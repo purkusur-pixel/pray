@@ -120,6 +120,12 @@ td .dow { display: block; color: var(--muted); font-size: .7rem; line-height: 1.
   max-width: 720px; width: 100%; margin: 0 auto; padding: 8px 16px calc(76px + env(safe-area-inset-bottom));
   color: var(--muted); font-size: .76rem;
 }
+.foot .oss { flex-basis: 100%; display: flex; align-items: center; gap: 10px; padding: 10px 12px; margin-bottom: 4px;
+  border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--ink); text-decoration: none; }
+.foot .oss svg { flex: none; }
+.foot .oss span { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.foot .oss b { font-size: .84rem; }
+.foot .oss small { color: var(--muted); font-size: .74rem; overflow-wrap: anywhere; }
 
 /* ---------- konum seçici ---------- */
 /* Pencereler ekranın güvenli alanında kalır: ana ekrandan açılan iPhone uygulamasında saat/çentik

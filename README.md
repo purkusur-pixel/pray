@@ -9,6 +9,10 @@ FastAPI · SQLite · Vanilla JS · Service Worker · IndexedDB · Docker
 
 ### 🌐 Canlı: **[namaz.sporyazilimlari.com.tr](https://namaz.sporyazilimlari.com.tr)**
 
+**Bu yazılım tamamen açık kaynak kodludur.** Sunucu ve uygulamanın bütün kodu bu depodadır; inceleyebilir,
+kendi sunucunuza kurabilir, geliştirmelere katkıda bulunabilirsiniz.
+Kaynak kodu: **[github.com/purkusur-pixel/pray](https://github.com/purkusur-pixel/pray)**
+
 Telefonda açıp “Yükle” (Android) ya da Paylaş › “Ana Ekrana Ekle” (iPhone) ile uygulama olarak kurabilirsiniz.
 
 <img src="docs/screenshots/vakitler.png" width="230" alt="Vakitler"> <img src="docs/screenshots/mushaf.png" width="230" alt="Kur'an-ı Kerîm"> <img src="docs/screenshots/hatim.png" width="230" alt="Hatim">
