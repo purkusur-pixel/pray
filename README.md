@@ -240,7 +240,10 @@ Telifli eserler (Diyanet ilmihali, Risale-i Nur, günümüz tercümeleri vb.) uy
 
 ## Gizlilik
 
-- Hesap, e-posta ya da telefon numarası istenmez; reklam ve analitik yoktur.
+**Tamamen açık kaynak kodlu ve hiçbir veri toplamayan yazılım.**
+
+- Hesap, e-posta ya da telefon numarası istenmez; reklam, çerez ve analitik yoktur.
+- Sunucu ziyaret kaydı tutmaz: Nginx'te `access_log off`, uvicorn'da `--no-access-log` açıktır; IP adresleri hiçbir yere yazılmaz (kötüye kullanımı önleyen sayaç yalnızca bellekte, en fazla bir gün durur; diske yazılmaz).
 - Konum yalnızca en yakın ilçeyi bulmak için bir kez gönderilir ve **saklanmaz**.
 - Kaza kayıtları, okuma yerleri, indirilen kitaplar ve PDF'ler **yalnızca telefonda** tutulur.
 - Sunucuda tutulanlar yalnızca şunlardır:

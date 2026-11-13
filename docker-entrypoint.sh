@@ -3,7 +3,8 @@
 # Boş bırakılırsa yalnızca Docker ağı içinde 8000'i dinler (Traefik / Nginx Proxy Manager için);
 # bu port compose'ta dışarıya yayınlanmaz.
 set -e
-COMMON="--workers 1 --proxy-headers --forwarded-allow-ips=* --no-server-header"
+# --no-access-log: istek kaydı (IP, adres) tutulmaz — uygulama veri toplamaz.
+COMMON="--workers 1 --proxy-headers --forwarded-allow-ips=* --no-server-header --no-access-log"
 
 if [ -n "$UVICORN_UDS" ]; then
   dir=$(dirname "$UVICORN_UDS")
