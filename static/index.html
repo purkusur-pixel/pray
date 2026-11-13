@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="nv-ver" content="__VER__">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Namaz Vakitleri</title>
+  <meta name="description" content="Diyanet namaz vakitleri — 14 günlük, çevrimdışı çalışır.">
+  <meta name="theme-color" content="#0e1a2b">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/static/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/static/icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="/static/style.css?v=__VER__">
+</head>
+<body>
+  <header class="topbar">
+    <div class="place">
+      <div class="place-name" id="placeName">Konum seçilmedi</div>
+      <div class="place-sub" id="placeSub"></div>
+    </div>
+    <div class="top-actions">
+    <button class="btn-loc btn-install" id="btnInstall" type="button" hidden>
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M11 3h2v9.6l3.3-3.3 1.4 1.4L12 16.4l-5.7-5.7 1.4-1.4 3.3 3.3V3Zm-6 15h14v2H5v-2Z"/></svg>
+      <span>Yükle</span>
+    </button>
+    <button class="btn-loc" id="btnLoc" type="button" aria-label="Konum değiştir">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+      <span>Konum</span>
+    </button>
+    </div>
+  </header>
+
+  <main id="main">
+   <div id="viewTimes" class="view">
+    <section class="hero" id="hero" hidden>
+      <div class="dates">
+        <div class="greg" id="gregDate"></div>
+        <div class="hijri" id="hijriDate"></div>
+      </div>
+      <div class="next-box">
+        <div class="now-label" id="nowLabel"></div>
+        <div class="next-label" id="nextLabel">Sonraki vakit</div>
+        <div class="countdown" id="countdown">—</div>
+        <div class="countdown-sub" id="countdownSub"></div>
+      </div>
+      <ol class="times" id="todayTimes"></ol>
+    </section>
+
+    <section class="upcoming" id="upcoming" hidden>
+      <h2 id="upcomingTitle">Önümüzdeki günler</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Tarih</th><th>İmsak</th><th>Güneş</th><th>Öğle</th><th>İkindi</th><th>Akşam</th><th>Yatsı</th></tr></thead>
+          <tbody id="upcomingBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <button class="siri-card" id="btnSiri" type="button" hidden>
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2Z"/></svg>
+      <span><b id="siriCardT">Siri ile sor</b><small id="siriCardS">“Hey Siri, Namaz” deyince kalan süreyi söylesin</small></span>
+    </button>
+
+    <section class="state" id="stateBox" hidden>
+      <p id="stateMsg"></p>
+      <button class="btn" id="btnRetry" type="button" hidden>Tekrar dene</button>
+    </section>
+   </div>
+
+   <div id="viewQibla" class="view" hidden>
+    <section class="qibla">
+      <div class="q-status" id="qStatus">Kıble yönü hesaplanıyor…</div>
+      <div class="dial-wrap">
+        <div class="dial-pointer" aria-hidden="true"></div>
+        <svg class="dial" id="dial" viewBox="-160 -160 320 320" role="img" aria-label="Kıble pusulası">
+          <g id="dialRot">
+            <circle r="150" class="ring"/>
+            <g id="ticks"></g>
+            <text class="card n" x="0" y="-114">K</text>
+            <text class="card" x="114" y="0">D</text>
+            <text class="card" x="0" y="114">G</text>
+            <text class="card" x="-114" y="0">B</text>
+            <g id="kaaba">
+              <line class="q-line" x1="0" y1="0" x2="0" y2="-118"/>
+              <g transform="translate(0,-136)">
+                <rect class="kaaba-box" x="-13" y="-13" width="26" height="26" rx="3"/>
+                <rect class="kaaba-band" x="-13" y="-6" width="26" height="4"/>
+              </g>
+            </g>
+          </g>
+          <circle r="5" class="hub"/>
+        </svg>
+      </div>
+      <div class="q-big" id="qBig">—</div>
+      <div class="q-sub" id="qSub"></div>
+      <div class="q-live" id="qLive"></div>
+      <div class="q-actions">
+        <button class="btn" id="btnCompass" type="button">Pusulayı başlat</button>
+        <button class="btn ghost" id="btnQGps" type="button">GPS ile hassas konum</button>
+      </div>
+      <p class="q-help" id="qHelp">Telefonu yere paralel tutun ve üstteki işaret Kâbe simgesiyle buluşana kadar
+        kendi etrafınızda yavaşça dönün. Metal eşyalardan ve mıknatıslardan uzak durun.</p>
+    </section>
+   </div>
+   <div id="viewKaza" class="view" hidden>
+    <section class="kz">
+      <div class="sec-head">
+        <h2>Kaza borçlarım</h2>
+        <span class="sec-sub" id="kzTotal"></span>
+      </div>
+      <div class="kz-grid" id="kzGrid"></div>
+      <div class="kz-tools">
+        <button class="btn ghost" id="kzUndo" type="button" disabled>↶ Geri al</button>
+        <button class="btn ghost" id="kzCalcBtn" type="button">Hesapla</button>
+      </div>
+      <p class="kz-hint">Kıldıkça <b>−</b>'ye dokunun. Sayıya dokunarak tam değeri yazabilir, düğmeye basılı tutarak hızlı değiştirebilirsiniz. Her kalem birbirinden bağımsızdır.</p>
+
+      <section class="card kz-calc" id="kzCalc">
+        <h3>Kaza hesapla</h3>
+        <div class="seg seg-wide" role="group" aria-label="Hesaplama türü">
+          <button type="button" data-kzm="dur" aria-pressed="true">Süre ile</button>
+          <button type="button" data-kzm="date" aria-pressed="false">Tarih aralığı ile</button>
+        </div>
+        <div class="kz-row" id="kzDur">
+          <label>Yıl<input type="number" inputmode="numeric" min="0" max="100" id="kzY" placeholder="0"></label>
+          <label>Ay<input type="number" inputmode="numeric" min="0" max="11" id="kzM" placeholder="0"></label>
+          <label>Gün<input type="number" inputmode="numeric" min="0" max="400" id="kzD" placeholder="0"></label>
+        </div>
+        <div class="kz-row" id="kzDates" hidden>
+          <label>Başlangıç<input type="date" id="kzFrom"></label>
+          <label>Bitiş<input type="date" id="kzTo"></label>
+        </div>
+        <p class="kz-small" id="kzDatesNote" hidden>Örn. ergenlik (buluğ) çağından düzenli kılmaya başladığınız güne kadar.</p>
+        <label class="kz-lbl">Namazdan düşülecek gün <small>(kadınlar için özel hâl günlerinin toplamı; oruçtan düşülmez)</small>
+          <input type="number" inputmode="numeric" min="0" id="kzMinus" placeholder="0"></label>
+        <label class="chk"><input type="checkbox" id="kzVitr" checked> Vitir dahil <small>Hanefî'de vaciptir; Şâfiî'de kaza borcu sayılmaz.</small></label>
+        <label class="chk"><input type="checkbox" id="kzOruc"> Oruç kazasını da hesapla <small>Yılda yaklaşık 30 gün (Ramazan) sayılır.</small></label>
+        <button class="btn" id="kzDo" type="button">Hesapla</button>
+        <div id="kzRes" hidden>
+          <div class="kz-res" id="kzResList"></div>
+          <div class="actions left">
+            <button class="btn" id="kzAdd" type="button">Mevcutlara ekle</button>
+            <button class="btn ghost" id="kzSet" type="button">Yerine yaz</button>
+          </div>
+        </div>
+        <p class="kz-small">1 yıl = 365 gün, 1 ay = 30 gün sayılır; her vakit için gün sayısı kadar kaza yazılır. Emin olmadığınız günleri ihtiyaten eklemek tavsiye edilir.</p>
+      </section>
+
+      <section class="card" id="kzPlan">
+        <h3>Ne zaman biter?</h3>
+        <label class="kz-lbl">Günde kaç günlük kaza kılıyorsunuz?
+          <input type="number" inputmode="numeric" min="1" max="20" id="kzPerDay" value="1"></label>
+        <p class="kz-plan-out" id="kzPlanOut"></p>
+      </section>
+
+      <section class="card">
+        <h3>Yedek ve sıfırlama</h3>
+        <p class="kz-small">Kaza bilgileri yalnızca bu telefonda tutulur; sunucuya gönderilmez. Telefon değiştirirken ya da tarayıcı verilerini silmeden önce yedek alın.</p>
+        <div class="actions left wrap">
+          <button class="btn ghost" id="kzBackup" type="button">Yedek kodunu kopyala</button>
+          <button class="btn ghost" id="kzRestore" type="button">Yedekten geri yükle</button>
+          <button class="btn ghost danger" id="kzReset" type="button">Sıfırla</button>
+        </div>
+      </section>
+    </section>
+   </div>
+
+   <div id="viewHatim" class="view" hidden>
+    <section id="hList">
+      <div class="sec-head">
+        <h2>Hatimlerim</h2>
+        <button class="btn" id="hNew" type="button">+ Yeni hatim dağıt</button>
+      </div>
+      <div id="hItems" class="h-items"></div>
+      <div class="card h-empty" id="hEmpty">
+        <h3>Birlikte okuyalım, birlikte hatmedelim</h3>
+        <p>Hatim oluşturun, linki paylaşın; herkes boş bir cüze dokunup adını yazarak alsın, okuyunca işaretlesin.
+          Size gönderilen bir hatim linkini açtığınızda o hatim burada kalır, her girişinizde buradan devam edersiniz.</p>
+      </div>
+    </section>
+    <section id="hDetail" hidden></section>
+   </div>
+   <div id="viewKitap" class="view" hidden>
+    <section id="kitapRoot" class="kitap"></section>
+   </div>
+  </main>
+
+  <nav class="tabbar" aria-label="Sekmeler">
+    <a href="#vakitler" class="tab" id="tabTimes" aria-current="page">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7Z"/></svg>
+      <span>Vakitler</span>
+    </a>
+    <a href="#kible" class="tab" id="tabQibla">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm-5.5-2.5 7.5-3.5 3.5-7.5-7.5 3.5Zm5.5-6.6a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg>
+      <span>Kıble</span>
+    </a>
+    <a href="#kaza" class="tab" id="tabKaza">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 2v14h14V5H5Zm2 2h4v2H7V7Zm0 4h4v2H7v-2Zm0 4h4v2H7v-2Zm7-8h3v2h-3V7Zm0 4h3v2h-3v-2Zm0 4h3v2h-3v-2Z"/></svg>
+      <span>Kaza</span>
+    </a>
+    <a href="#hatim" class="tab" id="tabHatim">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 5.5C10.3 4.1 7.9 3.5 4 3.5a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1c3.5 0 5.6.5 7.4 1.8a1 1 0 0 0 1.2 0c1.8-1.3 3.9-1.8 7.4-1.8a1 1 0 0 0 1-1v-13a1 1 0 0 0-1-1c-3.9 0-6.3.6-8 2Zm-1 12.1c-1.6-.8-3.5-1.1-6-1.2V5.5c3 .1 4.8.6 6 1.6v10.5Zm2 0V7.1c1.2-1 3-1.5 6-1.6v10.9c-2.5.1-4.4.4-6 1.2Z"/></svg>
+      <span>Hatim</span>
+    </a>
+    <a href="#kitap" class="tab" id="tabKitap">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 3h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm1 2v14h1V5H5Zm5-2h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm1 2v14h1V5h-1Zm5.6-.9 2.9-.8a1 1 0 0 1 1.2.7l4.1 15.5a1 1 0 0 1-.7 1.2l-2.9.8a1 1 0 0 1-1.2-.7L15.9 5.3a1 1 0 0 1 .7-1.2Zm1.5 2.2 3.6 13.5 1-.3-3.6-13.5-1 .3Z"/></svg>
+      <span>Kitaplar</span>
+    </a>
+  </nav>
+
+  <footer class="foot">
+    <span id="storeInfo"></span>
+    <span class="src">Kaynak: Diyanet İşleri Başkanlığı · sürüm __VER__</span>
+  </footer>
+
+  <dialog id="picker">
+    <form method="dialog" class="picker" id="pickerForm">
+      <h2>Konum seç</h2>
+      <button class="btn ghost geo" id="btnGeo" type="button">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm9 3h-2.07A7 7 0 0 0 13 5.07V3h-2v2.07A7 7 0 0 0 5.07 11H3v2h2.07A7 7 0 0 0 11 18.93V21h2v-2.07A7 7 0 0 0 18.93 13H21v-2Zm-9 6a5 5 0 1 1 0-10 5 5 0 0 1 0 10Z"/></svg>
+        Bulunduğum yeri bul
+      </button>
+      <p class="geo-note" id="geoNote">Konumunuz yalnızca en yakın ilçeyi bulmak için kullanılır, saklanmaz.</p>
+      <label>Ülke<select id="selCountry" required><option value="">Yükleniyor…</option></select></label>
+      <label>İl / Eyalet<select id="selState" required disabled><option value="">Önce ülke seçin</option></select></label>
+      <label>İlçe / Şehir<select id="selCity" required disabled><option value="">Önce il seçin</option></select></label>
+      <label class="chk"><input type="checkbox" id="chkAuto"> Konumumu otomatik takip et
+        <small>Uygulama açılınca bulunduğunuz ilçeyi bulur; başka ilçeye geçince vakitleri kendisi değiştirir.</small></label>
+      <p class="picker-err" id="pickerErr" hidden></p>
+      <div class="actions">
+        <button class="btn ghost" id="btnCancel" value="cancel" type="button">Vazgeç</button>
+        <button class="btn" id="btnSave" type="button" disabled>Kaydet</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <div class="update-bar" id="updateBar" role="alert" hidden>
+    <span>Yeni sürüm hazır</span>
+    <button class="btn" id="btnUpdate" type="button">Yenile</button>
+    <button class="update-x" id="btnUpdateX" type="button" aria-label="Kapat">×</button>
+  </div>
+
+  <dialog id="installDlg">
+    <div class="picker">
+      <h2>Uygulamayı yükle</h2>
+      <div id="installIos">
+        <p class="siri-lead">iPhone'da uygulama Safari'den ana ekrana eklenir:</p>
+        <ol class="siri-steps">
+          <li>Bu sayfayı <b>Safari</b>'de açın.</li>
+          <li>Alttaki <b>Paylaş</b> düğmesine dokunun
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" style="vertical-align:-3px"><path fill="currentColor" d="M12 2 7.5 6.5l1.4 1.4L11 5.8V15h2V5.8l2.1 2.1 1.4-1.4L12 2ZM5 10v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10h-2v10H7V10H5Z"/></svg>
+            (kare ve yukarı ok).</li>
+          <li>Listeyi kaydırıp <b>Ana Ekrana Ekle</b>'ye <small>(Add to Home Screen)</small> dokunun.</li>
+          <li>Sağ üstte <b>Ekle</b>'ye <small>(Add)</small> dokunun.</li>
+        </ol>
+      </div>
+      <div id="installOther" hidden>
+        <p class="siri-lead">Tarayıcının menüsünden (⋮) <b>Uygulamayı yükle</b> ya da <b>Ana ekrana ekle</b>'yi seçin.</p>
+      </div>
+      <p class="siri-note">Yüklenince uygulama ana ekranda simgesiyle açılır, internetsiz de çalışır.</p>
+      <div class="actions"><button class="btn ghost" id="btnInstallClose" type="button">Tamam</button></div>
+    </div>
+  </dialog>
+
+  <dialog id="siriDlg" class="guide-dlg" aria-labelledby="gTitle">
+    <div class="guide">
+      <header class="guide-head">
+        <div class="guide-top">
+          <h2 id="gTitle">Sesli asistana ekle</h2>
+          <div class="seg" role="group" aria-label="Dil / Language">
+            <button type="button" data-lang="tr">TR</button><button type="button" data-lang="en">EN</button>
+          </div>
+          <button class="guide-x" id="btnSiriClose" type="button" aria-label="Kapat">×</button>
+        </div>
+        <div class="gtabs" role="tablist">
+          <button type="button" role="tab" data-plat="ios">iPhone · Siri</button>
+          <button type="button" role="tab" data-plat="android">Android · Google</button>
+        </div>
+      </header>
+      <div class="guide-body" id="guideBody"></div>
+    </div>
+  </dialog>
+
+  <dialog id="kzEditDlg">
+    <form class="picker" method="dialog" id="kzEditForm">
+      <h2 id="kzEditT">Öğle</h2>
+      <label>Kalan kaza sayısı<input type="number" inputmode="numeric" min="0" max="99999" id="kzEditV"></label>
+      <div class="kz-quick">
+        <button type="button" class="btn ghost" data-q="-10">−10</button><button type="button" class="btn ghost" data-q="-1">−1</button>
+        <button type="button" class="btn ghost" data-q="1">+1</button><button type="button" class="btn ghost" data-q="10">+10</button>
+      </div>
+      <div class="actions"><button class="btn ghost" value="cancel" type="submit" formnovalidate>Vazgeç</button><button class="btn" value="ok" type="submit">Kaydet</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="askDlg">
+    <form class="picker" method="dialog">
+      <h2 id="askT"></h2>
+      <p class="ask-p" id="askP"></p>
+      <textarea id="askIn" rows="4" hidden></textarea>
+      <div class="ask-btns" id="askBtns"></div>
+    </form>
+  </dialog>
+
+  <dialog id="hFormDlg">
+    <form class="picker" id="hForm">
+      <h2 id="hFormT">Yeni hatim dağıt</h2>
+      <label>Başlık<input id="hfT" maxlength="80" required placeholder="Örn. Cuma hatmi, Annem için hatim"></label>
+      <label>Açıklama <small>(isteğe bağlı)</small><textarea id="hfD" maxlength="300" rows="3" placeholder="Niyet, dua edilecek kişi, notlar…"></textarea></label>
+      <label>Hatim duası tarihi <small>(isteğe bağlı)</small><input type="date" id="hfDt"></label>
+      <label id="hfNWrap">Hatim sayısı
+        <span class="stepper"><button type="button" class="btn ghost" data-st="-1" aria-label="Azalt">−</button><output id="hfN">1</output><button type="button" class="btn ghost" data-st="1" aria-label="Artır">+</button></span>
+      </label>
+      <label class="chk"><input type="checkbox" id="hfA"><span>Cüzlerin hepsi dağıtılınca ya da hatim tamamlanınca otomatik yeni hatim aç</span></label>
+      <p class="picker-err" id="hfErr" hidden></p>
+      <div class="actions"><button class="btn ghost" type="button" id="hfCancel">Vazgeç</button><button class="btn" type="submit" id="hfOk">Oluştur</button></div>
+    </form>
+  </dialog>
+
+  <div class="say-bar" id="sayBar" hidden>
+    <button class="btn" id="btnSay" type="button">🔊 <span id="sayBarT">Kalan süreyi dinle</span></button>
+    <button class="update-x" id="btnSayX" type="button" aria-label="Kapat">×</button>
+  </div>
+
+  <script src="/static/app.js?v=__VER__" defer></script>
+  <script src="/static/guide.js?v=__VER__" defer></script>
+  <script src="/static/kaza.js?v=__VER__" defer></script>
+  <script src="/static/hatim.js?v=__VER__" defer></script>
+  <script src="/static/kitap.js?v=__VER__" defer></script>
+</body>
+</html>

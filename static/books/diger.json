@@ -1,0 +1,23 @@
+{
+  "app": [
+    {
+      "t": "Elmalılı Hamdi Yazır Meali",
+      "by": "Hak Dini Kur'an Dili meali",
+      "d": "Kur'an sayfasıyla birlikte ayet ayet; cüz cüz telefona iner.",
+      "open": "meal:elmalili"
+    },
+    {
+      "t": "Muhtasar Tefsir ve Sa'dî Tefsiri",
+      "by": "Türkçe tefsir",
+      "d": "Her ayetin açıklaması; okuyucuda “Tefsir” düğmesiyle.",
+      "open": "tefsir"
+    },
+    {
+      "t": "Başka dillerde mealler",
+      "by": "70'ten fazla dil",
+      "d": "İngilizce, Almanca, Arapça tefsir, Kürtçe, Boşnakça… istediğinizi telefona indirin.",
+      "open": "meallib"
+    }
+  ],
+  "web": []
+}

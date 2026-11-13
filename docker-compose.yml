@@ -1,0 +1,37 @@
+# namaz.sporyazilimlari.com.tr
+#
+# Uygulama yalnızca sunucunun kendi içinden erişilebilen 127.0.0.1:${NAMAZ_PORT} adresini dinler
+# (dışarıdan bu porta ulaşılamaz). Alt alan adını sunucudaki Nginx buraya yönlendirir;
+# ziyaretçi adresi port yazmadan https://namaz.sporyazilimlari.com.tr olur.
+# Sunucudaki apartman-yonetim projesiyle aynı düzen.
+
+name: namaz
+
+services:
+  namaz:
+    build: .
+    image: namaz-vakitleri:latest
+    container_name: namaz
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      UVICORN_UDS: ""                                   # soket değil, konteyner içinde 8000
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS:-namaz.sporyazilimlari.com.tr}
+      TZ: Europe/Istanbul
+    ports:
+      - "127.0.0.1:${NAMAZ_PORT:-8070}:8000"
+    volumes:
+      - namaz-data:/srv/data          # sunucu önbelleği + istek sayaçları (kalıcı)
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    logging:
+      driver: json-file
+      options: { max-size: "5m", max-file: "3" }
+
+volumes:
+  namaz-data:
