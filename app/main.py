@@ -555,6 +555,15 @@ async def manifest():
                         media_type="application/manifest+json", headers=NO_CACHE)
 
 
+@app.get("/.well-known/assetlinks.json", include_in_schema=False)
+async def assetlinks():
+    """Android (TWA/PWABuilder) paketi için alan adı doğrulaması: static/.well-known/assetlinks.json konursa sunulur."""
+    f = config.STATIC_DIR / ".well-known" / "assetlinks.json"
+    if not f.is_file():
+        raise HTTPException(404, "Yok")
+    return FileResponse(f, media_type="application/json")
+
+
 @app.get("/h/{hid}", include_in_schema=False)
 async def hatim_link(request: Request, hid: str):
     """Paylaşılan hatim linki: uygulamanın kendisi açılır, Hatim sekmesi bu hatmi gösterir."""
