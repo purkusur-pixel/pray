@@ -417,7 +417,8 @@
     }
     return g.map((x) => (x.b === 'ٱ' ? 'ا' : x.b) + x.m).join('')
       .replace(/ءَا(?![ً-ْٰٓ])/g, 'اٰ')
-      .replace(/ـ(?:َٔ|َٔ)ا(?![ً-ْٰٓ])/g, 'اٰ');   // الْـَٔاخِرَة → الْاٰخِرَة   // ءَامَنُوا → اٰمَنُوا
+      .replace(/ـ(?:َٔ|َٔ)ا(?![ً-ْٰٓ])/g, 'اٰ')   // الْـَٔاخِرَة → الْاٰخِرَة   // ءَامَنُوا → اٰمَنُوا
+      .replace(/\u064F\u06E5/g, '\u0657').replace(/\u0650\u06E6/g, '\u0656');   // لَهُۥ → لَهٗ (ters ötre), بِهِۦ → بِهٖ (uzun esre)
   }
   /** Bilgisayar hattında Türkiye mushaflarındaki gibi yazım; Mushaf hattında Medine Mushafı'nın aslı */
   const qa = (t) => (hatPc() ? trStyle(t) : t);
