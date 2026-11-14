@@ -474,7 +474,7 @@
   /** Aramadan gelindiyse bulunan ayete kaydır ve kısa süre vurgula */
   let pendingAy = null;
   function showPendingAy() {
-    sesMark(); sesFab();
+    sesMark(); sesFab(); if (P.s && cur.kind === 'q') sesAutoPage(cur.page);
     if (!pendingAy) return;
     const el = $('ay-' + pendingAy); pendingAy = null;
     if (!el) return;
@@ -1032,10 +1032,11 @@
   function aud() {
     if (audio) return audio;
     audio = new Audio(); audio.preload = 'auto';
-    audio.addEventListener('ended', sesEnded);
-    audio.addEventListener('play', () => { P.playing = true; sesBar(); });
-    audio.addEventListener('pause', () => { P.playing = false; sesBar(); });
-    audio.addEventListener('error', () => { if (P.s && audio.src) { P.playing = false; sesBar(); A().toast('Ses çalınamadı. İnternet bağlantısını kontrol edin.'); } });
+    const real = () => audio.src && audio.src !== SILENT;
+    audio.addEventListener('ended', () => { if (real()) sesEnded(); });
+    audio.addEventListener('play', () => { if (real()) { P.playing = true; sesBar(); } });
+    audio.addEventListener('pause', () => { if (real()) { P.playing = false; sesBar(); } });
+    audio.addEventListener('error', () => { if (P.s && real()) { P.playing = false; sesBar(); A().toast('Ses çalınamadı. İnternet bağlantısını kontrol edin.'); } });
     if ('mediaSession' in navigator) {
       const ms = navigator.mediaSession;
       const on = (k, f) => { try { ms.setActionHandler(k, f); } catch { /* desteklenmiyor */ } };
@@ -1044,34 +1045,67 @@
     }
     return audio;
   }
+  /* iPhone: ses yalnız dokunuşla başlatılabilir. İlk dokunuşta aynı oynatıcıyı sessiz kısa bir sesle "açarız";
+     sonra ayetler (indirme bitince, ekran kapalıyken bile) aynı oynatıcıdan çalar. */
+  let SILENT = null, unlocked = false;
+  function sesUnlock() {
+    const el = aud();
+    if (unlocked) return;
+    if (!SILENT) {
+      const n = 400, b = new Uint8Array(44 + n), v = new DataView(b.buffer);
+      const w = (o, t) => { for (let i = 0; i < t.length; i++) b[o + i] = t.charCodeAt(i); };
+      w(0, 'RIFF'); v.setUint32(4, 36 + n, true); w(8, 'WAVEfmt '); v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+      v.setUint32(24, 8000, true); v.setUint32(28, 8000, true); v.setUint16(32, 1, true); v.setUint16(34, 8, true); w(36, 'data'); v.setUint32(40, n, true); b.fill(128, 44);
+      SILENT = URL.createObjectURL(new Blob([b], { type: 'audio/wav' }));
+    }
+    unlocked = true;
+    el.src = SILENT;
+    const pr = el.play(); if (pr) pr.catch(() => { unlocked = false; });
+  }
+  /** Ayet sesini al: telefonda varsa oradan; yoksa indirip telefona da kaydet (aynı dosya iki kez inmesin) */
+  async function sesGet(n) {
+    if (P.blobs.has(n)) return P.blobs.get(n);
+    let r = await sesHit(n);
+    if (!r && navigator.onLine) {
+      const net = await fetch(sesUrl(n));
+      if (!net.ok) throw new Error('Ses alınamadı');
+      try { const c = await sesCache(); if (c) await c.put(sesUrl(n), net.clone()); } catch { /* yer yok */ }
+      r = net;
+    }
+    if (!r) return null;
+    const u = URL.createObjectURL(await r.blob()); P.blobs.set(n, u); return u;
+  }
   /** Sıradaki ayeti belleğe al: arka planda (ekran kapalıyken) geçiş beklemeden olsun */
   function sesPrefetch(n) {
     if (!n || P.blobs.has(n) || P.pf.has(n)) return;
     P.pf.add(n);
-    (async () => {
-      const r = (await sesHit(n)) || (navigator.onLine ? await fetch(sesUrl(n)) : null);
-      if (r && r.ok) P.blobs.set(n, URL.createObjectURL(await r.blob()));
-    })().catch(() => {}).finally(() => P.pf.delete(n));
+    sesGet(n).catch(() => {}).finally(() => P.pf.delete(n));
   }
   function sesTrim(keep) {
     for (const [n, u] of P.blobs) if (!keep.includes(n)) { URL.revokeObjectURL(u); P.blobs.delete(n); }
   }
   async function sesPlay(s, a, bas) {
+    sesUnlock();                                       // dokunuşun içinde, ilk beklemeden önce
     await qMeta();
     P.s = s; P.a = a; P.bas = bas ?? needBasmala(s, a);
     const n = P.bas ? 1 : gnum(s, a), tok = ++P.tok;
+    P.playing = true; sesBar(); sesMark();
     let src = P.blobs.get(n);                          // hazırsa beklemeden (arka planda da çalsın)
     if (!src) {
-      const hit = await sesHit(n);
+      try { src = await sesGet(n); } catch { src = navigator.onLine ? sesUrl(n) : null; }
       if (tok !== P.tok) return;
-      if (hit) { src = URL.createObjectURL(await hit.blob()); P.blobs.set(n, src); }
-      else if (!navigator.onLine) { P.playing = false; sesBar(); A().toast('Bu ayetin sesi telefonda yok. İnternete bağlanın ya da “⋯ › İndir” ile önceden indirin.'); return; }
-      else src = sesUrl(n);
+      if (!src) { P.playing = false; sesBar(); A().toast('Bu ayetin sesi telefonda yok. İnternete bağlanın ya da “⋯ › İndir” ile önceden indirin.'); return; }
     }
     if (tok !== P.tok) return;
     const el = aud(), rate = sesCfg().rate;
     el.src = src; el.defaultPlaybackRate = rate; el.playbackRate = rate;
-    el.play().catch((e) => { if (e.name !== 'AbortError') { P.playing = false; sesBar(); } });
+    el.play().catch((e) => {
+      if (e.name === 'AbortError') return;
+      P.playing = false; sesBar();
+      if (e.name === 'NotAllowedError') A().toast('Dinlemek için ▶ düğmesine dokunun');
+      else A().toast('Ses çalınamadı');
+    });
+    sesAutoPage(pageOf(s, a));
     const nx = P.bas ? gnum(s, a) : (() => { const q = nextPos(s, a); return q ? (needBasmala(q[0], q[1]) ? 1 : gnum(q[0], q[1])) : 0; })();
     sesTrim([n, nx, gnum(s, a)]); sesPrefetch(nx); if (!P.bas) { const q = nextPos(s, a); if (q) sesPrefetch(gnum(q[0], q[1])); }
     sesMeta(); sesBar(); sesFollow();
@@ -1090,7 +1124,7 @@
   function sesToggle() {
     if (!P.s) return;
     const el = aud();
-    if (el.paused) { if (!el.src) sesPlay(P.s, P.a); else el.play().catch(() => {}); } else el.pause();
+    if (el.paused) { if (!el.src || el.src === SILENT) sesPlay(P.s, P.a); else el.play().catch(() => {}); } else el.pause();
   }
   function sesStop() {
     P.tok++; if (audio) { audio.pause(); audio.removeAttribute('src'); audio.load(); }
@@ -1147,6 +1181,7 @@
     fab.id = 'sesFab'; fab.type = 'button'; fab.className = 'ses-fab'; fab.hidden = true; fab.setAttribute('aria-label', 'Bu sayfayı dinle');
     fab.innerHTML = IC.spk; document.body.appendChild(fab);
     fab.addEventListener('click', async () => {
+      sesUnlock();
       await qMeta(); const p = cur.page || 1; const st = QM.p[p - 1];
       sesPlay(st[0], st[1]);
     });
@@ -1200,10 +1235,10 @@
   }
   async function sesCount() { try { const c = await sesCache(); return c ? (await c.keys()).length : 0; } catch { return 0; } }
   /** Sayfa / sure / cüz seslerini telefona indir (aynı anda 3 dosya, sunucuyu yormadan) */
-  function sesRange(kind) {
+  function sesRange(kind, page) {
     const s = P.s || 1, a = P.a || 1;
     let from, to;
-    if (kind === 'p') { const p = pageOf(s, a); from = gnum(...QM.p[p - 1]); to = p < 604 ? gnum(...QM.p[p]) - 1 : 6236; }
+    if (kind === 'p') { const p = page || pageOf(s, a); from = gnum(...QM.p[p - 1]); to = p < 604 ? gnum(...QM.p[p]) - 1 : 6236; }
     else if (kind === 's') { from = gnum(s, 1); to = gnum(s, QM.s[s - 1][2]); }
     else { const j = juzOf(s, a); from = gnum(...QM.js[j - 1]); to = j < 30 ? gnum(...QM.js[j]) - 1 : 6236; }
     const ns = []; for (let n = from; n <= to; n++) ns.push(n);
@@ -1238,6 +1273,27 @@
     const stopped = P.dl.stop; P.dl = null; sesBar(); sesSheet();
     A().toast(stopped ? 'İndirme durduruldu' : err ? `${err} ayet indirilemedi; tekrar deneyin` : 'İndirildi: internetsiz dinleyebilirsiniz');
   }
+  /** Ses açıkken okunan / açılan sayfanın sesleri arka planda sessizce telefona iner */
+  const autoDone = new Set(), autoQ = []; let autoBusy = false;
+  function sesAutoPage(p) {
+    if (!p || !P.s || autoDone.has(p) || !navigator.onLine || !('caches' in window)) return;
+    autoDone.add(p); autoQ.push(p);
+    if (!autoBusy) sesAutoRun();
+  }
+  async function sesAutoRun() {
+    autoBusy = true;
+    try {
+      const c = await sesCache();
+      while (autoQ.length && c) {
+        const p = autoQ.shift();
+        for (const n of sesRange('p', p)) {
+          if (!navigator.onLine) break;
+          if (P.blobs.has(n) || await c.match(sesUrl(n))) continue;
+          try { const r = await fetch(sesUrl(n)); if (r.ok) await c.put(sesUrl(n), r); } catch { autoDone.delete(p); break; }
+        }
+      }
+    } finally { autoBusy = false; }
+  }
   /** Mushafta ayete dokununca o ayetten itibaren oku */
   function sesTap(e) {
     if (e.target.closest('a,button,select,input,.qm-tef,.qm-tr,.qm-fn')) return false;
@@ -1246,7 +1302,7 @@
     const m = /^ay-(\d+)-(\d+)$/.exec(box?.id || ''); if (!m) return false;
     sesPlay(+m[1], +m[2]); return true;
   }
-  async function sesClear() { try { await caches.delete(SES_CACHE); } catch { /* yok */ } P.blobs.forEach((u) => URL.revokeObjectURL(u)); P.blobs.clear(); }
+  async function sesClear() { try { await caches.delete(SES_CACHE); } catch { /* yok */ } P.blobs.forEach((u) => URL.revokeObjectURL(u)); P.blobs.clear(); autoDone.clear(); }
 
   /* ------------------------------------------------------------ veri yönetimi (kitaplığın altında) */
   async function dmStats() {
