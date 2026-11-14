@@ -55,7 +55,7 @@ async def ses(br: str, edition: str, n: int, request: Request):
     cache = {"Cache-Control": "public, max-age=31536000, immutable"}
     if config.MOCK:
         return Response(_mock_wav(n), media_type="audio/wav", headers=cache)
-    headers = {}
+    headers = {"Accept-Encoding": "identity"}    # sıkıştırılmış gelirse ses dosyası bozuk görünür
     if rng := request.headers.get("range"):
         headers["Range"] = rng                  # oynatıcı ileri sarınca yalnız gereken parça gelir
     client = _http()
@@ -66,7 +66,8 @@ async def ses(br: str, edition: str, n: int, request: Request):
     if r.status_code not in (200, 206):
         await r.aclose()
         raise HTTPException(502 if r.status_code >= 500 else 404, "Ses alınamadı")
-    out = {k: r.headers[k] for k in ("content-length", "content-range", "accept-ranges", "etag", "last-modified") if k in r.headers}
+    out = {k: r.headers[k] for k in ("content-length", "content-range", "accept-ranges", "etag", "last-modified", "content-encoding")
+           if k in r.headers}
     out.update(cache)
     return StreamingResponse(r.aiter_raw(), status_code=r.status_code, media_type="audio/mpeg", headers=out,
                              background=BackgroundTask(r.aclose))

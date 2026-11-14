@@ -1007,7 +1007,8 @@
   /* ------------------------------------------------------------ Kur'an sesleri (ayet ayet)
    * Kaynak: Al Quran Cloud CDN, sunucu üzerinden akış (/ses/…; sunucuda saklanmaz). Okuyan: Mişârî Râşid el-Afâsî.
    * Ayarlar (kalite, hız) yalnız bu telefonda tutulur. İndirilen sesler tarayıcının Cache deposunda ('nv-ses'). */
-  const SES_ED = 'ar.alafasy', SES_NAME = 'Mişârî Râşid el-Afâsî', SES_CACHE = 'nv-ses';
+  const SES_ED = 'ar.alafasy', SES_NAME = 'Mişârî Râşid el-Afâsî', SES_CACHE = 'nv-ses2';
+  try { caches.delete('nv-ses'); } catch { /* yok */ }       // önceki sürümün (bozuk inmiş olabilecek) sesleri
   const RATES = [0.75, 1, 1.25, 1.5];
   const sesCfg = () => ({ br: 64, rate: 1, ...jget('nv_ses', {}) });
   const sesSet = (o) => jset('nv_ses', { ...sesCfg(), ...o });
@@ -1031,12 +1032,19 @@
   let audio = null;
   function aud() {
     if (audio) return audio;
-    audio = new Audio(); audio.preload = 'auto';
+    audio = document.createElement('audio'); audio.preload = 'auto';
+    audio.setAttribute('playsinline', ''); audio.setAttribute('webkit-playsinline', ''); audio.hidden = true;
+    document.body.appendChild(audio);
     const real = () => audio.src && audio.src !== SILENT;
     audio.addEventListener('ended', () => { if (real()) sesEnded(); });
     audio.addEventListener('play', () => { if (real()) { P.playing = true; sesBar(); } });
     audio.addEventListener('pause', () => { if (real()) { P.playing = false; sesBar(); } });
-    audio.addEventListener('error', () => { if (P.s && real()) { P.playing = false; sesBar(); A().toast('Ses çalınamadı. İnternet bağlantısını kontrol edin.'); } });
+    audio.addEventListener('error', () => {
+      if (!P.s || !real()) return;
+      P.playing = false; sesBar();
+      const c = audio.error?.code;
+      A().toast(c === 4 ? 'Ses dosyası çalınamadı (biçim). Lütfen bildirin: kod 4' : c === 2 ? 'Ses inerken bağlantı koptu' : `Ses çalınamadı (kod ${c || '?'})`);
+    });
     if ('mediaSession' in navigator) {
       const ms = navigator.mediaSession;
       const on = (k, f) => { try { ms.setActionHandler(k, f); } catch { /* desteklenmiyor */ } };
@@ -1063,17 +1071,25 @@
     const pr = el.play(); if (pr) pr.catch(() => { unlocked = false; });
   }
   /** Ayet sesini al: telefonda varsa oradan; yoksa indirip telefona da kaydet (aynı dosya iki kez inmesin) */
+  /** Gelen dosya gerçekten ses mi (MP3: "ID3" ya da çerçeve başı; geliştirmede WAV)? Bozuksa saklanmaz. */
+  async function isAudio(blob) {
+    const h = new Uint8Array(await blob.slice(0, 4).arrayBuffer());
+    return (h[0] === 0x49 && h[1] === 0x44 && h[2] === 0x33) || (h[0] === 0xFF && (h[1] & 0xE0) === 0xE0) || (h[0] === 0x52 && h[1] === 0x49 && h[2] === 0x46 && h[3] === 0x46);
+  }
+  async function sesFetch(n) {                         // indir, doğrula, telefona kaydet → Blob
+    const net = await fetch(sesUrl(n));
+    if (!net.ok) throw new Error(`Ses alınamadı (${net.status})`);
+    const blob = await net.blob();
+    if (!(await isAudio(blob))) throw new Error('Ses dosyası bozuk geldi');
+    try { const c = await sesCache(); if (c) await c.put(sesUrl(n), new Response(blob, { headers: { 'Content-Type': 'audio/mpeg', 'Content-Length': String(blob.size) } })); } catch { /* yer yok */ }
+    return blob;
+  }
   async function sesGet(n) {
     if (P.blobs.has(n)) return P.blobs.get(n);
-    let r = await sesHit(n);
-    if (!r && navigator.onLine) {
-      const net = await fetch(sesUrl(n));
-      if (!net.ok) throw new Error('Ses alınamadı');
-      try { const c = await sesCache(); if (c) await c.put(sesUrl(n), net.clone()); } catch { /* yer yok */ }
-      r = net;
-    }
-    if (!r) return null;
-    const u = URL.createObjectURL(await r.blob()); P.blobs.set(n, u); return u;
+    const hit = await sesHit(n);
+    const blob = hit ? await hit.blob() : navigator.onLine ? await sesFetch(n) : null;
+    if (!blob) return null;
+    const u = URL.createObjectURL(blob.type ? blob : new Blob([blob], { type: 'audio/mpeg' })); P.blobs.set(n, u); return u;
   }
   /** Sıradaki ayeti belleğe al: arka planda (ekran kapalıyken) geçiş beklemeden olsun */
   function sesPrefetch(n) {
@@ -1092,8 +1108,10 @@
     P.playing = true; sesBar(); sesMark();
     let src = P.blobs.get(n);                          // hazırsa beklemeden (arka planda da çalsın)
     if (!src) {
-      try { src = await sesGet(n); } catch { src = navigator.onLine ? sesUrl(n) : null; }
+      let why = '';
+      try { src = await sesGet(n); } catch (e) { why = e.message; src = null; }
       if (tok !== P.tok) return;
+      if (why) { P.playing = false; sesBar(); A().toast(why); return; }
       if (!src) { P.playing = false; sesBar(); A().toast('Bu ayetin sesi telefonda yok. İnternete bağlanın ya da “⋯ › İndir” ile önceden indirin.'); return; }
     }
     if (tok !== P.tok) return;
@@ -1260,10 +1278,7 @@
         const n = todo[i++];
         for (let t = 0; t < 3; t++) {
           try {
-            const r = await fetch(sesUrl(n));
-            if (r.status === 429) { await new Promise((ok) => setTimeout(ok, 4000)); continue; }
-            if (!r.ok) throw new Error();
-            await c.put(sesUrl(n), r); break;
+            await sesFetch(n); break;
           } catch { if (t === 2) err++; await new Promise((ok) => setTimeout(ok, 800)); }
         }
         P.dl.done++; sesBar(); if (P.dl.done % 5 === 0) sesSheet();
@@ -1289,7 +1304,7 @@
         for (const n of sesRange('p', p)) {
           if (!navigator.onLine) break;
           if (P.blobs.has(n) || await c.match(sesUrl(n))) continue;
-          try { const r = await fetch(sesUrl(n)); if (r.ok) await c.put(sesUrl(n), r); } catch { autoDone.delete(p); break; }
+          try { await sesFetch(n); } catch { autoDone.delete(p); break; }
         }
       }
     } finally { autoBusy = false; }
