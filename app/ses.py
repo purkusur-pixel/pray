@@ -66,8 +66,17 @@ async def ses(br: str, edition: str, n: int, request: Request):
     if r.status_code not in (200, 206):
         await r.aclose()
         raise HTTPException(502 if r.status_code >= 500 else 404, "Ses alınamadı")
-    out = {k: r.headers[k] for k in ("content-length", "content-range", "accept-ranges", "etag", "last-modified", "content-encoding")
-           if k in r.headers}
+    if r.headers.get("content-encoding", "identity") != "identity":
+        # Kaynak, istemesek de sıkıştırılmış (gzip) gönderebiliyor: açıp düz MP3 olarak ilet.
+        # (Açılmış boyut önceden bilinmez; bu durumda ileri-sarma parçası değil tüm dosya gönderilir.)
+        if r.status_code == 206:
+            await r.aclose()
+            r = await client.send(client.build_request("GET", f"{BASE}/{br}/{edition}/{n}.mp3", headers={"Accept-Encoding": "identity"}), stream=True)
+        out = {k: r.headers[k] for k in ("etag", "last-modified") if k in r.headers}
+        out.update(cache)
+        return StreamingResponse(r.aiter_bytes(), status_code=200, media_type="audio/mpeg", headers=out,
+                                 background=BackgroundTask(r.aclose))
+    out = {k: r.headers[k] for k in ("content-length", "content-range", "accept-ranges", "etag", "last-modified") if k in r.headers}
     out.update(cache)
     return StreamingResponse(r.aiter_raw(), status_code=r.status_code, media_type="audio/mpeg", headers=out,
                              background=BackgroundTask(r.aclose))
