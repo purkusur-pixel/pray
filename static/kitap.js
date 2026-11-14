@@ -1012,7 +1012,9 @@
   const RATES = [0.75, 1, 1.25, 1.5];
   const sesCfg = () => ({ br: 64, rate: 1, ...jget('nv_ses', {}) });
   const sesSet = (o) => jset('nv_ses', { ...sesCfg(), ...o });
-  const sesUrl = (n, br = sesCfg().br) => `/ses/${br}/${SES_ED}/${n}.mp3`;
+  const sesUrl = (n, br = sesCfg().br) => `/ses/${br}/${SES_ED}/${n}.mp3`;            // sunucu üzerinden (yedek yol) + depo anahtarı
+  const cdnUrl = (n, br = sesCfg().br) => `https://cdn.islamic.network/quran/audio/${br}/${SES_ED}/${n}.mp3`;   // doğrudan kaynak
+  let corsOK = null;                                   // kaynak doğrudan indirmeye izin veriyor mu (ilk denemede öğrenilir)
   let CUM = null;
   function gnum(s, a) {                               // Kur'an genelindeki ayet sırası (1–6236)
     if (!CUM) { CUM = [0]; for (const x of QM.s) CUM.push(CUM[CUM.length - 1] + x[2]); }
@@ -1077,10 +1079,19 @@
     return (h[0] === 0x49 && h[1] === 0x44 && h[2] === 0x33) || (h[0] === 0xFF && (h[1] & 0xE0) === 0xE0) || (h[0] === 0x52 && h[1] === 0x49 && h[2] === 0x46 && h[3] === 0x46);
   }
   async function sesFetch(n) {                         // indir, doğrula, telefona kaydet → Blob
-    const net = await fetch(sesUrl(n));
-    if (!net.ok) throw new Error(`Ses alınamadı (${net.status})`);
-    const blob = await net.blob();
-    if (!(await isAudio(blob))) throw new Error('Ses dosyası bozuk geldi');
+    let blob = null, why = '';
+    if (corsOK !== false) {                            // önce doğrudan kaynaktan (sunucuyu yormadan)
+      try {
+        const r = await fetch(cdnUrl(n), { mode: 'cors' });
+        if (r.ok) { const b = await r.blob(); if (await isAudio(b)) { blob = b; corsOK = true; } }
+      } catch { if (corsOK === null) corsOK = false; }
+    }
+    if (!blob) {                                       // olmazsa kendi sunucumuz üzerinden
+      const net = await fetch(sesUrl(n));
+      if (!net.ok) why = `Ses alınamadı (${net.status})`;
+      else { const b = await net.blob(); if (await isAudio(b)) blob = b; else why = 'Ses dosyası bozuk geldi'; }
+    }
+    if (!blob) throw new Error(why || 'Ses alınamadı');
     try { const c = await sesCache(); if (c) await c.put(sesUrl(n), new Response(blob, { headers: { 'Content-Type': 'audio/mpeg', 'Content-Length': String(blob.size) } })); } catch { /* yer yok */ }
     return blob;
   }
@@ -1108,10 +1119,10 @@
     P.playing = true; sesBar(); sesMark();
     let src = P.blobs.get(n);                          // hazırsa beklemeden (arka planda da çalsın)
     if (!src) {
-      let why = '';
-      try { src = await sesGet(n); } catch (e) { why = e.message; src = null; }
+      const hit = await sesHit(n).catch(() => null);
       if (tok !== P.tok) return;
-      if (why) { P.playing = false; sesBar(); A().toast(why); return; }
+      if (hit) { src = URL.createObjectURL(await hit.blob()); P.blobs.set(n, src); }
+      else if (navigator.onLine) src = cdnUrl(n);       // telefonda yoksa kaynaktan doğrudan çal (indirme arkada sürer)
       if (!src) { P.playing = false; sesBar(); A().toast('Bu ayetin sesi telefonda yok. İnternete bağlanın ya da “⋯ › İndir” ile önceden indirin.'); return; }
     }
     if (tok !== P.tok) return;
