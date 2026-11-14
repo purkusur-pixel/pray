@@ -207,12 +207,25 @@
       input: '', buttons: [{ label: 'Vazgeç', value: null, cls: 'ghost' }, { label: 'Geri yükle', value: 'ok' }] });
     if (!r || r.value !== 'ok') return;
     try {
-      const txt = r.text.trim();
-      if (!txt.startsWith('KAZA1:')) throw new Error();
-      const data = JSON.parse(decodeURIComponent(escape(atob(txt.slice(6)))));
-      if (!data || typeof data.v !== 'object') throw new Error();
+      // Mesajlaşma uygulamalarından gelen fazlalıklar (öndeki/arkadaki yazı, satır bölme, *kalın*, URL-güvenli base64) tolere edilir
+      const m = String(r.text || '').match(/KAZA1\s*:\s*([\s\S]+)/i);
+      if (!m) throw new Error();
+      // satırlara bölünmüş olabilir: parçaları sırayla ekleyip ilk çözülen hâli al (arkadaki yazı karışmaz)
+      const parts = m[1].split(/\s+/).map((x) => x.replace(/[^A-Za-z0-9+/=_-]/g, '')).filter(Boolean);
+      let data = null;
+      for (let n = 1; n <= parts.length && !data; n++) {
+        let b64 = parts.slice(0, n).join('').replace(/-/g, '+').replace(/_/g, '/').replace(/=+$/, '');
+        b64 += '='.repeat((4 - (b64.length % 4)) % 4);
+        try { data = JSON.parse(decodeURIComponent(escape(atob(b64)))); } catch { /* bir parça daha ekle */ }
+      }
+      if (!data || typeof data.v !== 'object' || Array.isArray(data.v)) throw new Error();
+      const v = {}, t = {};
+      for (const [k] of ITEMS) {
+        const n = Math.round(Number(data.v[k]) || 0); v[k] = Math.max(0, Math.min(99999, n));
+        if (data.t && Number.isFinite(+data.t[k])) t[k] = +data.t[k];
+      }
       snapshot();
-      A().sset(KEY, JSON.stringify({ v: data.v, t: data.t || {} }), 3650 * 86400);
+      A().sset(KEY, JSON.stringify({ v, t }), 3650 * 86400);
       load(); save(); build(); renderSummary();
       A().toast('Yedek geri yüklendi');
     } catch { A().toast('Kod okunamadı. Tamamını kopyaladığınızdan emin olun.'); }
