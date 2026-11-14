@@ -83,7 +83,7 @@ Telefonda açıp “Yükle” (Android) ya da Paylaş › “Ana Ekrana Ekle” 
 
 | Kitap | Ayrıntı |
 |---|---|
-| **Kur'an-ı Kerîm** | 604 sayfa, Medine Mushafı düzeni. Okudukça **cüz cüz iner** (≈50 KB/cüz). Ayrıca:<br>• iki yazı tipi: mushaf hattı ya da daha kolay okunan “bilgisayar baskısı”<br>• **durak (vakıf) işaretleri**<br>• **sayfaya, sureye ya da cüze git**<br>• parmakla sayfa çevirme, kaldığın yerden devam |
+| **Kur'an-ı Kerîm** | 604 sayfa, Medine Mushafı düzeni. Okudukça **cüz cüz iner** (≈50 KB/cüz). Ayrıca:<br>• iki yazı tipi: Medine Mushafı hattı ya da daha kolay okunan “bilgisayar baskısı”; bilgisayar baskısında **Türkiye mushaflarındaki yazım** (her sakin harfte cezm, idğam şeddesi ve vasl işareti yok)<br>• **durak (vakıf) işaretleri**<br>• **sayfaya, sureye ya da cüze git**<br>• parmakla sayfa çevirme, kaldığın yerden devam |
 | **Meal ve tefsir** | Ayet ayet görünüm. Elmalılı Hamdi Yazır meali ve Muhtasar Tefsir. **70'ten fazla dilde meal** de indirilebilir: İngilizce, Almanca, Urduca, Boşnakça… |
 | **Kur'an'da arama** | Türkçe yazınca mealde, Arapça yazınca Kur'an metninde arar. Hareke ve ş/s, ı/i farkı gözetilmez. Bulunan ayete gidilir ve ayet vurgulanır. |
 | **Dua Kitabı** | 794 dua, 15 bölüm, **17 konu**: kayıp eşya, şifa, borç, yolculuk, sıkıntı… Her dua Arapça, okunuş ve anlamıyla verilir; kaynağına göre renklidir: <span>🟢 âyet · 🔵 hadis · 🟡 dua</span>. |
@@ -212,6 +212,7 @@ v, upd  sürüm (ETag/304 için), son erişim
 |---|---|
 | **Depolama** | Her şey IndexedDB'de (`nv-kitap`: `quran`, `books`, `files`). Uygulama kalıcı depolama izni ister. |
 | **Kur'an** | `static/quran/1..30.json`: sayfa başına `[sure, ayet, metin]`. Okunan cüz iner, sonraki cüz önceden iner. Arama da bu verilerle **telefonda** yapılır. |
+| **Türkiye yazımı** | Bilgisayar baskısında metin ekranda Türk mushaflarındaki gibi gösterilir: Medine yazımında boş bırakılan sakin harflere cezm konur (مِنْ رَبِّهِمْ, أُنْزِلَ), kelime başındaki idğam şeddesi, iklâb mimi ve okunmayan harf işaretleri kaldırılır, ٱ → ا, ءَا → اٰ. Yalnız gösterimdir; harfler değişmez (6.236 ayette doğrulandı). “Mushaf” düğmesi aslını gösterir. |
 | **Durak işaretleri** | Tanzil metnine, Kral Fehd Kompleksi Hafs metnindeki yerlerine göre eklendi: 4.272 işaret (ۘ ۗ ۚ ۖ ۛ). Kelime iskeletleri karşılaştırılarak her işaretin yeri doğrulandı. Kur'an harflerinde hiçbir değişiklik yapılmadı. |
 | **Meal / tefsir** | Elmalılı meali statik dosyadır. QuranEnc mealleri ve tefsiri sunucuda **sure başına bir kez** çekilip saklanır. Kaynakta sürüm değişirse sunucu yeniden çeker. |
 | **Hadis kitapları** | Telefon, kitabı CDN'den **doğrudan** indirir. Sunucuda kitap tutulmaz. |

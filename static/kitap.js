@@ -390,6 +390,37 @@
   }
 
   /* ---------- Kur'an: sayfa */
+  /** Medine (Osmanî) yazımını Türkiye mushaflarındaki işaretlemeye yaklaştırır (yalnız gösterim; harfler aynı):
+   *  sakin harflere cezm, kelime başındaki idğam şeddesini kaldırır, iklâb mimini ve okunmayan harf işaretlerini siler,
+   *  vasl elifini düz elif, ءَا'yı اٰ yapar. */
+  function trStyle(t) {
+    const VOW = /[ً-ࣰْ-ࣲ]/;            // hareke, tenvin, şedde, cezm
+    const LET = /[ء-غف-يٱ]/;
+    const NOSUK = new Set(['ا', 'ى', 'ٱ', 'ء', 'و', 'ي', 'ة']);   // med harfleri vb.: cezm eklenmez
+    const g = [];
+    for (const ch of t) {
+      if (LET.test(ch) || ch === ' ' || !g.length) g.push({ b: ch, m: '' });
+      else g[g.length - 1].m += ch;
+    }
+    const isLet = (x) => x && LET.test(x.b);
+    for (let i = 0; i < g.length; i++) {
+      const x = g[i];
+      if (!isLet(x)) continue;
+      const iqlab = /[ۭۢ]/.test(x.m);
+      x.m = x.m.replace(/[ۭ۟۠ۢ]/g, '');           // okunmayan harf (۟ ۠), iklâb mimi (ۢ ۭ)
+      if (i === 0 || g[i - 1].b === ' ') x.m = x.m.replace('ّ', ''); // kelime başı şedde = önceki kelimeden idğam
+      if (VOW.test(x.m) || NOSUK.has(x.b)) continue;
+      const nx = g[i + 1];
+      if (!nx) continue;
+      if (nx.b === ' ') x.m = 'ْ' + x.m;                          // kelime sonunda sakin harf
+      else if (isLet(nx) && (!/ّ/.test(nx.m) || iqlab)) x.m = 'ْ' + x.m;   // kelime içi (şemsî lam hariç)
+    }
+    return g.map((x) => (x.b === 'ٱ' ? 'ا' : x.b) + x.m).join('')
+      .replace(/ءَا(?![ً-ْٰٓ])/g, 'اٰ')
+      .replace(/ـ(?:َٔ|َٔ)ا(?![ً-ْٰٓ])/g, 'اٰ');   // الْـَٔاخِرَة → الْاٰخِرَة   // ءَامَنُوا → اٰمَنُوا
+  }
+  /** Bilgisayar hattında Türkiye mushaflarındaki gibi yazım; Mushaf hattında Medine Mushafı'nın aslı */
+  const qa = (t) => (hatPc() ? trStyle(t) : t);
   const BASMALA = 'بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ';   // Tanzil metnindeki harfi harfine besmele (hareke sırası dahil)
   const B_TAIL = BASMALA.split(' ').slice(1).join(' ');
   /** Sure başındaki besmeleyi metnin kendi yazımıyla ayır: [besmele, kalan] ya da null.
@@ -427,9 +458,9 @@
       if (a === 1) {
         html += `<div class="q-sure"><span class="k-ar">سُورَةُ ${esc(QM.s[s - 1][0])}</span><small>${esc(QM.s[s - 1][1])} suresi · ${QM.s[s - 1][2]} ayet</small></div>`;
         const sp = s !== 1 && s !== 9 ? splitBasmala(txt) : null;
-        if (sp) { html += `<div class="q-bsm">${esc(sp[0])}</div>`; txt = sp[1]; }
+        if (sp) { html += `<div class="q-bsm">${esc(qa(sp[0]))}</div>`; txt = sp[1]; }
       }
-      html += `<span class="q-ay" id="ay-${s}-${a}">${esc(txt)}</span> <span class="q-no" aria-label="${a}. ayet">۝${arNum(a)}</span> `;
+      html += `<span class="q-ay" id="ay-${s}-${a}">${esc(qa(txt))}</span> <span class="q-no" aria-label="${a}. ayet">۝${arNum(a)}</span> `;
     }
     body.innerHTML = `<div class="q-page" style="font-size:${fs}px">${html}</div>`;
     saveProg('q', p, `Kur'an-ı Kerîm · Sayfa ${p}`, `${n}. cüz · ${surahsOnPage(p)}`);
@@ -471,12 +502,12 @@
       if (a === 1) {
         h += sureHead(s);
         const sp = s !== 1 && s !== 9 ? splitBasmala(txt) : null;
-        if (sp) { h += `<div class="q-bsm k-ar" style="font-size:${fs}px">${esc(sp[0])}</div>`; txt = sp[1]; }
+        if (sp) { h += `<div class="q-bsm k-ar" style="font-size:${fs}px">${esc(qa(sp[0]))}</div>`; txt = sp[1]; }
       }
       const mv = meal[s + ':' + a], tf = tef?.m[s + ':' + a];
       const tr = Array.isArray(mv) ? mv[0] : mv, fn = Array.isArray(mv) ? mv[1] : '';
       h += `<article class="qm" id="ay-${s}-${a}">
-        <div class="qm-ar k-ar" style="font-size:${fs}px">${esc(txt)} <span class="q-no">۝${arNum(a)}</span></div>
+        <div class="qm-ar k-ar" style="font-size:${fs}px">${esc(qa(txt))} <span class="q-no">۝${arNum(a)}</span></div>
         ${tr !== undefined ? `<p class="qm-tr" dir="${mdir}" style="font-size:${tfs}px"><b>${s}:${a}</b> ${noteMarks(tr)}</p>` : ''}
         ${fn ? `<p class="qm-fn" dir="${mdir}" style="font-size:${tfs - 2}px">${noteMarks(fn, true)}</p>` : ''}
         ${tf ? `<div class="qm-tef" style="font-size:${tfs - 1}px"><b>${TEFS[tefKey()]}</b> ${esc(tf[0])}${tf[1] ? `<small>${esc(tf[1])}</small>` : ''}</div>`
@@ -721,10 +752,10 @@
     return (DUAH = await r.json());
   }
   function dCard(it) {
-    const ar = it.arx ? esc(it.arx) : it.ar.map(([a, t]) => `${esc(t)} <span class="q-no">۝${arNum(a)}</span>`).join(' ');
+    const ar = it.arx ? esc(it.arx) : it.ar.map(([a, t]) => `${esc(qa(t))} <span class="q-no">۝${arNum(a)}</span>`).join(' ');
     return `<article class="d-card d-${it.k || 'dua'}"><div class="d-head"><b>${esc(it.t)}</b><i class="d-tag">${KIND[it.k] || 'Dua'}</i></div>
       ${it.ref ? `<small class="d-ref">${esc(it.ref)}</small>` : ''}
-      ${it.bsm ? `<div class="d-ar d-bsm">${esc(BASMALA)}</div>` : ''}
+      ${it.bsm ? `<div class="d-ar d-bsm">${esc(qa(BASMALA))}</div>` : ''}
       <div class="d-ar">${ar}</div>
       ${it.ok ? `<p class="d-ok"><span>Okunuşu</span>${esc(it.ok)}</p>` : ''}
       <p class="d-tr"><span>${it.k === 'hadis' && !it.ok ? 'Türkçesi' : 'Anlamı'}</span>${esc(it.tr)}</p>${it.note ? `<p class="d-note">${esc(it.note)}</p>` : ''}</article>`;
@@ -1093,7 +1124,7 @@
         if (n >= 0) saveProg('d', 0, 'Dua Kitabı', DUA.topics[n].t);
         break;
       }
-      case 'hat': jset('nv_khat', hatPc() ? 'mushaf' : 'pc'); A().toast(hatPc() ? 'Bilgisayar hattı' : 'Mushaf hattı'); render(); break;
+      case 'hat': jset('nv_khat', hatPc() ? 'mushaf' : 'pc'); A().toast(hatPc() ? 'Bilgisayar hattı · Türkiye mushafı yazımı' : 'Mushaf hattı · Medine Mushafı yazımı'); render(); break;
       case 'teftoggle': jset('nv_ktef', !tefOn()); render(); break;
       case 'tef1': showTef1(b); break;
       case 'mealread': jset('nv_kmeal', true); location.hash = `#kitap/kuran/${prog().q || 1}`; break;
