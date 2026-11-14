@@ -720,3 +720,41 @@ dialog.guide-dlg { width: min(600px, calc(100vw - 16px)); max-height: calc(100dv
 .k-waqf li { display: flex; align-items: center; gap: 12px; font-size: .9rem; line-height: 1.45; }
 .k-wm { font-size: 1.7rem; line-height: 2; min-width: 84px; text-align: center; color: var(--ink); }
 .k-waqf .kz-small { padding: 0 16px 14px; }
+
+/* Kur'an sesleri: sade çalar */
+.ses-bar { position: fixed; left: 0; right: 0; bottom: calc(66px + env(safe-area-inset-bottom)); z-index: 9; padding: 0 10px 6px; pointer-events: none; }
+.ses-bar[hidden] { display: none; }
+.ses-row, .ses-sheet { pointer-events: auto; max-width: 700px; margin: 0 auto; background: var(--surface); border: 1px solid var(--line);
+  box-shadow: 0 8px 26px rgba(0,0,0,.22); }
+.ses-row { display: flex; align-items: center; gap: 2px; padding: 6px 8px; border-radius: 18px; }
+.ses-b { flex: none; width: 44px; height: 44px; display: grid; place-items: center; border: 0; background: none; color: var(--ink); border-radius: 50%; cursor: pointer; }
+.ses-b:active { background: var(--line); }
+.ses-pp { width: 48px; height: 48px; background: var(--accent); color: #fff; }
+.ses-x { width: 36px; color: var(--muted); }
+.ses-more { font-size: 1.4rem; font-weight: 700; color: var(--muted); }
+.ses-t { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 1px; padding: 0 6px; border: 0; background: none; color: var(--ink); font: inherit; cursor: pointer; text-align: left; }
+.ses-t b { font-size: .95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.ses-t small { color: var(--muted); font-size: .74rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.ses-sheet { border-radius: 16px; padding: 12px; margin-bottom: 8px; display: flex; flex-direction: column; gap: 10px; }
+.ses-sheet[hidden] { display: none; }
+.ses-g { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.ses-g > span { width: 52px; color: var(--muted); font-size: .8rem; font-weight: 600; }
+.ses-c { font: inherit; font-size: .85rem; padding: 8px 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); cursor: pointer; }
+.ses-c.on { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 700; }
+.ses-note { margin: 0; color: var(--muted); font-size: .76rem; line-height: 1.45; }
+.ses-fab { position: fixed; right: 16px; bottom: calc(150px + env(safe-area-inset-bottom)); z-index: 8; width: 52px; height: 52px; border-radius: 50%;
+  display: grid; place-items: center; border: 0; background: var(--accent); color: #fff; box-shadow: 0 8px 22px rgba(0,0,0,.28); cursor: pointer; }
+.ses-fab[hidden] { display: none; }
+body.ses-on .k-nav { bottom: calc(132px + env(safe-area-inset-bottom)); }
+body.ses-on main, body.ses-on .foot { padding-bottom: calc(150px + env(safe-area-inset-bottom)); }
+.q-play { background: rgba(212, 167, 79, .22); border-radius: 8px; box-shadow: 0 0 0 2px rgba(212, 167, 79, .35); }
+article.qm.q-play { background: color-mix(in srgb, var(--surface) 82%, #d4a74f); }
+.q-ay { cursor: pointer; }
+/* veri yönetimi */
+.k-dmb { padding: 0 16px 14px; display: flex; flex-direction: column; gap: 10px; }
+.k-dmr { display: flex; align-items: center; gap: 10px; }
+.k-dmr span { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.k-dmr b { font-size: .9rem; color: var(--ink); }
+.k-dmr small { color: var(--muted); font-size: .78rem; }
+.k-dmr .btn { padding: 7px 14px; }
+body.ses-on .toast { bottom: calc(160px + env(safe-area-inset-bottom)); }

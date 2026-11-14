@@ -289,8 +289,11 @@
     h += `<section class="card k-book"><h3>PDF kitap ekle</h3><p class="kz-small">Telefonunuzdaki PDF kitapları ekleyin;
       telefonda saklanır, kaldığınız sayfa hatırlanır. Eklenenler kitaplığın başında görünür.</p>
       <div class="k-actions"><button class="btn" type="button" data-k="addpdf" data-kind="kitap">PDF kitap ekle</button></div></section>`;
+    h += `<details class="card k-about k-dm" id="kDm"><summary><b>Veri yönetimi</b><small>Telefona inen Kur'an, meal, ses ve kitapları görün, silin</small></summary>
+      <div id="kDmBody" class="k-dmb"><p class="kz-small">Hesaplanıyor…</p></div></details>`;
     h += aboutHtml();
     root().innerHTML = h;
+    $('kDm').addEventListener('toggle', (e) => { if (e.target.open) dmDraw(); });
     try {
       const est = await navigator.storage?.estimate?.();
       if (est?.usage) $('kStore').textContent = `Telefonda ${fmtMB(est.usage)}`;
@@ -303,6 +306,7 @@
     return `<details class="card k-about"><summary><b>Kitaplık hakkında</b><small>Kaynaklar ve açıklamalar</small></summary>
       <ul>
         <li><b>Kur'an-ı Kerîm:</b> Arapça metin Tanzil Projesi'nden (tanzil.net) birebir alınmıştır; durak işaretleri Kral Fehd Kur'an Kompleksi'nin Medine Mushafı metnine göre eklenmiştir; sayfa düzeni Medine Mushafı'dır (604 sayfa).</li>
+        <li><b>Kur'an sesleri:</b> Mişârî Râşid el-Afâsî kıraati, ayet ayet; Al Quran Cloud (cdn.islamic.network). Kişisel ve eğitim amaçlı dinleme içindir; sunucumuz sesleri saklamaz, yalnız aktarır.</li>
         <li><b>Meal:</b> Elmalılı Hamdi Yazır, Hak Dini Kur'an Dili meali.</li>
         <li><b>Tefsir:</b> Muhtasar Tefsir (Tefsir Araştırmaları Merkezi) Türkçe tercümesi, QuranEnc.com.</li>
         <li><b>Başka dillerde mealler:</b> QuranEnc.com (Kur'an-ı Kerim Ansiklopedisi); metinler değiştirilmeden, güncel sürümüyle gösterilir.${ex.length ? ' Eklediğiniz: ' + ex.map((x) => `${esc(x.t)} (sürüm ${esc(x.v)})`).join(', ') + '.' : ''}</li>
@@ -470,6 +474,7 @@
   /** Aramadan gelindiyse bulunan ayete kaydır ve kısa süre vurgula */
   let pendingAy = null;
   function showPendingAy() {
+    sesMark(); sesFab();
     if (!pendingAy) return;
     const el = $('ay-' + pendingAy); pendingAy = null;
     if (!el) return;
@@ -999,6 +1004,296 @@
       </div></div>`;
   }
 
+  /* ------------------------------------------------------------ Kur'an sesleri (ayet ayet)
+   * Kaynak: Al Quran Cloud CDN, sunucu üzerinden akış (/ses/…; sunucuda saklanmaz). Okuyan: Mişârî Râşid el-Afâsî.
+   * Ayarlar (kalite, hız) yalnız bu telefonda tutulur. İndirilen sesler tarayıcının Cache deposunda ('nv-ses'). */
+  const SES_ED = 'ar.alafasy', SES_NAME = 'Mişârî Râşid el-Afâsî', SES_CACHE = 'nv-ses';
+  const RATES = [0.75, 1, 1.25, 1.5];
+  const sesCfg = () => ({ br: 64, rate: 1, ...jget('nv_ses', {}) });
+  const sesSet = (o) => jset('nv_ses', { ...sesCfg(), ...o });
+  const sesUrl = (n, br = sesCfg().br) => `/ses/${br}/${SES_ED}/${n}.mp3`;
+  let CUM = null;
+  function gnum(s, a) {                               // Kur'an genelindeki ayet sırası (1–6236)
+    if (!CUM) { CUM = [0]; for (const x of QM.s) CUM.push(CUM[CUM.length - 1] + x[2]); }
+    return CUM[s - 1] + a;
+  }
+  function nextPos(s, a) { return a < QM.s[s - 1][2] ? [s, a + 1] : s < 114 ? [s + 1, 1] : null; }
+  function prevPos(s, a) { return a > 1 ? [s, a - 1] : s > 1 ? [s - 1, QM.s[s - 2][2]] : null; }
+  const needBasmala = (s, a) => a === 1 && s !== 1 && s !== 9;   // sure başında besmele (Fâtiha'da ayettir, Tevbe'de okunmaz)
+  async function sesCache() { return 'caches' in window ? caches.open(SES_CACHE) : null; }
+  async function sesHit(n) {
+    const c = await sesCache(); if (!c) return null;
+    const br = sesCfg().br;
+    return (await c.match(sesUrl(n, br))) || (await c.match(sesUrl(n, br === 64 ? 128 : 64)));
+  }
+
+  const P = { s: 0, a: 0, bas: false, playing: false, tok: 0, blobs: new Map(), pf: new Set(), dl: null };
+  let audio = null;
+  function aud() {
+    if (audio) return audio;
+    audio = new Audio(); audio.preload = 'auto';
+    audio.addEventListener('ended', sesEnded);
+    audio.addEventListener('play', () => { P.playing = true; sesBar(); });
+    audio.addEventListener('pause', () => { P.playing = false; sesBar(); });
+    audio.addEventListener('error', () => { if (P.s && audio.src) { P.playing = false; sesBar(); A().toast('Ses çalınamadı. İnternet bağlantısını kontrol edin.'); } });
+    if ('mediaSession' in navigator) {
+      const ms = navigator.mediaSession;
+      const on = (k, f) => { try { ms.setActionHandler(k, f); } catch { /* desteklenmiyor */ } };
+      on('play', () => aud().play()); on('pause', () => aud().pause());
+      on('previoustrack', () => sesStep(-1)); on('nexttrack', () => sesStep(1)); on('stop', sesStop);
+    }
+    return audio;
+  }
+  /** Sıradaki ayeti belleğe al: arka planda (ekran kapalıyken) geçiş beklemeden olsun */
+  function sesPrefetch(n) {
+    if (!n || P.blobs.has(n) || P.pf.has(n)) return;
+    P.pf.add(n);
+    (async () => {
+      const r = (await sesHit(n)) || (navigator.onLine ? await fetch(sesUrl(n)) : null);
+      if (r && r.ok) P.blobs.set(n, URL.createObjectURL(await r.blob()));
+    })().catch(() => {}).finally(() => P.pf.delete(n));
+  }
+  function sesTrim(keep) {
+    for (const [n, u] of P.blobs) if (!keep.includes(n)) { URL.revokeObjectURL(u); P.blobs.delete(n); }
+  }
+  async function sesPlay(s, a, bas) {
+    await qMeta();
+    P.s = s; P.a = a; P.bas = bas ?? needBasmala(s, a);
+    const n = P.bas ? 1 : gnum(s, a), tok = ++P.tok;
+    let src = P.blobs.get(n);                          // hazırsa beklemeden (arka planda da çalsın)
+    if (!src) {
+      const hit = await sesHit(n);
+      if (tok !== P.tok) return;
+      if (hit) { src = URL.createObjectURL(await hit.blob()); P.blobs.set(n, src); }
+      else if (!navigator.onLine) { P.playing = false; sesBar(); A().toast('Bu ayetin sesi telefonda yok. İnternete bağlanın ya da “⋯ › İndir” ile önceden indirin.'); return; }
+      else src = sesUrl(n);
+    }
+    if (tok !== P.tok) return;
+    const el = aud(), rate = sesCfg().rate;
+    el.src = src; el.defaultPlaybackRate = rate; el.playbackRate = rate;
+    el.play().catch((e) => { if (e.name !== 'AbortError') { P.playing = false; sesBar(); } });
+    const nx = P.bas ? gnum(s, a) : (() => { const q = nextPos(s, a); return q ? (needBasmala(q[0], q[1]) ? 1 : gnum(q[0], q[1])) : 0; })();
+    sesTrim([n, nx, gnum(s, a)]); sesPrefetch(nx); if (!P.bas) { const q = nextPos(s, a); if (q) sesPrefetch(gnum(q[0], q[1])); }
+    sesMeta(); sesBar(); sesFollow();
+  }
+  function sesEnded() {
+    if (P.bas) { sesPlay(P.s, P.a, false); return; }
+    const q = nextPos(P.s, P.a);
+    if (!q) { sesStop(); return; }
+    sesPlay(q[0], q[1]);
+  }
+  function sesStep(d) {
+    if (!P.s) return;
+    const q = d > 0 ? nextPos(P.s, P.a) : prevPos(P.s, P.a);
+    if (q) sesPlay(q[0], q[1]);
+  }
+  function sesToggle() {
+    if (!P.s) return;
+    const el = aud();
+    if (el.paused) { if (!el.src) sesPlay(P.s, P.a); else el.play().catch(() => {}); } else el.pause();
+  }
+  function sesStop() {
+    P.tok++; if (audio) { audio.pause(); audio.removeAttribute('src'); audio.load(); }
+    P.s = 0; P.playing = false; sesTrim([]); sesMark(); sesBar();
+    if ('mediaSession' in navigator) navigator.mediaSession.metadata = null;
+  }
+  const sesTitle = () => (P.s ? `${QM.s[P.s - 1][1]} ${P.a}` : '');
+  function sesMeta() {
+    if (!('mediaSession' in navigator) || !window.MediaMetadata) return;
+    navigator.mediaSession.metadata = new MediaMetadata({ title: P.bas ? `${QM.s[P.s - 1][1]} · Besmele` : `${QM.s[P.s - 1][1]} Sûresi, ${P.a}. ayet`,
+      artist: SES_NAME, album: "Kur'an-ı Kerîm", artwork: [{ src: '/static/icons/icon-512.png', sizes: '512x512', type: 'image/png' }] });
+  }
+  /** Okunan ayeti vurgula; sayfa değiştiyse okuyucu da o sayfaya geçsin */
+  function sesMark() {
+    document.querySelectorAll('.q-play').forEach((x) => x.classList.remove('q-play'));
+    if (!P.s) return;
+    const el = $(`ay-${P.s}-${P.a}`); if (!el) return;
+    el.classList.add('q-play');
+    const r = el.getBoundingClientRect();
+    if (r.top < 70 || r.bottom > window.innerHeight - 190) el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+  function sesFollow() {
+    if (cur.kind === 'q' && location.hash.startsWith('#kitap/kuran/')) {
+      const p = pageOf(P.s, P.a);
+      if (p !== cur.page) { goPage(p); return; }
+    }
+    sesMark();
+  }
+
+  /* --- çalar çubuğu (sade): ✕  ⏮  ⏯  ⏭  Sure ayet  ⋯ */
+  const IC = {
+    play: '<svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>',
+    pause: '<svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M7 5h3.5v14H7zm6.5 0H17v14h-3.5z"/></svg>',
+    prev: '<svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M6 5h2v14H6zm3.5 7 9.5 6.5v-13z"/></svg>',
+    next: '<svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M16 5h2v14h-2zM5 5.5v13l9.5-6.5z"/></svg>',
+    close: '<svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></svg>',
+    spk: '<svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M4 9v6h4l5 4V5L8 9zm12.5 3a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>',
+  };
+  function sesEl() {
+    let bar = $('sesBar');
+    if (bar) return bar;
+    bar = document.createElement('div'); bar.id = 'sesBar'; bar.className = 'ses-bar'; bar.hidden = true;
+    bar.innerHTML = `<div class="ses-sheet" id="sesSheet" hidden></div>
+      <div class="ses-row">
+        <button type="button" class="ses-b ses-x" data-s="close" aria-label="Kapat">${IC.close}</button>
+        <button type="button" class="ses-b" data-s="prev" aria-label="Önceki ayet">${IC.prev}</button>
+        <button type="button" class="ses-b ses-pp" data-s="toggle" aria-label="Oynat / duraklat"></button>
+        <button type="button" class="ses-b" data-s="next" aria-label="Sonraki ayet">${IC.next}</button>
+        <button type="button" class="ses-t" data-s="goto"><b id="sesT"></b><small id="sesSub"></small></button>
+        <button type="button" class="ses-b ses-more" data-s="more" aria-label="Hız, kalite, indirme">⋯</button>
+      </div>`;
+    document.body.appendChild(bar);
+    const fab = document.createElement('button');
+    fab.id = 'sesFab'; fab.type = 'button'; fab.className = 'ses-fab'; fab.hidden = true; fab.setAttribute('aria-label', 'Bu sayfayı dinle');
+    fab.innerHTML = IC.spk; document.body.appendChild(fab);
+    fab.addEventListener('click', async () => {
+      await qMeta(); const p = cur.page || 1; const st = QM.p[p - 1];
+      sesPlay(st[0], st[1]);
+    });
+    bar.addEventListener('click', (e) => {
+      const b = e.target.closest('[data-s]'); if (!b) return;
+      const k = b.dataset.s;
+      if (k === 'toggle') sesToggle();
+      else if (k === 'prev') sesStep(-1);
+      else if (k === 'next') sesStep(1);
+      else if (k === 'close') { $('sesSheet').hidden = true; sesStop(); }
+      else if (k === 'more') { const sh = $('sesSheet'); sh.hidden = !sh.hidden; if (!sh.hidden) sesSheet(); }
+      else if (k === 'goto') { if (P.s) location.hash = `#kitap/kuran/${pageOf(P.s, P.a)}`; }
+      else if (k === 'rate') { sesSet({ rate: +b.dataset.v }); if (audio) { audio.defaultPlaybackRate = audio.playbackRate = +b.dataset.v; } sesSheet(); sesBar(); }
+      else if (k === 'br') { sesSet({ br: +b.dataset.v }); sesSheet(); A().toast(`${b.dataset.v} kbps: sonraki ayetten itibaren`); }
+      else if (k === 'dl') sesDownload(b.dataset.v);
+      else if (k === 'dlstop') { if (P.dl) P.dl.stop = true; }
+    });
+    return bar;
+  }
+  function sesBar() {
+    const bar = sesEl(), on = !!P.s;
+    bar.hidden = !on; document.body.classList.toggle('ses-on', on);
+    sesFab();
+    if (!on) { $('sesSheet').hidden = true; return; }
+    bar.querySelector('.ses-pp').innerHTML = P.playing ? IC.pause : IC.play;
+    $('sesT').textContent = P.bas ? `${QM.s[P.s - 1][1]} · Besmele` : sesTitle();
+    const c = sesCfg();
+    $('sesSub').textContent = P.dl ? `İndiriliyor ${P.dl.done}/${P.dl.total}` : `Afâsî · ${c.rate}× · ${c.br} kbps`;
+  }
+  function sesFab() {
+    const show = !P.s && location.hash.startsWith('#kitap/kuran/');
+    if (!$('sesFab')) { if (!show) return; sesEl(); }
+    $('sesFab').hidden = !show;
+  }
+  window.addEventListener('hashchange', () => { sesFab(); const sh = $('sesSheet'); if (sh) sh.hidden = true; });
+  document.addEventListener('click', (e) => {                // dışarı dokununca ayar paneli kapansın
+    const sh = $('sesSheet'); if (sh && !sh.hidden && !e.target.closest('#sesBar')) { sh.hidden = true; e.preventDefault(); e.stopPropagation(); }
+  }, true);
+  async function sesSheet() {
+    const sh = $('sesSheet'); if (!sh || sh.hidden) return;
+    const c = sesCfg(), s = P.s || 1, a = P.a || 1, p = pageOf(s, a), j = juzOf(s, a);
+    const n = await sesCount();
+    sh.innerHTML = `<div class="ses-g"><span>Hız</span>${RATES.map((r) => `<button type="button" class="ses-c${r === c.rate ? ' on' : ''}" data-s="rate" data-v="${r}">${r}×</button>`).join('')}</div>
+      <div class="ses-g"><span>Kalite</span>${[64, 128].map((b) => `<button type="button" class="ses-c${b === c.br ? ' on' : ''}" data-s="br" data-v="${b}">${b} kbps</button>`).join('')}</div>
+      <div class="ses-g"><span>İndir</span>
+        ${P.dl ? `<button type="button" class="ses-c" data-s="dlstop">Durdur (${P.dl.done}/${P.dl.total})</button>`
+          : `<button type="button" class="ses-c" data-s="dl" data-v="p">${p}. sayfa</button>
+             <button type="button" class="ses-c" data-s="dl" data-v="s">${esc(QM.s[s - 1][1])} sûresi</button>
+             <button type="button" class="ses-c" data-s="dl" data-v="j">${j}. cüz</button>`}</div>
+      <p class="ses-note">Telefonda ${fmtN(n)} ayet sesi · Okuyan: ${SES_NAME} · İndirilenler internetsiz çalar; silmek için Kitaplık › Veri yönetimi.</p>`;
+  }
+  async function sesCount() { try { const c = await sesCache(); return c ? (await c.keys()).length : 0; } catch { return 0; } }
+  /** Sayfa / sure / cüz seslerini telefona indir (aynı anda 3 dosya, sunucuyu yormadan) */
+  function sesRange(kind) {
+    const s = P.s || 1, a = P.a || 1;
+    let from, to;
+    if (kind === 'p') { const p = pageOf(s, a); from = gnum(...QM.p[p - 1]); to = p < 604 ? gnum(...QM.p[p]) - 1 : 6236; }
+    else if (kind === 's') { from = gnum(s, 1); to = gnum(s, QM.s[s - 1][2]); }
+    else { const j = juzOf(s, a); from = gnum(...QM.js[j - 1]); to = j < 30 ? gnum(...QM.js[j]) - 1 : 6236; }
+    const ns = []; for (let n = from; n <= to; n++) ns.push(n);
+    if (!ns.includes(1) && QM.s.some((x, i) => i + 1 !== 9 && i > 0 && gnum(i + 1, 1) >= from && gnum(i + 1, 1) <= to)) ns.unshift(1);   // besmele
+    return ns;
+  }
+  async function sesDownload(kind) {
+    if (P.dl) return;
+    if (!navigator.onLine) { A().toast('İnternet bağlantısı yok'); return; }
+    const c = await sesCache(); if (!c) { A().toast('Bu tarayıcı indirmeyi desteklemiyor'); return; }
+    askPersist();
+    const ns = sesRange(kind), have = new Set((await c.keys()).map((r) => new URL(r.url).pathname));
+    const todo = ns.filter((n) => !have.has(sesUrl(n)));
+    P.dl = { done: ns.length - todo.length, total: ns.length, stop: false };
+    sesBar(); sesSheet();
+    let i = 0, err = 0;
+    const worker = async () => {
+      while (i < todo.length && !P.dl.stop) {
+        const n = todo[i++];
+        for (let t = 0; t < 3; t++) {
+          try {
+            const r = await fetch(sesUrl(n));
+            if (r.status === 429) { await new Promise((ok) => setTimeout(ok, 4000)); continue; }
+            if (!r.ok) throw new Error();
+            await c.put(sesUrl(n), r); break;
+          } catch { if (t === 2) err++; await new Promise((ok) => setTimeout(ok, 800)); }
+        }
+        P.dl.done++; sesBar(); if (P.dl.done % 5 === 0) sesSheet();
+      }
+    };
+    await Promise.all([worker(), worker(), worker()]);
+    const stopped = P.dl.stop; P.dl = null; sesBar(); sesSheet();
+    A().toast(stopped ? 'İndirme durduruldu' : err ? `${err} ayet indirilemedi; tekrar deneyin` : 'İndirildi: internetsiz dinleyebilirsiniz');
+  }
+  /** Mushafta ayete dokununca o ayetten itibaren oku */
+  function sesTap(e) {
+    if (e.target.closest('a,button,select,input,.qm-tef,.qm-tr,.qm-fn')) return false;
+    const el = e.target.closest('.q-ay, .qm-ar'); if (!el) return false;
+    const box = el.classList.contains('q-ay') ? el : el.closest('.qm');
+    const m = /^ay-(\d+)-(\d+)$/.exec(box?.id || ''); if (!m) return false;
+    sesPlay(+m[1], +m[2]); return true;
+  }
+  async function sesClear() { try { await caches.delete(SES_CACHE); } catch { /* yok */ } P.blobs.forEach((u) => URL.revokeObjectURL(u)); P.blobs.clear(); }
+
+  /* ------------------------------------------------------------ veri yönetimi (kitaplığın altında) */
+  async function dmStats() {
+    const qk = await DB.keys('quran').catch(() => []), bk = new Set(await DB.keys('books').catch(() => []));
+    const fk = await DB.keys('files').catch(() => []);
+    const hb = await hBooks().catch(() => null);
+    const text = qk.filter((k) => typeof k === 'number').length;
+    const meal = qk.filter((k) => typeof k === 'string' && /^(m|t):/.test(k)).length;
+    let ses = 0, sesB = 0;
+    try {
+      const c = await sesCache();
+      if (c) { const ks = await c.keys(); ses = ks.length; for (const r of ks.slice(0, 7000)) { const x = await c.match(r); sesB += +(x?.headers.get('content-length') || 0); } }
+    } catch { /* yok */ }
+    const hads = (hb?.books || []).filter((b) => bk.has(b.id) || bk.has(b.id + ':ar'));
+    let pdfB = 0; for (const k of fk) { const f = await DB.get('files', k).catch(() => null); pdfB += f?.size || 0; }
+    let usage = 0; try { usage = (await navigator.storage?.estimate?.())?.usage || 0; } catch { /* yok */ }
+    return { text, meal, ses, sesB, hads, pdf: fk.length, pdfB, usage };
+  }
+  async function dmDraw() {
+    const box = $('kDmBody'); if (!box) return;
+    const st = await dmStats();
+    const row = (t, d, k, n) => `<div class="k-dmr"><span><b>${t}</b><small>${d}</small></span>${n ? `<button class="btn ghost danger" type="button" data-k="${k}">Sil</button>` : ''}</div>`;
+    box.innerHTML = `${row("Kur'an metni", `${st.text}/30 cüz · okudukça yeniden iner`, 'dm-text', st.text)}
+      ${row('Mealler ve tefsir', `${st.meal} cüz dosyası`, 'dm-meal', st.meal)}
+      ${row("Kur'an sesleri", `${fmtN(st.ses)} ayet${st.sesB ? ' · ' + fmtMB(st.sesB) : ''}`, 'dm-ses', st.ses)}
+      ${row('Hadis kitapları', st.hads.length ? esc(st.hads.map((b) => b.name).join(', ')) : 'indirilen yok', 'dm-hadis', st.hads.length)}
+      ${row("PDF'ler", st.pdf ? `${st.pdf} dosya · ${fmtMB(st.pdfB)} · Kitaplarım'dan tek tek silinir` : 'eklenen yok', '', 0)}
+      <p class="kz-small">Toplam kullanılan yer: ${st.usage ? fmtMB(st.usage) : 'bilinmiyor'}. Okuma yerleriniz, kaza sayılarınız ve ayarlarınız silinmez.</p>`;
+  }
+  async function dmDelete(k) {
+    const T = { 'dm-text': "Kur'an metni", 'dm-meal': 'Mealler ve tefsir', 'dm-ses': "Kur'an sesleri", 'dm-hadis': 'Hadis kitapları' };
+    const ok = await A().ask({ title: `${T[k]} silinsin mi?`, text: 'Telefondaki kopyalar silinir; gerektiğinde yeniden indirilir. Okuma yerleriniz korunur.',
+      buttons: [{ label: 'Vazgeç', value: null, cls: 'ghost' }, { label: 'Sil', value: 'ok', cls: 'danger' }] });
+    if (ok !== 'ok') return;
+    if (k === 'dm-ses') await sesClear();
+    else if (k === 'dm-hadis') {
+      const hb = await hBooks().catch(() => null);
+      for (const b of hb?.books || []) { await DB.del('books', b.id).catch(() => {}); await DB.del('books', b.id + ':ar').catch(() => {}); hMem.delete(b.id); }
+    } else {
+      for (const key of await DB.keys('quran').catch(() => [])) {
+        if (k === 'dm-text' ? typeof key === 'number' : (typeof key === 'string' && /^(m|t):/.test(key))) { await DB.del('quran', key).catch(() => {}); qMem.delete(key); }
+      }
+      if (k === 'dm-text') qMem.clear();
+    }
+    A().toast('Silindi'); dmDraw();
+  }
+
   /* ------------------------------------------------------------ yönlendirme */
   let cur = { kind: 'lib' };
   function parse() {
@@ -1028,6 +1323,7 @@
       else if (cur.kind === 'hi') await renderHInfo(cur.id);
       else if (cur.kind === 'h') await renderHPage(cur.id, cur.page);
       else if (cur.kind === 'f') await renderPdf(cur.id, cur.page);
+      sesFab();
     } catch (e) {
       root().innerHTML = `<div class="k-top"><a class="h-back" href="#kitap">‹ Kitaplık</a></div><div class="card"><p>${esc(e.message || 'Bir hata oluştu')}</p>
         <button class="btn" type="button" data-k="retry">Tekrar dene</button></div>`;
@@ -1037,7 +1333,7 @@
   function goPage(p) {
     const base = location.hash.replace(/\/\d+$/, '');
     history.replaceState(null, '', `${base}/${p}`);
-    render().then(() => window.scrollTo(0, 0));
+    render().then(() => { window.scrollTo(0, 0); if (P.s) sesMark(); });
   }
   function step(d) {
     const max = +($('kPageIn')?.max || 9999);
@@ -1047,6 +1343,7 @@
   }
 
   root().addEventListener('click', async (e) => {
+    if (cur.kind === 'q' && sesTap(e)) return;
     const b = e.target.closest('[data-k],[data-qt]'); if (!b) return;
     if (b.dataset.qt) { qTab = b.dataset.qt; renderQIndex(); return; }
     const k = b.dataset.k, id = b.dataset.id;
@@ -1161,6 +1458,7 @@
         qMem.clear(); renderQIndex(); break;
       }
       case 'addpdf': pickPdf(b.dataset.kind); break;
+      case 'dm-text': case 'dm-meal': case 'dm-ses': case 'dm-hadis': dmDelete(k); break;
       case 'delfile': {
         const ok = await A().ask({ title: 'Kitap silinsin mi?', text: 'Dosya bu telefondan silinir.',
           buttons: [{ label: 'Vazgeç', value: null, cls: 'ghost' }, { label: 'Sil', value: 'ok', cls: 'danger' }] });

@@ -20,7 +20,7 @@ from fastapi.responses import FileResponse, JSONResponse, PlainTextResponse, Res
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
-from . import config, hatim, quranenc
+from . import config, hatim, quranenc, ses
 from .sources import NotSupported, QuotaExceeded, UpstreamError, make_source, quota_day
 from .store import Store
 
@@ -82,7 +82,9 @@ _hits: dict[str, deque] = defaultdict(deque)
 
 @app.middleware("http")
 async def rate_limit(request: Request, call_next):
-    if request.url.path.startswith("/api/"):
+    path0 = request.url.path
+    is_ses = path0.startswith("/ses/")
+    if path0.startswith("/api/") or is_ses:
         # Gerçek ziyaretçi IP'si: Nginx'in koyduğu X-Real-IP (dışarıdan gelen değeri Nginx ezer),
         # yoksa uvicorn --proxy-headers ile çözülen istemci adresi.
         ip = request.headers.get("x-real-ip") or (request.client.host if request.client else "?")
@@ -90,10 +92,10 @@ async def rate_limit(request: Request, call_next):
         if len(_hits) > 50000:                       # çok sayıda IP birikirse eskileri temizle
             for k in [k for k, v in _hits.items() if not v or now - v[-1] > 60]:
                 del _hits[k]
-        q = _hits[ip]
+        q = _hits[ip + "|ses" if is_ses else ip]   # ses indirme ayrı sayılır (bir cüz yüzlerce dosya)
         while q and now - q[0] > 60:
             q.popleft()
-        if len(q) >= config.CLIENT_RATE_PER_MIN:
+        if len(q) >= (config.CLIENT_RATE_PER_MIN * 3 if is_ses else config.CLIENT_RATE_PER_MIN):
             return JSONResponse({"detail": "Çok fazla istek, biraz bekleyin."}, status_code=429)
         q.append(now)
     response = await call_next(request)
@@ -572,4 +574,5 @@ async def hatim_link(request: Request, hid: str):
 
 app.include_router(hatim.router)
 app.include_router(quranenc.router)
+app.include_router(ses.router)
 app.mount("/static", StaticFiles(directory=config.STATIC_DIR), name="static")
