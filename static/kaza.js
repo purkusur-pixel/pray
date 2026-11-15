@@ -39,12 +39,12 @@
     return true;
   }
 
-  const fmtN = (n) => n.toLocaleString('tr-TR');
+  const fmtN = (n) => n.toLocaleString((window.LOC || 'tr-TR'));
   function fmtT(ms) {
     if (!ms) return 'henüz değişmedi';
     const d = new Date(ms);
-    return d.toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', year: 'numeric' }) + ' ' +
-      d.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' });
+    return d.toLocaleDateString((window.LOC || 'tr-TR'), { day: 'numeric', month: 'short', year: 'numeric' }) + ' ' +
+      d.toLocaleTimeString((window.LOC || 'tr-TR'), { hour: '2-digit', minute: '2-digit' });
   }
 
   /* ------------------------------------------------------------ kartlar */
@@ -81,7 +81,7 @@
       const days = Math.ceil(maxN / per);
       const y = Math.floor(days / 365), m = Math.floor((days % 365) / 30), d = days % 365 % 30;
       const parts = [y && `${y} yıl`, m && `${m} ay`, d && `${d} gün`].filter(Boolean).join(' ');
-      const end = new Date(Date.now() + days * 86400000).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
+      const end = new Date(Date.now() + days * 86400000).toLocaleDateString((window.LOC || 'tr-TR'), { day: 'numeric', month: 'long', year: 'numeric' });
       out = `Her gün ${per} günlük kaza (her vakitten ${per}) kılarsanız yaklaşık <b>${parts}</b> sonra, <b>${end}</b> civarında biter.`;
     }
     $('kzPlanOut').innerHTML = out;

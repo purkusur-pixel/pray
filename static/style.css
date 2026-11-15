@@ -761,3 +761,23 @@ article.qm.q-play { background: color-mix(in srgb, var(--surface) 82%, #d4a74f);
 .k-dmr small { color: var(--muted); font-size: .78rem; }
 .k-dmr .btn { padding: 7px 14px; }
 body.ses-on .toast { bottom: calc(160px + env(safe-area-inset-bottom)); }
+
+/* dil */
+html.i18n-wait body { visibility: hidden; }
+.btn-lang { padding-inline: 12px; gap: 6px; }
+.btn-lang span { font-weight: 700; letter-spacing: .02em; }
+.lang-dlg { border: 0; padding: 0; border-radius: 20px; width: min(360px, calc(100vw - 32px)); background: var(--surface); color: var(--ink); box-shadow: 0 20px 60px rgba(0,0,0,.35); }
+.lang-dlg::backdrop { background: rgba(0,0,0,.45); }
+.lang-h { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px 8px; }
+.lang-x { border: 0; background: none; color: var(--muted); font-size: 1.1rem; width: 40px; height: 40px; cursor: pointer; }
+.lang-list { display: flex; flex-direction: column; padding: 0 10px 12px; gap: 4px; }
+.lang-list button { font: inherit; font-size: 1.05rem; text-align: start; padding: 12px 14px; border-radius: 12px; border: 1px solid transparent; background: none; color: var(--ink); cursor: pointer; }
+.lang-list button.on { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); font-weight: 700; }
+.place { min-width: 0; flex: 1 1 auto; }
+.place-name, .place-sub { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 430px) {
+  .topbar { gap: 8px; padding-inline: 12px; }
+  .top-actions { gap: 6px; }
+  .top-actions .btn-loc { padding-inline: 10px; }
+  .btn-install span, .btn-lang svg { display: none; }
+}

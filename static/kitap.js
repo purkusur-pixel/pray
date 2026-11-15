@@ -11,8 +11,8 @@
   const VER = document.querySelector('meta[name=nv-ver]')?.content || '1';
   const AR_DIG = '٠١٢٣٤٥٦٧٨٩';
   const arNum = (n) => String(n).replace(/\d/g, (d) => AR_DIG[d]);
-  const fmtMB = (b) => (b < 1048576 ? Math.max(1, Math.round(b / 1024)) + ' KB' : (b / 1048576).toLocaleString('tr-TR', { maximumFractionDigits: 1 }) + ' MB');
-  const fmtN = (n) => Number(n).toLocaleString('tr-TR');
+  const fmtMB = (b) => (b < 1048576 ? Math.max(1, Math.round(b / 1024)) + ' KB' : (b / 1048576).toLocaleString((window.LOC || 'tr-TR'), { maximumFractionDigits: 1 }) + ' MB');
+  const fmtN = (n) => Number(n).toLocaleString((window.LOC || 'tr-TR'));
   const jget = (k, d) => { try { return JSON.parse(A().sget(k) || 'null') ?? d; } catch { return d; } };
   const jset = (k, v) => A().sset(k, JSON.stringify(v), YEAR);
 
@@ -118,7 +118,7 @@
   const extraMeals = () => jget('nv_kmealx', []);
   let LN = null;
   function langName(l) {
-    try { LN = LN || new Intl.DisplayNames(['tr'], { type: 'language' }); const n = LN.of(l); return n && n !== l ? n[0].toLocaleUpperCase('tr') + n.slice(1) : l.toUpperCase(); }
+    try { LN = LN || new Intl.DisplayNames([window.UILANG || 'tr'], { type: 'language' }); const n = LN.of(l); return n && n !== l ? n[0].toLocaleUpperCase(window.UILANG || 'tr') + n.slice(1) : l.toUpperCase(); }
     catch { return String(l).toUpperCase(); }
   }
   async function mealList() {
@@ -688,8 +688,9 @@
       if (fq && !normQ(`${ln} ${x.l} ${x.t} ${x.d} ${x.k}`, false).includes(fq)) continue;
       if (!groups.has(ln)) groups.set(ln, []); groups.get(ln).push(x);
     }
-    const TRN = langName('tr');
-    const names = [...groups.keys()].sort((a, b) => (a === TRN ? -1 : b === TRN ? 1 : a.localeCompare(b, 'tr')));
+    const pri = [langName(window.UILANG || 'tr'), langName('tr')];      // önce arayüz dili, sonra Türkçe
+    const rk = (n) => { const i = pri.indexOf(n); return i < 0 ? 9 : i; };
+    const names = [...groups.keys()].sort((a, b) => rk(a) - rk(b) || a.localeCompare(b, 'tr'));
     if (!names.length) { box.innerHTML = '<p class="kz-small">Sonuç yok.</p>'; return; }
     box.innerHTML = names.map((ln) => `<details class="card k-mlg"${fq || names.length < 4 ? ' open' : ''}><summary><b>${esc(ln)}</b> <small>${groups.get(ln).length}</small></summary>
       ${groups.get(ln).map((x) => `<div class="k-ml"><div><b dir="auto">${esc(x.t)}</b><small dir="auto">${esc(x.d)}${x.v ? ' · sürüm ' + esc(x.v) : ''}</small></div>

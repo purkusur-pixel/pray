@@ -83,7 +83,7 @@
     const d = new Date(dt + 'T00:00:00');
     const today = new Date(); today.setHours(0, 0, 0, 0);
     const diff = Math.round((d - today) / 86400000);
-    const s = d.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', weekday: 'long' });
+    const s = d.toLocaleDateString((window.LOC || 'tr-TR'), { day: 'numeric', month: 'long', weekday: 'long' });
     if (diff > 1) return `Hatim duası: ${s} · ${diff} gün kaldı`;
     if (diff === 1) return `Hatim duası yarın: ${s}`;
     if (diff === 0) return 'Hatim duası bugün';

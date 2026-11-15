@@ -9,6 +9,7 @@ const CACHE = 'nv-shell-' + VERSION;
 const SHELL = [
   '/',
   '/static/style.css?v=' + VERSION,
+  '/static/i18n.js?v=' + VERSION,
   '/static/app.js?v=' + VERSION,
   '/static/guide.js?v=' + VERSION,
   '/static/kaza.js?v=' + VERSION,

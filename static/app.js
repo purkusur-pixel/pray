@@ -206,9 +206,9 @@ async function ensureData() {
 }
 
 /* ------------------------------------------------------------ çizim */
-const fmtLong = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric', weekday: 'long', timeZone: 'UTC' });
-const fmtShort = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'short', timeZone: 'UTC' });
-const fmtDow = new Intl.DateTimeFormat('tr-TR', { weekday: 'short', timeZone: 'UTC' });
+const fmtLong = new Intl.DateTimeFormat((window.LOC || 'tr-TR'), { day: 'numeric', month: 'long', year: 'numeric', weekday: 'long', timeZone: 'UTC' });
+const fmtShort = new Intl.DateTimeFormat((window.LOC || 'tr-TR'), { day: 'numeric', month: 'short', timeZone: 'UTC' });
+const fmtDow = new Intl.DateTimeFormat((window.LOC || 'tr-TR'), { weekday: 'short', timeZone: 'UTC' });
 const utcDate = (s) => { const [y, m, d] = s.split('-').map(Number); return new Date(Date.UTC(y, m - 1, d)); };
 function hijriLong(h) {
   const p = (h || '').split('.').map(Number);
@@ -523,7 +523,7 @@ const KAABA = [21.422487, 39.826206];
 const angleDiff = (a, b) => ((a - b + 540) % 360) - 180;          // b'den a'ya işaretli fark (+ = sağa)
 const YONLER = ['Kuzey', 'Kuzeydoğu', 'Doğu', 'Güneydoğu', 'Güney', 'Güneybatı', 'Batı', 'Kuzeybatı'];
 const yonAdi = (deg) => YONLER[Math.round((((deg % 360) + 360) % 360) / 45) % 8];
-const fmt1 = (x) => Number(x).toLocaleString('tr-TR', { maximumFractionDigits: 1 });
+const fmt1 = (x) => Number(x).toLocaleString((window.LOC || 'tr-TR'), { maximumFractionDigits: 1 });
 
 const Q = (() => {
   const el = {
@@ -610,7 +610,7 @@ const Q = (() => {
     // Hem gerçek kuzeye göre (harita) hem pusulaya göre (manyetik) açı: diğer uygulamalarla karşılaştırma için
     // Telefonun kendi Pusula uygulamasıyla karşılaştırmak için: “Gerçek Kuzey” açıksa ilk, kapalıysa ikinci değer
     const magDeg = data.declination != null ? ((data.bearing - data.declination) % 360 + 360) % 360 : null;
-    setText(el.sub, `Kıble yönü: ${yonAdi(data.bearing)} (${fmt1(data.bearing)}°) · Kâbe'ye ${Number(data.km).toLocaleString('tr-TR')} km`
+    setText(el.sub, `Kıble yönü: ${yonAdi(data.bearing)} (${fmt1(data.bearing)}°) · Kâbe'ye ${Number(data.km).toLocaleString((window.LOC || 'tr-TR'))} km`
       + (magDeg !== null ? ` · Pusula uygulamasında ${Math.round(data.bearing)}° (Gerçek Kuzey açık) ya da ${Math.round(magDeg)}° (kapalı)` : ''));
     aligned = null;
     draw();
@@ -792,7 +792,7 @@ const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platfo
 function guideLang() {
   const v = sget('nv_glang');
   if (v === 'tr' || v === 'en') return v;
-  return 'tr';            // telefon İngilizce olsa da varsayılan Türkçe; EN yalnızca seçilirse
+  return (window.UILANG || 'tr') === 'tr' ? 'tr' : 'en';   // uygulama dili Türkçe değilse kılavuz İngilizce
 }
 function siriUrl(lang = guideLang()) { return `${location.origin}/api/siri?k=${siriKey()}${lang === 'en' ? '&l=en' : ''}`; }
 
