@@ -294,10 +294,7 @@
     h += aboutHtml();
     root().innerHTML = h;
     $('kDm').addEventListener('toggle', (e) => { if (e.target.open) dmDraw(); });
-    try {
-      const est = await navigator.storage?.estimate?.();
-      if (est?.usage) $('kStore').textContent = `Telefonda ${fmtMB(est.usage)}`;
-    } catch { /* yok */ }
+    dmStats().then((st) => { const el = $('kStore'); if (el) el.textContent = st.total ? `Telefonda ${fmtMB(st.total)}` : 'Telefonda kitap yok'; }).catch(() => {});
   }
   let DG = null;
   /** Kitaplığın en altındaki tek açıklama: kaynaklar, sürümler ve gizlilik (her sayfada ayrı ayrı yazmak yerine) */
@@ -638,7 +635,7 @@
   }
 
   /* ---------- Başka dillerde meal (QuranEnc.com, sunucu üzerinden; telefona cüz cüz iner) */
-  const BUILTIN_QE = /^turkish_(rwwad|shaban|shahin|mokhtasar|saadi)$/;
+  const BUILTIN_QE = /_(mokhtasar|saadi)$|^turkish_(mokhtasar|saadi)$/;           // tefsirler meal listesinde gösterilmez
   let mlFilter = '';
   async function qeList(force) {
     let c = await DB.get('quran', 'qelist').catch(() => null);
@@ -673,7 +670,7 @@
       }
       h += '</div>';
     }
-    h += `<h3 class="k-sec">Başka dillerde meal ekle <small class="k-sec-sub">Seçtiğiniz meal okudukça cüz cüz telefona iner; “Tümünü indir” ile hepsini önceden alabilirsiniz.</small></h3>
+    h += `<h3 class="k-sec">Meal ekle: Türkçe ve diğer diller <small class="k-sec-sub">Seçtiğiniz meal okudukça cüz cüz telefona iner; “Tümünü indir” ile hepsini önceden alabilirsiniz.</small></h3>
       <input type="search" class="k-mlfilter" id="kMlF" placeholder="Dil ya da mütercim ara: İngilizce, Almanca, Kürtçe…" value="${esc(mlFilter)}" autocomplete="off">
       <div id="kMlAll"><p class="k-wait">Liste alınıyor…</p></div>`;
     root().innerHTML = h;
@@ -691,7 +688,8 @@
       if (fq && !normQ(`${ln} ${x.l} ${x.t} ${x.d} ${x.k}`, false).includes(fq)) continue;
       if (!groups.has(ln)) groups.set(ln, []); groups.get(ln).push(x);
     }
-    const names = [...groups.keys()].sort((a, b) => a.localeCompare(b, 'tr'));
+    const TRN = langName('tr');
+    const names = [...groups.keys()].sort((a, b) => (a === TRN ? -1 : b === TRN ? 1 : a.localeCompare(b, 'tr')));
     if (!names.length) { box.innerHTML = '<p class="kz-small">Sonuç yok.</p>'; return; }
     box.innerHTML = names.map((ln) => `<details class="card k-mlg"${fq || names.length < 4 ? ' open' : ''}><summary><b>${esc(ln)}</b> <small>${groups.get(ln).length}</small></summary>
       ${groups.get(ln).map((x) => `<div class="k-ml"><div><b dir="auto">${esc(x.t)}</b><small dir="auto">${esc(x.d)}${x.v ? ' · sürüm ' + esc(x.v) : ''}</small></div>
@@ -916,15 +914,17 @@
     saveProg('h:' + id, p, `${b.name} · Sayfa ${p}`, secName);
   }
 
-  /* ---------- PDF: okuma */
-  let pdfDoc = null, pdfId = null, pdfScale = 1;
+  /* ---------- PDF: okuma — bütün sayfalar alt alta (normal PDF okuyucu gibi), görünenler çizilir */
+  let pdfDoc = null, pdfId = null, pdfScale = 1, pdfObs = null, pdfSizes = [], pdfCur = 1, pdfJob = 0;
   async function renderPdf(id, p) {
+    const same = pdfId === id && pdfDoc && document.querySelector(`#kBody .pdf-doc[data-id="${CSS.escape(id)}"]`);
+    if (same) { pdfScrollTo(p); return; }                     // aynı belgede sayfaya git: yeniden açmadan kaydır
     const f = await DB.get('files', id).catch(() => null);
     if (!f) { A().toast('Dosya bulunamadı'); location.hash = '#kitap'; return; }
     root().innerHTML = readerShell({ back: '#kitap', title: f.name, sub: '', page: p, max: f.pages || 9999, kind: 'f' });
     const body = $('kBody');
     try {
-      if (pdfId !== id) {
+      if (pdfId !== id || !pdfDoc) {
         pdfScale = 1;
         body.innerHTML = '<p class="k-wait">Açılıyor…</p>';
         const lib = await loadPdfJs();
@@ -936,45 +936,91 @@
       body.innerHTML = `<div class="k-wait"><p>PDF açılamadı${navigator.onLine ? '' : ' (PDF okuyucu ilk kullanımda internetten bir kez yüklenir)'}.</p></div>`;
       return;
     }
-    p = Math.max(1, Math.min(pdfDoc.numPages, p | 0));
-    $('kPageIn').max = pdfDoc.numPages; $('kPageMax').textContent = `/ ${pdfDoc.numPages}`; $('kPageIn').value = p; $('kPageCur').textContent = p;
-    $('kSub').textContent = `sayfa ${p} / ${pdfDoc.numPages}`;
-    pdfPage = await pdfDoc.getPage(p);
-    body.innerHTML = '';
-    await drawPdf();
-    saveProg('f:' + id, p, `${f.name} · Sayfa ${p}`, '');
+    const n = pdfDoc.numPages;
+    p = Math.max(1, Math.min(n, p | 0));
+    $('kPageIn').max = n; $('kPageMax').textContent = `/ ${n}`;
+    // sayfa boyutları: ilk sayfanınki hepsine varsayılır, çizildikçe gerçeğiyle düzeltilir
+    const vp1 = (await pdfDoc.getPage(1)).getViewport({ scale: 1 });
+    pdfSizes = Array.from({ length: n }, () => [vp1.width, vp1.height]);
+    body.innerHTML = `<div class="pdf-doc" data-id="${esc(id)}">${pdfSizes.map((_, i) => `<div class="pdf-pg" data-p="${i + 1}"><span>${i + 1}</span></div>`).join('')}</div>`;
+    pdfLayout();
+    if (pdfObs) pdfObs.disconnect();
+    pdfObs = new IntersectionObserver((ents) => { for (const e of ents) if (e.isIntersecting) pdfDraw(+e.target.dataset.p); }, { rootMargin: '1200px 0px' });
+    body.querySelectorAll('.pdf-pg').forEach((el) => pdfObs.observe(el));
+    pdfCur = p; pdfScrollTo(p, true);
+    pdfShowPage(p, f.name);
   }
-  /** Sayfayı asıl düzeniyle çiz: büyütünce tablo/sütunlar bozulmaz, sayfa yana ve aşağı kaydırılarak okunur. */
-  let pdfPage = null, pdfJob = 0;
-  async function drawPdf(keep, focus) {
-    const body = $('kBody'); if (!body || !pdfPage) return;
-    const job = ++pdfJob;
+  /** Yer tutucuların boyutu: genişlik = ekran × yakınlaştırma */
+  function pdfLayout() {
+    const body = $('kBody'); if (!body) return;
+    const w = Math.max(200, (body.clientWidth || 360)) * pdfScale;
     body.classList.toggle('zoomed', pdfScale > 1);
-    const old = body.querySelector('canvas');
-    // büyütmeden önce odak noktasını (parmakların ortası ya da ekranın ortası) hatırla, sonra aynı yere getir
-    const br = body.getBoundingClientRect();
-    const ox = focus ? focus.x - br.left : body.clientWidth / 2, oy = focus ? focus.y : window.innerHeight / 2;
-    const fx = old && keep ? (body.scrollLeft + ox) / old.clientWidth : 0;
-    const fy = old && keep ? (oy - old.getBoundingClientRect().top) / old.clientHeight : 0;
-    const w = body.clientWidth || 360;
-    const vp0 = pdfPage.getViewport({ scale: 1 });
-    const scale = (w / vp0.width) * pdfScale;
+    body.querySelectorAll('.pdf-pg').forEach((el) => {
+      const [pw, ph] = pdfSizes[+el.dataset.p - 1];
+      el.style.width = Math.floor(w) + 'px'; el.style.height = Math.floor(w * ph / pw) + 'px';
+    });
+  }
+  async function pdfDraw(pn, force) {
+    const el = document.querySelector(`.pdf-pg[data-p="${pn}"]`); if (!el || !pdfDoc) return;
+    const job = pdfJob;
+    if (!force && el.dataset.s === String(pdfScale)) return;    // bu boyutta zaten çizili
+    el.dataset.s = String(pdfScale);
+    const page = await pdfDoc.getPage(pn);
+    const vp0 = page.getViewport({ scale: 1 });
+    if (pdfSizes[pn - 1][1] / pdfSizes[pn - 1][0] !== vp0.height / vp0.width) { pdfSizes[pn - 1] = [vp0.width, vp0.height]; pdfLayout(); }
+    const w = parseFloat(el.style.width), scale = w / vp0.width;
     let dpr = Math.min(3, window.devicePixelRatio || 1);
-    const MAXPX = 14e6;                                  // telefonlarda tuval sınırı (≈16 MP) aşılmasın
-    while (dpr > 1 && vp0.width * vp0.height * (scale * dpr) ** 2 > MAXPX) dpr -= 0.25;
-    const vp = pdfPage.getViewport({ scale: scale * dpr });
+    while (dpr > 1 && vp0.width * vp0.height * (scale * dpr) ** 2 > 8e6) dpr -= 0.25;   // telefon tuval sınırı
+    const vp = page.getViewport({ scale: scale * dpr });
     const c = document.createElement('canvas');
-    c.width = Math.floor(vp.width); c.height = Math.floor(vp.height);
-    c.style.width = Math.floor(vp.width / dpr) + 'px'; c.style.height = Math.floor(vp.height / dpr) + 'px';
-    c.className = 'k-pdf';
-    await pdfPage.render({ canvasContext: c.getContext('2d'), viewport: vp }).promise;
-    if (job !== pdfJob) return;                          // bu arada yeniden büyütüldü
-    body.innerHTML = ''; body.appendChild(c);
-    if (keep && old) {
-      body.scrollLeft = Math.max(0, fx * c.clientWidth - ox);
-      const top = c.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo(0, Math.max(0, top + fy * c.clientHeight - oy));
-    }
+    c.width = Math.floor(vp.width); c.height = Math.floor(vp.height); c.className = 'k-pdf';
+    await page.render({ canvasContext: c.getContext('2d'), viewport: vp }).promise;
+    if (job !== pdfJob || el.dataset.s !== String(pdfScale)) return;
+    el.querySelector('canvas')?.remove(); el.appendChild(c);
+    // bellek: uzaktaki sayfaların çizimini bırak
+    const all = [...document.querySelectorAll('.pdf-pg canvas')];
+    if (all.length > 10) for (const x of all) { const pg = x.parentElement; if (pg && Math.abs(+pg.dataset.p - pdfCur) > 5) { x.remove(); delete pg.dataset.s; } }
+  }
+  function pdfScrollTo(p, instant) {
+    const el = document.querySelector(`.pdf-pg[data-p="${p}"]`); if (!el) return;
+    const top = el.getBoundingClientRect().top + window.scrollY - 70;
+    window.scrollTo({ top, behavior: instant ? 'auto' : 'smooth' });
+    pdfCur = p; pdfShowPage(p);
+  }
+  function pdfShowPage(p, name) {
+    cur.page = p;
+    if ($('kPageCur')) $('kPageCur').textContent = p;
+    if ($('kPageIn')) $('kPageIn').value = p;
+    if ($('kSub') && pdfDoc) $('kSub').textContent = `sayfa ${p} / ${pdfDoc.numPages}`;
+    const t = document.querySelector('.k-rtitle b')?.textContent || name || '';
+    saveProg('f:' + pdfId, p, `${t} · Sayfa ${p}`, '');
+  }
+  // kaydırdıkça hangi sayfadayız
+  let pdfScrollT = 0;
+  window.addEventListener('scroll', () => {
+    if (cur.kind !== 'f' || !pdfDoc) return;
+    clearTimeout(pdfScrollT);
+    pdfScrollT = setTimeout(() => {
+      const mid = window.innerHeight / 2;
+      for (const el of document.querySelectorAll('.pdf-pg')) {
+        const r = el.getBoundingClientRect();
+        if (r.top <= mid && r.bottom >= mid) { const p = +el.dataset.p; if (p !== pdfCur) { pdfCur = p; pdfShowPage(p); history.replaceState(null, '', location.hash.replace(/\/\d+$/, '') + '/' + p); } break; }
+      }
+    }, 120);
+  }, { passive: true });
+  /** Yakınlaştır: odak noktası (parmakların ortası / ekran ortası) yerinde kalsın */
+  function pdfZoom(ns, focus) {
+    const body = $('kBody'), doc = body?.querySelector('.pdf-doc'); if (!doc) return;
+    const br = body.getBoundingClientRect(), dr = doc.getBoundingClientRect();
+    const ox = focus ? focus.x - br.left : body.clientWidth / 2, oy = focus ? focus.y : window.innerHeight / 2;
+    const fx = (focus ? focus.x : br.left + ox) - dr.left, fy = oy - dr.top;     // belge içindeki nokta
+    const k = ns / pdfScale;
+    pdfScale = ns; pdfJob++;
+    pdfLayout();
+    body.scrollLeft = Math.max(0, fx * k - ox);
+    const top = doc.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo(0, Math.max(0, top + fy * k - oy));
+    document.querySelectorAll('.pdf-pg').forEach((el) => { const r = el.getBoundingClientRect(); if (r.bottom > -800 && r.top < window.innerHeight + 800) pdfDraw(+el.dataset.p, true); else { el.querySelector('canvas')?.remove(); delete el.dataset.s; } });
   }
 
   /* ---------- okuyucu iskeleti (üst çubuk + gövde + alt gezinme) */
@@ -1343,27 +1389,32 @@
       if (c) { const ks = await c.keys(); ses = ks.length; for (const r of ks.slice(0, 7000)) { const x = await c.match(r); sesB += +(x?.headers.get('content-length') || 0); } }
     } catch { /* yok */ }
     const hads = (hb?.books || []).filter((b) => bk.has(b.id) || bk.has(b.id + ':ar'));
-    let pdfB = 0; for (const k of fk) { const f = await DB.get('files', k).catch(() => null); pdfB += f?.size || 0; }
+    const hadB = hads.reduce((t, b) => t + (bk.has(b.id) ? b.trSize || 0 : 0) + (bk.has(b.id + ':ar') ? b.arSize || 0 : 0), 0);
+    let pdfB = 0; for (const k of fk) { const f = await DB.get('files', k).catch(() => null); pdfB += f?.size || f?.data?.size || 0; }
+    const textB = text * 47e3, mealB = meal * 32e3;
     let usage = 0; try { usage = (await navigator.storage?.estimate?.())?.usage || 0; } catch { /* yok */ }
-    return { text, meal, ses, sesB, hads, pdf: fk.length, pdfB, usage };
+    return { text, textB, meal, mealB, ses, sesB, hads, hadB, pdf: fk.length, pdfB, usage, total: textB + mealB + sesB + hadB + pdfB };
   }
   async function dmDraw() {
     const box = $('kDmBody'); if (!box) return;
     const st = await dmStats();
     const row = (t, d, k, n) => `<div class="k-dmr"><span><b>${t}</b><small>${d}</small></span>${n ? `<button class="btn ghost danger" type="button" data-k="${k}">Sil</button>` : ''}</div>`;
-    box.innerHTML = `${row("Kur'an metni", `${st.text}/30 cüz · okudukça yeniden iner`, 'dm-text', st.text)}
-      ${row('Mealler ve tefsir', `${st.meal} cüz dosyası`, 'dm-meal', st.meal)}
-      ${row("Kur'an sesleri", `${fmtN(st.ses)} ayet${st.sesB ? ' · ' + fmtMB(st.sesB) : ''}`, 'dm-ses', st.ses)}
-      ${row('Hadis kitapları', st.hads.length ? esc(st.hads.map((b) => b.name).join(', ')) : 'indirilen yok', 'dm-hadis', st.hads.length)}
-      ${row("PDF'ler", st.pdf ? `${st.pdf} dosya · ${fmtMB(st.pdfB)} · Kitaplarım'dan tek tek silinir` : 'eklenen yok', '', 0)}
-      <p class="kz-small">Toplam kullanılan yer: ${st.usage ? fmtMB(st.usage) : 'bilinmiyor'}. Okuma yerleriniz, kaza sayılarınız ve ayarlarınız silinmez.</p>`;
+    const mb = (b) => (b ? ' · ' + fmtMB(b) : '');
+    box.innerHTML = `${row("Kur'an metni", `${st.text}/30 cüz${mb(st.textB)} · okudukça yeniden iner`, 'dm-text', st.text)}
+      ${row('Mealler ve tefsir', `${st.meal} cüz dosyası${mb(st.mealB)}`, 'dm-meal', st.meal)}
+      ${row("Kur'an sesleri", `${fmtN(st.ses)} ayet${mb(st.sesB)}`, 'dm-ses', st.ses)}
+      ${row('Hadis kitapları', st.hads.length ? esc(st.hads.map((b) => b.name).join(', ')) + mb(st.hadB) : 'indirilen yok', 'dm-hadis', st.hads.length)}
+      ${row("PDF'ler", st.pdf ? `${st.pdf} dosya${mb(st.pdfB)}` : 'eklenen yok', 'dm-pdf', st.pdf)}
+      <p class="kz-small">Kitaplar toplamı: ${fmtMB(st.total)}. Uygulamanın kendi dosyaları (internetsiz açılması için, ≈10 MB) bu hesaba dahil değil;
+        silinen veri telefonun genel depo göstergesine birkaç dakika sonra yansıyabilir. Okuma yerleriniz, kaza sayılarınız ve ayarlarınız silinmez.</p>`;
   }
   async function dmDelete(k) {
-    const T = { 'dm-text': "Kur'an metni", 'dm-meal': 'Mealler ve tefsir', 'dm-ses': "Kur'an sesleri", 'dm-hadis': 'Hadis kitapları' };
+    const T = { 'dm-text': "Kur'an metni", 'dm-meal': 'Mealler ve tefsir', 'dm-ses': "Kur'an sesleri", 'dm-hadis': 'Hadis kitapları', 'dm-pdf': "Eklediğiniz PDF'lerin tümü" };
     const ok = await A().ask({ title: `${T[k]} silinsin mi?`, text: 'Telefondaki kopyalar silinir; gerektiğinde yeniden indirilir. Okuma yerleriniz korunur.',
       buttons: [{ label: 'Vazgeç', value: null, cls: 'ghost' }, { label: 'Sil', value: 'ok', cls: 'danger' }] });
     if (ok !== 'ok') return;
     if (k === 'dm-ses') await sesClear();
+    else if (k === 'dm-pdf') { for (const key of await DB.keys('files').catch(() => [])) await DB.del('files', key).catch(() => {}); pdfId = null; pdfDoc = null; }
     else if (k === 'dm-hadis') {
       const hb = await hBooks().catch(() => null);
       for (const b of hb?.books || []) { await DB.del('books', b.id).catch(() => {}); await DB.del('books', b.id + ':ar').catch(() => {}); hMem.delete(b.id); }
@@ -1373,7 +1424,7 @@
       }
       if (k === 'dm-text') qMem.clear();
     }
-    A().toast('Silindi'); dmDraw();
+    A().toast('Silindi'); if (k === 'dm-pdf') render(); else { dmDraw(); dmStats().then((st) => { const el = $('kStore'); if (el) el.textContent = st.total ? `Telefonda ${fmtMB(st.total)}` : 'Telefonda kitap yok'; }); }
   }
 
   /* ------------------------------------------------------------ yönlendirme */
@@ -1415,6 +1466,7 @@
   function goPage(p) {
     const base = location.hash.replace(/\/\d+$/, '');
     history.replaceState(null, '', `${base}/${p}`);
+    if (cur.kind === 'f') { render(); return; }               // PDF: o sayfaya kaydırır
     render().then(() => { window.scrollTo(0, 0); if (P.s) sesMark(); });
   }
   function step(d) {
@@ -1461,7 +1513,7 @@
         if (cur.kind === 'f') {
           const ns = Math.max(1, Math.min(4, pdfScale + (k === 'fplus' ? 0.5 : -0.5)));
           if (ns === pdfScale) { A().toast(k === 'fplus' ? 'En büyük boyut' : 'Sayfa ekrana sığdırıldı'); break; }
-          pdfScale = ns; A().toast(`%${Math.round(ns * 100)}`); drawPdf(true);
+          A().toast(`%${Math.round(ns * 100)}`); pdfZoom(ns);
           break;
         }
         if (cur.kind === 'es') {
@@ -1540,7 +1592,7 @@
         qMem.clear(); renderQIndex(); break;
       }
       case 'addpdf': pickPdf(b.dataset.kind); break;
-      case 'dm-text': case 'dm-meal': case 'dm-ses': case 'dm-hadis': dmDelete(k); break;
+      case 'dm-text': case 'dm-meal': case 'dm-ses': case 'dm-hadis': case 'dm-pdf': dmDelete(k); break;
       case 'delfile': {
         const ok = await A().ask({ title: 'Kitap silinsin mi?', text: 'Dosya bu telefondan silinir.',
           buttons: [{ label: 'Vazgeç', value: null, cls: 'ghost' }, { label: 'Sil', value: 'ok', cls: 'danger' }] });
@@ -1581,12 +1633,12 @@
   function pdfZoomTo(ns, focus) {
     ns = Math.max(1, Math.min(4, Math.round(ns * 4) / 4));
     if (ns === pdfScale) return;
-    pdfScale = ns; drawPdf(true, focus);
+    pdfZoom(ns, focus);
   }
   root().addEventListener('touchstart', (e) => {
     if (cur.kind !== 'f' || !e.target.closest('#kBody')) return;
     if (e.touches.length === 2) {
-      const c = $('kBody').querySelector('canvas'); if (!c) return;
+      const c = $('kBody').querySelector('.pdf-doc'); if (!c) return;
       const t = e.touches, x = (t[0].clientX + t[1].clientX) / 2, y = (t[0].clientY + t[1].clientY) / 2, r = c.getBoundingClientRect();
       pinch = { d0: tdist(t), x, y, c, k: 1 };
       c.style.transformOrigin = `${x - r.left}px ${y - r.top}px`;
@@ -1623,8 +1675,7 @@
     if (tx0 === null) return;
     const dx = e.changedTouches[0].clientX - tx0, dy = e.changedTouches[0].clientY - ty0; tx0 = null;
     if (Math.abs(dx) < 70 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
-    if (!['q', 'h', 'f'].includes(cur.kind)) return;                        // yalnız sayfalı okuyucularda
-    if (cur.kind === 'f' && pdfScale > 1) return;   // yakınlaştırılmış sayfada parmak kaydırma = gezinme
+    if (!['q', 'h'].includes(cur.kind)) return;                             // yalnız sayfalı okuyucularda (PDF aşağı kayar)
     const rtl = cur.kind === 'q';
     step((dx > 0) === rtl ? 1 : -1);
   }, { passive: true });
