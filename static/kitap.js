@@ -110,12 +110,35 @@
       jset('nv_kmealclean', 2);
     } catch { /* sonra */ }
   })();
-  const TEFS = { mokhtasar: 'Muhtasar Tefsir' };
-  const tefKey = () => 'mokhtasar';
-  const tefKind = () => 't';                                         // 't' = Muhtasar tefsir
+  const TEFS = new Proxy({}, { get: () => (window.T ? window.T('Muhtasar Tefsir') : 'Muhtasar Tefsir') });
+  const tefKey = () => { const k = jget('nv_ktefk', 'mokhtasar'); return /^(mokhtasar|[a-z]+_mokhtasar)$/.test(k) ? k : 'mokhtasar'; };
+  const tefKind = () => (tefKey() === 'mokhtasar' ? 't' : 't:' + tefKey());   // 't' = Türkçe Muhtasar; 't:english_mokhtasar' …
   const isQe = (key) => key.includes('_');                           // başka dilde meal (QuranEnc anahtarı: english_saheeh …)
   /* Başka dillerde eklenen mealler (telefonda): [{k, t, l, v, dir}] */
   const extraMeals = () => jget('nv_kmealx', []);
+  /* Arayüz dili değişince Kur'an okurken o dilde bir meal ve (varsa) o dilde Muhtasar tefsir seçilir; kişi sonra değiştirebilir */
+  const LANG_MEAL = { en: ['english_saheeh', 'english_rwwad'], ar: ['arabic_moyassar'], id: ['indonesian_affairs', 'indonesian_sabiq'], ur: ['urdu_junagarhi'],
+    hi: ['hindi_omari'], bn: ['bengali_zakaria'], fa: ['persian_ih'], ms: ['malay_basumayyah'] };
+  async function langAuto() {
+    const L = window.UILANG || 'tr';
+    if (jget('nv_lauto', 'tr') === L) return;
+    if (L === 'tr') {
+      if (jget('nv_lautok', '') && mealKey() === jget('nv_lautok', '')) jset('nv_kmealk', 'elmalili');
+      jset('nv_ktefk', 'mokhtasar'); jset('nv_lauto', 'tr'); return;
+    }
+    if (!navigator.onLine) return;
+    let items; try { items = await qeList(); } catch { return; }
+    const by = (k) => items.find((x) => x.k === k);
+    const m = (LANG_MEAL[L] || []).map(by).find(Boolean) || items.find((x) => x.l === L && !/_(mokhtasar|saadi)$/.test(x.k));
+    if (m) {
+      if (!extraMeals().some((x) => x.k === m.k)) jset('nv_kmealx', extraMeals().concat([{ k: m.k, t: m.t, l: m.l, v: m.v, dir: m.dir }]));
+      jset('nv_kmealk', m.k); jset('nv_lautok', m.k);
+    }
+    const tk = items.find((x) => x.l === L && /_mokhtasar$/.test(x.k));
+    jset('nv_ktefk', tk ? tk.k : 'mokhtasar');
+    jset('nv_lauto', L);
+  }
+  setTimeout(() => { langAuto().catch(() => {}); }, 1500);
   let LN = null;
   function langName(l) {
     try { LN = LN || new Intl.DisplayNames([window.UILANG || 'tr'], { type: 'language' }); const n = LN.of(l); return n && n !== l ? n[0].toLocaleUpperCase(window.UILANG || 'tr') + n.slice(1) : l.toUpperCase(); }
@@ -718,6 +741,14 @@
       try { const r = await fetch('/static/books/esma.json?v=' + VER); if (r.ok) { d = await r.json(); d.ver = VER; DB.put('books', 'esma', d).catch(() => {}); } } catch { /* çevrimdışı */ }
     }
     if (!d) throw new Error('Esmâü\'l-Hüsnâ henüz telefona inmedi; internete bağlanınca iner.');
+    const L = window.UILANG || 'tr';
+    if (L !== 'tr') {                                                // isimlerin okunuşu ve anlamı seçilen dilde
+      let x = await DB.get('books', 'esma-' + L).catch(() => null);
+      if (!x || (navigator.onLine && x.ver !== VER)) {
+        try { const r = await fetch(`/static/books/esma-${L}.json?v=${VER}`); if (r.ok) { x = await r.json(); x.ver = VER; DB.put('books', 'esma-' + L, x).catch(() => {}); } } catch { /* çevrimdışı */ }
+      }
+      if (x?.n?.length === d.n.length) d = { ...d, n: d.n.map((it, i) => [it[0], it[1], x.n[i][0], x.n[i][1]]) };
+    }
     return (ESMA = d);
   }
   let esQuery = '';

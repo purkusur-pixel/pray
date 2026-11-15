@@ -190,10 +190,16 @@ async def qe_juz(key: str, juz: int):
 
 @router.get("/api/tefsir/{juz}")
 async def tefsir(juz: int, k: str = Query("mokhtasar")):
-    if not 1 <= juz <= 30 or k not in TEFSIR:
+    if not 1 <= juz <= 30 or not (k in TEFSIR or re.fullmatch(r"[a-z]{2,20}_mokhtasar", k)):
         raise HTTPException(404, "Bulunamadı")
-    key, src = TEFSIR[k]
-    info = await _find(key)                      # listede olmasa da (liste alınamadıysa) doğrudan kaynaktan denenir
+    if k in TEFSIR:
+        key, src = TEFSIR[k]
+        info = await _find(key)                  # listede olmasa da (liste alınamadıysa) doğrudan kaynaktan denenir
+    else:                                        # Muhtasar Tefsir'in başka dildeki tercümesi (english_mokhtasar …)
+        key, info = k, await _find(k)
+        if not info:
+            raise HTTPException(404, "Bulunamadı")
+        src = f"{info['t']} — QuranEnc.com, sürüm {info['v']}. Metin değiştirilmeden yayımlanmıştır."
     ver = info["v"] if info else ""
     rows = await _juz_rows(key, juz, ver)
     return JSONResponse({"j": juz, "k": k, "ver": ver, "src": src, "t": rows},

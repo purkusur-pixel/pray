@@ -241,6 +241,7 @@ function render() {
   $('stateBox').hidden = true;
   $('hero').hidden = false;
   $('btnSiri').hidden = false;
+  $('btnCal').hidden = false;
   $('upcoming').hidden = days.length < 2;
   $('upcomingTitle').textContent = `Önümüzdeki ${Math.min(days.length, SHOW_DAYS)} gün`;
 
@@ -909,6 +910,31 @@ async function doInstall() {
 $('btnInstall').addEventListener('click', doInstall);
 $('btnInstallClose').addEventListener('click', () => $('installDlg').close());
 updateInstallBtn();
+
+/* Takvim aboneliği: vakitler telefonun takviminde (adres yalnız il/ilçe, bildirim dakikası ve dil içerir) */
+const CAL_OPTS = [[0, 'Vaktinde'], [5, '5 dk önce'], [10, '10 dk önce'], [15, '15 dk önce'], [-1, 'Bildirim yok']];
+function calUrl(proto) {
+  const l = readLoc(); if (!l) return '';
+  return `${proto}://${location.host}/takvim/${l.s}/${l.i}.ics?u=${$('calU').value}&l=${window.UILANG || 'tr'}`;
+}
+$('btnCal').addEventListener('click', () => {
+  if (!readLoc()) { openPicker(true); return; }
+  const tr = window.T || ((x) => x), cur = sget('nv_calu') ?? '0';
+  $('calU').innerHTML = CAL_OPTS.map(([v, t]) => `<option value="${v}"${String(v) === cur ? ' selected' : ''}>${tr(t)}</option>`).join('');
+  $('calIos').hidden = !isIOS; $('calAnd').hidden = !isAndroid;
+  $('calDlg').showModal();
+});
+$('calGo').addEventListener('click', () => {
+  sset('nv_calu', $('calU').value, 3650 * 86400);
+  const url = calUrl('webcal');
+  if (isAndroid) window.open('https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(url), '_blank');
+  else location.href = url;
+});
+$('calCopy').addEventListener('click', async () => {
+  const url = calUrl('https');
+  try { await navigator.clipboard.writeText(url); toast('Link kopyalandı ✓'); }
+  catch { await ask({ title: 'Seçip kopyalayın:', input: url, buttons: [{ label: 'Tamam', value: null }] }); }
+});
 
 /* Onay / seçim penceresi (kaza ve hatim sekmeleri kullanır) */
 function ask({ title, text = '', buttons = [{ label: 'Tamam', value: 'ok' }], input = null }) {

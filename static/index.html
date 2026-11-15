@@ -69,6 +69,11 @@
       <span><b id="siriCardT">Siri ile sor</b><small id="siriCardS">“Hey Siri, Namaz” deyince kalan süreyi söylesin</small></span>
     </button>
 
+    <button class="siri-card" id="btnCal" type="button" hidden>
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2V2Zm12 8H5v10h14V10ZM5 8h14V6H5v2Zm2 4h4v4H7v-4Z"/></svg>
+      <span><b>Takvime ekle</b><small>Vakitler telefonun takviminde ve kilit ekranında görünsün</small></span>
+    </button>
+
     <section class="state" id="stateBox" hidden>
       <p id="stateMsg"></p>
       <button class="btn" id="btnRetry" type="button" hidden>Tekrar dene</button>
@@ -304,6 +309,19 @@
         <button type="button" class="btn ghost" data-q="1">+1</button><button type="button" class="btn ghost" data-q="10">+10</button>
       </div>
       <div class="actions"><button class="btn ghost" value="cancel" type="submit" formnovalidate>Vazgeç</button><button class="btn" value="ok" type="submit">Kaydet</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="calDlg">
+    <form class="picker" method="dialog">
+      <h2>Takvime ekle</h2>
+      <p class="siri-lead">Vakitler telefonunuzun takviminde etkinlik olarak görünür; uygulama kapalıyken de bildirim gelir. Takvim kendini yeniler.</p>
+      <label>Bildirim<select id="calU"></select></label>
+      <p class="siri-note" id="calIos">iPhone'da bildirim gelmezse: Ayarlar › Takvim › Hesaplar › Abone Olunan Takvimler › Namaz Vakitleri › “Uyarıları Kaldır”ı kapatın. Kilit ekranında görmek için kilit ekranına Takvim widget'ı ekleyin.</p>
+      <p class="siri-note" id="calAnd" hidden>Google Takvim'de bildirim süresini o takvimin ayarlarından seçin. Takvim günde birkaç kez kendini yeniler.</p>
+      <p class="siri-note">Başka ilçeye taşınırsanız yeniden abone olun ve eskisini takvimden silin. Sunucu kimin abone olduğunu tutmaz.</p>
+      <div class="actions"><button class="btn ghost" id="calCopy" type="button">Linki kopyala</button><button class="btn" id="calGo" type="button">Abone ol</button></div>
+      <div class="actions"><button class="btn ghost" value="cancel" type="submit" formnovalidate>Kapat</button></div>
     </form>
   </dialog>
 

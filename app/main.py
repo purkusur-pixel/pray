@@ -349,6 +349,68 @@ async def siri(k: str | None = Query(None, description="Uygulamanın Siri anahta
     return siri_text(place, res["days"], now, "en" if en else "tr")
 
 
+# ------------------------------------------------------- takvim aboneliği
+# Telefonun takvimi bu adrese abone olur; vakitler takvimde etkinlik olarak görünür, isteğe göre bildirim gelir.
+# Adreste yalnız il/ilçe numarası, bildirim dakikası ve dil vardır; sunucu kimin abone olduğunu tutmaz.
+CAL_NAMES = {
+    "tr": (["İmsak", "Güneş", "Öğle", "İkindi", "Akşam", "Yatsı"], "Namaz Vakitleri", "vakti"),
+    "en": (["Fajr (Imsak)", "Sunrise", "Dhuhr", "Asr", "Maghrib", "Isha"], "Prayer Times", ""),
+    "ar": (["الفجر (الإمساك)", "الشروق", "الظهر", "العصر", "المغرب", "العشاء"], "مواقيت الصلاة", ""),
+    "id": (["Imsak", "Terbit", "Zuhur", "Asar", "Magrib", "Isya"], "Jadwal Salat", ""),
+    "ur": (["فجر (امساک)", "طلوعِ آفتاب", "ظہر", "عصر", "مغرب", "عشاء"], "اوقاتِ نماز", ""),
+    "hi": (["फ़ज्र (इमसाक)", "सूर्योदय", "ज़ुहर", "अस्र", "मग़रिब", "इशा"], "नमाज़ के समय", ""),
+    "bn": (["ফজর (ইমসাক)", "সূর্যোদয়", "যোহর", "আসর", "মাগরিব", "ইশা"], "নামাজের সময়", ""),
+    "fa": (["اذان صبح (امساک)", "طلوع آفتاب", "ظهر", "عصر", "مغرب", "عشاء"], "اوقات نماز", ""),
+    "ms": (["Imsak", "Syuruk", "Zohor", "Asar", "Maghrib", "Isyak"], "Waktu Solat", ""),
+}
+
+
+def _ics_text(s: str) -> str:
+    return s.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+
+
+def _ics_fold(line: str) -> str:
+    """RFC 5545: satırlar 75 baytı geçmesin (UTF-8 karakter ortasından bölmeden)."""
+    out, cur = [], ""
+    for ch in line:
+        if len((cur + ch).encode()) > 74:
+            out.append(cur); cur = " " + ch
+        else:
+            cur += ch
+    out.append(cur)
+    return "\r\n".join(out)
+
+
+@app.get("/takvim/{state}/{city}.ics", include_in_schema=False)
+async def calendar(state: int, city: int, u: int = Query(0, ge=-1, le=120), l: str = Query("tr", max_length=5)):
+    names, cal_title, suffix = CAL_NAMES.get(l, CAL_NAMES["tr"])
+    res = await times(state=state, city=city, start=_today() - timedelta(days=1), days=config.MAX_DAYS)
+    name = res["city"]["name"]
+    place = name[:1] + name[1:].replace("I", "ı").replace("İ", "i").lower() if name.isupper() else name
+    stamp = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//namaz.sporyazilimlari.com.tr//Namaz Vakitleri//TR",
+             "CALSCALE:GREGORIAN", "METHOD:PUBLISH", f"X-WR-CALNAME:{_ics_text(f'{cal_title} · {place}')}",
+             "REFRESH-INTERVAL;VALUE=DURATION:PT12H", "X-PUBLISHED-TTL:PT12H"]
+    for day in res["days"]:
+        d = day["d"].replace("-", "")
+        for i, hm in enumerate(day.get("t") or []):
+            if not hm or ":" not in hm:
+                continue
+            hh, mm = hm.split(":")[:2]
+            title = f"{names[i]} {suffix}".strip() if i != 1 else names[i]
+            lines += ["BEGIN:VEVENT", f"UID:{d}-{i}-{city}@namaz-vakitleri", f"DTSTAMP:{stamp}",
+                      f"DTSTART:{d}T{int(hh):02d}{int(mm):02d}00", "DURATION:PT10M",   # yerel saat (kayan): ilçenin saati
+                      f"SUMMARY:{_ics_text(f'{title} · {hm}')}", "TRANSP:TRANSPARENT"]
+            if u >= 0:
+                lines += ["BEGIN:VALARM", "ACTION:DISPLAY", f"DESCRIPTION:{_ics_text(title)}",
+                          f"TRIGGER:-PT{u}M" if u else "TRIGGER:PT0S", "END:VALARM"]
+            lines.append("END:VEVENT")
+    lines.append("END:VCALENDAR")
+    body = "\r\n".join(_ics_fold(x) for x in lines) + "\r\n"
+    return Response(body, media_type="text/calendar; charset=utf-8",
+                    headers={"Cache-Control": "public, max-age=3600", "Content-Disposition": f'inline; filename="namaz-{city}.ics"'})
+
+
 @app.get("/api/status")
 async def status():
     """Bugün dış kaynağa yapılan istekler (gizli bilgi içermez)."""
