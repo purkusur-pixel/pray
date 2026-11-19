@@ -781,13 +781,3 @@ html.i18n-wait body { visibility: hidden; }
   .top-actions .btn-loc { padding-inline: 10px; }
   .btn-install span, .btn-lang svg { display: none; }
 }
-
-/* Hatim: linkle aç / tarayıcıdan uygulamaya */
-.h-paste { display: flex; gap: 8px; margin: 0 0 14px; }
-.h-paste input { flex: 1; min-width: 0; font: inherit; font-size: .9rem; color: var(--ink); background: var(--surface);
-  border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
-.h-paste .btn { flex: none; }
-.h-inapp { display: flex; flex-direction: column; gap: 10px; border-color: var(--accent); }
-.h-inapp p { margin: 0; font-size: .88rem; color: var(--muted); }
-.h-inapp b { color: var(--ink); }
-.h-inapp .btn { align-self: flex-start; }
