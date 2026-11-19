@@ -939,7 +939,7 @@ window.App = {
   sayOn: () => sget('nv_say') === '1', setSay: (on) => sset('nv_say', on ? '1' : '0', 3650 * 86400),
   isIOS, isAndroid, isStandalone: isStandaloneApp, canInstall: () => !!installEvt, install: doInstall,
   place: () => { const l = readLoc(); return l ? title(l.n) : ''; }, toast,
-  sget, sset, sdel, ask, view: () => S.view, takeHatimLink: () => { const x = S.hatimLink; S.hatimLink = null; return x; },
+  sget, sset, sdel, ask, view: () => S.view, inBrowser: () => (isIOS || isAndroid) && !isStandaloneApp(), takeHatimLink: () => { const x = S.hatimLink; S.hatimLink = null; return x; },
 };
 
 /* ------------------------------------------------------------ başlat */

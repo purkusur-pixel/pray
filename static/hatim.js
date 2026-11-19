@@ -189,6 +189,8 @@
         <h2>${esc(h.t)}</h2>${h.d ? `<p class="h-desc">${esc(h.d)}</p>` : ''}
         ${dua ? `<p class="h-dua-big">${esc(dua)}</p>` : ''}
       </section>
+      ${A().inBrowser() ? `<div class="card h-inapp"><p><b>Telefonunuzda uygulama yüklüyse</b> bu hatim şu an tarayıcıda açıldı. Uygulamada devam etmek için linki kopyalayın, uygulamayı açın ve Hatim sekmesinde “Linkle aç” kutusuna yapıştırın.</p>
+        <button class="btn ghost" type="button" data-a="inapp">Linki kopyala</button></div>` : ''}
       <section class="card h-prog">
         <div class="h-prog-top"><span>${cr.n}. hatim · alınan cüzler</span><b>%${pct}</b></div>
         <div class="h-bar"><i style="width:${pct}%"></i><i class="r" style="width:${Math.round(s.read / 30 * 100)}%"></i></div>
@@ -360,6 +362,10 @@
         break;
       case 'addround': ownerOp((key) => api('POST', `/${id}/round`, null, key), 'Yeni hatim eklendi'); break;
       case 'edit': openForm(curH); break;
+      case 'inapp': {
+        const e = entry(id);
+        copy(e?.key ? adminLinkOf(id, e.key) : linkOf(id), 'Link kopyalandı — şimdi uygulamayı açıp Hatim › Linkle aç kutusuna yapıştırın'); break;
+      }
       case 'adminlink':
         copy(adminLinkOf(id, entry(id).key), 'Yönetici linki kopyalandı — yalnızca kendi telefonunuzda açın'); break;
       case 'relink': {
@@ -398,6 +404,20 @@
     $('hFormDlg').showModal();
   }
   $('hNew').addEventListener('click', () => openForm(null));
+  /* Linkle aç: iPhone'da linkler uygulamada değil tarayıcıda açıldığı için linki buraya yapıştırarak uygulamaya alınır */
+  async function openPasted(text) {
+    const t = (text || '').trim();
+    const m = t.match(/\/h\/([A-Za-z0-9]{10})(?:\/?#k=([A-Za-z0-9_-]{16,40}))?/) || t.match(/#hatim\/([A-Za-z0-9]{10})/) || t.match(/^([A-Za-z0-9]{10})$/);
+    if (!m) { A().toast('Hatim linki tanınmadı'); return; }
+    const id = m[1], key = m[2] || null;
+    if (!entry(id)) upsert(id, { o: Date.now() });
+    if (key && !entry(id)?.key) {
+      try { const r = await api('GET', `/${id}/own`, null, key); if (r.own) { upsert(id, { key }); A().toast('Bu hatmi yönetici olarak eklediniz'); } } catch { /* yok */ }
+    }
+    $('hPaste').value = '';
+    location.hash = '#hatim/' + id;
+  }
+  $('hPasteForm').addEventListener('submit', (e) => { e.preventDefault(); openPasted($('hPaste').value); });
   $('hfCancel').addEventListener('click', () => $('hFormDlg').close());
   $('hFormDlg').addEventListener('click', (e) => {
     const st = e.target.closest('[data-st]'); if (!st) return;
