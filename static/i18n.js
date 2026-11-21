@@ -133,7 +133,7 @@
       dlg = document.createElement('dialog');
       dlg.id = 'langDlg'; dlg.className = 'lang-dlg'; dlg.setAttribute('data-notr', '');
       dlg.innerHTML = `<div class="lang-h"><b>Dil · Language · اللغة</b><button type="button" class="lang-x" aria-label="Kapat">✕</button></div>
-        <div class="lang-list">${LANGS.map(([k, n]) => `<button type="button" data-l="${k}" class="${k === lang ? 'on' : ''}" lang="${k}" dir="${RTL.has(k) ? 'rtl' : 'ltr'}">${n}</button>`).join('')}</div>`;
+        <div class="lang-list">${LANGS.map(([k, n]) => `<button type="button" data-l="${k}" class="${k === lang ? 'on' : ''}" dir="ltr"><bdi lang="${k}">${n}</bdi><small>${k.toUpperCase()}</small></button>`).join('')}</div>`;
       document.body.appendChild(dlg);
       dlg.addEventListener('click', (e) => {
         if (e.target === dlg || e.target.closest('.lang-x')) { dlg.close(); return; }

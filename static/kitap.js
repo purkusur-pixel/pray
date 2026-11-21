@@ -100,7 +100,8 @@
     return (MI = m);
   }
   const mealOn = () => !!jget('nv_kmeal', false);
-  const tefOn = () => !!jget('nv_ktef', false);
+  const tefAllowed = () => (window.UILANG || 'tr') === 'tr';            // tefsir yalnız Türkçe arayüzde
+  const tefOn = () => tefAllowed() && !!jget('nv_ktef', false);
   const GONE = new Set(['rwwad', 'shaban', 'shahin']);                // kaldırılan Türkçe mealler
   const mealKey = () => { const k = jget('nv_kmealk', 'elmalili'); return GONE.has(k) ? 'elmalili' : k; };
   (async () => {                                                     // kaldırılan meallerin telefondaki cüzlerini bir kez temizle
@@ -141,13 +142,15 @@
   setTimeout(() => { langAuto().catch(() => {}); }, 1500);
   let LN = null;
   function langName(l) {
+    if (String(l).startsWith('x-')) return l.slice(2);
     try { LN = LN || new Intl.DisplayNames([window.UILANG || 'tr'], { type: 'language' }); const n = LN.of(l); return n && n !== l ? n[0].toLocaleUpperCase(window.UILANG || 'tr') + n.slice(1) : l.toUpperCase(); }
     catch { return String(l).toUpperCase(); }
   }
   async function mealList() {
     const idx = await mealIndex().catch(() => []);
     return idx.concat(extraMeals().map((x) => ({ key: x.k, name: `${langName(x.l)} · ${x.t}`, dir: x.dir, qe: true,
-      credit: `${x.t} — QuranEnc.com (Kur'an-ı Kerim Ansiklopedisi), sürüm ${x.v}. Metin değiştirilmeden yayımlanmıştır.` })));
+      credit: isFz(x.k) ? `${x.t} — fawazahmed0/quran-api${x.d ? ' (' + x.d + ')' : ''}. Metin değiştirilmeden yayımlanmıştır.`
+        : `${x.t} — QuranEnc.com (Kur'an-ı Kerim Ansiklopedisi), sürüm ${x.v}. Metin değiştirilmeden yayımlanmıştır.` })));
   }
   /** kind: 'm:<meal>', 't' (Muhtasar tefsir) ya da 't:saadi' — cüz başına bir dosya, telefonda saklanır */
   async function juzData(kind, n) {
@@ -159,6 +162,12 @@
     if (!d) {
       if (!navigator.onLine) throw Object.assign(new Error(`${tef ? 'Tefsir' : 'Meal'} (${n}. cüz) henüz indirilmedi; internete bağlanınca iner.`), { offline: true });
       const mk = kind.slice(2);
+      if (!tef && isFz(mk)) {                                        // fawazahmed0/quran-api: doğrudan CDN'den
+        const j = await fzFetch(`/editions/${mk.slice(3)}/juzs/${n}.min.json`);
+        const x = extraMeals().find((m) => m.k === mk);
+        d = { v: 2, ver: '', src: x ? `${x.t} — fawazahmed0/quran-api${x.d ? ' (' + x.d + ')' : ''}` : '', m: Object.fromEntries((j.juzs || []).map((r) => [r.chapter + ':' + r.verse, r.text])) };
+        askPersist(); await DB.put('quran', k, d); qMem.set(k, d); return d;
+      }
       const url = kind === 't' ? `/api/tefsir/${n}` : tef ? `/api/tefsir/${n}?k=${encodeURIComponent(mk)}`
         : isQe(mk) ? `/api/qe/${encodeURIComponent(mk)}/${n}` : `/static/meal/${mk}/${n}.json`;
       const r = await fetch(url);
@@ -182,6 +191,18 @@
     const r = await fetch('/static/books/hadis.json?v=' + VER); HB = await r.json(); return HB;
   }
   const hMem = new Map();
+  /* Hadis dili: arayüz diline göre (fawazahmed0/hadith-api'de o dilde baskı yoksa hadis kitapları gizlenir) */
+  const HLANG = { tr: 'tur', en: 'eng', id: 'ind', ur: 'urd', bn: 'ben', ar: 'ara' };
+  const hCode = () => HLANG[window.UILANG || 'tr'] || null;
+  const hKey = (id) => (hCode() === 'tur' ? id : `${id}:${hCode()}`);          // ana metnin telefondaki anahtarı
+  const hArMain = () => hCode() === 'ara';                                      // Arapça arayüzde ana metin Arapça
+  const hName = (b) => b.nm?.[window.UILANG]?.[0] || b.name;
+  const hAuthor = (b) => b.nm?.[window.UILANG]?.[1] || b.author;
+  const hSize = (b) => (hCode() === 'tur' ? b.trSize : b.sz?.[hCode()] || 0);
+  const hUrls = (b) => (hCode() === 'tur' ? b.tr : [`https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/${hCode()}-${b.id}.min.json`,
+    `https://raw.githubusercontent.com/fawazahmed0/hadith-api/1/editions/${hCode()}-${b.id}.min.json`]);
+  const hSec = (b, book, sec) => (hCode() === 'tur' ? b.sec[sec] : book?.sec?.[sec]) || '';
+  const H_ALLKEYS = (id) => [id, id + ':ar', ...Object.values(HLANG).filter((c) => c !== 'tur').map((c) => `${id}:${c}`)];
   async function fetchProgress(urls, onProg) {
     let last;
     for (const u of urls) {
@@ -202,10 +223,10 @@
     const b = (await hBooks()).books.find((x) => x.id === id); if (!b) return;
     if (!navigator.onLine) { A().toast('İnternet bağlantısı yok'); return; }
     askPersist();
-    const key = arabic ? id + ':ar' : id;
+    const key = arabic ? id + ':ar' : hKey(id);
     downloading.set(key, { got: 0 }); renderSoon();
     try {
-      const txt = await fetchProgress(arabic ? b.arUrl : b.tr, (got) => { downloading.set(key, { got }); renderSoon(); });
+      const txt = await fetchProgress(arabic ? b.arUrl : hUrls(b), (got) => { downloading.set(key, { got }); renderSoon(); });
       downloading.set(key, { got: -1 }); renderSoon();           // işleniyor
       await new Promise((r) => setTimeout(r, 30));
       const j = JSON.parse(txt);
@@ -214,19 +235,20 @@
         await DB.put('books', key, { m });
       } else {
         const list = j.hadiths.map((h) => [h.hadithnumber, h.text || '', h.reference?.book ?? 0]);
-        await DB.put('books', key, { list, at: Date.now() });
+        await DB.put('books', key, { list, sec: j.metadata?.sections || null, at: Date.now() });
       }
-      hMem.delete(id);
-      A().toast(`${b.name}${arabic ? ' (Arapça)' : ''} indirildi`);
+      hMem.delete(hKey(id));
+      A().toast(`${hName(b)}${arabic ? ' (Arapça)' : ''} indirildi`);
     } catch (e) {
       A().toast('İndirilemedi: ' + (e.message || 'bağlantı hatası'));
     } finally { downloading.delete(key); render(); }
   }
   /** Kitabı sayfalara böl (yazı boyutundan bağımsız, sabit sayfa numaraları için ≈1500 harf/sayfa). */
   async function hLoad(id) {
-    if (hMem.has(id)) return hMem.get(id);
-    const d = await DB.get('books', id); if (!d) return null;
-    const ar = await DB.get('books', id + ':ar').catch(() => null);
+    const mk = hKey(id);
+    if (hMem.has(mk)) return hMem.get(mk);
+    const d = await DB.get('books', mk); if (!d) return null;
+    const ar = hArMain() ? null : await DB.get('books', id + ':ar').catch(() => null);
     const pages = []; let cur = [], len = 0;
     const secStart = {};
     for (let i = 0; i < d.list.length; i++) {
@@ -238,8 +260,8 @@
       cur.push(i); len += l;
     }
     if (cur.length) pages.push(cur);
-    const book = { list: d.list, ar: ar?.m || null, pages, secStart };
-    hMem.set(id, book);
+    const book = { list: d.list, ar: ar?.m || null, pages, secStart, sec: d.sec || null };
+    hMem.set(mk, book);
     return book;
   }
 
@@ -305,9 +327,9 @@
     h += `<a class="card k-book k-dua k-esma" href="#kitap/esma"><span class="k-ar">الأسماء الحسنى</span>
       <span><h3>Esmâü'l-Hüsnâ</h3><small>Allah'ın 99 güzel ismi · Arapça, okunuş ve anlam</small></span></a>`;
     // Hadis kitapları: tek kart, dokununca liste açılır
-    const hbn = (hb?.books || []).filter((b) => bkeys.has(b.id)).length;
-    h += `<a class="card k-book k-dua k-hadis" href="#kitap/hadis"><span class="k-ar">الكتب الستة</span>
-      <span><h3>Hadis Kitapları</h3><small>Kütüb-i Sitte · Buhârî, Müslim, Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce${hbn ? ` · telefonda ${hbn} kitap` : ''}</small></span></a>`;
+    const hbn = (hb?.books || []).filter((b) => bkeys.has(hKey(b.id))).length;
+    if (hCode()) h += `<a class="card k-book k-dua k-hadis" href="#kitap/hadis"><span class="k-ar">الكتب الستة</span>
+      <span><h3>Hadis Kitapları</h3><small>${hCode() === 'tur' ? 'Kütüb-i Sitte · Buhârî, Müslim, Ebû Dâvûd, Tirmizî, Nesâî, İbn Mâce' : esc((hb?.books || []).map(hName).join(', '))}${hbn ? ` · ${(window.T || ((x) => x))('telefonda')} ${hbn}` : ''}</small></span></a>`;
     // PDF ekle
     h += `<section class="card k-book"><h3>PDF kitap ekle</h3><p class="kz-small">Telefonunuzdaki PDF kitapları ekleyin;
       telefonda saklanır, kaldığınız sayfa hatırlanır. Eklenenler kitaplığın başında görünür.</p>
@@ -385,17 +407,17 @@
         <button class="btn" type="submit">Ara</button></form>
       <form class="k-goto" id="kGoto"><label>Sayfaya git<input type="number" inputmode="numeric" enterkeyhint="go" min="1" max="604" id="kGotoP" placeholder="1–604" value="${cur || ''}"></label>
         <button class="btn" type="submit">Aç</button></form>
-      ${cur ? `<a class="card k-cont" href="#kitap/kuran/${cur}"><span class="k-cont-ic">▶</span><span><small>Kaldığınız yer</small><b>Sayfa ${cur} · ${juzOfPage(cur)}. cüz</b><small>${esc(surahsOnPage(cur))}</small></span></a>` : ''}
+      ${cur ? `<a class="card k-cont" href="#kitap/kuran/${cur}"><span class="k-cont-ic">▶</span><span><small>Kaldığınız yer</small><b>${pgL(cur)} · ${jzL(juzOfPage(cur))}</b><small>${esc(surahsOnPage(cur))}</small></span></a>` : ''}
       <div class="seg seg-wide k-tabs"><button type="button" data-qt="juz" aria-pressed="${qTab === 'juz'}">Cüzler</button><button type="button" data-qt="sure" aria-pressed="${qTab === 'sure'}">Sureler</button></div>`;
     if (qTab === 'juz') {
       h += '<div class="k-juz">' + Array.from({ length: 30 }, (_, i) => {
         const n = i + 1, p = QM.j[i];
-        return `<a class="k-jz${have.has(n) ? ' have' : ''}" href="#kitap/kuran/${p}"><b>${n}. cüz</b><small>s. ${p}</small><i>${have.has(n) ? '✓' : '⤓'}</i></a>`;
+        return `<a class="k-jz${have.has(n) ? ' have' : ''}" href="#kitap/kuran/${p}"><b>${jzL(n)}</b><small>${sAbbr()} ${p}</small><i>${have.has(n) ? '✓' : '⤓'}</i></a>`;
       }).join('') + '</div>';
     } else {
       h += '<div class="k-sure">' + QM.s.map((s, i) => {
         const p = pageOf(i + 1, 1);
-        return `<a class="k-sr" href="#kitap/kuran/${p}"><span class="k-srn">${i + 1}</span><span><b>${esc(s[1])}</b><small>${s[2]} ayet · ${s[3] === 'M' ? 'Mekkî' : 'Medenî'} · s. ${p}</small></span><span class="k-ar">${esc(s[0])}</span></a>`;
+        return `<a class="k-sr" href="#kitap/kuran/${p}"><span class="k-srn">${i + 1}</span><span><b>${esc(sName(i + 1))}</b><small>${TT(`${s[2]} ayet`)} · ${TT(s[3] === 'M' ? 'Mekkî' : 'Medenî')} · ${sAbbr()} ${p}</small></span><span class="k-ar">${esc(s[0])}</span></a>`;
       }).join('') + '</div>';
     }
     h += `<div class="k-actions k-qdl"><button class="btn ghost" type="button" data-k="qall">Tümünü indir (≈1,5 MB)</button>
@@ -407,10 +429,20 @@
     root().innerHTML = h;
   }
   const juzOfPage = (p) => fileOfPage(p);
+  /* Arayüz diline göre sure adı, sayfa/cüz etiketi */
+  const UL = () => window.UILANG || 'tr';
+  const TT = (x) => (window.T ? window.T(x) : x);
+  const SURE_LAT = ["Al-Fatihah", "Al-Baqarah", "Al-Imran", "An-Nisa", "Al-Ma'idah", "Al-An'am", "Al-A'raf", "Al-Anfal", "At-Tawbah", "Yunus", "Hud", "Yusuf", "Ar-Ra'd", "Ibrahim", "Al-Hijr", "An-Nahl", "Al-Isra", "Al-Kahf", "Maryam", "Ta-Ha", "Al-Anbiya", "Al-Hajj", "Al-Mu'minun", "An-Nur", "Al-Furqan", "Ash-Shu'ara", "An-Naml", "Al-Qasas", "Al-Ankabut", "Ar-Rum", "Luqman", "As-Sajdah", "Al-Ahzab", "Saba", "Fatir", "Ya-Sin", "As-Saffat", "Sad", "Az-Zumar", "Ghafir", "Fussilat", "Ash-Shura", "Az-Zukhruf", "Ad-Dukhan", "Al-Jathiyah", "Al-Ahqaf", "Muhammad", "Al-Fath", "Al-Hujurat", "Qaf", "Adh-Dhariyat", "At-Tur", "An-Najm", "Al-Qamar", "Ar-Rahman", "Al-Waqi'ah", "Al-Hadid", "Al-Mujadilah", "Al-Hashr", "Al-Mumtahanah", "As-Saff", "Al-Jumu'ah", "Al-Munafiqun", "At-Taghabun", "At-Talaq", "At-Tahrim", "Al-Mulk", "Al-Qalam", "Al-Haqqah", "Al-Ma'arij", "Nuh", "Al-Jinn", "Al-Muzzammil", "Al-Muddaththir", "Al-Qiyamah", "Al-Insan", "Al-Mursalat", "An-Naba", "An-Nazi'at", "Abasa", "At-Takwir", "Al-Infitar", "Al-Mutaffifin", "Al-Inshiqaq", "Al-Buruj", "At-Tariq", "Al-A'la", "Al-Ghashiyah", "Al-Fajr", "Al-Balad", "Ash-Shams", "Al-Layl", "Ad-Duha", "Ash-Sharh", "At-Tin", "Al-Alaq", "Al-Qadr", "Al-Bayyinah", "Az-Zalzalah", "Al-Adiyat", "Al-Qari'ah", "At-Takathur", "Al-Asr", "Al-Humazah", "Al-Fil", "Quraysh", "Al-Ma'un", "Al-Kawthar", "Al-Kafirun", "An-Nasr", "Al-Masad", "Al-Ikhlas", "Al-Falaq", "An-Nas"];
+  const sName = (i) => (UL() === 'tr' ? QM.s[i - 1][1] : /^(ar|ur|fa)$/.test(UL()) ? QM.s[i - 1][0] : SURE_LAT[i - 1]);
+  const SURE_PRE = { en: 'Surah ', id: 'Surah ', ms: 'Surah ', ar: 'سورة ', ur: 'سورۃ ', fa: 'سوره ', hi: 'सूरह ', bn: 'সূরা ' };
+  const sLabel = (names) => (UL() === 'tr' ? names + ' suresi' : (SURE_PRE[UL()] || '') + names);
+  const pgL = (p) => TT(`Sayfa ${p}`);
+  const jzL = (n) => TT(`${n}. cüz`);
+  const sAbbr = () => TT('s.');
   function surahsOnPage(p) {
     const a = QM.p[p - 1], b = p < 604 ? QM.p[p] : [115, 0];
-    const names = []; for (let s = a[0]; s <= Math.min(114, b[1] === 1 ? b[0] - 1 : b[0]); s++) names.push(QM.s[s - 1][1]);
-    return names.join(', ') + ' suresi';
+    const names = []; for (let s = a[0]; s <= Math.min(114, b[1] === 1 ? b[0] - 1 : b[0]); s++) names.push(sName(s));
+    return sLabel(names.join(', '));
   }
 
   /* ---------- Kur'an: sayfa */
@@ -459,7 +491,7 @@
     await qMeta();
     p = Math.max(1, Math.min(604, p | 0));
     const n = fileOfPage(p), fs = fontSize('q', 27);
-    root().innerHTML = readerShell({ back: '#kitap/kuran', title: `Sayfa ${p}`, sub: `${n}. cüz · ${surahsOnPage(p)}`, page: p, max: 604, kind: 'q', rtl: true });
+    root().innerHTML = readerShell({ back: '#kitap/kuran', title: pgL(p), sub: `${jzL(n)} · ${surahsOnPage(p)}`, page: p, max: 604, kind: 'q', rtl: true });
     const body = $('kBody');
     let data;
     try {
@@ -481,14 +513,14 @@
     for (const [s, a, t] of rows) {
       let txt = t;
       if (a === 1) {
-        html += `<div class="q-sure"><span class="k-ar">سُورَةُ ${esc(QM.s[s - 1][0])}</span><small>${esc(QM.s[s - 1][1])} suresi · ${QM.s[s - 1][2]} ayet</small></div>`;
+        html += `<div class="q-sure"><span class="k-ar">سُورَةُ ${esc(QM.s[s - 1][0])}</span><small>${esc(sLabel(sName(s)))} · ${TT(`${QM.s[s - 1][2]} ayet`)}</small></div>`;
         const sp = s !== 1 && s !== 9 ? splitBasmala(txt) : null;
         if (sp) { html += `<div class="q-bsm">${esc(qa(sp[0]))}</div>`; txt = sp[1]; }
       }
       html += `<span class="q-ay" id="ay-${s}-${a}">${esc(qa(txt))}</span> <span class="q-no" aria-label="${a}. ayet">۝${arNum(a)}</span> `;
     }
     body.innerHTML = `<div class="q-page" style="font-size:${fs}px">${html}</div>`;
-    saveProg('q', p, `Kur'an-ı Kerîm · Sayfa ${p}`, `${n}. cüz · ${surahsOnPage(p)}`);
+    saveProg('q', p, `${TT("Kur'an-ı Kerîm")} · ${pgL(p)}`, `${jzL(n)} · ${surahsOnPage(p)}`);
     showPendingAy();
   }
   /** Aramadan gelindiyse bulunan ayete kaydır ve kısa süre vurgula */
@@ -503,7 +535,7 @@
 
   /* ---------- Kur'an: meal (ve tefsir) ile ayet ayet */
   function sureHead(s) {
-    return `<div class="q-sure"><span class="k-ar">سُورَةُ ${esc(QM.s[s - 1][0])}</span><small>${esc(QM.s[s - 1][1])} suresi · ${QM.s[s - 1][2]} ayet</small></div>`;
+    return `<div class="q-sure"><span class="k-ar">سُورَةُ ${esc(QM.s[s - 1][0])}</span><small>${esc(sLabel(sName(s)))} · ${TT(`${QM.s[s - 1][2]} ayet`)}</small></div>`;
   }
   async function renderQMeal(p, n, rows, fs) {
     const body = $('kBody');
@@ -536,8 +568,10 @@
         <div class="qm-ar k-ar" style="font-size:${fs}px">${esc(qa(txt))} <span class="q-no">۝${arNum(a)}</span></div>
         ${tr !== undefined ? `<p class="qm-tr" dir="${mdir}" style="font-size:${tfs}px"><b>${s}:${a}</b> ${noteMarks(tr)}</p>` : ''}
         ${fn ? `<p class="qm-fn" dir="${mdir}" style="font-size:${tfs - 2}px">${noteMarks(fn, true)}</p>` : ''}
+        <div class="qm-acts">${tf || !tefAllowed() ? '' : `<button class="qm-tb" type="button" data-k="tef1" data-s="${s}" data-a="${a}">Tefsirini göster</button>`}
+          <button class="qm-tb" type="button" data-k="aycopy" data-s="${s}" data-a="${a}">Ayeti kopyala</button></div>
         ${tf ? `<div class="qm-tef" style="font-size:${tfs - 1}px"><b>${TEFS[tefKey()]}</b> ${esc(tf[0])}${tf[1] ? `<small>${esc(tf[1])}</small>` : ''}</div>`
-          : `<button class="qm-tb" type="button" data-k="tef1" data-s="${s}" data-a="${a}">Tefsirini göster</button><div class="qm-tef" hidden></div>`}
+          : '<div class="qm-tef" hidden></div>'}
       </article>`;
     }
     h += '</div>';
@@ -546,7 +580,7 @@
       if (e.target.value === '__lib') { e.target.value = mi?.key || ''; location.hash = '#kitap/meal'; return; }
       jset('nv_kmealk', e.target.value); render();
     });
-    saveProg('q', p, `Kur'an-ı Kerîm · Sayfa ${p}`, `${n}. cüz · ${surahsOnPage(p)}`);
+    saveProg('q', p, `${TT("Kur'an-ı Kerîm")} · ${pgL(p)}`, `${jzL(n)} · ${surahsOnPage(p)}`);
     showPendingAy();
   }
   /** Dipnot işaretlerini [1] üst simge yap (metin önce güvenli hale getirilir). */
@@ -554,8 +588,24 @@
     const e = esc(t).replace(/\n/g, '<br>');
     return isNote ? e.replace(/(^|<br>)\s*\[(\d+)\]\s*/g, '$1<sup>$2</sup> ') : e.replace(/\[(\d+)\]/g, '<sup>$1</sup>');
   }
+  /** Ayeti kopyala: Arapça metin + ekranda görünen meal (hangi dildeyse) + kaynaklar + ses dosyasının adresi */
+  async function copyAyah(btn) {
+    const s = +btn.dataset.s, a = +btn.dataset.a, art = btn.closest('.qm');
+    const ar = (art.querySelector('.qm-ar')?.childNodes[0]?.textContent || '').trim();
+    const trEl = art.querySelector('.qm-tr');
+    const tr = trEl ? trEl.textContent.replace(/^\s*\d+:\d+\s*/, '').trim() : '';
+    const mk = mealKey(), mi = (await mealList()).find((x) => x.key === mk);
+    const lines = [`${ar} ﴿${arNum(a)}﴾`, '', tr ? `${s}:${a} ${tr}` : '', '',
+      `${sLabel(sName(s))} ${s}:${a}`,
+      mi && tr ? `${TT('Meal:')} ${mi.name}` : '',
+      `${TT('Arapça metin:')} Tanzil (tanzil.net)`,
+      `${TT('Ses (Mişârî Râşid el-Afâsî):')} https://cdn.islamic.network/quran/audio/${sesCfg().br}/ar.alafasy/${gnum(s, a)}.mp3`];
+    const text = lines.filter((x, i) => x !== '' || (i > 0 && lines[i - 1] !== '')).join('\n').replace(/\n{3,}/g, '\n\n').trim();
+    try { await navigator.clipboard.writeText(text); A().toast(TT('Ayet kopyalandı ✓')); }
+    catch { await A().ask({ title: 'Seçip kopyalayın:', input: text, buttons: [{ label: 'Tamam', value: null }] }); }
+  }
   async function showTef1(btn) {
-    const s = +btn.dataset.s, a = +btn.dataset.a, box = btn.nextElementSibling;
+    const s = +btn.dataset.s, a = +btn.dataset.a, box = btn.closest('.qm').querySelector('.qm-tef');
     btn.disabled = true; btn.textContent = 'Yükleniyor…';
     try {
       const d = await juzData(tefKind(), juzOf(s, a)), tf = d.m[s + ':' + a] || ['', ''];
@@ -649,7 +699,7 @@
     for (const [s, a, t, pg] of hits.slice(0, srShown)) {
       const page = pg || pageOf(s, a);
       h += `<a class="card k-sr-it" href="#kitap/kuran/${page}" data-k="gores" data-ay="${s}-${a}" data-m="${ar ? 0 : 1}">
-        <small>${esc(QM.s[s - 1][1])} ${s}:${a} · s. ${page}</small>
+        <small>${esc(sName(s))} ${s}:${a} · ${sAbbr()} ${page}</small>
         <span class="${ar ? 'k-ar k-sr-ar' : 'k-sr-tr'}"${ar ? ' dir="rtl"' : ''}>${hilite(t, nq, f)}</span></a>`;
     }
     h += '</div>';
@@ -668,6 +718,29 @@
     if (!c) throw new Error('Meal listesi alınamadı. İnternete bağlanıp tekrar deneyin.');
     return c.items;
   }
+  /* İkinci kaynak: fawazahmed0/quran-api (Tanzil vb. kaynaklı ~400 meal; telefona doğrudan, cüz cüz iner) */
+  const FZ_ISO = {"Achinese": "ace", "Afar": "aa", "Afrikaans": "af", "Albanian": "sq", "Amharic": "am", "Assamese": "as", "Azerbaijani": "az", "Bambara": "bm", "Bengali": "bn", "Berber": "ber", "Bosnian": "bs", "Bulgarian": "bg", "Burmese": "my", "Catalan": "ca", "Chichewa": "ny", "Chinese(simplified)": "zh", "Chinese(traditional)": "zh-Hant", "Croatian": "hr", "Czech": "cs", "Dagbani": "dag", "Danish": "da", "Dari": "prs", "Divehi": "dv", "Dutch": "nl", "English": "en", "Esperanto": "eo", "Filipino": "fil", "Finnish": "fi", "French": "fr", "Fulah": "ff", "Ganda": "lg", "German": "de", "Gujarati": "gu", "Hausa": "ha", "Hebrew": "he", "Hindi": "hi", "Hungarian": "hu", "Indonesian": "id", "Iranun": "ill", "Italian": "it", "Japanese": "ja", "Javanese": "jv", "Kannada": "kn", "Kazakh": "kk", "Kendayan": "knx", "Khmer": "km", "Kinyarwanda": "rw", "Kirghiz": "ky", "Korean": "ko", "Kurdish": "ckb", "Kurmanji": "kmr", "Lingala": "ln", "Luyia": "luy", "Macedonian": "mk", "Malay": "ms", "Malayalam": "ml", "Maltese": "mt", "Maranao": "mrw", "Marathi": "mr", "Nepali": "ne", "Norwegian": "no", "Oromo": "om", "Panjabi": "pa", "Persian": "fa", "Polish": "pl", "Portuguese": "pt", "Pushto": "ps", "Romanian": "ro", "Rundi": "rn", "Russian": "ru", "Serbian": "sr", "Shona": "sn", "Sindhi": "sd", "Sinhala": "si", "Slovak": "sk", "Somali": "so", "Sotho": "st", "Spanish": "es", "Swahili": "sw", "Swedish": "sv", "Tajik": "tg", "Tamil": "ta", "Tatar": "tt", "Telugu": "te", "Thai": "th", "Turkish": "tr", "Twi": "tw", "Uighur": "ug", "Ukrainian": "uk", "Urdu": "ur", "Uzbek": "uz", "Vietnamese": "vi", "Xhosa": "xh", "Yau": "yau", "Yoruba": "yo", "Zulu": "zu"};
+  const FZ_SKIP = /-(la|lad)$|^ara-|^tur-(muslimshahin|sabanpiris|shabanbritch|elmalilihamdiya|latinalphabet1?)$/;
+  const FZ_TRN = {"tur-abdulbakigolpin": "Abdülbâki Gölpınarlı", "tur-ademugur": "Adem Uğur", "tur-alibulac": "Ali Bulaç", "tur-alifikriyavuz": "Ali Fikri Yavuz", "tur-celalyldrm": "Celal Yıldırım", "tur-diyanetisleri": "Diyanet İşleri", "tur-diyanetisleri1": "Diyanet İşleri (2)", "tur-diyanetvakfi": "Diyanet Vakfı", "tur-edipyuksel": "Edip Yüksel", "tur-elmallsadelesti": "Elmalılı Hamdi Yazır (sadeleştirilmiş)", "tur-elmallsadelesti1": "Elmalılı Hamdi Yazır (sadeleştirilmiş, 2)", "tur-fizilalilkuran": "Fî Zılâli'l-Kur'ân", "tur-gultekinonan": "Gültekin Onan", "tur-hasanbasricanta": "Hasan Basri Çantay", "tur-ibnikesir": "İbn Kesîr", "tur-iskenderalimihr": "İskender Ali Mihr", "tur-muhammedesed": "Muhammed Esed", "tur-muhammetabay": "Muhammet Abay", "tur-suatyildirim": "Suat Yıldırım", "tur-suleymanates": "Süleyman Ateş", "tur-tefhimulkuran": "Tefhîmu'l-Kur'ân", "tur-wwwislamhouseco": "IslamHouse.com", "tur-yasarnuriozturk": "Yaşar Nuri Öztürk", "tur-yasarnuriozturk1": "Yaşar Nuri Öztürk (2)", "tur-ynozturk": "Yaşar Nuri Öztürk (3)"};   // Türkçe adların doğru yazımı
+  const FZ_BASE = ['https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1', 'https://raw.githubusercontent.com/fawazahmed0/quran-api/1'];
+  async function fzFetch(path) {
+    let last;
+    for (const b of FZ_BASE) { try { const r = await fetch(b + path); if (r.ok) return await r.json(); last = new Error('HTTP ' + r.status); } catch (e) { last = e; } }
+    throw last || new Error('İndirilemedi');
+  }
+  async function fzList() {
+    let c = await DB.get('quran', 'fzlist').catch(() => null);
+    if (navigator.onLine && (!c || Date.now() - c.at > 7 * 86400000)) {
+      try {
+        const j = await fzFetch('/editions.min.json');   // {ad: {name, author, language, direction, source}}
+        const items = Object.values(j).filter((e) => e.language !== 'Latin' && !FZ_SKIP.test(e.name)).map((e) => ({
+          k: 'fz:' + e.name, l: FZ_ISO[e.language] || 'x-' + e.language, t: FZ_TRN[e.name] || e.author, d: e.source ? 'kaynak: ' + e.source.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') : '', v: '', dir: e.direction, src: 'fz' }));
+        c = { at: Date.now(), items }; DB.put('quran', 'fzlist', c).catch(() => {});
+      } catch { /* çevrimdışı */ }
+    }
+    return c ? c.items : [];
+  }
+  const isFz = (key) => key.startsWith('fz:');
   async function mealHave(key) {
     const pre = `m:${key}:`;
     return (await DB.keys('quran').catch(() => [])).filter((k) => typeof k === 'string' && k.startsWith(pre)).length;
@@ -698,7 +771,11 @@
       <div id="kMlAll"><p class="k-wait">Liste alınıyor…</p></div>`;
     root().innerHTML = h;
     $('kMlF').addEventListener('input', (e) => { mlFilter = e.target.value; drawMealAll(); });
-    try { MLALL = (await qeList()).filter((x) => !BUILTIN_QE.test(x.k)); } catch (e) { $('kMlAll').innerHTML = `<div class="card"><p>${esc(e.message)}</p><button class="btn" type="button" data-k="retry">Tekrar dene</button></div>`; return; }
+    try {
+      const [qe, fz] = await Promise.all([qeList().catch(() => []), fzList()]);
+      MLALL = qe.filter((x) => !BUILTIN_QE.test(x.k)).map((x) => ({ ...x, d: [x.d, 'QuranEnc.com'].filter(Boolean).join(' · ') })).concat(fz);
+      if (!MLALL.length) throw new Error('Meal listesi alınamadı. İnternete bağlanıp tekrar deneyin.');
+    } catch (e) { $('kMlAll').innerHTML = `<div class="card"><p>${esc(e.message)}</p><button class="btn" type="button" data-k="retry">Tekrar dene</button></div>`; return; }
     drawMealAll();
   }
   let MLALL = [];
@@ -869,18 +946,18 @@
       <div class="sec-head"><h2>Hadis Kitapları</h2><span class="sec-sub">Kütüb-i Sitte</span></div>
       <p class="kz-small">Altı temel hadis kitabı. Okumak istediğinizi indirin; telefonda saklanır, internetsiz okunur.</p><div class="k-hlist">`;
     for (const b of hb?.books || []) {
-      const has = bkeys.has(b.id), hasAr = bkeys.has(b.id + ':ar'), dl = downloading.get(b.id), dlAr = downloading.get(b.id + ':ar');
+      const has = bkeys.has(hKey(b.id)), hasAr = !hArMain() && bkeys.has(b.id + ':ar'), dl = downloading.get(hKey(b.id)), dlAr = downloading.get(b.id + ':ar');
       const p = prog()['h:' + b.id];
       let st;
-      if (dl) st = `<span class="k-dl" data-dl="${b.id}">${dlText(dl, b.trSize)}</span>`;
-      else if (has) st = `<span class="k-ok">Telefonda ✓${hasAr ? ' · Arapça ✓' : ''}${p ? ` · sayfa ${p}` : ''}</span>`;
-      else st = `<span class="k-muted">≈${fmtMB(b.trSize)} · ${fmtN(b.total)} hadis</span>`;
+      if (dl) st = `<span class="k-dl" data-dl="${hKey(b.id)}">${dlText(dl, hSize(b))}</span>`;
+      else if (has) st = `<span class="k-ok">${TT('Telefonda ✓')}${hasAr ? ' · ' + TT('Arapça ✓') : ''}${p ? ' · ' + TT(`sayfa ${p}`) : ''}</span>`;
+      else st = `<span class="k-muted">≈${fmtMB(hSize(b))} · ${fmtN(b.total)} hadis</span>`;
       h += `<div class="card k-hbook">
-        <div class="k-hmain"><b>${esc(b.name)}</b><small>${esc(b.author)}</small>${st}
+        <div class="k-hmain"><b>${esc(hName(b))}</b><small>${esc(hAuthor(b))}</small>${st}
           ${dlAr ? `<span class="k-dl" data-dl="${b.id}:ar">Arapça: ${dlText(dlAr, b.arSize)}</span>` : ''}</div>
         <div class="k-hbtn">${has ? `<a class="btn" href="#kitap/h/${b.id}${p ? '/' + p : ''}">${p ? 'Devam' : 'Oku'}</a>`
           : `<button class="btn" type="button" data-k="dl" data-id="${b.id}"${dl ? ' disabled' : ''}>İndir</button>`}
-          <a class="btn ghost k-more" href="#kitap/h/${b.id}" aria-label="${esc(b.name)} ayrıntılar">⋯</a></div></div>`;
+          <a class="btn ghost k-more" href="#kitap/h/${b.id}" aria-label="${esc(hName(b))}">⋯</a></div></div>`;
     }
     h += '</div>';
     root().innerHTML = h;
@@ -891,17 +968,17 @@
     const b = (await hBooks()).books.find((x) => x.id === id);
     if (!b) { location.hash = '#kitap/hadis'; return; }
     const keys = new Set(await DB.keys('books').catch(() => []));
-    const has = keys.has(id), hasAr = keys.has(id + ':ar'), p = prog()['h:' + id];
+    const has = keys.has(hKey(id)), hasAr = hArMain() || keys.has(id + ':ar'), p = prog()['h:' + id];
     let h = `<div class="k-top"><a class="h-back" href="#kitap/hadis">‹ Hadis Kitapları</a></div>
-      <section class="h-hero k-hhero"><span class="k-ar">${esc(b.ar)}</span><h2>${esc(b.name)}</h2><p class="h-desc">${esc(b.author)} · ${fmtN(b.total)} hadis</p></section>`;
-    if (b.trCount < b.total * 0.9) {
+      <section class="h-hero k-hhero"><span class="k-ar">${esc(b.ar)}</span><h2>${esc(hName(b))}</h2><p class="h-desc">${esc(hAuthor(b))} · ${TT(`${fmtN(b.total)} hadis`)}</p></section>`;
+    if (hCode() === 'tur' && b.trCount < b.total * 0.9) {
       h += `<p class="card kz-small">Bu kitabın Türkçe tercümesi kaynakta eksik (${fmtN(b.trCount)}/${fmtN(b.total)} hadis). Tercümesi olmayan hadisleri okumak için Arapça metni de indirin.</p>`;
     }
     if (!has) {
-      h += `<div class="card"><p>Kitap telefonunuza bir kez indirilir (≈${fmtMB(b.trSize)}, internet hızına göre yarım–birkaç dakika), sonra internetsiz okunur.</p>
-        <div class="k-actions"><button class="btn" type="button" data-k="dl" data-id="${id}"${downloading.has(id) ? ' disabled' : ''}>Türkçe indir</button>
-        <button class="btn ghost" type="button" data-k="dlar" data-id="${id}"${downloading.has(id + ':ar') ? ' disabled' : ''}>Arapça metni de indir (≈${fmtMB(b.arSize)})</button></div>
-        <p class="k-dlstat">${downloading.has(id) ? `<span data-dl="${id}">${dlText(downloading.get(id), 0)}</span>` : ''}</p></div>`;
+      h += `<div class="card"><p>Kitap telefonunuza bir kez indirilir (≈${fmtMB(hSize(b))}, internet hızına göre yarım–birkaç dakika), sonra internetsiz okunur.</p>
+        <div class="k-actions"><button class="btn" type="button" data-k="dl" data-id="${id}"${downloading.has(hKey(id)) ? ' disabled' : ''}>İndir</button>
+        ${hArMain() ? '' : `<button class="btn ghost" type="button" data-k="dlar" data-id="${id}"${downloading.has(id + ':ar') ? ' disabled' : ''}>Arapça metni de indir (≈${fmtMB(b.arSize)})</button>`}</div>
+        <p class="k-dlstat">${downloading.has(hKey(id)) ? `<span data-dl="${hKey(id)}">${dlText(downloading.get(hKey(id)), 0)}</span>` : ''}</p></div>`;
       root().innerHTML = h; return;
     }
     const book = await hLoad(id);
@@ -910,7 +987,7 @@
     if (p) h += `<a class="card k-cont" href="#kitap/h/${id}/${p}"><span class="k-cont-ic">▶</span><span><small>Kaldığınız yer</small><b>Sayfa ${p} / ${book.pages.length}</b></span></a>`;
     h += '<h3 class="k-sec">Bölümler</h3><div class="k-toc">';
     for (const [sec, page] of Object.entries(book.secStart).sort((x, y) => x[1] - y[1])) {     // kitaptaki sırasıyla
-      const name = b.sec[sec] || (sec === '0' ? (page === 1 ? 'Giriş' : 'Diğer hadisler') : `${sec}. bölüm`);
+      const name = hSec(b, book, sec) || (sec === '0' ? (page === 1 ? 'Giriş' : 'Diğer hadisler') : `${sec}. bölüm`);
       h += `<a class="k-tc" href="#kitap/h/${id}/${page}"><span class="k-srn">${sec}</span><b>${esc(name)}</b><small>s. ${page}</small></a>`;
     }
     h += `</div><div class="k-actions k-qdl">
@@ -927,23 +1004,23 @@
     if (!book) { location.hash = `#kitap/h/${id}`; return; }
     p = Math.max(1, Math.min(book.pages.length, p | 0));
     const idx = book.pages[p - 1], first = book.list[idx[0]];
-    const secName = b.sec[first[2]] || '';
+    const secName = hSec(b, book, first[2]);
     const showAr = book.ar && jget('nv_kar', true);
-    root().innerHTML = readerShell({ back: `#kitap/h/${id}`, title: b.name, sub: `${secName ? secName + ' · ' : ''}sayfa ${p}`, page: p, max: book.pages.length, kind: 'h', ar: !!book.ar, arOn: showAr });
+    root().innerHTML = readerShell({ back: `#kitap/h/${id}`, title: hName(b), sub: `${secName ? secName + ' · ' : ''}sayfa ${p}`, page: p, max: book.pages.length, kind: 'h', ar: !!book.ar, arOn: showAr });
     const fs = fontSize('h', 17);
     let html = '';
     let prevSec = null;
     for (const i of idx) {
       const [num, tr, sec] = book.list[i];
-      if (sec !== prevSec && (i === 0 || book.list[i - 1][2] !== sec)) html += `<h3 class="hd-sec">${esc(b.sec[sec] || '')}</h3>`;
+      if (sec !== prevSec && (i === 0 || book.list[i - 1][2] !== sec)) html += `<h3 class="hd-sec">${esc(hSec(b, book, sec))}</h3>`;
       prevSec = sec;
       const ar = book.ar?.[num];
       html += `<article class="hd"><div class="hd-no">Hadis ${String(num).replace('.', ',')}</div>
         ${showAr && ar ? `<p class="hd-ar" dir="rtl" lang="ar">${esc(ar)}</p>` : ''}
-        ${tr ? `<p class="hd-tr">${esc(tr)}</p>` : (ar && !showAr ? `<p class="hd-ar" dir="rtl" lang="ar">${esc(ar)}</p>` : (ar ? '' : '<p class="kz-small">Bu hadisin Türkçe tercümesi kaynakta yok. Arapça metni indirerek okuyabilirsiniz.</p>'))}</article>`;
+        ${tr ? `<p class="hd-tr" dir="auto"${hArMain() ? ' lang="ar"' : ''}>${esc(tr)}</p>` : (ar && !showAr ? `<p class="hd-ar" dir="rtl" lang="ar">${esc(ar)}</p>` : (ar ? '' : '<p class="kz-small">Bu hadisin tercümesi kaynakta yok. Arapça metni indirerek okuyabilirsiniz.</p>'))}</article>`;
     }
     $('kBody').innerHTML = `<div class="hd-page" style="font-size:${fs}px">${html}</div>`;
-    saveProg('h:' + id, p, `${b.name} · Sayfa ${p}`, secName);
+    saveProg('h:' + id, p, `${hName(b)} · Sayfa ${p}`, secName);
   }
 
   /* ---------- PDF: okuma — bütün sayfalar alt alta (normal PDF okuyucu gibi), görünenler çizilir */
@@ -1064,7 +1141,7 @@
         ${ar ? `<button class="k-ib${arOn ? ' on' : ''}" type="button" data-k="artoggle" aria-pressed="${!!arOn}" title="Arapça metin">ع</button>` : ''}
         ${kind === 'q' ? `<button class="k-ib k-ibt" type="button" data-k="hat" title="Yazı hattı">${hatPc() ? 'Mushaf' : 'Bilgisayar'}</button>` : ''}
         ${kind === 'q' ? `<button class="k-ib k-ibt${mealOn() ? ' on' : ''}" type="button" data-k="mealtoggle" aria-pressed="${mealOn()}">Meal</button>
-          ${mealOn() ? `<button class="k-ib k-ibt${tefOn() ? ' on' : ''}" type="button" data-k="teftoggle" aria-pressed="${tefOn()}">Tefsir</button>` : ''}` : ''}
+          ${mealOn() && tefAllowed() ? `<button class="k-ib k-ibt${tefOn() ? ' on' : ''}" type="button" data-k="teftoggle" aria-pressed="${tefOn()}">Tefsir</button>` : ''}` : ''}
         <button class="k-ib" type="button" data-k="fminus" aria-label="Yazıyı küçült">A−</button>
         <button class="k-ib" type="button" data-k="fplus" aria-label="Yazıyı büyüt">A+</button></div>
       <div class="k-body${rtl ? ' rtl' : ''}" id="kBody"></div>
@@ -1238,10 +1315,10 @@
     P.s = 0; P.playing = false; sesTrim([]); sesMark(); sesBar();
     if ('mediaSession' in navigator) navigator.mediaSession.metadata = null;
   }
-  const sesTitle = () => (P.s ? `${QM.s[P.s - 1][1]} ${P.a}` : '');
+  const sesTitle = () => (P.s ? `${sName(P.s)} ${P.a}` : '');
   function sesMeta() {
     if (!('mediaSession' in navigator) || !window.MediaMetadata) return;
-    navigator.mediaSession.metadata = new MediaMetadata({ title: P.bas ? `${QM.s[P.s - 1][1]} · Besmele` : `${QM.s[P.s - 1][1]} Sûresi, ${P.a}. ayet`,
+    navigator.mediaSession.metadata = new MediaMetadata({ title: P.bas ? `${sName(P.s)} · ${TT('Besmele')}` : `${sLabel(sName(P.s))}, ${P.a}`,
       artist: SES_NAME, album: "Kur'an-ı Kerîm", artwork: [{ src: '/static/icons/icon-512.png', sizes: '512x512', type: 'image/png' }] });
   }
   /** Okunan ayeti vurgula; sayfa değiştiyse okuyucu da o sayfaya geçsin */
@@ -1314,7 +1391,7 @@
     sesFab();
     if (!on) { $('sesSheet').hidden = true; return; }
     bar.querySelector('.ses-pp').innerHTML = P.playing ? IC.pause : IC.play;
-    $('sesT').textContent = P.bas ? `${QM.s[P.s - 1][1]} · Besmele` : sesTitle();
+    $('sesT').textContent = P.bas ? `${sName(P.s)} · ${TT('Besmele')}` : sesTitle();
     const c = sesCfg();
     $('sesSub').textContent = P.dl ? `İndiriliyor ${P.dl.done}/${P.dl.total}` : `Afâsî · ${c.rate}× · ${c.br} kbps`;
   }
@@ -1336,7 +1413,7 @@
       <div class="ses-g"><span>İndir</span>
         ${P.dl ? `<button type="button" class="ses-c" data-s="dlstop">Durdur (${P.dl.done}/${P.dl.total})</button>`
           : `<button type="button" class="ses-c" data-s="dl" data-v="p">${p}. sayfa</button>
-             <button type="button" class="ses-c" data-s="dl" data-v="s">${esc(QM.s[s - 1][1])} sûresi</button>
+             <button type="button" class="ses-c" data-s="dl" data-v="s">${esc(sLabel(sName(s)))}</button>
              <button type="button" class="ses-c" data-s="dl" data-v="j">${j}. cüz</button>`}</div>
       <p class="ses-note">Telefonda ${fmtN(n)} ayet sesi · Okuyan: ${SES_NAME} · İndirilenler internetsiz çalar; silmek için Kitaplık › Veri yönetimi.</p>`;
   }
@@ -1420,8 +1497,9 @@
       const c = await sesCache();
       if (c) { const ks = await c.keys(); ses = ks.length; for (const r of ks.slice(0, 7000)) { const x = await c.match(r); sesB += +(x?.headers.get('content-length') || 0); } }
     } catch { /* yok */ }
-    const hads = (hb?.books || []).filter((b) => bk.has(b.id) || bk.has(b.id + ':ar'));
-    const hadB = hads.reduce((t, b) => t + (bk.has(b.id) ? b.trSize || 0 : 0) + (bk.has(b.id + ':ar') ? b.arSize || 0 : 0), 0);
+    const hads = (hb?.books || []).filter((b) => H_ALLKEYS(b.id).some((k) => bk.has(k)));
+    const hadB = hads.reduce((t, b) => t + (bk.has(b.id) ? b.trSize || 0 : 0) + (bk.has(b.id + ':ar') ? b.arSize || 0 : 0)
+      + Object.entries(b.sz || {}).reduce((u, [c, n]) => u + (bk.has(`${b.id}:${c}`) ? n : 0), 0), 0);
     let pdfB = 0; for (const k of fk) { const f = await DB.get('files', k).catch(() => null); pdfB += f?.size || f?.data?.size || 0; }
     const textB = text * 47e3, mealB = meal * 32e3;
     let usage = 0; try { usage = (await navigator.storage?.estimate?.())?.usage || 0; } catch { /* yok */ }
@@ -1435,7 +1513,7 @@
     box.innerHTML = `${row("Kur'an metni", `${st.text}/30 cüz${mb(st.textB)} · okudukça yeniden iner`, 'dm-text', st.text)}
       ${row('Mealler ve tefsir', `${st.meal} cüz dosyası${mb(st.mealB)}`, 'dm-meal', st.meal)}
       ${row("Kur'an sesleri", `${fmtN(st.ses)} ayet${mb(st.sesB)}`, 'dm-ses', st.ses)}
-      ${row('Hadis kitapları', st.hads.length ? esc(st.hads.map((b) => b.name).join(', ')) + mb(st.hadB) : 'indirilen yok', 'dm-hadis', st.hads.length)}
+      ${row('Hadis kitapları', st.hads.length ? esc(st.hads.map(hName).join(', ')) + mb(st.hadB) : 'indirilen yok', 'dm-hadis', st.hads.length)}
       ${row("PDF'ler", st.pdf ? `${st.pdf} dosya${mb(st.pdfB)}` : 'eklenen yok', 'dm-pdf', st.pdf)}
       <p class="kz-small">Kitaplar toplamı: ${fmtMB(st.total)}. Uygulamanın kendi dosyaları (internetsiz açılması için, ≈10 MB) bu hesaba dahil değil;
         silinen veri telefonun genel depo göstergesine birkaç dakika sonra yansıyabilir. Okuma yerleriniz, kaza sayılarınız ve ayarlarınız silinmez.</p>`;
@@ -1449,7 +1527,8 @@
     else if (k === 'dm-pdf') { for (const key of await DB.keys('files').catch(() => [])) await DB.del('files', key).catch(() => {}); pdfId = null; pdfDoc = null; }
     else if (k === 'dm-hadis') {
       const hb = await hBooks().catch(() => null);
-      for (const b of hb?.books || []) { await DB.del('books', b.id).catch(() => {}); await DB.del('books', b.id + ':ar').catch(() => {}); hMem.delete(b.id); }
+      for (const b of hb?.books || []) { for (const k of H_ALLKEYS(b.id)) await DB.del('books', k).catch(() => {}); }
+      hMem.clear();
     } else {
       for (const key of await DB.keys('quran').catch(() => [])) {
         if (k === 'dm-text' ? typeof key === 'number' : (typeof key === 'string' && /^(m|t):/.test(key))) { await DB.del('quran', key).catch(() => {}); qMem.delete(key); }
@@ -1468,6 +1547,7 @@
     if (parts[0] === 'kuran') return parts[1] ? { kind: 'q', page: +parts[1] || 1 } : { kind: 'qi' };
     if (parts[0] === 'ara') { let q = ''; try { q = decodeURIComponent(parts.slice(1).join('/')); } catch { /* bozuk */ } return { kind: 'qs', q }; }
     if (parts[0] === 'meal') return { kind: 'ml' };
+    if ((parts[0] === 'hadis' || parts[0] === 'h') && !hCode()) return { kind: 'lib' };     // bu dilde hadis kitabı yok
     if (parts[0] === 'hadis') return { kind: 'hl' };
     if (parts[0] === 'esma') return { kind: 'es', page: +parts[1] || 0 };
     if (parts[0] === 'h' && parts[1]) return parts[2] ? { kind: 'h', id: parts[1], page: +parts[2] || 1 } : { kind: 'hi', id: parts[1] };
@@ -1525,7 +1605,7 @@
       case 'mealuse': jset('nv_kmealk', id); jset('nv_kmeal', true); location.hash = `#kitap/kuran/${prog().q || 1}`; break;
       case 'mealadd': {
         const x = MLALL.find((m) => m.k === id); if (!x) break;
-        const ex = extraMeals().filter((m) => m.k !== id); ex.push({ k: x.k, t: x.t, l: x.l, v: x.v, dir: x.dir }); jset('nv_kmealx', ex);
+        const ex = extraMeals().filter((m) => m.k !== id); ex.push({ k: x.k, t: x.t, l: x.l, v: x.v, dir: x.dir, src: x.src, d: x.d }); jset('nv_kmealx', ex);
         A().toast(`${langName(x.l)} meali eklendi`); renderMealLib(); break;
       }
       case 'mealdl': mealDownloadAll(id); renderMealLib(); break;
@@ -1591,6 +1671,7 @@
       case 'hat': jset('nv_khat', hatPc() ? 'mushaf' : 'pc'); A().toast(hatPc() ? 'Bilgisayar hattı · Türkiye mushafı yazımı' : 'Mushaf hattı · Medine Mushafı yazımı'); render(); break;
       case 'teftoggle': jset('nv_ktef', !tefOn()); render(); break;
       case 'tef1': showTef1(b); break;
+      case 'aycopy': copyAyah(b); break;
       case 'mealread': jset('nv_kmeal', true); location.hash = `#kitap/kuran/${prog().q || 1}`; break;
       case 'openapp': {
         const o = b.dataset.open;
@@ -1607,7 +1688,8 @@
         const ok = await A().ask({ title: 'Kitap telefondan silinsin mi?', text: 'İstediğiniz zaman tekrar indirebilirsiniz. Kaldığınız sayfa korunur.',
           buttons: [{ label: 'Vazgeç', value: null, cls: 'ghost' }, { label: 'Sil', value: 'ok', cls: 'danger' }] });
         if (ok !== 'ok') break;
-        await DB.del('books', id).catch(() => {}); await DB.del('books', id + ':ar').catch(() => {}); hMem.delete(id);
+        for (const k of H_ALLKEYS(id)) await DB.del('books', k).catch(() => {});
+        hMem.clear();
         location.hash = '#kitap/hadis'; break;
       }
       case 'qall': {
