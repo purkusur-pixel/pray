@@ -41,9 +41,10 @@ self.addEventListener('fetch', (e) => {
   if (e.request.method !== 'GET' || url.origin !== location.origin) return;
   if (url.pathname.startsWith('/api/')) return;              // veri: her zaman ağ
   if (url.pathname.startsWith('/ses/')) return;              // Kur'an sesleri: uygulama kendi deposuna ('nv-ses') indirir
-  if (url.pathname.startsWith('/static/quran/') || url.pathname.startsWith('/static/meal/')) return;   // Kur'an/meal cüzleri: uygulama kendi deposuna (IndexedDB) kaydeder
+  if (url.pathname.startsWith('/static/quran/') || url.pathname.startsWith('/static/meal/')) return;
+  if (url.pathname.startsWith('/static/tefsir/') && !url.pathname.includes('/f/')) return;   // tefsir bölümleri: uygulama kendi deposuna kaydeder   // Kur'an/meal cüzleri: uygulama kendi deposuna (IndexedDB) kaydeder
   // Sürümü yolunda olan değişmez dosyalar (pdf.js, yazı tipi): güncellemelerde silinmeyen ayrı önbellek
-  if (url.pathname.startsWith('/static/vendor/') || url.pathname.startsWith('/static/fonts/')) {
+  if (url.pathname.startsWith('/static/vendor/') || url.pathname.startsWith('/static/fonts/') || url.pathname.startsWith('/static/tefsir/elmalili/f/')) {
     e.respondWith(caches.open('nv-assets').then(async (cache) => {
       const hit = await cache.match(url.pathname);
       if (hit) return hit;

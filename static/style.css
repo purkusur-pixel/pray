@@ -786,3 +786,22 @@ html.i18n-wait body { visibility: hidden; }
   .top-actions .btn-loc { padding-inline: 10px; }
   .btn-install span, .btn-lang svg { display: none; }
 }
+
+/* Elmalılı tefsiri (Hak Dini Kur'an Dili) — bölüm kutusu */
+.em { margin: 10px 0 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.em > summary { cursor: pointer; padding: 10px 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; list-style: none; }
+.em > summary::-webkit-details-marker { display: none; }
+.em > summary::before { content: '▸'; color: var(--accent); }
+.em[open] > summary::before { content: '▾'; }
+.em > summary b { font-size: .75rem; color: var(--accent); text-transform: uppercase; letter-spacing: .04em; }
+.em > summary span { font-size: .85rem; color: var(--muted); }
+.em-in { padding: 0 14px 12px; }
+.em-body { line-height: 1.75; overflow-wrap: anywhere; }
+.em-body p { margin: .55em 0; }
+.em-body svg.ea { max-width: 100%; height: auto; vertical-align: middle; fill: currentColor; }
+.em-body .em-ay { text-align: center; margin: .9em 0; }
+.em-body .em-meal { margin: .9em 0; padding: 10px 12px; border-radius: 10px; background: var(--now); font-style: italic; }
+.em-body .em-meal > b { display: block; font-style: normal; font-size: .8em; color: var(--accent); margin-bottom: 2px; }
+.em-body .em-meal > b.an, .em-body .an { display: inline; font-style: normal; color: var(--accent); font-size: .85em; margin: 0 .15em; }
+.em-body .em-intro { border-bottom: 1px dashed var(--line); margin-bottom: .8em; }
+.em-body .em-src { font-size: .8em; color: var(--muted); border-top: 1px solid var(--line); padding-top: 6px; }

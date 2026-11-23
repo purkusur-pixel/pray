@@ -111,8 +111,58 @@
       jset('nv_kmealclean', 2);
     } catch { /* sonra */ }
   })();
-  const TEFS = new Proxy({}, { get: () => (window.T ? window.T('Muhtasar Tefsir') : 'Muhtasar Tefsir') });
-  const tefKey = () => { const k = jget('nv_ktefk', 'mokhtasar'); return /^(mokhtasar|[a-z]+_mokhtasar)$/.test(k) ? k : 'mokhtasar'; };
+  const TEFS = new Proxy({}, { get: (o, k) => (k === 'elmalili' ? "Elmalılı · Hak Dini Kur'an Dili" : window.T ? window.T('Muhtasar Tefsir') : 'Muhtasar Tefsir') });
+  const tefKey = () => { const k = jget('nv_ktefk', 'mokhtasar'); return /^(mokhtasar|elmalili|[a-z]+_mokhtasar)$/.test(k) ? k : 'mokhtasar'; };
+  const isElm = () => tefKey() === 'elmalili';
+  /* Elmalılı tefsiri (Hak Dini Kur'an Dili): Elmalılı'nın kendi ayırdığı ayet grupları hâlinde; her bölüm ayrı dosya, açıldıkça telefona iner.
+     Arapça ibareler kitabın kendi yazı tipiyle, sayfadaki hâliyle (SVG) çizilir. */
+  const ELM = '/static/tefsir/elmalili/';
+  let EI = null, EMF = false;
+  async function elmIdx() {
+    if (EI) return EI;
+    let m = await DB.get('quran', 'e:idx').catch(() => null);
+    if (!m || (navigator.onLine && m.ver !== VER)) {
+      try { const r = await fetch(ELM + 'index.json?v=' + VER); if (r.ok) { m = await r.json(); m.ver = VER; DB.put('quran', 'e:idx', m).catch(() => {}); } } catch { /* çevrimdışı */ }
+    }
+    if (!m) throw new Error('Tefsir bilgisi alınamadı; internete bağlanınca iner.');
+    if (!EMF) {
+      EMF = true;
+      const st = document.createElement('style');
+      st.textContent = m.fonts.map((f) => `@font-face{font-family:"em-${f}";src:url(${ELM}f/${f}.woff2) format("woff2")}.em-body text.${f}{font-family:"em-${f}"}`).join('');
+      document.head.appendChild(st);
+    }
+    return (EI = m);
+  }
+  /** (sure, ayet) -> bölüm sırası */
+  const elmFind = (ix, s, a) => (ix.s[s] || []).findIndex((r) => a >= r[0] && a <= r[1]);
+  async function elmGroup(s, i) {
+    const k = `e:${s}:${i}`;
+    if (qMem.has(k)) return qMem.get(k);
+    let d = await DB.get('quran', k).catch(() => null);
+    if (!d) {
+      if (!navigator.onLine) throw Object.assign(new Error('Bu tefsir bölümü henüz indirilmedi; internete bağlanınca iner.'), { offline: true });
+      const r = await fetch(`${ELM}${s}/${i}.json?v=${EI?.v || 1}`);
+      if (!r.ok) throw new Error('Tefsir indirilemedi');
+      d = await r.json();
+      askPersist(); await DB.put('quran', k, d);
+    }
+    qMem.set(k, d);
+    return d;
+  }
+  const elmLabel = (s, r) => `${sLabel(sName(s))} ${r[0] === r[1] ? r[0] + '. âyet' : r[0] + '–' + r[1] + '. âyetler'}`;
+  function elmBody(d) {
+    return `<div class="em-body" dir="ltr">${d.h}${d.y ? `<p class="em-src">Bu bölüm, eserin elimizdeki baskısında eksik olduğu için Yazma Eserler Kurumu baskısından alınmıştır
+      (Hak Dini Kur'an Dili, İnceleme – Tenkitli Metin, haz. A. C. Köksal – M. Kaya, 2021); yazımı bu baskınınkidir.</p>` : ''}</div>`;
+  }
+  /** Bir bölümün kutusu: başlığına dokununca açılır, içerik o zaman iner */
+  const elmBox = (s, i, r, open) => `<details class="em" data-s="${s}" data-i="${i}"${open ? ' open' : ''}><summary><b>${TEFS.elmalili}</b><span>${esc(elmLabel(s, r))}</span></summary><div class="em-in"></div></details>`;
+  async function elmFill(det) {
+    const box = det.querySelector('.em-in');
+    if (!det.open || box.dataset.ok) return;
+    box.dataset.ok = '1'; box.innerHTML = '<p class="k-wait">Yükleniyor…</p>';
+    try { await elmIdx(); box.innerHTML = elmBody(await elmGroup(+det.dataset.s, +det.dataset.i)); }
+    catch (e) { delete box.dataset.ok; box.innerHTML = `<p class="k-wait">${esc(e.message)}</p>`; }
+  }
   const tefKind = () => (tefKey() === 'mokhtasar' ? 't' : 't:' + tefKey());   // 't' = Türkçe Muhtasar; 't:english_mokhtasar' …
   const isQe = (key) => key.includes('_');                           // başka dilde meal (QuranEnc anahtarı: english_saheeh …)
   /* Başka dillerde eklenen mealler (telefonda): [{k, t, l, v, dir}] */
@@ -351,6 +401,7 @@
         <li><b>Kur'an sesleri:</b> Mişârî Râşid el-Afâsî kıraati, ayet ayet; Al Quran Cloud (cdn.islamic.network). Kişisel ve eğitim amaçlı dinleme içindir; sunucumuz sesleri saklamaz, yalnız aktarır.</li>
         <li><b>Meal:</b> Elmalılı Hamdi Yazır, Hak Dini Kur'an Dili meali.</li>
         <li><b>Tefsir:</b> Muhtasar Tefsir (Tefsir Araştırmaları Merkezi) Türkçe tercümesi, QuranEnc.com.</li>
+        <li><b>Elmalılı tefsiri:</b> Elmalılı M. Hamdi Yazır (ö. 1942), Hak Dini Kur'an Dili, asıl (sadeleştirilmemiş) metin; Arapça ibareler kitabın kendi yazı tipiyle çizilmiştir. Elimizdeki baskıda eksik olan Tevbe 34–129, Hûd 61–123 ve Ra'd 12–43 kısımları Yazma Eserler Kurumu baskısından (haz. A. C. Köksal – M. Kaya, 2021) alınmıştır.</li>
         <li><b>Başka dillerde mealler:</b> QuranEnc.com (Kur'an-ı Kerim Ansiklopedisi); metinler değiştirilmeden, güncel sürümüyle gösterilir.${ex.length ? ' Eklediğiniz: ' + ex.map((x) => `${esc(x.t)} (sürüm ${esc(x.v)})`).join(', ') + '.' : ''}</li>
         <li><b>Hadis kitapları:</b> fawazahmed0/hadith-api; Türkçe tercümeyi hazırlayanın adı kaynakta belirtilmemiştir. Hadis numaraları o baskıya göredir.</li>
         <li><b>Dua Kitabı ve Esmâü'l-Hüsnâ:</b> âyetler Kur'an metninden, hadis duaları Kütüb-i Sitte'den alınmıştır; okunuşlar ve kısa anlamlar bu uygulama için hazırlanmıştır. Okunuşlar yaklaşıktır, doğru okuyuşu bir hocadan öğrenin.</li>
@@ -544,18 +595,21 @@
     const juzs = [...new Set(rows.map(([s, a]) => juzOf(s, a)))];
     let meal = {}, mealErr = '', mealSrc = '', tef = null, tefErr = '';
     try { for (const j of juzs) { const d = await juzData('m:' + (mi?.key || 'elmalili'), j); Object.assign(meal, d.m); if (d.src) mealSrc = d.src; } } catch (e) { mealErr = e.message; }
-    if (tefOn()) {
+    let eix = null;
+    if (tefOn() && isElm()) { try { eix = await elmIdx(); } catch (e) { tefErr = e.message; } }
+    else if (tefOn()) {
       try { tef = { m: {} }; for (const j of juzs) { const d = await juzData(tefKind(), j); Object.assign(tef.m, d.m); tef.ver = d.ver; tef.src = d.src; } }
       catch (e) { tefErr = e.message; tef = null; }
     }
     const tfs = Math.max(14, Math.round(fs * 0.62)), mdir = mi?.dir === 'rtl' ? 'rtl' : 'ltr';
     let h = `<div class="qm-bar"><label>Meal <select id="kMealSel">${idx.map((x) => `<option value="${esc(x.key)}"${x.key === mi?.key ? ' selected' : ''}>${esc(x.name)}</option>`).join('')}
       <option value="__lib">＋ Başka dilde meal…</option></select></label>
+      ${tefAllowed() && (window.UILANG || 'tr') === 'tr' ? `<label>Tefsir <select id="kTefSel">${['mokhtasar', 'elmalili'].map((k) => `<option value="${k}"${tefKey() === k ? ' selected' : ''}>${k === 'elmalili' ? 'Elmalılı (Hak Dini Kur\'an Dili)' : 'Muhtasar Tefsir'}</option>`).join('')}</select></label>` : ''}
 </div>`;
     if (mealErr) h += `<p class="k-wait">${esc(mealErr)} <button class="btn ghost" type="button" data-k="retry">Tekrar dene</button></p>`;
     if (tefErr) h += `<p class="k-wait">${esc(tefErr)}</p>`;
     h += '<div class="qm-list">';
-    for (const [s, a, t] of rows) {
+    for (const [ri, [s, a, t]] of rows.entries()) {
       let txt = t;
       if (a === 1) {
         h += sureHead(s);
@@ -568,11 +622,15 @@
         <div class="qm-ar k-ar" style="font-size:${fs}px">${esc(qa(txt))} <span class="q-no">۝${arNum(a)}</span></div>
         ${tr !== undefined ? `<p class="qm-tr" dir="${mdir}" style="font-size:${tfs}px"><b>${s}:${a}</b> ${noteMarks(tr)}</p>` : ''}
         ${fn ? `<p class="qm-fn" dir="${mdir}" style="font-size:${tfs - 2}px">${noteMarks(fn, true)}</p>` : ''}
-        <div class="qm-acts">${tf || !tefAllowed() ? '' : `<button class="qm-tb" type="button" data-k="tef1" data-s="${s}" data-a="${a}">Tefsirini göster</button>`}
+        <div class="qm-acts">${tf || !tefAllowed() || eix ? '' : `<button class="qm-tb" type="button" data-k="tef1" data-s="${s}" data-a="${a}">Tefsirini göster</button>`}
           <button class="qm-tb" type="button" data-k="aycopy" data-s="${s}" data-a="${a}">Ayeti kopyala</button></div>
         ${tf ? `<div class="qm-tef" style="font-size:${tfs - 1}px"><b>${TEFS[tefKey()]}</b> ${esc(tf[0])}${tf[1] ? `<small>${esc(tf[1])}</small>` : ''}</div>`
           : '<div class="qm-tef" hidden></div>'}
       </article>`;
+      if (eix) {                                                  // Elmalılı: bölümün bu sayfadaki son ayetinden sonra
+        const gi = elmFind(eix, s, a), nx = rows[ri + 1];
+        if (gi >= 0 && !(nx && nx[0] === s && elmFind(eix, s, nx[1]) === gi)) h += elmBox(s, gi, eix.s[s][gi], false);
+      }
     }
     h += '</div>';
     body.innerHTML = h;
@@ -580,6 +638,8 @@
       if (e.target.value === '__lib') { e.target.value = mi?.key || ''; location.hash = '#kitap/meal'; return; }
       jset('nv_kmealk', e.target.value); render();
     });
+    $('kTefSel')?.addEventListener('change', (e) => { jset('nv_ktefk', e.target.value); render(); });
+    body.querySelectorAll('details.em').forEach((d) => d.addEventListener('toggle', () => elmFill(d)));
     saveProg('q', p, `${TT("Kur'an-ı Kerîm")} · ${pgL(p)}`, `${jzL(n)} · ${surahsOnPage(p)}`);
     showPendingAy();
   }
@@ -607,6 +667,16 @@
   async function showTef1(btn) {
     const s = +btn.dataset.s, a = +btn.dataset.a, box = btn.closest('.qm').querySelector('.qm-tef');
     btn.disabled = true; btn.textContent = 'Yükleniyor…';
+    if (isElm()) {
+      try {
+        const ix = await elmIdx(), gi = elmFind(ix, s, a);
+        if (gi < 0) throw new Error('Bu ayet için tefsir yok.');
+        box.outerHTML = elmBox(s, gi, ix.s[s][gi], true);
+        const det = btn.closest('.qm').querySelector('details.em');
+        det.addEventListener('toggle', () => elmFill(det)); elmFill(det); btn.remove();
+      } catch (e) { btn.disabled = false; btn.textContent = 'Tefsirini göster'; A().toast(e.message); }
+      return;
+    }
     try {
       const d = await juzData(tefKind(), juzOf(s, a)), tf = d.m[s + ':' + a] || ['', ''];
       box.innerHTML = `<b>${TEFS[tefKey()]}</b> ${esc(tf[0] || 'Bu ayet için tefsir metni yok.')}${tf[1] ? `<small>${esc(tf[1])}</small>` : ''}`;
@@ -1491,7 +1561,7 @@
     const fk = await DB.keys('files').catch(() => []);
     const hb = await hBooks().catch(() => null);
     const text = qk.filter((k) => typeof k === 'number').length;
-    const meal = qk.filter((k) => typeof k === 'string' && /^(m|t):/.test(k)).length;
+    const meal = qk.filter((k) => typeof k === 'string' && /^(m|t|e):/.test(k)).length;
     let ses = 0, sesB = 0;
     try {
       const c = await sesCache();
@@ -1531,7 +1601,7 @@
       hMem.clear();
     } else {
       for (const key of await DB.keys('quran').catch(() => [])) {
-        if (k === 'dm-text' ? typeof key === 'number' : (typeof key === 'string' && /^(m|t):/.test(key))) { await DB.del('quran', key).catch(() => {}); qMem.delete(key); }
+        if (k === 'dm-text' ? typeof key === 'number' : (typeof key === 'string' && /^(m|t|e):/.test(key))) { await DB.del('quran', key).catch(() => {}); qMem.delete(key); }
       }
       if (k === 'dm-text') qMem.clear();
     }
