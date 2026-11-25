@@ -1,0 +1,127 @@
+{
+  "title": "Örnek zikirler",
+  "note": "Bilgilendirme amaçlıdır. Sayılar, hadislerde geçen ya da gelenekte yaygın olan sayılardır; zikir sayıyla sınırlı değildir.",
+  "note_en": "For information only. Counts are those mentioned in hadith or common in tradition; dhikr is not limited to a number.",
+  "z": [
+    {
+      "id": "subhanallah", "n": 33,
+      "ar": "سُبْحَانَ اللّٰهِ",
+      "tr": "Sübhânallâh",
+      "m": "Allah'ı her türlü eksiklikten uzak tutarım.",
+      "en": "Glory be to Allah.",
+      "f": "Namazdan sonraki tesbihatta 33 kere söylenir.",
+      "f_en": "Said 33 times in the tasbihat after the prayer.",
+      "k": "Müslim, Mesâcid"
+    },
+    {
+      "id": "elhamdulillah", "n": 33,
+      "ar": "اَلْحَمْدُ لِلّٰهِ",
+      "tr": "Elhamdülillâh",
+      "m": "Hamd Allah'a mahsustur.",
+      "en": "All praise is for Allah.",
+      "f": "Namazdan sonraki tesbihatta 33 kere söylenir.",
+      "f_en": "Said 33 times in the tasbihat after the prayer.",
+      "k": "Müslim, Mesâcid"
+    },
+    {
+      "id": "allahuekber", "n": 33,
+      "ar": "اَللّٰهُ أَكْبَرُ",
+      "tr": "Allâhu ekber",
+      "m": "Allah en büyüktür.",
+      "en": "Allah is the Greatest.",
+      "f": "Namazdan sonraki tesbihatta 33 kere söylenir; ardından tevhid ile yüze tamamlanır.",
+      "f_en": "Said 33 times in the tasbihat after the prayer, then completed to one hundred with the tawhid.",
+      "k": "Müslim, Mesâcid"
+    },
+    {
+      "id": "tevhid", "n": 100,
+      "ar": "لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلٰى كُلِّ شَيْءٍ قَدِيرٌ",
+      "tr": "Lâ ilâhe illallâhu vahdehû lâ şerîke leh, lehü'l-mülkü ve lehü'l-hamdü ve hüve alâ külli şey'in kadîr",
+      "m": "Allah'tan başka ilah yoktur; O birdir, ortağı yoktur. Mülk O'nundur, hamd O'na mahsustur. O her şeye kadirdir.",
+      "en": "There is no god but Allah, alone, without partner. His is the dominion and His is the praise, and He has power over all things.",
+      "f": "Tesbihatın sonunda bir kere söylenir. Günde yüz kere söylemenin fazileti de hadislerde geçer.",
+      "f_en": "Said once at the end of the tasbihat. Saying it a hundred times a day is also praised in hadith.",
+      "k": "Müslim, Mesâcid; Buhârî, Daavât; Müslim, Zikir"
+    },
+    {
+      "id": "kelimetevhid", "n": 100,
+      "ar": "لَا إِلٰهَ إِلَّا اللّٰهُ",
+      "tr": "Lâ ilâhe illallâh",
+      "m": "Allah'tan başka ilah yoktur.",
+      "en": "There is no god but Allah.",
+      "f": "Hadiste zikrin en faziletlisi olarak geçer.",
+      "f_en": "Described in hadith as the best form of dhikr.",
+      "k": "Tirmizî, Daavât; İbn Mâce, Edeb"
+    },
+    {
+      "id": "subhanallahivebihamdihi", "n": 100,
+      "ar": "سُبْحَانَ اللّٰهِ وَبِحَمْدِهِ",
+      "tr": "Sübhânallâhi ve bi-hamdihî",
+      "m": "Allah'ı hamd ile tesbih ederim.",
+      "en": "Glory be to Allah and praise be to Him.",
+      "f": "Günde yüz kere söyleyenin günahlarının bağışlanacağı hadiste bildirilir.",
+      "f_en": "Hadith reports that whoever says it a hundred times a day is forgiven his sins.",
+      "k": "Buhârî, Daavât; Müslim, Zikir"
+    },
+    {
+      "id": "subhanallahilazim", "n": 100,
+      "ar": "سُبْحَانَ اللّٰهِ وَبِحَمْدِهِ سُبْحَانَ اللّٰهِ الْعَظِيمِ",
+      "tr": "Sübhânallâhi ve bi-hamdihî, sübhânallâhi'l-azîm",
+      "m": "Allah'ı hamd ile tesbih ederim; yüce Allah'ı tesbih ederim.",
+      "en": "Glory be to Allah and praise be to Him; glory be to Allah the Almighty.",
+      "f": "Hadiste dile hafif, mîzanda ağır, Rahmân'a sevimli iki söz olarak geçer.",
+      "f_en": "Described in hadith as two phrases light on the tongue, heavy on the scale and beloved to the Most Merciful.",
+      "k": "Buhârî, Tevhîd; Müslim, Zikir"
+    },
+    {
+      "id": "estagfirullah", "n": 100,
+      "ar": "أَسْتَغْفِرُ اللّٰهَ",
+      "tr": "Estağfirullâh",
+      "m": "Allah'tan bağışlanma dilerim.",
+      "en": "I seek forgiveness from Allah.",
+      "f": "Peygamberimiz günde yüz kere tövbe ve istiğfar ettiğini bildirmiştir. Farz namazdan sonra üç kere söylenir.",
+      "f_en": "The Prophet said he sought forgiveness a hundred times a day. Said three times after the obligatory prayer.",
+      "k": "Müslim, Zikir; Müslim, Mesâcid"
+    },
+    {
+      "id": "lahavle", "n": 100,
+      "ar": "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللّٰهِ",
+      "tr": "Lâ havle ve lâ kuvvete illâ billâh",
+      "m": "Güç ve kuvvet ancak Allah'ındır.",
+      "en": "There is no power and no strength except with Allah.",
+      "f": "Hadiste cennet hazinelerinden bir hazine olarak geçer.",
+      "f_en": "Described in hadith as one of the treasures of Paradise.",
+      "k": "Buhârî, Daavât; Müslim, Zikir"
+    },
+    {
+      "id": "salavat", "n": 100,
+      "ar": "اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَعَلٰى آلِ مُحَمَّدٍ",
+      "tr": "Allâhümme salli alâ Muhammedin ve alâ âli Muhammed",
+      "m": "Allah'ım! Muhammed'e ve Muhammed'in ailesine rahmet eyle.",
+      "en": "O Allah, send blessings upon Muhammad and the family of Muhammad.",
+      "f": "Bir salavat getirene Allah'ın on rahmet edeceği hadiste bildirilir.",
+      "f_en": "Hadith reports that Allah blesses ten times whoever sends one blessing.",
+      "k": "Müslim, Salât"
+    },
+    {
+      "id": "hasbunallah", "n": 100,
+      "ar": "حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيلُ",
+      "tr": "Hasbünallâhu ve ni'me'l-vekîl",
+      "m": "Allah bize yeter; O ne güzel vekildir.",
+      "en": "Allah is sufficient for us, and He is the best Disposer of affairs.",
+      "f": "Kur'an'da müminlerin sözü olarak geçer.",
+      "f_en": "Mentioned in the Qur'an as the words of the believers.",
+      "k": "Âl-i İmrân 3/173"
+    },
+    {
+      "id": "yunus", "n": 100,
+      "ar": "لَا إِلٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ",
+      "tr": "Lâ ilâhe illâ ente sübhâneke innî küntü mine'z-zâlimîn",
+      "m": "Senden başka ilah yoktur. Seni tenzih ederim. Ben gerçekten zalimlerden oldum.",
+      "en": "There is no god but You, glory be to You; indeed I have been of the wrongdoers.",
+      "f": "Hz. Yûnus'un balığın karnında ettiği dua olarak Kur'an'da geçer.",
+      "f_en": "The prayer of Prophet Yunus in the belly of the fish, mentioned in the Qur'an.",
+      "k": "Enbiyâ 21/87"
+    }
+  ]
+}

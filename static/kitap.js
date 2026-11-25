@@ -376,6 +376,8 @@
       <span><h3>Dua Kitabı</h3><small>Namaz duaları, tesbihat, namaz sureleri ve Kur'an'dan dualar · Arapça, okunuş ve anlam</small></span></a>`;
     h += `<a class="card k-book k-dua k-esma" href="#kitap/esma"><span class="k-ar">الأسماء الحسنى</span>
       <span><h3>Esmâü'l-Hüsnâ</h3><small>Allah'ın 99 güzel ismi · Arapça, okunuş ve anlam</small></span></a>`;
+    h += `<a class="card k-book k-dua k-zk" href="#kitap/zikir"><span class="k-ar">سُبْحَانَ اللّٰهِ</span>
+      <span><h3>Zikirmatik</h3><small>Zikir sayacı · ${zk().c ? `${(window.T || ((x) => x))('Kaldığınız sayı')}: ${zk().c}` : 'Dokundukça sayar, hedefe gelince titrer'}</small></span></a>`;
     // Hadis kitapları: tek kart, dokununca liste açılır
     const hbn = (hb?.books || []).filter((b) => bkeys.has(hKey(b.id))).length;
     if (hCode()) h += `<a class="card k-book k-dua k-hadis" href="#kitap/hadis"><span class="k-ar">الكتب الستة</span>
@@ -898,6 +900,81 @@
     }
     return (ESMA = d);
   }
+  /* ---------- Zikirmatik: basit sayaç; sayı yalnız bu telefonda saklanır */
+  const ZK_T = [33, 99, 100, 500, 1000, 0];                          // 0 = sınırsız
+  const zk = () => { const z = jget('nv_zikir', {}); const t = Math.floor(+z.t); return { c: +z.c || 0, t: z.t === undefined || !(t >= 0 && t <= 1e5) ? 33 : t, v: z.v !== false, tot: +z.tot || 0, tur: +z.tur || 0, id: z.id || '' }; };
+  let ZKD = null;
+  /** Örnek zikirler (bilgilendirme): Arapça, okunuş, anlam, önerilen sayı, kaynak */
+  async function zikirData() {
+    if (ZKD) return ZKD;
+    let d = await DB.get('books', 'zikir').catch(() => null);
+    if (!d || (navigator.onLine && d.ver !== VER)) {
+      try { const r = await fetch('/static/books/zikir.json?v=' + VER); if (r.ok) { d = await r.json(); d.ver = VER; DB.put('books', 'zikir', d).catch(() => {}); } } catch { /* çevrimdışı */ }
+    }
+    return (ZKD = d);
+  }
+  const zkSave = (z) => jset('nv_zikir', z);
+  async function renderZikir() {
+    const zd = await zikirData().catch(() => null), tr = (window.UILANG || 'tr') === 'tr';
+    const zm = (x) => (tr ? x.m : x.en), zf = (x) => (tr ? x.f : x.f_en);
+    root().innerHTML = `<div class="k-reader k-zik"><div class="k-rbar"><a class="h-back" href="#kitap" aria-label="Geri">‹</a>
+        <div class="k-rtitle"><b>Zikirmatik</b><small>Zikir sayacı</small></div></div>
+      <div class="zk">
+        <div class="zk-cur" id="zkCur"></div>
+        <div class="zk-t" role="group" aria-label="Hedef">${ZK_T.map((t) => `<button type="button" data-t="${t}">${t || '∞'}</button>`).join('')}</div>
+        <button type="button" class="zk-btn" id="zkBtn" aria-label="Say"><span class="zk-n" id="zkN">0</span><span class="zk-s" id="zkS"></span></button>
+        <div class="zk-acts"><button class="btn ghost" type="button" id="zkUndo">− 1</button>
+          <button class="btn ghost" type="button" id="zkReset">Sıfırla</button>
+          <label class="zk-v"><input type="checkbox" id="zkVib"> Titreşim</label></div>
+        <p class="kz-small zk-tot" id="zkTot"></p></div>
+      ${zd ? `<section class="zk-list"><h3>${esc(zd.title)}</h3><p class="kz-small">${esc(tr ? zd.note : zd.note_en)}</p>
+        ${zd.z.map((x) => `<details class="card zk-it" id="zk-${x.id}"><summary><span class="k-ar zk-ar">${esc(x.ar)}</span>
+          <span class="zk-ok"><b>${esc(x.tr)}</b><small>${esc(zm(x))}</small></span><span class="zk-c">${x.n}</span></summary>
+          <div class="zk-in"><p>${esc(zf(x))}</p><p class="kz-small"><span>Kaynak</span> · ${esc(x.k)}</p>
+          <button class="btn" type="button" data-zid="${x.id}">Bu zikri say (${x.n})</button></div></details>`).join('')}
+        <button class="btn ghost zk-free" type="button" data-zid="">Serbest sayaç</button></section>` : ''}</div>`;
+    const btn = $('zkBtn');
+    const draw = (z, pop) => {
+      $('zkN').textContent = z.c;
+      $('zkS').textContent = z.t ? `${z.c % z.t === 0 && z.c ? z.t : z.c % z.t} / ${z.t}${z.tur ? ` · ${z.tur}. tur` : ''}` : '';
+      root().querySelectorAll('.zk-t button').forEach((b) => b.classList.toggle('on', +b.dataset.t === z.t));
+      btn.style.setProperty('--p', z.t ? ((z.c % z.t === 0 && z.c ? z.t : z.c % z.t) / z.t) : 0);
+      $('zkVib').checked = z.v;
+      const x = zd?.z.find((q) => q.id === z.id);
+      $('zkCur').innerHTML = x ? `<div class="k-ar zk-car">${esc(x.ar)}</div><b>${esc(x.tr)}</b><small>${esc(zm(x))}</small>` : '';
+      root().querySelectorAll('.zk-it').forEach((d) => d.classList.toggle('on', d.id === 'zk-' + z.id));
+      $('zkTot').textContent = z.tot ? `Toplam: ${z.tot}` : '';
+      if (pop) { btn.classList.remove('pop'); void btn.offsetWidth; btn.classList.add('pop'); }
+    };
+    const tap = (e) => {
+      e.preventDefault();
+      const z = zk(); z.c += 1; z.tot += 1;
+      const done = z.t && z.c % z.t === 0;
+      if (done) z.tur = z.c / z.t;
+      if (z.v) navigator.vibrate?.(done ? [120, 80, 120] : 12);
+      zkSave(z); draw(z, true);
+      if (done) A().toast((window.T || ((x) => x))('{0} tamamlandı').replace('{0}', z.t));
+    };
+    btn.addEventListener('pointerdown', tap);
+    btn.addEventListener('keydown', (e) => { if (e.key === ' ' || e.key === 'Enter') tap(e); });
+    btn.addEventListener('click', (e) => e.preventDefault());
+    $('zkUndo').addEventListener('click', () => { const z = zk(); if (!z.c) return; z.c -= 1; z.tot = Math.max(0, z.tot - 1); z.tur = z.t ? Math.floor(z.c / z.t) : 0; zkSave(z); draw(z); });
+    $('zkReset').addEventListener('click', () => { const z = zk(); if (!z.c) return; if (!confirm((window.T || ((x) => x))('Sayaç sıfırlansın mı?'))) return; z.c = 0; z.tur = 0; zkSave(z); draw(z); });
+    $('zkVib').addEventListener('change', (e) => { const z = zk(); z.v = e.target.checked; zkSave(z); });
+    root().querySelector('.zk-list')?.addEventListener('click', (e) => {
+      const b = e.target.closest('[data-zid]'); if (!b) return;
+      const z = zk(), x = zd.z.find((q) => q.id === b.dataset.zid);
+      if (z.c && !confirm((window.T || ((q) => q))('Sayaç sıfırlansın mı?'))) return;
+      z.id = x ? x.id : ''; z.c = 0; z.tur = 0; if (x) z.t = x.n;
+      zkSave(z); draw(z); window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    root().querySelector('.zk-t').addEventListener('click', (e) => {
+      const b = e.target.closest('[data-t]'); if (!b) return;
+      const z = zk(); z.t = +b.dataset.t; z.tur = z.t ? Math.floor(z.c / z.t) : 0; zkSave(z); draw(z);
+    });
+    draw(zk());
+  }
+
   let esQuery = '';
   async function renderEsma(focus) {
     const d = await esmaData(), fs = fontSize('e', 30);
@@ -1620,6 +1697,7 @@
     if ((parts[0] === 'hadis' || parts[0] === 'h') && !hCode()) return { kind: 'lib' };     // bu dilde hadis kitabı yok
     if (parts[0] === 'hadis') return { kind: 'hl' };
     if (parts[0] === 'esma') return { kind: 'es', page: +parts[1] || 0 };
+    if (parts[0] === 'zikir') return { kind: 'zk' };
     if (parts[0] === 'h' && parts[1]) return parts[2] ? { kind: 'h', id: parts[1], page: +parts[2] || 1 } : { kind: 'hi', id: parts[1] };
     if (parts[0] === 'f' && parts[1]) return { kind: 'f', id: parts[1], page: +parts[2] || 1 };
     return { kind: 'lib' };
@@ -1635,6 +1713,7 @@
       else if (cur.kind === 'ml') await renderMealLib();
       else if (cur.kind === 'hl') await renderHList();
       else if (cur.kind === 'es') await renderEsma(cur.page);
+      else if (cur.kind === 'zk') await renderZikir();
       else if (cur.kind === 'hi') await renderHInfo(cur.id);
       else if (cur.kind === 'h') await renderHPage(cur.id, cur.page);
       else if (cur.kind === 'f') await renderPdf(cur.id, cur.page);
