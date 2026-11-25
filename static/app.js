@@ -743,7 +743,7 @@ function setView(v) {
 }
 const route = () => {
   const h = location.hash;
-  setView(h === '#kible' ? 'qibla' : h === '#kaza' ? 'kaza' : h.startsWith('#hatim') ? 'hatim' : h.startsWith('#kitap') ? 'kitap' : 'times');
+  setView(h === '#kible' ? 'qibla' : h.startsWith('#kaza') ? 'kaza' : h.startsWith('#hatim') ? 'hatim' : h.startsWith('#kitap') ? 'kitap' : 'times');
 };
 /* Paylaşılan hatim linki: /h/<kod>  (yönetici linki: /h/<kod>#k=<anahtar>) → Hatim sekmesinde açılır */
 S.hatimLink = null;

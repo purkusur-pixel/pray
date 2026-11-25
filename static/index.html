@@ -111,7 +111,12 @@
     </section>
    </div>
    <div id="viewKaza" class="view" hidden>
-    <section class="kz">
+    <div class="seg seg-wide kz-seg" id="kzSeg" role="group" aria-label="Kaza ve Zikirmatik">
+      <button type="button" data-p="kaza" aria-pressed="true">Kaza</button>
+      <button type="button" data-p="zikir" aria-pressed="false">Zikirmatik</button>
+    </div>
+    <section id="zkPane" hidden></section>
+    <section class="kz" id="kzPane">
       <div class="sec-head">
         <h2>Kaza borçlarım</h2>
         <span class="sec-sub" id="kzTotal"></span>
@@ -204,7 +209,7 @@
     </a>
     <a href="#kaza" class="tab" id="tabKaza">
       <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 2v14h14V5H5Zm2 2h4v2H7V7Zm0 4h4v2H7v-2Zm0 4h4v2H7v-2Zm7-8h3v2h-3V7Zm0 4h3v2h-3v-2Zm0 4h3v2h-3v-2Z"/></svg>
-      <span>Kaza</span>
+      <span>Kaza · Zikir</span>
     </a>
     <a href="#hatim" class="tab" id="tabHatim">
       <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 5.5C10.3 4.1 7.9 3.5 4 3.5a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1c3.5 0 5.6.5 7.4 1.8a1 1 0 0 0 1.2 0c1.8-1.3 3.9-1.8 7.4-1.8a1 1 0 0 0 1-1v-13a1 1 0 0 0-1-1c-3.9 0-6.3.6-8 2Zm-1 12.1c-1.6-.8-3.5-1.1-6-1.2V5.5c3 .1 4.8.6 6 1.6v10.5Zm2 0V7.1c1.2-1 3-1.5 6-1.6v10.9c-2.5.1-4.4.4-6 1.2Z"/></svg>

@@ -248,8 +248,22 @@
       const per = A().sget('nv_kzper'); if (per) $('kzPerDay').value = per;
       build(); built = true;
     }
-    renderSummary();
+    pane();
   }
+  /* Kaza · Zikirmatik: üstteki iki düğmeyle geçilir; son açılan hatırlanır */
+  function pane(p) {
+    const h = location.hash;
+    if (!p) p = h === '#kaza/zikir' ? 'zikir' : h === '#kaza' && A().sget('nv_kzpane') === 'zikir' ? 'zikir' : 'kaza';
+    A().sset('nv_kzpane', p, 3650 * 86400);
+    const want = p === 'zikir' ? '#kaza/zikir' : '#kaza';
+    if (location.hash !== want) history.replaceState(null, '', want);
+    $('kzPane').hidden = p !== 'kaza'; $('zkPane').hidden = p !== 'zikir';
+    $('kzSeg').querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.p === p)));
+    document.title = (p === 'zikir' ? 'Zikirmatik' : 'Kaza') + ' · Namaz Vakitleri';
+    if (p === 'zikir') { const go = () => (window.Kitap?.zikir ? window.Kitap.zikir($('zkPane')) : setTimeout(go, 60)); go(); }
+    else renderSummary();
+  }
+  $('kzSeg').addEventListener('click', (e) => { const b = e.target.closest('[data-p]'); if (b) pane(b.dataset.p); });
   window.Kaza = { show };
   if (!$('viewKaza').hidden) show();
 })();
