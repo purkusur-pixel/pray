@@ -1,0 +1,132 @@
+# A'lâ, Gâşiye, Fecr, Beled, Şems, Leyl
+87:1 | tesbih et | adını | Rabbinin | en yüce || {3|En yüce} {2|Rabbinin} {1|adını} {0|tesbih et};
+87:2 | o ki | yarattı | ve düzenledi || {0|O ki} {1|yarattı} {2|ve düzenledi};
+87:3 | ve o ki | takdir etti (ölçü verdi) | ve yol gösterdi || {0|o ki} {1|takdir etti} {2|ve yol gösterdi};
+87:4 | ve o ki | çıkardı | otlağı || {0|o ki} {2|otlağı} {1|çıkardı},
+87:5 | sonra onu kıldı | çer çöp | kapkara (kuru) || {0|sonra onu} {2|kapkara} {1|bir çer çöp} {0|hâline getirdi.}
+87:6 | sana okutacağız | artık -mezsin | unutursun || {0|Biz sana (Kur'an'ı) okutacağız}, {1|artık} {2|unutmayacaksın};
+87:7 | ancak | şey | diledi | Allah | şüphesiz O | bilir | açığı | ve şeyi | gizlenen || {0|ancak} {3|Allah'ın} {2|dilediği} {1|müstesna.} {4|Şüphesiz O}, {6|açığı} {7|da} {8|gizliyi de} {5|bilir.}
+87:8 | ve sana kolaylaştıracağız | en kolaya || {0|Seni} {1|en kolay olana (İslam'a)} {0|muvaffak kılacağız.}
+87:9 | öyleyse öğüt ver | eğer | fayda verirse | öğüt || {0|Öyleyse öğüt ver}; {1|eğer} {3|öğüt} {2|fayda verirse.}
+87:10 | öğüt alacak | kimse | korkar || {2|(Allah'tan) korkan} {1|kimse} {0|öğüt alacak};
+87:11 | ve ondan kaçınır | en bedbaht || {1|en bedbaht olan ise} {0|ondan kaçınır};
+87:12 | o ki | girecek | ateşe | en büyük || {0|o ki} {3|en büyük} {2|ateşe} {1|girecek};
+87:13 | sonra | -mez | ölür | orada | ve -mez | yaşar || {0|sonra} {3|orada} {2|ne öl}{1|ür}, {4|ne de} {5|yaşar.}
+87:14 | gerçekten | kurtuluşa erdi | kimse | arındı || {0|Gerçekten} {3|arınan} {2|kimse} {1|kurtuluşa ermiştir};
+87:15 | ve andı | adını | Rabbinin | ve namaz kıldı || {2|Rabbinin} {1|adını} {0|anıp} {3|namaz kılan} da.
+87:16 | bilakis | tercih ediyorsunuz | hayatını | dünya || {0|Fakat siz} {3|dünya} {2|hayatını} {1|tercih ediyorsunuz.}
+87:17 | ve ahiret | daha hayırlı | ve daha kalıcı || {0|Oysa ahiret} {1|daha hayırlı} {2|ve daha kalıcıdır.}
+87:18 | şüphesiz | bu | elbette -de | sahifeler | önceki || {0|Şüphesiz} {1|bu}, {4|önceki} {3|sahifelerde} {2|de vardır};
+87:19 | sahifeleri | İbrahim'in | ve Musa'nın || {1|İbrahim'in} {2|ve Musa'nın} {0|sahifelerinde.}
+88:1 | -mi | sana geldi | haberi | Gâşiye (kuşatan) || {3|Her şeyi kuşatacak olanın (kıyametin)} {2|haberi} {1|sana geldi} {0|mi?}
+88:2 | yüzler | o gün | zillet içinde || {1|O gün} {0|bir takım yüzler} {2|zillet içindedir};
+88:3 | çalışmış | yorgun düşmüş || {0|çalışmış}, {1|yorgun düşmüştür.}
+88:4 | girer | bir ateşe | kızgın || {2|Kızgın} {1|bir ateşe} {0|girerler.}
+88:5 | içirilir | -den | pınar | kaynar || {3|Kaynar} {2|bir pınardan} {0|içirilirler.}
+88:6 | yoktur | onlar için | yiyecek | ancak | -den | darî' (dikenli bitki) || {1|Onlar için} {5|darî'den (kuru, dikenli bir bitkiden)} {3|başka} {2|yiyecek} {0|yoktur};
+88:7 | -mez | besler (şişmanlatır) | ve -mez | giderir | -den | açlık || (o,) {1|ne besle}{0|r}, {2|ne de} {5|açlığı} {3|giderir.}
+88:8 | yüzler | o gün | nimet içinde || {1|O gün} {0|bir takım yüzler} {2|nimet içinde (sevinçli)dir};
+88:9 | çabasından | hoşnut || {0|(dünyadaki) çabalarından} {1|hoşnuttur};
+88:10 | -de | cennet | yüce || {2|yüce} {1|bir cennet}{0|tedirler.}
+88:11 | -mez | işitir | orada | boş söz || {2|Orada} {3|boş bir söz} {1|işit}{0|mezler.}
+88:12 | orada | pınar | akan || {0|Orada} {2|akan} {1|bir pınar vardır.}
+88:13 | orada | tahtlar | yükseltilmiş || {0|Orada} {2|yükseltilmiş} {1|tahtlar},
+88:14 | ve kadehler | konulmuş || {1|konulmuş} {0|kadehler},
+88:15 | ve yastıklar | dizilmiş || {1|dizilmiş} {0|yastıklar},
+88:16 | ve halılar | serilmiş || {1|serilmiş} {0|halılar vardır.}
+88:17 | bakmazlar mı | bakarlar | -e | deve(ye) | nasıl | yaratıldı || {0|Hiç} {3|deveye} {1|bakmazlar mı}, {4|nasıl} {5|yaratılmıştır?}
+88:18 | ve -e | göğe | nasıl | yükseltildi || {1|Göğe} {0|(bakmazlar mı)}, {2|nasıl} {3|yükseltilmiştir?}
+88:19 | ve -e | dağlara | nasıl | dikildi || {1|Dağlara}, {2|nasıl} {3|dikilmiştir?}
+88:20 | ve -e | yere | nasıl | yayıldı || {1|Yere}, {2|nasıl} {3|yayılmıştır?}
+88:21 | öyleyse öğüt ver | ancak | sen | öğüt verensin || {0|Öyleyse öğüt ver}; {2|sen} {1|ancak} {3|bir öğüt vericisin.}
+88:22 | değilsin | onların üzerinde | zorba (zorlayıcı) || {1|Onların üzerinde} {2|bir zorba} {0|değilsin.}
+88:23 | ancak | kimse | yüz çevirdi | ve inkâr etti || {0|Ancak} {2|yüz çeviren} {3|ve inkâr eden} {1|kimse olursa},
+88:24 | onu azaplandırır | Allah | azapla | en büyük || {1|Allah} {0|onu} {3|en büyük} {2|azapla} {0|azaplandırır.}
+88:25 | şüphesiz | bizedir | dönüşleri || {0|Şüphesiz} {2|onların dönüşü} {1|bizedir.}
+88:26 | sonra | şüphesiz | bize aittir | hesapları || {0|Sonra} {1|şüphesiz} {3|onların hesabı da} {2|bize aittir.}
+89:1 | andolsun fecre (tan yerine) || {0|Fecre andolsun},
+89:2 | ve gecelere | on || {1|on} {0|geceye},
+89:3 | ve çifte | ve teke || {0|çifte} {1|ve teke},
+89:4 | ve geceye | -diği zaman | geçip gider || {2|geçip gittiği} {1|zaman} {0|geceye andolsun ki},
+89:5 | -mi | -de | bunlar | yemin | akıl sahibi için | akıl || {2|bunlarda} {4|akıl sahibi} için {3|bir yemin} var {0|mı?}
+89:6 | görmedin mi | gördün | nasıl | yaptı | Rabbin | Âd kavmine || {4|Rabbinin} {5|Âd kavmine} {2|ne} {3|yaptığını} {0|görmedin mi?}
+89:7 | İrem | sahibi | sütunlar || {1|O} {2|sütunlarla} {1|dolu} {0|İrem şehrine},
+89:8 | o ki | -medi | yaratıldı | benzeri | -de | ülkeler || {0|ki} {5|ülkeler} {4|içinde} {3|benzeri} {2|yaratıl}{1|mamıştı.}
+89:9 | ve Semûd'a | onlar ki | oydular | kayaları | vadide || {2|Vadide} {3|kayaları} {2|oyan} {0|Semûd'a},
+89:10 | ve Firavun'a | sahibi | kazıklar || {2|kazıklar} {1|sahibi} {0|Firavun'a?}
+89:11 | onlar ki | azdılar | -de | ülkeler || {0|Onlar ki} {3|ülkelerde} {1|azdılar},
+89:12 | ve çoğalttılar | oralarda | bozgunculuğu || {1|oralarda} {2|bozgunculuğu} {0|çoğalttılar.}
+89:13 | ve yağdırdı | üzerlerine | Rabbin | kamçısını | azap || {2|Rabbin} de {1|onların üzerine} {4|azap} {3|kamçısı} {0|yağdırdı.}
+89:14 | şüphesiz | Rabbin | elbette gözetleme yerindedir || {0|Şüphesiz} {1|Rabbin} {2|her an gözetlemektedir.}
+89:15 | ama | insan | -diğinde | -ki | onu sınadı | Rabbi | ve ona ikram etti | ve onu nimetlendirdi | der ki | Rabbim | bana ikram etti || {0|Ama} {1|insan}, {5|Rabbi} {4|onu sınayıp} {6|ona ikram ettiği} {7|ve nimet verdiği} {2|zaman}, “{9|Rabbim} {10|bana ikram etti}” {8|der.}
+89:16 | ama | -diğinde | -ki | onu sınadı | ve daralttı | ona | rızkını | der ki | Rabbim | beni aşağıladı || {0|Ama} {3|onu sınayıp} {5|onun} {6|rızkını} {4|daralttığı} {1|zaman} da “{8|Rabbim} {9|beni aşağıladı}” {7|der.}
+89:17 | hayır | bilakis | -mezsiniz | ikram edersiniz | yetime || {0|Hayır!} {1|Bilakis siz} {4|yetime} {3|ikram} {2|etmiyorsunuz};
+89:18 | ve -mezsiniz | birbirinizi teşvik edersiniz | -e | yedirmeye | yoksulu || {4|yoksulu} {3|doyurmaya} {1|birbirinizi teşvik} {0|etmiyorsunuz};
+89:19 | ve yersiniz | mirası | yemekle | hepsini toplayarak || {1|mirası} {3|hepsini silip süpürerek} {0|yiyorsunuz}
+89:20 | ve seversiniz | malı | sevgiyle | çok || {1|ve malı} {3|aşırı} {2|bir sevgiyle} {0|seviyorsunuz.}
+89:21 | hayır | -diği zaman | parça parça edildi | yer | dövülerek | dövülerek || {0|Hayır!} {3|Yer} {4|dövüldükçe} {5|dövülüp} {2|parça parça edildiği} {1|zaman},
+89:22 | ve geldiğinde | Rabbin | ve melekler | saf | saf || {1|Rabbinin (emri)} {2|ve melekler} {3|saf} {4|saf} {0|geldiği} zaman,
+89:23 | ve getirildi | o gün | cehennem | o gün | düşünür (anlar) | insan | ve nerede | onun için | öğüt (fayda) || {1|o gün} {2|cehennem de} {0|getirildiği} zaman, {3|işte o gün} {5|insan} {4|düşünüp anlar}; {6|ama} {7|ona} {8|bu anlamanın} {6|ne faydası var?}
+89:24 | der | keşke | önceden gönderseydim | hayatım için || “{1|Keşke} {3|bu hayatım için} {2|önceden (iyilik) gönderseydim!}” {0|der.}
+89:25 | o gün | -mez | azap eder | azabı gibi | hiç kimse || {0|O gün} (Allah'ın) {3|azabı gibi} {4|hiç kimse} {2|azap edemez};
+89:26 | ve -mez | bağlar | bağlaması gibi | hiç kimse || {3|hiç kimse} de (O'nun) {2|bağlaması gibi} {1|bağlayamaz.}
+89:27 | ey | nefs | huzura kavuşmuş || “{0|Ey} {2|huzura kavuşmuş} {1|nefis!}
+89:28 | dön | -e | Rabbine | razı olmuş olarak | razı olunmuş olarak || {2|Rabbine}, {3|sen O'ndan razı}, {4|O da senden razı olarak} {0|dön!}
+89:29 | gir | arasına | kullarımın || {1|Kullarımın} {2|arasına} {0|gir}
+89:30 | ve gir | cennetime || {1|ve cennetime} {0|gir!}”
+90:1 | hayır | yemin ederim | bu | belde(ye) || {1|Yemin ederim} {2|bu} {3|beldeye};
+90:2 | ve sen | helal kılınmışsın (konaklayan) | bu | beldede || {0|ki sen} {2|bu} {3|beldede} {1|yaşamaktasın (sana helal kılınacaktır)};
+90:3 | ve babaya | ve şeye | doğurdu || {0|babaya} {1|ve} {2|doğurduğu} {1|evlada} andolsun ki,
+90:4 | andolsun | yarattık | insanı | -de | meşakkat || {0|Andolsun} {1|biz} {2|insanı} {4|meşakkat} {3|içinde} {1|yarattık.}
+90:5 | sanır mı | -ı | asla | güç yetirmez | ona | hiç kimse || {5|Hiç kimsenin} {4|kendisine} {3|güç yetiremeyeceğini} {0|mi sanıyor?}
+90:6 | der | tükettim | mal | yığın yığın || “{3|Yığın yığın} {2|mal} {1|harcadım}” {0|der.}
+90:7 | sanır mı | -ı | -medi | onu gördü | hiç kimse || {4|Kimsenin} {3|kendisini görmediğini} {0|mi sanıyor?}
+90:8 | -medik mi | kıldık | ona | iki göz || {2|Biz ona} {3|iki göz} {1|ver}{0|medik mi?}
+90:9 | ve bir dil | ve iki dudak || {0|Bir dil} {1|ve iki dudak} (vermedik mi?)
+90:10 | ve ona gösterdik | iki yol(u) || {0|Ve ona} {1|(iyilik ve kötülük) iki yolunu} {0|göstermedik mi?}
+90:11 | fakat -medi | atıldı (aştı) | sarp yokuşu || {0|Fakat o} {2|sarp yokuşu} {1|aşmaya} {0|atılmadı.}
+90:12 | ve ne | bildirdi sana | nedir | sarp yokuş || {3|Sarp yokuşun} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+90:13 | çözmek | köle || {1|Köle} {0|azat etmek},
+90:14 | yahut | doyurmak | -de | gün | sahibi | açlık || {0|yahut} {5|açlık} {4|olan} {3|bir günde} {1|doyurmak};
+90:15 | yetimi | sahibi | yakınlık || {2|yakınlığı} {1|olan} {0|bir yetimi},
+90:16 | yahut | yoksulu | sahibi | toprak (sefalet) || {0|yahut} {3|toprağa düşmüş} {1|bir yoksulu}.
+90:17 | sonra | olmak | -den | kimseler | iman eden | ve birbirine tavsiye eden | sabrı | ve birbirine tavsiye eden | merhameti || {0|Sonra} {4|iman edip}, {6|sabrı} {5|tavsiye eden} {8|ve merhameti} {7|tavsiye eden} {3|kimselerden} {1|olmak.}
+90:18 | işte onlar | ehli | sağ (bereket) || {0|İşte onlar} {2|sağın (mutluluğun)} {1|ehlidir.}
+90:19 | ve kimseler | inkâr eden | ayetlerimizi | onlar | ehli | sol (uğursuzluk) || {2|Ayetlerimizi} {1|inkâr eden} {0|kimseler} {3|ise} {5|solun (bedbahtlığın)} {4|ehlidir.}
+90:20 | üzerlerine | ateş | kapatılmış || {1|Onların} {0|üzerine} {2|kapatılmış} {1|bir ateş vardır.}
+91:1 | andolsun güneşe | ve kuşluk aydınlığına || {0|Güneşe} {1|ve kuşluk aydınlığına} andolsun,
+91:2 | ve aya | -diği zaman | onu izledi || {2|onu izlediği} {1|zaman} {0|aya},
+91:3 | ve gündüze | -diği zaman | onu açığa çıkardı || {2|onu (güneşi) ortaya çıkardığı} {1|zaman} {0|gündüze},
+91:4 | ve geceye | -diği zaman | onu örttü || {2|onu örttüğü} {1|zaman} {0|geceye},
+91:5 | ve göğe | ve ona (zata) | onu bina etti || {0|göğe} {1|ve onu} {2|bina edene},
+91:6 | ve yere | ve ona (zata) | onu yaydı || {0|yere} {1|ve onu} {2|yayıp döşeyene},
+91:7 | ve nefse | ve ona (zata) | onu düzenledi || {0|nefse} {1|ve onu} {2|düzenleyene},
+91:8 | sonra ona ilham etti | kötülüğünü | ve takvasını || {0|sonra da ona} {1|kötülüğünü} {2|ve takvasını} {0|ilham edene} andolsun ki,
+91:9 | gerçekten | kurtuldu | kimse | onu arındırdı || {3|Onu (nefsini) arındıran} {2|kimse} {0|gerçekten} {1|kurtuluşa ermiştir.}
+91:10 | ve gerçekten | ziyana uğradı | kimse | onu kirletti || {3|Onu kirleten} {2|kimse} {0|de} {1|ziyana uğramıştır.}
+91:11 | yalanladı | Semûd | azgınlığı yüzünden || {1|Semûd kavmi} {2|azgınlığı yüzünden} (peygamberini) {0|yalanladı.}
+91:12 | -diği zaman | kalkıp koştu | en bedbahtı || {2|İçlerinden en bedbahtı} {1|kalkıp koştuğu} {0|zaman},
+91:13 | dedi ki | onlara | elçisi | Allah'ın | dişi deve | Allah'ın | ve su içme hakkı || {3|Allah'ın} {2|elçisi} {1|onlara} “{5|Allah'ın} {4|devesine} {6|ve onun su içme hakkına} dokunmayın” {0|dedi.}
+91:14 | onu yalanladılar | ve onu kestiler | helak etti | üzerlerine | Rableri | günahları yüzünden | ve onu dümdüz etti || {0|Fakat onu yalanladılar} {1|ve deveyi kestiler.} {4|Rableri} de {5|günahları yüzünden} {3|onları} {2|helak etti} {6|ve (yurtlarını) dümdüz etti.}
+91:15 | ve -mez | korkar | sonundan || (Allah) {2|bunun sonundan} {1|kork}{0|maz.}
+92:1 | andolsun geceye | -diği zaman | örter || {2|(Her şeyi) örttüğü} {1|zaman} {0|geceye},
+92:2 | ve gündüze | -diği zaman | açıldı (aydınlandı) || {2|açılıp aydınlandığı} {1|zaman} {0|gündüze},
+92:3 | ve şeye | yarattı | erkeği | ve dişiyi || {2|erkeği} {3|ve dişiyi} {1|yaratana} {0|andolsun ki},
+92:4 | şüphesiz | çabalarınız | elbette farklıdır || {0|şüphesiz} {1|sizin çabalarınız} {2|farklı farklıdır.}
+92:5 | ama | kim | verdi | ve sakındı || {0|Ama} {1|kim} {2|verir} {3|ve sakınırsa},
+92:6 | ve doğruladı | en güzeli || {1|en güzeli} {0|de tasdik ederse},
+92:7 | ona kolaylaştıracağız | en kolaya || {0|biz onu} {1|en kolaya} {0|muvaffak kılarız.}
+92:8 | ama | kim | cimrilik etti | ve kendini yeterli gördü || {0|Ama} {1|kim} {2|cimrilik eder} {3|ve kendini müstağni görürse},
+92:9 | ve yalanladı | en güzeli || {1|en güzeli} {0|de yalanlarsa},
+92:10 | ona kolaylaştıracağız | en zora || {0|biz de onu} {1|en zora} {0|kolayca hazırlarız.}
+92:11 | ve -mez | fayda verir | ona | malı | -diği zaman | yuvarlandı || {5|(Çukura) yuvarlandığı} {4|zaman} {3|malı} {2|ona} {1|hiçbir fayda} {0|sağlamaz.}
+92:12 | şüphesiz | bize düşer | elbette doğru yolu göstermek || {0|Şüphesiz} {2|doğru yolu göstermek} {1|bize düşer.}
+92:13 | ve şüphesiz | bizimdir | elbette ahiret | ve dünya (ilk) || {0|Şüphesiz} {2|ahiret} {3|de dünya da} {1|bizimdir.}
+92:14 | sizi uyardım | bir ateşle | alev alev yanan || {0|İşte sizi} {2|alev alev yanan} {1|bir ateşe karşı} {0|uyardım.}
+92:15 | -mez | ona girer | ancak | en bedbaht || {1|Ona} {3|en bedbaht olandan} {2|başkası} {1|gir}{0|mez};
+92:16 | o ki | yalanladı | ve yüz çevirdi || {0|o ki} {1|yalanlamış} {2|ve yüz çevirmiştir.}
+92:17 | ve ondan uzak tutulacak | en takvalı || {1|En takvalı olan ise} {0|ondan uzak tutulacaktır};
+92:18 | o ki | verir | malını | arınır || {0|o ki} {3|arınmak için} {2|malını} {1|verir.}
+92:19 | ve -mez | hiç kimse için | yanında | -den | nimet | karşılık verilir || {2|Onun yanında} {1|hiç kimsenin} {5|karşılığı ödenecek} {4|bir nimeti} {0|yoktur};
+92:20 | ancak | arayarak | rızasını (yüzünü) | Rabbinin | en yüce || {0|o, ancak} {4|en yüce} {3|Rabbinin} {2|rızasını} {1|arayarak} (verir).
+92:21 | ve elbette ileride | razı olacak || {0|Elbette o da} {1|razı olacaktır.}

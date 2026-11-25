@@ -100,6 +100,14 @@
     return (MI = m);
   }
   const mealOn = () => !!jget('nv_kmeal', false);
+  /* Kelime kelime renkli meal: {g: [kelime karşılıkları], m: '{i|metin} ek söz …'} */
+  const KW_SEG = /\{(\d+)\|([^{}]*)\}/g;
+  const KW_PAL = ['#c0392b', '#2471a3', '#1e8449', '#b9770e', '#7d3c98', '#117a65', '#a04000', '#2e4053', '#c2185b', '#5d6d7e', '#6c3483', '#0e6655'];
+  const kwC = (i) => KW_PAL[i % KW_PAL.length];
+  /** meal değerinin düz metni (dipnotlu dizi, renkli meal nesnesi ya da düz metin) */
+  const mText = (v) => (v && typeof v === 'object' && !Array.isArray(v) ? String(v.m || '').replace(KW_SEG, '$2') : Array.isArray(v) ? v[0] : v);
+  const KURD = { key: 'fz:kmr-unknown', name: 'Kurdî · Kurmancî (bi tîpên latînî)', dir: 'ltr', qe: true,
+    credit: 'Kurmancî (Kuzey Kürtçesi, Latin harfli) meal — mütercimi belirtilmemiş; kaynak: maktabah.org / donatequran.com, fawazahmed0/quran-api üzerinden. Metin değiştirilmeden yayımlanmıştır.' };
   const tefAllowed = () => (window.UILANG || 'tr') === 'tr';            // tefsir yalnız Türkçe arayüzde
   const tefOn = () => tefAllowed() && !!jget('nv_ktef', false);
   const GONE = new Set(['rwwad', 'shaban', 'shahin']);                // kaldırılan Türkçe mealler
@@ -112,7 +120,7 @@
     } catch { /* sonra */ }
   })();
   const TEFS = new Proxy({}, { get: (o, k) => (k === 'elmalili' ? "Elmalılı · Hak Dini Kur'an Dili" : window.T ? window.T('Muhtasar Tefsir') : 'Muhtasar Tefsir') });
-  const tefKey = () => { const k = jget('nv_ktefk', 'mokhtasar'); return /^(mokhtasar|elmalili|[a-z]+_mokhtasar)$/.test(k) ? k : 'mokhtasar'; };
+  const tefKey = () => { const k = jget('nv_ktefk', 'elmalili'); return /^(mokhtasar|elmalili|[a-z]+_mokhtasar)$/.test(k) ? k : 'mokhtasar'; };
   const isElm = () => tefKey() === 'elmalili';
   /* Elmalılı tefsiri (Hak Dini Kur'an Dili): Elmalılı'nın kendi ayırdığı ayet grupları hâlinde; her bölüm ayrı dosya, açıldıkça telefona iner.
      Arapça ibareler kitabın kendi yazı tipiyle, sayfadaki hâliyle (SVG) çizilir. */
@@ -175,7 +183,7 @@
     if (jget('nv_lauto', 'tr') === L) return;
     if (L === 'tr') {
       if (jget('nv_lautok', '') && mealKey() === jget('nv_lautok', '')) jset('nv_kmealk', 'elmalili');
-      jset('nv_ktefk', 'mokhtasar'); jset('nv_lauto', 'tr'); return;
+      jset('nv_ktefk', 'elmalili'); jset('nv_lauto', 'tr'); return;
     }
     if (!navigator.onLine) return;
     let items; try { items = await qeList(); } catch { return; }
@@ -198,7 +206,8 @@
   }
   async function mealList() {
     const idx = await mealIndex().catch(() => []);
-    return idx.concat(extraMeals().map((x) => ({ key: x.k, name: `${langName(x.l)} · ${x.t}`, dir: x.dir, qe: true,
+    const ex = extraMeals();
+    return idx.concat(ex.some((x) => x.k === KURD.key) ? [] : [KURD], ex.map((x) => ({ key: x.k, name: `${langName(x.l)} · ${x.t}`, dir: x.dir, qe: true,
       credit: isFz(x.k) ? `${x.t} — fawazahmed0/quran-api${x.d ? ' (' + x.d + ')' : ''}. Metin değiştirilmeden yayımlanmıştır.`
         : `${x.t} — QuranEnc.com (Kur'an-ı Kerim Ansiklopedisi), sürüm ${x.v}. Metin değiştirilmeden yayımlanmıştır.` })));
   }
@@ -209,6 +218,10 @@
     let d = await DB.get('quran', k).catch(() => null);
     const tef = kind[0] === 't';
     if (d && !tef && d.v !== 2) d = null;          // dipnotsuz eski kayıt: yeniden indir
+    if (d && !tef && navigator.onLine && MI) {     // sürekli genişleyen meal (renkli kelime meali): yeni sürüm varsa yenile
+      const e = MI.find((x) => 'm:' + x.key === kind);
+      if (e?.live && e.version && d.ver !== e.version) d = null;
+    }
     if (!d) {
       if (!navigator.onLine) throw Object.assign(new Error(`${tef ? 'Tefsir' : 'Meal'} (${n}. cüz) henüz indirilmedi; internete bağlanınca iner.`), { offline: true });
       const mk = kind.slice(2);
@@ -365,7 +378,7 @@
     const qp = prog().q;
     h += `<section class="card k-book k-quran">
       <div class="k-bhead"><span class="k-ar">القرآن الكريم</span><div><h3>Kur'an-ı Kerîm</h3>
-      <small>30 cüz · 604 sayfa (Medine Mushafı) · Elmalılı meali, Muhtasar tefsir · telefonda ${have.size}/30 cüz</small></div></div>
+      <small>30 cüz · 604 sayfa (Medine Mushafı) · Elmalılı meali ve tefsiri · renkli kelime meali · telefonda ${have.size}/30 cüz</small></div></div>
       <div class="k-actions"><a class="btn" href="#kitap/kuran">Cüzler ve sureler</a>
       ${qp ? `<a class="btn ghost" href="#kitap/kuran/${qp}">Devam et (s. ${qp})</a>` : '<a class="btn ghost" href="#kitap/kuran/1">Okumaya başla</a>'}
       <button class="btn ghost" type="button" data-k="mealread">Meal ve tefsirle oku</button>
@@ -595,6 +608,11 @@
     const juzs = [...new Set(rows.map(([s, a]) => juzOf(s, a)))];
     let meal = {}, mealErr = '', mealSrc = '', tef = null, tefErr = '';
     try { for (const j of juzs) { const d = await juzData('m:' + (mi?.key || 'elmalili'), j); Object.assign(meal, d.m); if (d.src) mealSrc = d.src; } } catch (e) { mealErr = e.message; }
+    const kw = mi?.key === 'kelime';
+    let kwFb = {};                                   // renkli meali henüz hazırlanmamış ayetler için Elmalılı meali
+    if (kw && rows.some(([s, a]) => !meal[s + ':' + a])) {
+      try { for (const j of juzs) Object.assign(kwFb, (await juzData('m:elmalili', j)).m); } catch { /* yok */ }
+    }
     let eix = null;
     if (tefOn() && isElm()) { try { eix = await elmIdx(); } catch (e) { tefErr = e.message; } }
     else if (tefOn()) {
@@ -604,7 +622,7 @@
     const tfs = Math.max(14, Math.round(fs * 0.62)), mdir = mi?.dir === 'rtl' ? 'rtl' : 'ltr';
     let h = `<div class="qm-bar"><label>Meal <select id="kMealSel">${idx.map((x) => `<option value="${esc(x.key)}"${x.key === mi?.key ? ' selected' : ''}>${esc(x.name)}</option>`).join('')}
       <option value="__lib">＋ Başka dilde meal…</option></select></label>
-      ${tefAllowed() && (window.UILANG || 'tr') === 'tr' ? `<label>Tefsir <select id="kTefSel">${['mokhtasar', 'elmalili'].map((k) => `<option value="${k}"${tefKey() === k ? ' selected' : ''}>${k === 'elmalili' ? 'Elmalılı (Hak Dini Kur\'an Dili)' : 'Muhtasar Tefsir'}</option>`).join('')}</select></label>` : ''}
+      ${tefAllowed() && (window.UILANG || 'tr') === 'tr' ? `<label>Tefsir <select id="kTefSel">${['elmalili', 'mokhtasar'].map((k) => `<option value="${k}"${tefKey() === k ? ' selected' : ''}>${k === 'elmalili' ? 'Elmalılı (Hak Dini Kur\'an Dili)' : 'Muhtasar Tefsir'}</option>`).join('')}</select></label>` : ''}
 </div>`;
     if (mealErr) h += `<p class="k-wait">${esc(mealErr)} <button class="btn ghost" type="button" data-k="retry">Tekrar dene</button></p>`;
     if (tefErr) h += `<p class="k-wait">${esc(tefErr)}</p>`;
@@ -617,10 +635,14 @@
         if (sp) { h += `<div class="q-bsm k-ar" style="font-size:${fs}px">${esc(qa(sp[0]))}</div>`; txt = sp[1]; }
       }
       const mv = meal[s + ':' + a], tf = tef?.m[s + ':' + a];
-      const tr = Array.isArray(mv) ? mv[0] : mv, fn = Array.isArray(mv) ? mv[1] : '';
-      h += `<article class="qm" id="ay-${s}-${a}">
-        <div class="qm-ar k-ar" style="font-size:${fs}px">${esc(qa(txt))} <span class="q-no">۝${arNum(a)}</span></div>
-        ${tr !== undefined ? `<p class="qm-tr" dir="${mdir}" style="font-size:${tfs}px"><b>${s}:${a}</b> ${noteMarks(tr)}</p>` : ''}
+      const ws = kw && mv && mv.g ? txt.split(' ') : null, kwOk = ws && ws.length === mv.g.length;
+      const fb = kw && !kwOk ? kwFb[s + ':' + a] : undefined;
+      const tr = kw ? (fb !== undefined ? mText(fb) : undefined) : Array.isArray(mv) ? mv[0] : mv, fn = !kw && Array.isArray(mv) ? mv[1] : '';
+      h += `<article class="qm${kwOk ? ' kw' : ''}" id="ay-${s}-${a}">
+        ${kwOk ? `<div class="qm-ar kw-ws" dir="rtl" data-ar="${esc(qa(txt))}">${ws.map((w, i) => `<span class="kw-w" data-i="${i}" style="--c:${kwC(i)}"><span class="k-ar" style="font-size:${fs}px">${esc(qa(w))}</span><span class="kw-g" dir="ltr" style="font-size:${Math.max(11, Math.round(tfs * 0.78))}px">${esc(mv.g[i])}</span></span>`).join('')}<span class="q-no k-ar" style="font-size:${fs}px">۝${arNum(a)}</span></div>
+          <p class="qm-tr kw-m" dir="ltr" style="font-size:${tfs}px"><b>${s}:${a}</b> ${esc(mv.m).replace(/\{(\d+)\|([^{}]*)\}/g, (x, i, t) => `<span class="kw-s" data-i="${i}" style="--c:${kwC(+i)}">${t}</span>`)}</p>`
+        : `<div class="qm-ar k-ar" style="font-size:${fs}px">${esc(qa(txt))} <span class="q-no">۝${arNum(a)}</span></div>`}
+        ${tr !== undefined ? `<p class="qm-tr" dir="${mdir}" style="font-size:${tfs}px"><b>${s}:${a}</b> ${noteMarks(tr)}</p>${fb !== undefined ? '<p class="kw-na">Bu ayetin renkli kelime meali henüz hazırlanmadı; Elmalılı meali gösteriliyor.</p>' : ''}` : ''}
         ${fn ? `<p class="qm-fn" dir="${mdir}" style="font-size:${tfs - 2}px">${noteMarks(fn, true)}</p>` : ''}
         <div class="qm-acts">${tf || !tefAllowed() || eix ? '' : `<button class="qm-tb" type="button" data-k="tef1" data-s="${s}" data-a="${a}">Tefsirini göster</button>`}
           <button class="qm-tb" type="button" data-k="aycopy" data-s="${s}" data-a="${a}">Ayeti kopyala</button></div>
@@ -639,6 +661,11 @@
       jset('nv_kmealk', e.target.value); render();
     });
     $('kTefSel')?.addEventListener('change', (e) => { jset('nv_ktefk', e.target.value); render(); });
+    if (!body.dataset.kwl) body.dataset.kwl = '1', body.addEventListener('click', (e) => {                // renkli meal: dokunulan kelime ile karşılığını birlikte işaretle
+      const el = e.target.closest('.kw [data-i]'), art = e.target.closest('.qm.kw');
+      body.querySelectorAll('.kw-on').forEach((x) => x.classList.remove('kw-on'));
+      if (el && art) art.querySelectorAll(`[data-i="${el.dataset.i}"]`).forEach((x) => x.classList.add('kw-on'));
+    });
     body.querySelectorAll('details.em').forEach((d) => d.addEventListener('toggle', () => elmFill(d)));
     saveProg('q', p, `${TT("Kur'an-ı Kerîm")} · ${pgL(p)}`, `${jzL(n)} · ${surahsOnPage(p)}`);
     showPendingAy();
@@ -651,7 +678,8 @@
   /** Ayeti kopyala: Arapça metin + ekranda görünen meal (hangi dildeyse) + kaynaklar + ses dosyasının adresi */
   async function copyAyah(btn) {
     const s = +btn.dataset.s, a = +btn.dataset.a, art = btn.closest('.qm');
-    const ar = (art.querySelector('.qm-ar')?.childNodes[0]?.textContent || '').trim();
+    const qe = art.querySelector('.qm-ar');
+    const ar = (qe?.dataset.ar || qe?.childNodes[0]?.textContent || '').trim();
     const trEl = art.querySelector('.qm-tr');
     const tr = trEl ? trEl.textContent.replace(/^\s*\d+:\d+\s*/, '').trim() : '';
     const mk = mealKey(), mi = (await mealList()).find((x) => x.key === mk);
@@ -728,7 +756,7 @@
       } else {
         const d = await juzData('m:' + key, n);
         for (const [ref, v] of Object.entries(d.m)) {
-          const t = Array.isArray(v) ? v[0] : v;
+          const t = mText(v);
           if (t && normMap(t, f)[0].includes(nq)) { const [s, a] = ref.split(':').map(Number); hits.push([s, a, t, 0]); }
         }
       }

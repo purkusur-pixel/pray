@@ -1,0 +1,67 @@
+# Zilzâl, Âdiyât, Kâria, Tekâsür, Asr, Hümeze, Fîl, Kureyş, Mâûn
+99:1 | -diği zaman | sarsıldı | yer | sarsıntısı(yla) || {2|Yer} {3|o şiddetli sarsıntısıyla} {1|sarsıldığı} {0|zaman},
+99:2 | ve çıkardı | yer | ağırlıklarını || {1|yer} {2|ağırlıklarını (içindekileri)} {0|dışarı çıkardığı},
+99:3 | ve dedi | insan | ne (oluyor) | ona || {1|insan} da “{3|Ona} {2|ne oluyor?}” {0|dediği zaman},
+99:4 | o gün | anlatır | haberlerini || {0|işte o gün} (yer) {2|haberlerini} {1|anlatır;}
+99:5 | çünkü | Rabbin | vahyetti | ona || {0|çünkü} {1|Rabbin} {3|ona} {2|vahyetmiştir.}
+99:6 | o gün | çıkar | insanlar | bölük bölük | gösterilsin diye | amelleri || {0|O gün} {2|insanlar}, {5|amelleri} {4|kendilerine gösterilsin diye} {3|bölük bölük} {1|(kabirlerinden) çıkarlar.}
+99:7 | kim | yaparsa | ağırlığınca | zerre | hayır | onu görür || {0|Kim} {3|zerre} {2|ağırlığınca} {4|bir hayır} {1|yaparsa} {5|onu görür.}
+99:8 | ve kim | yaparsa | ağırlığınca | zerre | şer | onu görür || {0|Kim de} {3|zerre} {2|ağırlığınca} {4|bir kötülük} {1|yaparsa} {5|onu görür.}
+100:1 | andolsun koşanlara | soluyarak || {1|Soluk soluğa} {0|koşanlara andolsun},
+100:2 | ve çıkaranlara | çakarak (kıvılcım) || {1|(nallarıyla) çakıp kıvılcım} {0|çıkaranlara},
+100:3 | ve baskın yapanlara | sabahleyin || {1|sabahleyin} {0|baskın yapanlara},
+100:4 | ve kaldırdılar | onunla (orada) | toz || {1|orada} {2|tozu dumana} {0|katanlara},
+100:5 | ve ortasına daldılar | onunla (orada) | topluluğun || {1|orada} {2|(düşman) topluluğunun} {0|ortasına dalanlara};
+100:6 | şüphesiz | insan | Rabbine karşı | elbette çok nankördür || {0|şüphesiz} {1|insan} {2|Rabbine karşı} {3|çok nankördür.}
+100:7 | ve şüphesiz o | üzerine | buna | elbette şahittir || {0|Ve şüphesiz kendisi} {2|buna} {3|elbette şahittir.}
+100:8 | ve şüphesiz o | sevgisine | malın (hayrın) | elbette çok düşkündür || {0|Ve şüphesiz o}, {2|mal} {1|sevgisine} {3|çok düşkündür.}
+100:9 | bilmez mi | bilir | -diği zaman | (dışarı) çıkarıldı | şey | -de | kabirler || {0|Peki o bilmez mi ki}, {6|kabirlerde} {4|olanlar} {3|dışarı çıkarıldığı} {2|zaman},
+100:10 | ve ortaya konuldu | şey | -de | göğüsler || {3|göğüslerde (kalplerde)} {1|olanlar} {0|ortaya konulduğu zaman},
+100:11 | şüphesiz | Rableri | onlardan | o gün | elbette haberdardır || {0|şüphesiz} {1|Rableri} {3|o gün} {2|onlardan} {4|tamamen haberdardır.}
+101:1 | Kâria (kapıyı çalan) || {0|Kâria (kapıları çalan büyük felaket)!}
+101:2 | nedir | Kâria || {1|Nedir} {0|o Kâria?}
+101:3 | ve ne | bildirdi sana | nedir | Kâria || {3|Kâria'nın} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+101:4 | gün | olur | insanlar | pervaneler gibi | yayılmış || {0|O gün} {2|insanlar} {4|yayılmış} {3|pervaneler gibi} {1|olur};
+101:5 | ve olur | dağlar | yün gibi | atılmış (didilmiş) || {1|dağlar} {3|atılmış} {2|renkli yün gibi} {0|olur.}
+101:6 | işte | kim | ağır geldi | tartıları || {0|İşte} {3|tartıları} {2|ağır gelen} {1|kimse},
+101:7 | o | -de | hayat | hoşnut olunan || {0|o} {3|hoşnut olacağı} {2|bir hayat} {1|içindedir.}
+101:8 | ve | kim | hafif geldi | tartıları || {0|Ama} {3|tartıları} {2|hafif gelen} {1|kimse},
+101:9 | anası (varacağı yer) | Hâviye || {0|onun anası (yeri)} {1|Hâviye'dir.}
+101:10 | ve ne | bildirdi sana | nedir | o || {3|Onun} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+101:11 | bir ateş | kızgın || {1|Kızgın} {0|bir ateştir!}
+102:1 | oyaladı sizi | çoklukla övünme || {1|Çoklukla övünmek} {0|sizi oyaladı},
+102:2 | -e kadar | ziyaret ettiniz | kabirleri || {2|kabirleri} {1|ziyaret edinceye} {0|kadar.}
+102:3 | hayır | -acaksınız | bileceksiniz || {0|Hayır!} {1|İleride} {2|bileceksiniz!}
+102:4 | sonra | hayır | -acaksınız | bileceksiniz || {0|Sonra} {1|hayır!} {2|İleride} {3|bileceksiniz!}
+102:5 | hayır | eğer | bilseydiniz | bilgisiyle | kesin || {0|Hayır!} {1|Eğer} {4|kesin} {3|bilgiyle} {2|bilseydiniz!}
+102:6 | elbette göreceksiniz | cehennemi || {1|Cehennemi} {0|mutlaka göreceksiniz.}
+102:7 | sonra | elbette onu göreceksiniz | gözüyle | kesin || {0|Sonra} {1|onu} {3|kesin} {2|bir gözle} {1|göreceksiniz.}
+102:8 | sonra | elbette sorulacaksınız | o gün | -den | nimetler || {0|Sonra} {2|o gün} {4|nimetlerden} {1|mutlaka sorguya çekileceksiniz.}
+103:1 | andolsun asra (zamana) || {0|Asra (zamana) andolsun ki},
+103:2 | şüphesiz | insan | elbette -dedir | ziyan || {0|şüphesiz} {1|insan} {3|ziyan} {2|içindedir};
+103:3 | ancak | kimseler | iman eden | ve yapan | salih ameller | ve birbirine tavsiye eden | hakkı | ve birbirine tavsiye eden | sabrı || {0|ancak} {2|iman eden}, {4|salih ameller} {3|işleyen}, {6|hakkı} {5|birbirine tavsiye eden} {8|ve sabrı} {7|birbirine tavsiye eden} {1|kimseler} başka.
+104:1 | vay haline | her | arkadan çekiştiren | kaş göz işaretiyle alay eden || {1|Arkadan çekiştiren}, {3|kaş göz işaretiyle alay eden} {1|her} {2|kişinin} {0|vay haline!}
+104:2 | o ki | topladı | mal | ve onu saydı || {0|O ki} {2|mal} {1|toplamış} {3|ve onu tekrar tekrar saymıştır.}
+104:3 | sanır | -dığını | malı(nın) | onu ebedî kıldı || {2|Malının} {3|kendisini ebedî kılacağını} {0|sanır.}
+104:4 | hayır | elbette atılacak | -e | Hutame || {0|Hayır!} {1|Andolsun ki o}, {3|Hutame'ye} {1|atılacaktır.}
+104:5 | ve ne | bildirdi sana | nedir | Hutame || {3|Hutame'nin} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+104:6 | ateşi | Allah'ın | tutuşturulmuş || {0|O}, {1|Allah'ın} {2|tutuşturulmuş} {0|ateşidir};
+104:7 | o ki | yükselir | üzerine | kalpler || {0|o ateş ki} {3|kalplere} {2|kadar} {1|yükselir.}
+104:8 | şüphesiz o | onların üzerine | kapatılmıştır || {0|Şüphesiz o (ateş)}, {1|onların üzerine} {2|kapatılmıştır},
+104:9 | -de | sütunlar | uzatılmış || {2|uzatılmış} {1|sütunlar} {0|içinde.}
+105:1 | görmedin mi | gördün | nasıl | yaptı | Rabbin | sahiplerine | fil || {4|Rabbinin} {6|fil} {5|sahiplerine} {2|nasıl} {3|ne yaptığını} {0|görmedin mi?}
+105:2 | -medi mi | kıldı | tuzaklarını | -de | boşa çıkma || {2|Onların tuzaklarını} {4|boşa} {1|çıkarmadı} {0|mı?}
+105:3 | ve gönderdi | üzerlerine | kuşlar | sürü sürü || {1|Üzerlerine} {3|sürü sürü} {2|kuşlar} {0|gönderdi.}
+105:4 | onlara atıyorlardı | taşlar | -den | pişkin çamur || {0|Onlar (kuşlar), onlara} {3|pişkin çamurdan} {1|taşlar} {0|atıyorlardı.}
+105:5 | ve onları kıldı | ekin yaprağı gibi | yenilmiş || {0|Sonunda onları} {2|yenilmiş} {1|ekin yaprağı gibi} {0|yaptı.}
+106:1 | ısındırıldığı için | Kureyş'in || {1|Kureyş'in} {0|alıştırılması (ısındırılması) için},
+106:2 | ısındırılmaları | yolculuğuna | kış | ve yaz || {2|kış} {3|ve yaz} {1|yolculuklarına} {0|alıştırılmaları için},
+106:3 | ibadet etsinler | Rabbine | bu | Ev (Kâbe) || {2|bu} {3|Evin (Kâbe'nin)} {1|Rabbine} {0|ibadet etsinler};
+106:4 | o ki | onları doyurdu | -den | açlık | ve onları emin kıldı | -den | korku || {0|O ki} {1|onları} {3|açlıktan} kurtarıp {1|doyurdu} {4|ve onları} {6|korkudan} emin kılıp {4|güvene kavuşturdu.}
+107:1 | gördün mü | kimseyi | yalanlayan | dini (hesap gününü) || {3|Dini (hesap gününü)} {2|yalanlayanı} {0|gördün mü?}
+107:2 | işte o | kimse | iter | yetimi || {0|İşte o}, {3|yetimi} {2|itip kakan} {1|kimsedir};
+107:3 | ve -mez | teşvik eder | -e | yedirmeye | yoksulu || {4|yoksulu} {3|doyurmaya} {1|teşvik} {0|etmez.}
+107:4 | vay haline | namaz kılanların || {1|Namaz kılanların} {0|vay haline!}
+107:5 | onlar ki | onlar | -den | namazlarını | gafildirler || {0|Onlar ki} {3|namazlarından} {4|gafildirler};
+107:6 | onlar ki | onlar | gösteriş yaparlar || {0|onlar ki} {2|gösteriş yaparlar}
+107:7 | ve engellerler | yardımı (zekâtı, ufak tefek eşyayı) || {1|ve en küçük yardımı} {0|bile engellerler.}

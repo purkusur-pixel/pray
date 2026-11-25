@@ -1,0 +1,7 @@
+1:1 | adıyla | Allah'ın | Rahmân | Rahîm || {2|Rahmân} ve {3|Rahîm} olan {1|Allah'ın} {0|adıyla.}
+1:2 | hamd | Allah'a (mahsustur) | Rabbi | âlemlerin || {0|Hamd}, {3|âlemlerin} {2|Rabbi} {1|Allah'a} mahsustur.
+1:3 | Rahmân | Rahîm || O, {0|Rahmân}dır, {1|Rahîm}dir.
+1:4 | sahibi | günü | din (hesap) || {2|Din} {1|gününün} {0|sahibidir.}
+1:5 | yalnız sana | ibadet ederiz | ve yalnız senden | yardım dileriz || {0|Yalnız sana} {1|ibadet ederiz} {2|ve yalnız senden} {3|yardım dileriz.}
+1:6 | bizi ilet | yola | dosdoğru || {0|Bizi} {2|dosdoğru} {1|yola} {0|ilet;}
+1:7 | yoluna | kimselerin | nimet verdiğin | kendilerine | değil | gazap edilmiş | üzerlerine | ve ne de | sapmışlar || {3|kendilerine} {2|nimet verdiğin} {1|kimselerin} {0|yoluna}; {6|üzerlerine} {5|gazap edilmişlerin} {4|değil}, {8|sapmışların da} {7|değil.}

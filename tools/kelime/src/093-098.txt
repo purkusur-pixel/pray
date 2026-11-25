@@ -1,0 +1,60 @@
+# Duhâ, İnşirâh, Tîn, Alak, Kadir, Beyyine
+93:1 | andolsun kuşluk vaktine || {0|Kuşluk vaktine andolsun},
+93:2 | ve geceye | -diği zaman | sükûna erdi (karanlığı çöktü) || {0|ve} {2|sükûna erdiği} {1|zaman} {0|geceye andolsun ki},
+93:3 | -medi | seni terk etti | Rabbin | ve -medi | darıldı || {2|Rabbin} {1|seni terk} {0|etmedi} {3|ve} (sana) {4|darılmadı da.}
+93:4 | ve elbette ahiret | daha hayırlıdır | senin için | -den | dünya (ilk hayat) || {0|Elbette ahiret} {2|senin için} {4|dünyadan} {1|daha hayırlıdır.}
+93:5 | ve elbette ileride | sana verecek | Rabbin | ve sen hoşnut olacaksın || {2|Rabbin} {0|elbette ileride} {1|sana (nice nimetler) verecek} {3|ve sen hoşnut olacaksın.}
+93:6 | -medi mi | seni buldu | yetim | ve barındırdı || {1|O seni} {2|yetim} {1|bulup} {3|barındırmadı} {0|mı?}
+93:7 | ve seni buldu | yolunu bilmez (şaşkın) | ve doğru yola iletti || {0|Seni} {1|yolunu bilmez} {0|bulup} {2|doğru yola iletmedi mi?}
+93:8 | ve seni buldu | fakir | ve zengin etti || {0|Seni} {1|fakir} {0|bulup} {2|zengin etmedi mi?}
+93:9 | öyleyse | yetimi | sakın | ezme || {0|Öyleyse} {1|yetimi} {3|ezme}{2|!}
+93:10 | ve | isteyeni | sakın | azarlama || {1|İsteyeni (dilenciyi)} de {3|azarlama}{2|!}
+93:11 | ve | nimetini | Rabbinin | anlat || {0|Rabbinin} {1|nimetini} {3|anlat.}
+94:1 | -medik mi | açtık | senin için | göğsünü || {2|Senin} {3|göğsünü} {1|açıp genişletmedik} {0|mi?}
+94:2 | ve kaldırdık | senden | yükünü || {1|Senden} {2|yükünü} {0|kaldırıp atmadık mı?}
+94:3 | o ki | büktü | belini || {0|O (yük) ki} {2|belini} {1|bükmüştü.}
+94:4 | ve yükselttik | senin için | şanını (anılmanı) || {1|Senin} {2|şanını (anılmanı)} {0|yükseltmedik mi?}
+94:5 | şüphesiz | ile | zorluk | kolaylık || {0|Şüphesiz} {2|zorlukla} {1|beraber} {3|bir kolaylık vardır.}
+94:6 | şüphesiz | ile | zorluk | kolaylık || {0|Gerçekten} {2|zorlukla} {1|beraber} {3|bir kolaylık vardır.}
+94:7 | öyleyse -diğinde | boşaldın (işi bitirdin) | hemen yorul (başka işe koyul) || {0|Öyleyse} {1|bir işi bitirince} {2|hemen başka işe koyul (yorul)}
+94:8 | ve -e | Rabbine | rağbet et (yönel) || {0|ve} {1|yalnız Rabbine} {2|yönel.}
+95:1 | andolsun incire | ve zeytine || {0|İncire} {1|ve zeytine} andolsun,
+95:2 | ve Tûr'a | Sînâ || {1|Sînâ} {0|Dağına (Tûr'a)},
+95:3 | ve bu | belde(ye) | güvenli || {0|ve bu} {2|güvenli} {1|beldeye} andolsun ki,
+95:4 | andolsun | yarattık | insanı | -de | en güzel | biçim || {0|Andolsun ki biz} {2|insanı} {4|en güzel} {5|biçimde} {1|yarattık.}
+95:5 | sonra | onu çevirdik | en aşağısına | aşağıların || {0|Sonra} {1|onu} {3|aşağıların} {2|en aşağısına} {1|çevirdik.}
+95:6 | ancak | kimseler | iman eden | ve yapan | salih ameller | onlar için vardır | bir ecir | -siz | kesintisiz (minnet edilmeyen) || {0|Ancak} {2|iman edip} {4|salih ameller} {3|işleyenler} {0|başka}; {5|onlar için} {8|kesintisiz} {6|bir mükâfat vardır.}
+95:7 | artık ne | seni yalanlatır | bundan sonra | dini (hesap gününü) || {2|Bundan sonra} {3|hesap gününü} {1|yalanlamana} {0|ne sebep olabilir?}
+95:8 | değil mi | Allah | en hükmedeni | hükmedenlerin || {1|Allah} {3|hâkimlerin} {2|en hâkimi} {0|değil mi?}
+96:1 | oku | adıyla | Rabbinin | ki o | yarattı || {4|Yaratan} {2|Rabbinin} {1|adıyla} {0|oku!}
+96:2 | yarattı | insanı | -den | alak (asılıp tutunan) || {0|O,} {1|insanı} {3|alaktan (rahme tutunan kan pıhtısından)} {0|yarattı.}
+96:3 | oku | ve Rabbin | en cömert || {0|Oku!} {1|Rabbin} {2|en cömert olandır.}
+96:4 | o ki | öğretti | kalemle || {0|O ki} {2|kalemle} {1|(yazmayı) öğretti.}
+96:5 | öğretti | insana | şey | -medi | biliyordu || {1|İnsana} {4|bilmediği} {2|şeyleri} {0|öğretti.}
+96:6 | hayır | şüphesiz | insan | elbette azar || {0|Hayır!} {1|Şüphesiz} {2|insan} {3|azar};
+96:7 | çünkü | kendini gördü | müstağni (yeterli) || {0|çünkü} {1|kendini} {2|kendine yeterli} {1|görür.}
+96:8 | şüphesiz | -e | Rabbin | dönüş || {0|Şüphesiz} {3|dönüş} {1|ancak} {2|Rabbinedir.}
+96:9 | gördün mü | kimseyi | engelleyen || {2|Engelleyeni} {0|gördün mü},
+96:10 | bir kulu | -diği zaman | namaz kıldı || {0|bir kulu} {2|namaz kıldığı} {1|zaman?}
+96:11 | gördün mü | eğer | oldu | üzerinde | doğru yol || {0|Ne dersin}, {1|eğer} (o kul) {4|doğru yol} {3|üzerinde} {2|idiyse},
+96:12 | yahut | emretti | takvayı || {0|yahut} {2|takvayı} {1|emrettiyse?}
+96:13 | gördün mü | eğer | yalanladı | ve yüz çevirdi || {0|Ne dersin}, {1|eğer} (o engelleyen) {2|yalanladı} {3|ve yüz çevirdiyse?}
+96:14 | -medi mi | bildi | -dığını | Allah'ın | gördüğünü || {3|Allah'ın} {4|her şeyi gördüğünü} {1|bil}{0|medi mi?}
+96:15 | hayır | andolsun eğer | -mezse | vazgeçer | elbette çekeriz | perçeminden || {0|Hayır!} {1|Andolsun eğer} {3|vazgeç}{2|mezse}, {5|onu perçeminden} {4|tutup sürükleyeceğiz};
+96:16 | perçem | yalancı | günahkâr || {1|yalancı}, {2|günahkâr} {0|perçeminden.}
+96:17 | çağırsın | meclisini (yandaşlarını) || {0|Haydi o} {1|meclisini (yandaşlarını)} {0|çağırsın!}
+96:18 | çağıracağız | zebanileri || {0|Biz de} {1|zebanileri} {0|çağıracağız.}
+96:19 | hayır | sakın | ona uyma | ve secde et | ve yaklaş || {0|Hayır!} {2|Ona} {1|sakın} {2|uyma}; {3|secde et} {4|ve (Allah'a) yaklaş.}
+97:1 | şüphesiz biz | onu indirdik | -de | gecesi | Kadir || {0|Şüphesiz biz} {1|onu (Kur'an'ı)} {4|Kadir} {3|gecesinde} {1|indirdik.}
+97:2 | ve ne | bildirdi sana | nedir | gecesi | Kadir || {4|Kadir} {3|gecesinin} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+97:3 | gecesi | Kadir | daha hayırlıdır | -den | bin | ay || {1|Kadir} {0|gecesi} {4|bin} {5|aydan} {2|daha hayırlıdır.}
+97:4 | iner | melekler | ve Ruh (Cebrail) | onda | izniyle | Rablerinin | -den (için) | her | iş || {3|O gecede} {1|melekler} {2|ve Ruh (Cebrail)}, {5|Rablerinin} {4|izniyle} {7|her} {8|iş} {6|için} {0|iner de iner.}
+97:5 | esenliktir | o | -e kadar | doğuşu | fecrin || {1|O gece} {4|fecrin} {3|doğuşuna} {2|kadar} {0|bir esenliktir.}
+98:1 | -medi | oldu(lar) | kimseler | inkâr eden | -den | ehli | Kitap | ve müşrikler | ayrılacak | -e kadar | onlara geldi | apaçık delil || {5|Kitap} {6|ehlinden} {3|inkâr edenler} {7|ve müşrikler}, {11|kendilerine apaçık delil} {10|gelinceye} {9|kadar} (küfürlerinden) {8|ayrılacak} {0|değillerdi.}
+98:2 | bir elçi | -den | Allah | okuyan | sayfalar | tertemiz || (Bu delil,) {2|Allah} {1|tarafından} {5|tertemiz} {4|sayfalar} {3|okuyan} {0|bir elçidir.}
+98:3 | onlarda | yazılar (hükümler) | dosdoğru || {0|Onlarda} {2|dosdoğru} {1|hükümler vardır.}
+98:4 | ve -medi | ayrılığa düştü | kimseler | verilen | Kitap | ancak | -den | sonra | -dikten | onlara geldi | apaçık delil || {4|Kitap} {3|verilenler}, {10|kendilerine apaçık delil} {9|geldikten} {7|sonra} {5|ancak} {1|ayrılığa} {0|düştüler.}
+98:5 | ve -medi | emredildiler | ancak | ibadet etmeleri | Allah'a | ihlaslı olarak | O'na | dini | hanifler olarak | ve kılmaları | namazı | ve vermeleri | zekâtı | ve işte bu | dinidir | dosdoğru (millet) || Oysa onlara, {7|dini} {6|yalnız O'na} {5|has kılarak} {8|hanifler olarak} {4|Allah'a} {3|ibadet etmeleri}, {10|namazı} {9|kılmaları} {12|ve zekâtı} {11|vermeleri} {2|dışında} bir şey {1|emredil}{0|memişti.} {13|İşte bu}, {15|dosdoğru milletin} {14|dinidir.}
+98:6 | şüphesiz | kimseler | inkâr eden | -den | ehli | Kitap | ve müşrikler | -de | ateşi | cehennem | ebedî kalıcılar | orada | işte onlar | onlar | en kötüsü | yaratılmışların || {0|Şüphesiz} {5|Kitap} {4|ehlinden} {2|inkâr edenler} {6|ve müşrikler}, {11|içinde} {10|ebedî kalmak üzere} {9|cehennem} {8|ateşindedirler}. {12|İşte onlar}, {15|yaratılmışların} {14|en kötüsüdür.}
+98:7 | şüphesiz | kimseler | iman eden | ve yapan | salih ameller | işte onlar | onlar | en hayırlısı | yaratılmışların || {0|Şüphesiz} {2|iman edip} {4|salih ameller} {3|işleyenler}, {5|işte onlar} {8|yaratılmışların} {7|en hayırlısıdır.}
+98:8 | mükâfatları | katında | Rableri | cennetleri | Adn | akar | -den | altlarından | ırmaklar | ebedî kalıcılar | orada | sonsuza dek | razı oldu | Allah | onlardan | ve razı oldular | O'ndan | bu | kimse içindir | korktu | Rabbinden || {2|Rableri} {1|katında} {0|onların mükâfatı}, {7|altlarından} {8|ırmaklar} {5|akan} {4|Adn} {3|cennetleridir}; {10|orada} {11|sonsuza dek} {9|ebedî kalacaklardır.} {13|Allah} {14|onlardan} {12|razı olmuştur}, {15|onlar da} {16|O'ndan} {15|razı olmuşlardır.} {17|Bu}, {20|Rabbinden} {19|korkan} {18|kimse içindir.}

@@ -1,0 +1,33 @@
+# Kevser, Kâfirûn, Nasr, Tebbet, İhlâs, Felak, Nâs
+108:1 | şüphesiz biz | sana verdik | Kevser'i || {0|Şüphesiz biz} {1|sana} {2|Kevser'i} {1|verdik.}
+108:2 | öyleyse namaz kıl | Rabbin için | ve kurban kes || {0|Öyleyse} {1|Rabbin için} {0|namaz kıl} {2|ve kurban kes.}
+108:3 | şüphesiz | sana buğzeden | o | soyu kesik olan || {0|Şüphesiz} {1|sana buğzeden}, {3|soyu kesik olanın} {2|ta kendisidir.}
+109:1 | de ki | ey | kâfirler || {0|De ki:} “{1|Ey} {2|kâfirler!}
+109:2 | -mem | ibadet ederim | şeye | ibadet ettiğiniz || {3|Sizin ibadet ettiğiniz} {2|şeylere} {1|ben ibadet} {0|etmem.}
+109:3 | ve değil(siniz) | siz | ibadet edenler | şeye | ibadet ederim || {1|Siz} de {4|benim ibadet ettiğime} {2|ibadet edecek} {0|değilsiniz.}
+109:4 | ve değil(im) | ben | ibadet eden | şeye | ibadet ettiğiniz || {1|Ben} de {4|sizin ibadet ettiklerinize} {2|ibadet edecek} {0|değilim.}
+109:5 | ve değil(siniz) | siz | ibadet edenler | şeye | ibadet ederim || {1|Siz} de {4|benim ibadet ettiğime} {2|ibadet edecek} {0|değilsiniz.}
+109:6 | size | dininiz | ve bana | dinim || {1|Sizin dininiz} {0|size}, {3|benim dinim} {2|bana.}”
+110:1 | -diği zaman | geldi | yardımı | Allah'ın | ve fetih || {3|Allah'ın} {2|yardımı} {4|ve fetih} {1|geldiği} {0|zaman},
+110:2 | ve gördüğünde | insanları | girerlerken | -e | dinine | Allah'ın | bölük bölük || {1|insanların} {5|Allah'ın} {4|dinine} {6|bölük bölük} {2|girdiklerini} {0|gördüğünde},
+110:3 | (o zaman) tesbih et | hamd ile | Rabbini | ve O'ndan bağışlanma dile | şüphesiz O | -dır | tövbeleri çok kabul eden || {2|Rabbini} {1|hamd ile} {0|tesbih et} {3|ve O'ndan bağışlanma dile.} {4|Şüphesiz O}, {6|tövbeleri çok kabul eden}{5|dir.}
+111:1 | kurusun | iki eli | Ebû | Leheb'in | ve kurudu (da) || {2|Ebû} {3|Leheb'in} {1|iki eli} {0|kurusun}; {4|kurudu da!}
+111:2 | -medi | fayda verdi | ona | malı | ve şey | kazandı || {3|Malı} {4|ve} {5|kazandıkları} {2|ona} {1|fayda} {0|vermedi.}
+111:3 | girecektir | bir ateşe | sahip | alevli || {0|O,} {3|alevli} {1|bir ateşe} {0|girecektir.}
+111:4 | ve karısı da | taşıyıcı | odun || {0|Karısı da} {2|odun} {1|taşıyıcı olarak} (oraya girecektir).
+111:5 | -de | boynu | bir ip | -den | hurma lifi || {1|Boynunda} {4|hurma lifinden} {3|bükülmüş} {2|bir ip} olduğu hâlde.
+112:1 | de ki | O | Allah | birdir || {0|De ki:} “{1|O,} {2|Allah'tır}, {3|bir tektir.}
+112:2 | Allah | Samed (her şey O'na muhtaç, O hiçbir şeye muhtaç değil) || {0|Allah} {1|Samed'dir} (her şey O'na muhtaçtır, O hiçbir şeye muhtaç değildir).
+112:3 | -medi | doğurdu | ve -medi | doğuruldu || O, {1|doğur}{0|mamış} {2|ve} {3|doğurulmamıştır.}
+112:4 | ve -medi | oldu | O'na | denk | hiçbir kimse || {3|O'na denk} {4|hiçbir kimse} {1|de} {0|yoktur.}”
+113:1 | de ki | sığınırım | Rabbine | sabahın (yarılan aydınlığın) || {0|De ki:} “{3|Sabahın} {2|Rabbine} {1|sığınırım},
+113:2 | -den | şerri | şeyin | yarattığı || {3|yarattığı} {2|şeylerin} {1|şerrinden},
+113:3 | ve -den | şerri | karanlığı | -diği zaman | çöktü || {3|çöktüğü} {4|zaman} {2|karanlığın} {1|şerrinden},
+113:4 | ve -den | şerri | üfleyenler | -e | düğümler || {4|düğümlere} {2|üfleyenlerin} {1|şerrinden},
+113:5 | ve -den | şerri | hasetçi | -diği zaman | haset etti || {4|haset ettiği} {3|zaman} {2|hasetçinin} {1|şerrinden.}”
+114:1 | de ki | sığınırım | Rabbine | insanların || {0|De ki:} “{3|İnsanların} {2|Rabbine} {1|sığınırım},
+114:2 | Melik'i (hükümdarı) | insanların || {1|insanların} {0|Melik'ine (hükümdarına)},
+114:3 | İlâhı | insanların || {1|insanların} {0|İlâhına},
+114:4 | -den | şerri | vesvesecinin | sinsi || {3|o sinsi} {2|vesvesecinin} {1|şerrinden;}
+114:5 | o ki | vesvese verir | -e | göğüsleri | insanların || {0|o ki} {4|insanların} {3|göğüslerine} {1|vesvese verir;}
+114:6 | -den | cinler | ve insanlar || (Bu vesveseci) {1|cinlerden} {2|ve insanlardan} {0|olur.}”
