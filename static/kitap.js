@@ -899,7 +899,7 @@
     return (ESMA = d);
   }
   /* ---------- Zikirmatik: basit sayaç; sayı yalnız bu telefonda saklanır */
-  const ZK_T = [33, 99, 100, 500, 1000, 0];                          // 0 = sınırsız
+  const ZK_T = [33, 99, 500, 1000, 4444, 0];                          // 0 = sınırsız
   const zk = () => { const z = jget('nv_zikir', {}); const t = Math.floor(+z.t); return { c: +z.c || 0, t: z.t === undefined || !(t >= 0 && t <= 1e5) ? 33 : t, v: z.v !== false, tot: +z.tot || 0, tur: +z.tur || 0, id: z.id || '' }; };
   let ZKD = null;
   /** Örnek zikirler (bilgilendirme): Arapça, okunuş, anlam, önerilen sayı, kaynak */
