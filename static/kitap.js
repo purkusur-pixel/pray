@@ -109,6 +109,7 @@
   const KURD_KEY = 'fz:kmr-unknown';   // Kurmancî yalnız "Başka dilde meal"den eklenirse görünür
   const tefAllowed = () => (window.UILANG || 'tr') === 'tr';            // tefsir yalnız Türkçe arayüzde
   const tefOn = () => tefAllowed() && !!jget('nv_ktef', false);
+  if (!jget('nv_ktefind', false)) { if (!jget('nv_kmeal', false)) jset('nv_ktef', false); jset('nv_ktefind', true); }   // tefsir artık mealden bağımsız: gizli kalmış açık tefsir Mushaf'ı değiştirmesin
   const GONE = new Set(['rwwad', 'shaban', 'shahin']);                // kaldırılan Türkçe mealler
   const mealKey = () => { const k = jget('nv_kmealk', 'elmalili'); return GONE.has(k) || (k === KURD_KEY && !jget('nv_kmealx', []).some((x) => x.k === k)) ? 'elmalili' : k; };
   (async () => {                                                     // kaldırılan meallerin telefondaki cüzlerini bir kez temizle
@@ -138,12 +139,15 @@
       st.textContent = m.fonts.map((f) => `@font-face{font-family:"em-${f}";src:url(${ELM}f/${f}.woff2) format("woff2")}.em-body text.${f}{font-family:"em-${f}"}`).join('');
       document.head.appendChild(st);
     }
+    if (m.v >= 2) (async () => {                      // eski (toplu bölüm) kayıtları bir kez sil
+      try { if (jget('nv_kelmv', 1) >= m.v) return; for (const k of await DB.keys('quran')) if (typeof k === 'string' && /^e(\d*):/.test(k) && !k.startsWith(`e${m.v}:`) && k !== 'e:idx') await DB.del('quran', k); jset('nv_kelmv', m.v); } catch { /* sonra */ }
+    })();
     return (EI = m);
   }
   /** (sure, ayet) -> bölüm sırası */
   const elmFind = (ix, s, a) => (ix.s[s] || []).findIndex((r) => a >= r[0] && a <= r[1]);
   async function elmGroup(s, i) {
-    const k = `e:${s}:${i}`;
+    const k = `e${EI?.v || 1}:${s}:${i}`;           // sürüm 2: ayet ayet bölümler
     if (qMem.has(k)) return qMem.get(k);
     let d = await DB.get('quran', k).catch(() => null);
     if (!d) {
@@ -162,7 +166,7 @@
       (Hak Dini Kur'an Dili, İnceleme – Tenkitli Metin, haz. A. C. Köksal – M. Kaya, 2021); yazımı bu baskınınkidir.</p>` : ''}</div>`;
   }
   /** Bir bölümün kutusu: başlığına dokununca açılır, içerik o zaman iner */
-  const elmBox = (s, i, r, open) => `<details class="em" data-s="${s}" data-i="${i}"${open ? ' open' : ''}><summary><b>${TEFS.elmalili}</b><span>${esc(elmLabel(s, r))}</span></summary><div class="em-in"></div></details>`;
+  const elmBox = (s, i, r, open) => r[2] === 0 ? `<p class="em-none">${TEFS.elmalili}: ${esc(elmLabel(s, r))} için meal dışında ayrıca açıklama yazılmamıştır.</p>` : `<details class="em" data-s="${s}" data-i="${i}"${open ? ' open' : ''}><summary><b>${TEFS.elmalili}</b><span>${esc(elmLabel(s, r))}</span></summary><div class="em-in"></div></details>`;
   async function elmFill(det) {
     const box = det.querySelector('.em-in');
     if (!det.open || box.dataset.ok) return;
@@ -571,7 +575,7 @@
       qLoad(ahead).catch(() => {});
       if (mealOn()) juzData('m:' + mealKey(), ahead).catch(() => {});
     }
-    if (mealOn()) { await renderQMeal(p, n, rows, fs); return; }
+    if (mealOn() || tefOn()) { await renderQMeal(p, n, rows, fs); return; }   // meal ve tefsir birbirinden bağımsız
     let html = '';
     for (const [s, a, t] of rows) {
       let txt = t;
@@ -606,8 +610,9 @@
     const mi = idx.find((x) => x.key === mk) || idx[0];
     const juzs = [...new Set(rows.map(([s, a]) => juzOf(s, a)))];
     let meal = {}, mealErr = '', mealSrc = '', tef = null, tefErr = '';
-    try { for (const j of juzs) { const d = await juzData('m:' + (mi?.key || 'elmalili'), j); Object.assign(meal, d.m); if (d.src) mealSrc = d.src; } } catch (e) { mealErr = e.message; }
-    const kw = mi?.key === 'kelime';
+    const mOn = mealOn();
+    if (mOn) try { for (const j of juzs) { const d = await juzData('m:' + (mi?.key || 'elmalili'), j); Object.assign(meal, d.m); if (d.src) mealSrc = d.src; } } catch (e) { mealErr = e.message; }
+    const kw = mOn && mi?.key === 'kelime';
     let kwFb = {};                                   // renkli meali henüz hazırlanmamış ayetler için Elmalılı meali
     if (kw && rows.some(([s, a]) => !meal[s + ':' + a])) {
       try { for (const j of juzs) Object.assign(kwFb, (await juzData('m:elmalili', j)).m); } catch { /* yok */ }
@@ -619,9 +624,9 @@
       catch (e) { tefErr = e.message; tef = null; }
     }
     const tfs = Math.max(14, Math.round(fs * 0.62)), mdir = mi?.dir === 'rtl' ? 'rtl' : 'ltr';
-    let h = `<div class="qm-bar"><label>Meal <select id="kMealSel">${idx.map((x) => `<option value="${esc(x.key)}"${x.key === mi?.key ? ' selected' : ''}>${esc(x.name)}</option>`).join('')}
-      <option value="__lib">＋ Başka dilde meal…</option></select></label>
-      ${tefAllowed() && (window.UILANG || 'tr') === 'tr' ? `<label>Tefsir <select id="kTefSel">${['elmalili', 'mokhtasar'].map((k) => `<option value="${k}"${tefKey() === k ? ' selected' : ''}>${k === 'elmalili' ? 'Elmalılı (Hak Dini Kur\'an Dili)' : 'Muhtasar Tefsir'}</option>`).join('')}</select></label>` : ''}
+    let h = `<div class="qm-bar">${mOn ? `<label>Meal <select id="kMealSel">${idx.map((x) => `<option value="${esc(x.key)}"${x.key === mi?.key ? ' selected' : ''}>${esc(x.name)}</option>`).join('')}
+      <option value="__lib">＋ Başka dilde meal…</option></select></label>` : ''}
+      ${tefOn() && (window.UILANG || 'tr') === 'tr' ? `<label>Tefsir <select id="kTefSel">${['elmalili', 'mokhtasar'].map((k) => `<option value="${k}"${tefKey() === k ? ' selected' : ''}>${k === 'elmalili' ? 'Elmalılı (Hak Dini Kur\'an Dili)' : 'Muhtasar Tefsir'}</option>`).join('')}</select></label>` : ''}
 </div>`;
     if (mealErr) h += `<p class="k-wait">${esc(mealErr)} <button class="btn ghost" type="button" data-k="retry">Tekrar dene</button></p>`;
     if (tefErr) h += `<p class="k-wait">${esc(tefErr)}</p>`;
@@ -638,7 +643,7 @@
       // Türk hattı tüm ayete uygulanıp sonra bölünür: kelime tek başına dönüştürülünce sondaki sakin harfin cezmi düşüyordu
       const wq = kwOk ? qa(txt).split(' ') : null, wsh = wq && wq.length === ws.length ? wq : ws && ws.map(qa);
       const fb = kw && !kwOk ? kwFb[s + ':' + a] : undefined;
-      const tr = kw ? (fb !== undefined ? mText(fb) : undefined) : Array.isArray(mv) ? mv[0] : mv, fn = !kw && Array.isArray(mv) ? mv[1] : '';
+      const tr = !mOn ? undefined : kw ? (fb !== undefined ? mText(fb) : undefined) : Array.isArray(mv) ? mv[0] : mv, fn = mOn && !kw && Array.isArray(mv) ? mv[1] : '';
       h += `<article class="qm${kwOk ? ' kw' : ''}" id="ay-${s}-${a}">
         ${kwOk ? `<div class="qm-ar kw-ws" dir="rtl" data-ar="${esc(qa(txt))}">${ws.map((w, i) => `<span class="kw-w" data-i="${i}" style="--c:${kwC(i)}"><span class="k-ar" style="font-size:${fs}px">${esc(wsh[i])}</span><span class="kw-g" dir="ltr" style="font-size:${Math.max(11, Math.round(tfs * 0.78))}px">${esc(mv.g[i])}</span></span>`).join('')}<span class="q-no k-ar" style="font-size:${fs}px">۝${arNum(a)}</span></div>
           <p class="qm-tr kw-m" dir="ltr" style="font-size:${tfs}px"><b>${s}:${a}</b> ${esc(mv.m).replace(/\{(\d+)\|([^{}]*)\}/g, (x, i, t) => `<span class="kw-s" data-i="${i}" style="--c:${kwC(+i)}">${t}</span>`)}</p>`
@@ -1315,7 +1320,7 @@
         ${ar ? `<button class="k-ib${arOn ? ' on' : ''}" type="button" data-k="artoggle" aria-pressed="${!!arOn}" title="Arapça metin">ع</button>` : ''}
         ${kind === 'q' ? `<button class="k-ib k-ibt" type="button" data-k="hat" title="Yazı hattı">${hatPc() ? 'Mushaf' : 'Bilgisayar'}</button>` : ''}
         ${kind === 'q' ? `<button class="k-ib k-ibt${mealOn() ? ' on' : ''}" type="button" data-k="mealtoggle" aria-pressed="${mealOn()}">Meal</button>
-          ${mealOn() && tefAllowed() ? `<button class="k-ib k-ibt${tefOn() ? ' on' : ''}" type="button" data-k="teftoggle" aria-pressed="${tefOn()}">Tefsir</button>` : ''}` : ''}
+          ${tefAllowed() ? `<button class="k-ib k-ibt${tefOn() ? ' on' : ''}" type="button" data-k="teftoggle" aria-pressed="${tefOn()}">Tefsir</button>` : ''}` : ''}
         <button class="k-ib" type="button" data-k="fminus" aria-label="Yazıyı küçült">A−</button>
         <button class="k-ib" type="button" data-k="fplus" aria-label="Yazıyı büyüt">A+</button></div>
       <div class="k-body${rtl ? ' rtl' : ''}" id="kBody"></div>
@@ -1814,7 +1819,7 @@
         const key = cur.kind === 'q' ? 'q' : 'h', d = key === 'q' ? 27 : 17;
         const v = Math.max(key === 'q' ? 18 : 13, Math.min(key === 'q' ? 48 : 30, fontSize(key, d) + (k === 'fplus' ? 2 : -2)));
         setFont(key, v);
-        if (key === 'q' && mealOn()) { render(); break; }
+        if (key === 'q' && (mealOn() || tefOn())) { render(); break; }
         const pg = document.querySelector('.q-page, .hd-page'); if (pg) pg.style.fontSize = v + 'px';
         break;
       }

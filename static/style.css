@@ -791,6 +791,7 @@ html.i18n-wait body { visibility: hidden; }
 .em { margin: 10px 0 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
 .em > summary { cursor: pointer; padding: 10px 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; list-style: none; }
 .em > summary::-webkit-details-marker { display: none; }
+.em-none { margin: 6px 0 12px; font-size: .85rem; color: var(--muted); }
 .em > summary::before { content: '▸'; color: var(--accent); }
 .em[open] > summary::before { content: '▾'; }
 .em > summary b { font-size: .75rem; color: var(--accent); text-transform: uppercase; letter-spacing: .04em; }
