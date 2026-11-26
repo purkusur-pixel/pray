@@ -106,12 +106,11 @@
   const kwC = (i) => KW_PAL[i % KW_PAL.length];
   /** meal değerinin düz metni (dipnotlu dizi, renkli meal nesnesi ya da düz metin) */
   const mText = (v) => (v && typeof v === 'object' && !Array.isArray(v) ? String(v.m || '').replace(KW_SEG, '$2') : Array.isArray(v) ? v[0] : v);
-  const KURD = { key: 'fz:kmr-unknown', name: 'Kurdî · Kurmancî (bi tîpên latînî)', dir: 'ltr', qe: true,
-    credit: 'Kurmancî (Kuzey Kürtçesi, Latin harfli) meal — mütercimi belirtilmemiş; kaynak: maktabah.org / donatequran.com, fawazahmed0/quran-api üzerinden. Metin değiştirilmeden yayımlanmıştır.' };
+  const KURD_KEY = 'fz:kmr-unknown';   // Kurmancî yalnız "Başka dilde meal"den eklenirse görünür
   const tefAllowed = () => (window.UILANG || 'tr') === 'tr';            // tefsir yalnız Türkçe arayüzde
   const tefOn = () => tefAllowed() && !!jget('nv_ktef', false);
   const GONE = new Set(['rwwad', 'shaban', 'shahin']);                // kaldırılan Türkçe mealler
-  const mealKey = () => { const k = jget('nv_kmealk', 'elmalili'); return GONE.has(k) ? 'elmalili' : k; };
+  const mealKey = () => { const k = jget('nv_kmealk', 'elmalili'); return GONE.has(k) || (k === KURD_KEY && !jget('nv_kmealx', []).some((x) => x.k === k)) ? 'elmalili' : k; };
   (async () => {                                                     // kaldırılan meallerin telefondaki cüzlerini bir kez temizle
     try {
       if (jget('nv_kmealclean', 0) >= 2) return;
@@ -207,9 +206,7 @@
   async function mealList() {
     const idx = await mealIndex().catch(() => []);
     const ex = extraMeals();
-    // Kurmancî varsayılan listede değil; "Başka dilde meal"den eklenir. Önceden seçmiş olanın seçimi boşa düşmesin.
-    const kurd = mealKey() === KURD.key && !ex.some((x) => x.k === KURD.key) ? [KURD] : [];
-    return idx.concat(kurd, ex.map((x) => ({ key: x.k, name: `${langName(x.l)} · ${x.t}`, dir: x.dir, qe: true,
+    return idx.concat(ex.map((x) => ({ key: x.k, name: `${langName(x.l)} · ${x.t}`, dir: x.dir, qe: true,
       credit: isFz(x.k) ? `${x.t} — fawazahmed0/quran-api${x.d ? ' (' + x.d + ')' : ''}. Metin değiştirilmeden yayımlanmıştır.`
         : `${x.t} — QuranEnc.com (Kur'an-ı Kerim Ansiklopedisi), sürüm ${x.v}. Metin değiştirilmeden yayımlanmıştır.` })));
   }
