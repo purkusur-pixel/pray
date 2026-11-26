@@ -843,11 +843,12 @@ html.i18n-wait body { visibility: hidden; }
 /* Kelime kelime renkli meal */
 .kw-ws { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: flex-start; line-height: 1.2; }
 .kw-w { display: inline-flex; flex-direction: column; align-items: center; padding: 2px 5px; border-radius: 10px; border: 1px solid transparent; cursor: pointer; }
-.kw-w .k-ar { color: var(--c); line-height: 1.9; }
+.kw-w .k-ar { color: var(--c); line-height: 1.9; padding: .15em .08em; overflow: visible; }
 .kw-g { color: var(--c); max-width: 9.5em; text-align: center; line-height: 1.25; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 .kw-ws .q-no { align-self: center; }
 .kw-s { color: var(--c); font-weight: 600; border-radius: 4px; cursor: pointer; }
-@media (prefers-color-scheme: dark) { .kw-w .k-ar, .kw-g, .kw-s { filter: brightness(1.6) saturate(.9); } }
+/* Karanlık modda renkler filtreyle değil karışımla açılır: iOS Safari'de filter, kutu dışına taşan harekeleri (esre, üstün) kesiyordu */
+@media (prefers-color-scheme: dark) { .kw-w .k-ar, .kw-g, .kw-s { color: color-mix(in srgb, var(--c) 72%, #fff); } }
 .kw-on { background: color-mix(in srgb, var(--c) 16%, transparent); border-color: color-mix(in srgb, var(--c) 50%, transparent); }
 .kw-s.kw-on { outline: 2px solid color-mix(in srgb, var(--c) 50%, transparent); }
 .kw-na { font-size: .8rem; color: var(--muted); margin: -4px 0 6px; }
