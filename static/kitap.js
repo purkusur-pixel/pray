@@ -207,7 +207,9 @@
   async function mealList() {
     const idx = await mealIndex().catch(() => []);
     const ex = extraMeals();
-    return idx.concat(ex.some((x) => x.k === KURD.key) ? [] : [KURD], ex.map((x) => ({ key: x.k, name: `${langName(x.l)} · ${x.t}`, dir: x.dir, qe: true,
+    // Kurmancî varsayılan listede değil; "Başka dilde meal"den eklenir. Önceden seçmiş olanın seçimi boşa düşmesin.
+    const kurd = mealKey() === KURD.key && !ex.some((x) => x.k === KURD.key) ? [KURD] : [];
+    return idx.concat(kurd, ex.map((x) => ({ key: x.k, name: `${langName(x.l)} · ${x.t}`, dir: x.dir, qe: true,
       credit: isFz(x.k) ? `${x.t} — fawazahmed0/quran-api${x.d ? ' (' + x.d + ')' : ''}. Metin değiştirilmeden yayımlanmıştır.`
         : `${x.t} — QuranEnc.com (Kur'an-ı Kerim Ansiklopedisi), sürüm ${x.v}. Metin değiştirilmeden yayımlanmıştır.` })));
   }
