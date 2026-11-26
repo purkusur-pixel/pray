@@ -635,10 +635,12 @@
       }
       const mv = meal[s + ':' + a], tf = tef?.m[s + ':' + a];
       const ws = kw && mv && mv.g ? txt.split(' ') : null, kwOk = ws && ws.length === mv.g.length;
+      // Türk hattı tüm ayete uygulanıp sonra bölünür: kelime tek başına dönüştürülünce sondaki sakin harfin cezmi düşüyordu
+      const wq = kwOk ? qa(txt).split(' ') : null, wsh = wq && wq.length === ws.length ? wq : ws && ws.map(qa);
       const fb = kw && !kwOk ? kwFb[s + ':' + a] : undefined;
       const tr = kw ? (fb !== undefined ? mText(fb) : undefined) : Array.isArray(mv) ? mv[0] : mv, fn = !kw && Array.isArray(mv) ? mv[1] : '';
       h += `<article class="qm${kwOk ? ' kw' : ''}" id="ay-${s}-${a}">
-        ${kwOk ? `<div class="qm-ar kw-ws" dir="rtl" data-ar="${esc(qa(txt))}">${ws.map((w, i) => `<span class="kw-w" data-i="${i}" style="--c:${kwC(i)}"><span class="k-ar" style="font-size:${fs}px">${esc(qa(w))}</span><span class="kw-g" dir="ltr" style="font-size:${Math.max(11, Math.round(tfs * 0.78))}px">${esc(mv.g[i])}</span></span>`).join('')}<span class="q-no k-ar" style="font-size:${fs}px">۝${arNum(a)}</span></div>
+        ${kwOk ? `<div class="qm-ar kw-ws" dir="rtl" data-ar="${esc(qa(txt))}">${ws.map((w, i) => `<span class="kw-w" data-i="${i}" style="--c:${kwC(i)}"><span class="k-ar" style="font-size:${fs}px">${esc(wsh[i])}</span><span class="kw-g" dir="ltr" style="font-size:${Math.max(11, Math.round(tfs * 0.78))}px">${esc(mv.g[i])}</span></span>`).join('')}<span class="q-no k-ar" style="font-size:${fs}px">۝${arNum(a)}</span></div>
           <p class="qm-tr kw-m" dir="ltr" style="font-size:${tfs}px"><b>${s}:${a}</b> ${esc(mv.m).replace(/\{(\d+)\|([^{}]*)\}/g, (x, i, t) => `<span class="kw-s" data-i="${i}" style="--c:${kwC(+i)}">${t}</span>`)}</p>`
         : `<div class="qm-ar k-ar" style="font-size:${fs}px">${esc(qa(txt))} <span class="q-no">۝${arNum(a)}</span></div>`}
         ${tr !== undefined ? `<p class="qm-tr" dir="${mdir}" style="font-size:${tfs}px"><b>${s}:${a}</b> ${noteMarks(tr)}</p>${fb !== undefined ? '<p class="kw-na">Bu ayetin renkli kelime meali henüz hazırlanmadı; Elmalılı meali gösteriliyor.</p>' : ''}` : ''}
