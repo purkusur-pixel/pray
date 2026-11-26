@@ -1,0 +1,52 @@
+69:1 | gerçekleşecek olan || {0|Gerçekleşecek olan} (kıyamet)!
+69:2 | nedir | gerçekleşecek olan || {1|Nedir} {0|o gerçekleşecek olan?}
+69:3 | ve ne | sana bildirdi | nedir | gerçekleşecek olan || {3|Gerçekleşecek olanın} {2|ne olduğunu} {1|sana} {0|ne} {1|bildirdi?}
+69:4 | yalanladı | Semud | ve Âd | kapı çalanı || {1|Semud} {2|ve Âd} {3|kapı çalanı} (kıyameti) {0|yalanladı.}
+69:5 | ama | Semud | helak edildiler | azgın çığlıkla || {1|Semud} {0|ise} {3|azgın bir çığlıkla} {2|helak edildi.}
+69:6 | ve ama | Âd | helak edildiler | bir rüzgârla | uğultulu dondurucu | azgın || {1|Âd} {0|ise} {4|uğultulu ve dondurucu}, {5|azgın} {3|bir rüzgârla} {2|helak edildi.}
+69:7 | onu musallat etti | üzerlerine | yedi | gece | ve sekiz | gün | ardı ardına | görürsün | kavmi | orada | yere serilmiş | sanki onlar | kütükleri | hurma | içi boş || (Allah) {0|onu} {1|onların üzerine} {2|yedi} {3|gece} {4|ve sekiz} {5|gün} {6|ardı ardına} {0|musallat etti.} {8|O kavmi} {9|orada}, {11|sanki} {14|içi boş} {13|hurma} {12|kütükleri} {11|gibi} {10|yere serilmiş} {7|görürsün.}
+69:8 | mi | görüyorsun | onlardan | hiç | kalan || {0|Şimdi} {2|onlardan} {4|geriye kalan} {3|hiçbir şey} {1|görüyor} {0|musun?}
+69:9 | ve getirdi | Firavun | ve kimseler | ondan öncekiler | ve altüst olan şehirler | günahla || {1|Firavun}, {3|ondan öncekiler} {4|ve altüst olan şehirler} (halkı) {5|o günahı} {0|işlediler.}
+69:10 | isyan ettiler | elçisine | Rablerinin | onları yakaladı | bir yakalayış | şiddetli || {2|Rablerinin} {1|elçisine} {0|isyan ettiler}, {3|o da onları} {5|şiddetle artan} {4|bir yakalayışla} {3|yakaladı.}
+69:11 | şüphesiz biz | zaman | taştığında | su | sizi taşıdık | -de | gemi || {0|Şüphesiz biz}, {3|su} {2|taştığı} {1|zaman} {4|sizi} {6|gemi}{5|de} {4|taşıdık};
+69:12 | onu kılmak için | sizin için | bir öğüt | ve onu bellesin | kulak | belleyen || {0|onu} {1|sizin için} {2|bir öğüt} {0|kılalım} {3|ve} {5|belleyen} {4|kulaklar} {3|onu bellesin diye.}
+69:13 | zaman | üfürüldüğünde | -e | Sur | bir üfürüş | tek || {3|Sur}{2|a} {5|bir tek} {4|üfürüş} {1|üfürüldüğü} {0|zaman},
+69:14 | ve kaldırıldığında | yer | ve dağlar | ufalandığında | bir çarpışla | tek || {1|yer} {2|ve dağlar} {0|kaldırılıp} {5|bir tek} {4|çarpışla} {3|darmadağın edildiğinde},
+69:15 | o gün | vuku bulur | vakıa || {0|işte o gün} {2|kıyamet} {1|kopmuş olur.}
+69:16 | ve yarıldı | gök | o | o gün | dayanıksızdır || {1|Gök} {0|yarılır}; {2|o} {3|o gün} {4|dayanıksızdır.}
+69:17 | ve melekler | üzerinde | kenarları | ve taşır | Arşını | Rabbinin | üstlerinde | o gün | sekiz || {0|Melekler} {2|onun kenarları} {1|üzerindedir.} {7|O gün} {5|Rabbinin} {4|Arşını} {6|onların üstünde} {8|sekiz} (melek) {3|taşır.}
+69:18 | o gün | arz olunursunuz | -maz | gizli kalır | sizden | gizli bir şey || {0|O gün} (Allah'a) {1|arz olunursunuz}; {4|sizden} {5|hiçbir gizliniz} {3|gizli kal}{2|maz.}
+69:19 | ama | kimse | verilen | kitabı | sağından | der | alın | okuyun | kitabımı || {0|Ama} {3|kitabı} {4|sağından} {2|verilen} {1|kimse} {5|der ki}: {6|"Alın}, {8|kitabımı} {7|okuyun!}
+69:20 | şüphesiz ben | sandım | ki ben | kavuşacağım | hesabıma || {0|Şüphesiz ben} {4|hesabıma} {3|kavuşacağımı} {1|biliyordum."}
+69:21 | o | içindedir | hayat | hoşnut || {0|Artık o}, {3|hoşnut} {2|bir hayat} {1|içindedir};
+69:22 | -de | cennet | yüksek || {2|yüksek} {1|bir cennet}{0|tedir.}
+69:23 | meyveleri | yakındır || {0|Meyveleri} {1|sarkmıştır.}
+69:24 | yiyin | ve için | afiyetle | şeyler karşılığı | önceden gönderdiğiniz | -de | günler | geçmiş || {7|Geçmiş} {6|günler}{5|de} {4|önceden yaptıklarınıza} {3|karşılık} {2|afiyetle} {0|yiyin} {1|için!}
+69:25 | ve ama | kimse | verilen | kitabı | solundan | der | keşke | -mezdim | verilmeseydi | kitabım || {0|Ama} {3|kitabı} {4|solundan} {2|verilen} {1|kimse} {5|der ki}: {6|"Keşke} {9|kitabım} {8|bana verilme}{7|seydi};
+69:26 | ve -mezdim | bilmeseydim | ne | hesabım || {3|hesabımın} {2|ne olduğunu} {1|bil}{0|meseydim!}
+69:27 | keşke o | olsaydı | son || {0|Keşke o} (ölüm) {2|her şeyi bitiren} {1|olsaydı!}
+69:28 | -madı | fayda sağladı | bana | malım || {3|Malım} {2|bana} {1|fayda sağla}{0|madı};
+69:29 | yok oldu | benden | saltanatım || {2|saltanatım} {1|benden} {0|yok olup gitti."}
+69:30 | onu tutun | onu bağlayın || (Allah meleklere buyurur:) {0|"Onu tutun} {1|ve bağlayın!}
+69:31 | sonra | cehenneme | onu atın || {0|Sonra} {1|cehenneme} {2|atın onu!}
+69:32 | sonra | -e | zincir | uzunluğu | yetmiş | arşın | onu geçirin || {0|Sonra} {3|uzunluğu} {4|yetmiş} {5|arşın} olan {2|bir zincir}{1|e} {6|onu vurun!}
+69:33 | şüphesiz o | idi | -mazdı | inanırdı | Allah'a | yüce || {0|Çünkü o}, {5|yüce} {4|Allah'a} {3|inan}{2|mazdı}{1|.}
+69:34 | ve -mazdı | teşvik ederdi | üzerine | yedirmek | yoksul || {4|Yoksulu} {3|doyurmaya} {2|da} {1|teşvik et}{0|mezdi.}
+69:35 | yoktur | ona | bugün | burada | bir dost || {2|Bugün} {3|burada} {1|onun} {4|candan bir dostu} {0|yoktur.}
+69:36 | ve -maz | yiyecek | başka | -den | irin || {4|İrin}{3|den} {2|başka} {1|bir yiyeceği} {0|de yoktur.}
+69:37 | -maz | onu yer | başkası | günahkârlar || {1|Onu} {3|günahkârlar}{2|dan başkası} {1|ye}{0|mez."}
+69:38 | hayır | yemin ederim | şeylere | gördüğünüz || {0|Hayır!} {3|Gördüğünüz} {2|şeylere} {1|yemin ederim},
+69:39 | ve şeylere | -mediğiniz | gördüğünüz || {0|ve} {2|gör}{1|mediğiniz} {0|şeylere},
+69:40 | şüphesiz o | elbette sözüdür | bir elçinin | değerli || {0|şüphesiz o} (Kur'an), {3|değerli} {2|bir elçinin} {1|sözüdür.}
+69:41 | ve değildir | o | sözü | bir şairin | az | ne | inanıyorsunuz || {1|O} {3|bir şairin} {2|sözü} {0|değildir.} {4|Ne kadar az} {6|inanıyorsunuz!}
+69:42 | ve -maz | sözü | bir kâhinin | az | ne | düşünüyorsunuz || {1|Bir} {2|kâhinin} {1|sözü} {0|de değildir.} {3|Ne kadar az} {5|düşünüyorsunuz!}
+69:43 | indirilmiştir | -den | Rabbi | âlemler || (O,) {3|âlemlerin} {2|Rabbi} {1|tarafından} {0|indirilmiştir.}
+69:44 | ve eğer | uydursaydı | bize karşı | bazı | sözler || {0|Eğer} (Peygamber) {2|bize karşı} {3|bazı} {4|sözler} {1|uydursaydı},
+69:45 | elbette yakalardık | onu | sağ elinden || {1|onu} {2|sağ elinden} {0|yakalardık},
+69:46 | sonra | elbette keserdik | onun | şah damarını || {0|sonra} {2|onun} {3|şah damarını} {1|keserdik.}
+69:47 | olmazdı | sizden | -den | hiç kimse | ondan | engelleyenler || {1|Sizden} {3|hiç kimse} {4|ona} (bu konuda) {5|engel} {0|olamazdı.}
+69:48 | ve şüphesiz o | elbette bir öğüttür | takva sahipleri için || {0|Şüphesiz o} (Kur'an), {2|takva sahipleri için} {1|bir öğüttür.}
+69:49 | ve şüphesiz biz | elbette biliyoruz | ki | sizden | yalanlayanlar || {0|Şüphesiz biz} {3|sizden} {4|yalanlayanlar} {2|olduğunu} {1|elbette biliyoruz.}
+69:50 | ve şüphesiz o | elbette bir hasrettir | üzerine | kâfirler || {0|Şüphesiz o}, {3|kâfirler} {2|için} {1|bir hasret} (pişmanlık) {1|kaynağıdır.}
+69:51 | ve şüphesiz o | elbette gerçeğidir | kesin bilginin || {0|Şüphesiz o}, {2|kesin bilginin} {1|ta kendisidir.}
+69:52 | tesbih et | adını | Rabbinin | büyük || {0|Öyleyse} {3|büyük} {2|Rabbinin} {1|adını} {0|tesbih et.}

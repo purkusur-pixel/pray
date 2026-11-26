@@ -1,0 +1,15 @@
+91:1 | andolsun güneşe | ve kuşluk aydınlığına || {0|Güneşe} {1|ve kuşluk aydınlığına} andolsun,
+91:2 | ve aya | -diği zaman | onu izledi || {2|onu izlediği} {1|zaman} {0|aya},
+91:3 | ve gündüze | -diği zaman | onu açığa çıkardı || {2|onu (güneşi) ortaya çıkardığı} {1|zaman} {0|gündüze},
+91:4 | ve geceye | -diği zaman | onu örttü || {2|onu örttüğü} {1|zaman} {0|geceye},
+91:5 | ve göğe | ve ona (zata) | onu bina etti || {0|göğe} {1|ve onu} {2|bina edene},
+91:6 | ve yere | ve ona (zata) | onu yaydı || {0|yere} {1|ve onu} {2|yayıp döşeyene},
+91:7 | ve nefse | ve ona (zata) | onu düzenledi || {0|nefse} {1|ve onu} {2|düzenleyene},
+91:8 | sonra ona ilham etti | kötülüğünü | ve takvasını || {0|sonra da ona} {1|kötülüğünü} {2|ve takvasını} {0|ilham edene} andolsun ki,
+91:9 | gerçekten | kurtuldu | kimse | onu arındırdı || {3|Onu (nefsini) arındıran} {2|kimse} {0|gerçekten} {1|kurtuluşa ermiştir.}
+91:10 | ve gerçekten | ziyana uğradı | kimse | onu kirletti || {3|Onu kirleten} {2|kimse} {0|de} {1|ziyana uğramıştır.}
+91:11 | yalanladı | Semûd | azgınlığı yüzünden || {1|Semûd kavmi} {2|azgınlığı yüzünden} (peygamberini) {0|yalanladı.}
+91:12 | -diği zaman | kalkıp koştu | en bedbahtı || {2|İçlerinden en bedbahtı} {1|kalkıp koştuğu} {0|zaman},
+91:13 | dedi ki | onlara | elçisi | Allah'ın | dişi deve | Allah'ın | ve su içme hakkı || {3|Allah'ın} {2|elçisi} {1|onlara} “{5|Allah'ın} {4|devesine} {6|ve onun su içme hakkına} dokunmayın” {0|dedi.}
+91:14 | onu yalanladılar | ve onu kestiler | helak etti | üzerlerine | Rableri | günahları yüzünden | ve onu dümdüz etti || {0|Fakat onu yalanladılar} {1|ve deveyi kestiler.} {4|Rableri} de {5|günahları yüzünden} {3|onları} {2|helak etti} {6|ve (yurtlarını) dümdüz etti.}
+91:15 | ve -mez | korkar | sonundan || (Allah) {2|bunun sonundan} {1|kork}{0|maz.}

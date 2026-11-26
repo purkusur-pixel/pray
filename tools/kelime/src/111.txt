@@ -1,0 +1,5 @@
+111:1 | kurusun | iki eli | Ebû | Leheb'in | ve kurudu (da) || {2|Ebû} {3|Leheb'in} {1|iki eli} {0|kurusun}; {4|kurudu da!}
+111:2 | -medi | fayda verdi | ona | malı | ve şey | kazandı || {3|Malı} {4|ve} {5|kazandıkları} {2|ona} {1|fayda} {0|vermedi.}
+111:3 | girecektir | bir ateşe | sahip | alevli || {0|O,} {3|alevli} {1|bir ateşe} {0|girecektir.}
+111:4 | ve karısı da | taşıyıcı | odun || {0|Karısı da} {2|odun} {1|taşıyıcı olarak} (oraya girecektir).
+111:5 | -de | boynu | bir ip | -den | hurma lifi || {1|Boynunda} {4|hurma lifinden} {3|bükülmüş} {2|bir ip} olduğu hâlde.

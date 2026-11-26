@@ -1,0 +1,6 @@
+109:1 | de ki | ey | kâfirler || {0|De ki:} “{1|Ey} {2|kâfirler!}
+109:2 | -mem | ibadet ederim | şeye | ibadet ettiğiniz || {3|Sizin ibadet ettiğiniz} {2|şeylere} {1|ben ibadet} {0|etmem.}
+109:3 | ve değil(siniz) | siz | ibadet edenler | şeye | ibadet ederim || {1|Siz} de {4|benim ibadet ettiğime} {2|ibadet edecek} {0|değilsiniz.}
+109:4 | ve değil(im) | ben | ibadet eden | şeye | ibadet ettiğiniz || {1|Ben} de {4|sizin ibadet ettiklerinize} {2|ibadet edecek} {0|değilim.}
+109:5 | ve değil(siniz) | siz | ibadet edenler | şeye | ibadet ederim || {1|Siz} de {4|benim ibadet ettiğime} {2|ibadet edecek} {0|değilsiniz.}
+109:6 | size | dininiz | ve bana | dinim || {1|Sizin dininiz} {0|size}, {3|benim dinim} {2|bana.}”

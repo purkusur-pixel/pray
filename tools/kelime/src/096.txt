@@ -1,0 +1,19 @@
+96:1 | oku | adıyla | Rabbinin | ki o | yarattı || {4|Yaratan} {2|Rabbinin} {1|adıyla} {0|oku!}
+96:2 | yarattı | insanı | -den | alak (asılıp tutunan) || {0|O,} {1|insanı} {3|alaktan (rahme tutunan kan pıhtısından)} {0|yarattı.}
+96:3 | oku | ve Rabbin | en cömert || {0|Oku!} {1|Rabbin} {2|en cömert olandır.}
+96:4 | o ki | öğretti | kalemle || {0|O ki} {2|kalemle} {1|(yazmayı) öğretti.}
+96:5 | öğretti | insana | şey | -medi | biliyordu || {1|İnsana} {4|bilmediği} {2|şeyleri} {0|öğretti.}
+96:6 | hayır | şüphesiz | insan | elbette azar || {0|Hayır!} {1|Şüphesiz} {2|insan} {3|azar};
+96:7 | çünkü | kendini gördü | müstağni (yeterli) || {0|çünkü} {1|kendini} {2|kendine yeterli} {1|görür.}
+96:8 | şüphesiz | -e | Rabbin | dönüş || {0|Şüphesiz} {3|dönüş} {1|ancak} {2|Rabbinedir.}
+96:9 | gördün mü | kimseyi | engelleyen || {2|Engelleyeni} {0|gördün mü},
+96:10 | bir kulu | -diği zaman | namaz kıldı || {0|bir kulu} {2|namaz kıldığı} {1|zaman?}
+96:11 | gördün mü | eğer | oldu | üzerinde | doğru yol || {0|Ne dersin}, {1|eğer} (o kul) {4|doğru yol} {3|üzerinde} {2|idiyse},
+96:12 | yahut | emretti | takvayı || {0|yahut} {2|takvayı} {1|emrettiyse?}
+96:13 | gördün mü | eğer | yalanladı | ve yüz çevirdi || {0|Ne dersin}, {1|eğer} (o engelleyen) {2|yalanladı} {3|ve yüz çevirdiyse?}
+96:14 | -medi mi | bildi | -dığını | Allah'ın | gördüğünü || {3|Allah'ın} {4|her şeyi gördüğünü} {1|bil}{0|medi mi?}
+96:15 | hayır | andolsun eğer | -mezse | vazgeçer | elbette çekeriz | perçeminden || {0|Hayır!} {1|Andolsun eğer} {3|vazgeç}{2|mezse}, {5|onu perçeminden} {4|tutup sürükleyeceğiz};
+96:16 | perçem | yalancı | günahkâr || {1|yalancı}, {2|günahkâr} {0|perçeminden.}
+96:17 | çağırsın | meclisini (yandaşlarını) || {0|Haydi o} {1|meclisini (yandaşlarını)} {0|çağırsın!}
+96:18 | çağıracağız | zebanileri || {0|Biz de} {1|zebanileri} {0|çağıracağız.}
+96:19 | hayır | sakın | ona uyma | ve secde et | ve yaklaş || {0|Hayır!} {2|Ona} {1|sakın} {2|uyma}; {3|secde et} {4|ve (Allah'a) yaklaş.}

@@ -1,0 +1,99 @@
+15:1 | Elif Lâm Râ | bunlar | ayetleridir | Kitabın | ve Kur'an'ın | apaçık || {0|Elif Lâm Râ.} {1|Bunlar}, {3|Kitabın} {4|ve} {5|apaçık} {4|Kur'an'ın} {2|ayetleridir.}
+15:2 | çok kere | arzu eder | kimseler | inkâr eden | keşke | olsaydılar | Müslümanlar || {3|İnkâr edenler} {0|çok kere}: "{4|Keşke} {6|Müslüman} {5|olsaydık}" diye {1|arzu ederler.}
+15:3 | onları bırak | yesinler | ve faydalansınlar | ve onları oyalasın | emel | yakında | bilecekler || {0|Bırak onları}, {1|yesinler}, {2|faydalansınlar} {4|ve emel} {3|onları oyalasın}; {5|yakında} {6|bilecekler.}
+15:4 | ve -medik | helak etmedik | hiçbir | şehri | başka | ve onun vardı | bir yazı | bilinen || {1|Helak ettiğimiz} {2|hiçbir} {3|şehir} {4|yoktur ki} {5|onun} {7|belirlenmiş} {6|bir yazısı} {5|olmasın.}
+15:5 | -maz | öne geçemez | hiçbir | ümmet | ecelinden | ve -mazlar | geri kalamazlar || {2|Hiçbir} {3|ümmet} {4|ecelini} {1|öne geçe}{0|mez}, {6|geri de bırakama}{5|zlar.}
+15:6 | ve dediler | ey | kimse | indirilen | ona | zikir (Kur'an) | şüphesiz sen | elbette bir delisin || {0|Dediler ki}: "{1|Ey} {4|kendisine} {5|zikir} {3|indirilen} {2|kişi!} {6|Sen} {7|mutlaka bir delisin.}"
+15:7 | -meli değil miydin | ne | bize getirsen | melekleri | eğer | isen | -den | doğrular || "{4|Eğer} {7|doğru sözlülerden} {5|isen} {3|bize melekleri} {2|getirmen} {0|gerekmez miydi?}"
+15:8 | -mayız | indirmeyiz | melekleri | başka | hak ile | ve değildir | olurlar | o zaman | mühlet verilenler || {2|Biz melekleri} {4|ancak hak ile} {1|indiririz}{0|.} {7|O zaman} (onlara) {8|mühlet verilmez}{5|.}
+15:9 | şüphesiz biz | biz | indirdik | zikri (Kur'an) | ve şüphesiz biz | onu | elbette koruyucularız || {0|Şüphesiz} {3|zikri} (Kur'an'ı) {1|biz} {2|indirdik}, {5|onun} {6|koruyucusu} {4|da elbette biziz.}
+15:10 | ve andolsun | gönderdik | -den | senden önce | içine | toplulukları | öncekilerin || {0|Andolsun}, {3|senden önce} {6|önceki} {5|toplulukların} {4|içine} de (peygamberler) {1|gönderdik.}
+15:11 | ve -mezdi | onlara gelmezdi | hiçbir | peygamber | başka | idiler | onunla | alay ediyor || {1|Onlara} {3|bir peygamber} {1|gelmeye}{0|dursun}, {6|onunla} {7|alay} {5|ederlerdi}{4|.}
+15:12 | böylece | onu sokarız | içine | kalpleri | suçluların || {0|Böylece} {1|onu} (inkârı) {4|suçluların} {3|kalplerine} {1|sokarız.}
+15:13 | -mezler | inanmazlar | ona | ve andolsun | geçti | yolu (sünneti) | öncekilerin || {2|Ona} {1|inan}{0|mazlar.} {6|Öncekilerin} {5|yolu} {3|gerçekten} {4|geçip gitmiştir.}
+15:14 | ve eğer | açsaydık | onlara | bir kapı | -den | gök | sürekli | ondan | yükselselerdi || {0|Eğer} {2|onlara} {5|gökten} {3|bir kapı} {1|açsaydık} {6|da} {7|oradan} {8|yükselip dursalardı},
+15:15 | elbette derlerdi | ancak | döndürüldü | gözlerimiz | hayır | biz | bir topluluğuz | büyülenmiş || {0|mutlaka şöyle derlerdi}: "{3|Gözlerimiz} {1|sadece} {2|döndürüldü}; {4|hayır}, {5|biz} {7|büyülenmiş} {6|bir topluluğuz.}"
+15:16 | ve andolsun | kıldık | -de | gök | burçlar | ve onu süsledik | bakanlar için || {0|Andolsun}, {3|gökte} {4|burçlar} {1|yaptık} {5|ve onu} {6|bakanlar için} {5|süsledik.}
+15:17 | ve onu koruduk | -den | her | şeytan | kovulmuş || {0|Onu} {2|her} {4|kovulmuş} {3|şeytandan} {0|koruduk.}
+15:18 | ancak | kimse | çaldı | kulak hırsızlığı | onu takip eder | bir alev | apaçık || {0|Ancak} {2|kulak hırsızlığı} {1|eden} müstesna; {6|apaçık} {5|bir alev} {4|onu takip eder.}
+15:19 | ve yeri | onu uzattık | ve bıraktık | orada | sabit dağlar | ve bitirdik | orada | -den | her | şey | ölçülü || {0|Yeri} {1|uzatıp yaydık}, {3|oraya} {4|sabit dağlar} {2|yerleştirdik} {6|ve orada} {8|her} {10|ölçülü} {9|şeyden} {5|bitirdik.}
+15:20 | ve kıldık | sizin için | orada | geçimlikler | ve kimseler | değilsiniz | ona | rızık verenler || {2|Orada} {1|sizin için} {4|ve} {6|kendilerine} {7|rızık verici} {5|olmadığınız} {4|kimseler için} {3|geçimlikler} {0|yarattık.}
+15:21 | ve değil | -den | şey | başka | katımızdadır | hazineleri | ve -mayız | onu indirmeyiz | başka | ölçüyle | bilinen || {2|Hiçbir şey} {0|yoktur ki} {5|hazineleri} {4|katımızda} {3|olmasın.} {7|Biz onu} {8|ancak} {10|belli} {9|bir ölçüyle} {7|indiririz}{6|.}
+15:22 | ve gönderdik | rüzgârları | aşılayıcılar olarak | indirdik | -den | gök | su | onu size içirdik | ve değilsiniz | siz | onu | depolayanlar || {1|Rüzgârları} {2|aşılayıcılar olarak} {0|gönderdik}, {5|gökten} {6|su} {3|indirip} {7|onu size içirdik}; {9|onu} {11|depolayan} {9|siz} {8|değilsiniz.}
+15:23 | ve şüphesiz biz | elbette biz | diriltiriz | ve öldürürüz | ve biz | vârisleriz || {0|Şüphesiz} {1|biz} {2|diriltiriz} {3|ve öldürürüz}; {4|ve} (her şeyin) {5|vârisi} {4|biziz.}
+15:24 | ve andolsun | bildik | öne geçenleri | sizden | ve andolsun | bildik | geri kalanları || {0|Andolsun}, {3|sizden} {2|öne geçenleri} {1|bildik}, {6|geri kalanları} {4|da} {5|bildik.}
+15:25 | ve şüphesiz | Rabbin | O | onları toplayacaktır | şüphesiz O | hikmet sahibidir | bilendir || {0|Şüphesiz} {3|onları} {1|Rabbin} {2|O} {3|toplayacaktır.} {4|Şüphesiz O}, {5|hikmet sahibidir}, {6|bilendir.}
+15:26 | ve andolsun | yarattık | insanı | -den | kuru çamur | -den | balçık | şekil verilmiş || {0|Andolsun}, {2|insanı} {7|şekil verilmiş} {6|kara balçıktan} {4|kuru bir çamurdan} {1|yarattık.}
+15:27 | ve cinleri | onu yarattık | -den | önce | -den | ateşi | zehirli || {0|Cinleri} {3|daha önce} {6|zehirli} {5|ateşten} {1|yarattık.}
+15:28 | ve hani | dedi | Rabbin | meleklere | şüphesiz ben | yaratacağım | bir beşer | -den | kuru çamur | -den | balçık | şekil verilmiş || {0|Hani} {2|Rabbin} {3|meleklere} {1|demişti ki}: "{4|Ben} {11|şekil verilmiş} {10|kara balçıktan} {8|kuru bir çamurdan} {6|bir beşer} {5|yaratacağım.}"
+15:29 | zaman | onu düzenlediğim | ve üfürdüğüm | ona | -den | ruhum | hemen kapanın | ona | secde ederek || "{0|Onu} {1|düzenleyip} {3|içine} {5|ruhumdan} {2|üfürdüğüm zaman} {7|ona} {8|secde ederek} {6|kapanın.}"
+15:30 | secde etti | melekler | hepsi | topluca || {1|Meleklerin} {2|hepsi} {3|topluca} {0|secde etti.}
+15:31 | ancak | İblis | kaçındı | ki | olmaktan | ile | secde edenler || {0|Ancak} {1|İblis} {6|secde edenlerle} {5|beraber} {4|olmaktan} {2|kaçındı.}
+15:32 | dedi | ey İblis | ne oldu | sana | ki -memen | olmaman | ile | secde edenler || (Allah) {0|dedi ki}: "{1|Ey İblis!} {7|Secde edenlerle} {6|beraber} {5|olma}{4|man} {3|sana} {2|ne oluyor?}"
+15:33 | dedi | -medim | olmadım | secde edecek | bir beşere | onu yarattın | -den | kuru çamur | -den | balçık | şekil verilmiş || {0|Dedi ki}: "{10|Şekil verilmiş} {9|kara balçıktan} {7|kuru bir çamurdan} {5|yarattığın} {4|bir beşere} {3|secde edecek} {2|değil}{1|im.}"
+15:34 | dedi | öyleyse çık | oradan | çünkü sen | kovulmuşsun || {0|Dedi ki}: "{2|Oradan} {1|çık}, {3|çünkü sen} {4|kovulmuşsun.}
+15:35 | ve şüphesiz | üzerinedir | lanet | -e kadar | gün | din (hesap) || {0|Şüphesiz} {5|hesap} {4|gününe} {3|kadar} {2|lanet} {1|senin üzerinedir.}"
+15:36 | dedi | Rabbim | öyleyse bana mühlet ver | -e kadar | gün | diriltilecekleri || {0|Dedi ki}: "{1|Rabbim!} {5|Diriltilecekleri} {4|güne} {3|kadar} {2|bana mühlet ver.}"
+15:37 | dedi | şüphesiz sen | -densin | mühlet verilenler || {0|Dedi ki}: "{1|Sen} {3|mühlet verilenlerdensin},
+15:38 | -e kadar | gün | vakit | bilinen || {3|bilinen} {2|vaktin} {1|gününe} {0|kadar.}"
+15:39 | dedi | Rabbim | -den dolayı | beni azdırmandan | elbette süsleyeceğim | onlara | -de | yer | ve elbette onları azdıracağım | hepsini || {0|Dedi ki}: "{1|Rabbim!} {3|Beni azdırmana} {2|karşılık} {7|yeryüzünde} {5|onlara} (kötülükleri) {4|mutlaka süsleyeceğim} {8|ve onların} {9|hepsini} {8|mutlaka azdıracağım};
+15:40 | ancak | kullarını | onlardan | ihlasa erdirilmiş || {0|ancak} {2|onlardan} {3|ihlasa erdirilmiş} {1|kulların} müstesna."
+15:41 | dedi | bu | bir yoldur | bana | dosdoğru || (Allah) {0|dedi ki}: "{1|Bu}, {3|bana} (varan) {4|dosdoğru} {2|bir yoldur.}
+15:42 | şüphesiz | kullarım | yoktur | senin | onlar üzerinde | bir güç | ancak | kimse | sana uyan | -den | azgınlar || {0|Şüphesiz} {1|kullarım} {4|üzerinde} {3|senin} {5|hiçbir gücün} {2|yoktur}; {6|ancak} {10|azgınlardan} {8|sana uyanlar} {7|müstesna.}
+15:43 | ve şüphesiz | cehennem | elbette buluşma yeridir | hepsinin || {0|Şüphesiz} {1|cehennem}, {3|onların hepsinin} {2|buluşma yeridir.}
+15:44 | onun vardır | yedi | kapı | her | kapı için | onlardan | bir pay | ayrılmış || {0|Onun} {1|yedi} {2|kapısı} {0|vardır}; {3|her} {4|kapı için} {5|onlardan} {7|ayrılmış} {6|bir pay} vardır."
+15:45 | şüphesiz | sakınanlar | içindedir | cennetler | ve pınarlar || {0|Şüphesiz} {1|sakınanlar} {3|cennetlerde} {4|ve pınar başlarındadırlar.}
+15:46 | oraya girin | selametle | güven içinde || "{0|Oraya} {1|selametle} {2|güven içinde} {0|girin.}"
+15:47 | ve çıkarıp attık | şeyi | -de | göğüsleri | -den | kin | kardeşler olarak | üzerinde | tahtlar | karşılıklı || {3|Göğüslerinde} {5|kinden} {1|ne varsa} {0|çıkarıp attık}; {6|kardeşler olarak} {8|tahtlar} {7|üzerinde} {9|karşılıklı} otururlar.
+15:48 | -maz | onlara dokunmaz | orada | bir yorgunluk | ve değildirler | onlar | oradan | çıkarılacaklar || {2|Orada} {1|onlara} {3|bir yorgunluk} {1|dokun}{0|maz}; {5|onlar} {6|oradan} {7|çıkarılacak} {4|da değildirler.}
+15:49 | haber ver | kullarıma | ki ben | ben | bağışlayanım | merhametliyim || {1|Kullarıma} {0|haber ver ki}, {2|ben} {3|gerçekten} {4|bağışlayanım}, {5|merhametliyim.}
+15:50 | ve ki | azabım | o | azaptır | elem verici || {0|Ve} {1|azabım} {2|da} {4|elem verici} {3|bir azaptır.}
+15:51 | ve onlara haber ver | -den | misafirleri | İbrahim'in || {0|Onlara} {3|İbrahim'in} {2|misafirlerinden} {0|haber ver.}
+15:52 | zaman | girdiler | yanına | dediler | selam | dedi | şüphesiz biz | sizden | korkuyoruz || {0|Hani} {2|onun yanına} {1|girmişler} {3|ve}: "{4|Selam}" {3|demişlerdi.} {5|O}: "{6|Biz} {7|sizden} {8|korkuyoruz}" {5|demişti.}
+15:53 | dediler | -me | korkma | şüphesiz biz | seni müjdeliyoruz | bir oğulla | bilgili || {0|Dediler ki}: "{2|Kork}{1|ma}, {3|biz} {4|seni} {6|bilgili} {5|bir oğulla} {4|müjdeliyoruz.}"
+15:54 | dedi | beni müjdeliyor musunuz | rağmen | ki | bana dokunmasına | ihtiyarlık | neyle | müjdeliyorsunuz || {0|Dedi ki}: "{5|İhtiyarlık} {4|bana dokunmuşken} {2|-} {1|beni mi müjdeliyorsunuz?} {6|Neyle} {7|müjdeliyorsunuz?}"
+15:55 | dediler | seni müjdeledik | hak ile | öyleyse -me | olma | -den | ümitsizler || {0|Dediler ki}: "{1|Seni} {2|hak ile} {1|müjdeledik}, {6|ümitsizlerden} {4|ol}{3|ma.}"
+15:56 | dedi | ve kim | ümit keser | -den | rahmeti | Rabbinin | başka | sapıklar || {0|Dedi ki}: "{5|Rabbinin} {4|rahmetinden} {7|sapıklardan} {6|başka} {1|kim} {2|ümit keser?}"
+15:57 | dedi | nedir | işiniz | ey | elçiler || {0|Dedi ki}: "{3|Ey} {4|elçiler!} {2|Asıl işiniz} {1|nedir?}"
+15:58 | dediler | şüphesiz biz | gönderildik | -e | bir kavim | suçlu || {0|Dediler ki}: "{1|Biz} {5|suçlu} {4|bir kavme} {2|gönderildik},
+15:59 | ancak | ailesi | Lut | şüphesiz biz | elbette onları kurtaracağız | hepsini || {0|ancak} {2|Lut'un} {1|ailesi} müstesna; {3|biz} {4|onları} {5|hep birden} {4|kurtaracağız},
+15:60 | ancak | karısı | takdir ettik | şüphesiz o | elbette -dendir | geride kalanlar || {0|ancak} {1|karısı} müstesna; {3|onun} {5|geride kalanlardan} {4|olacağını} {2|takdir ettik.}"
+15:61 | zaman ki | geldi | ailesine | Lut'un | elçiler || {4|Elçiler} {3|Lut} {2|ailesine} {1|gelince},
+15:62 | dedi | şüphesiz siz | bir topluluksunuz | tanınmayan || {0|Lut dedi ki}: "{1|Siz} {3|tanınmayan} {2|bir topluluksunuz.}"
+15:63 | dediler | hayır | sana getirdik | şeyi | idiler | onda | şüphe ediyor || {0|Dediler ki}: "{1|Hayır}, {5|hakkında} {6|şüphe} {4|ettikleri} {3|şeyi} {2|sana getirdik.}
+15:64 | ve sana getirdik | hakkı | ve şüphesiz biz | elbette doğru söyleyenleriz || {0|Sana} {1|hakkı} {0|getirdik}, {2|biz} {3|elbette doğru söylüyoruz.}
+15:65 | yola çık | ailenle | bir kısmında | -den | gece | ve takip et | arkalarını | ve -masın | dönüp bakmasın | sizden | hiç kimse | ve gidin | yere | emrolunduğunuz || {4|Gecenin} {2|bir kısmında} {1|ailenle} {0|yola çık}, {6|onların arkasından} {5|git}; {9|sizden} {10|hiç kimse} {8|dönüp bak}{7|masın}; {13|emrolunduğunuz} {12|yere} {11|gidin.}"
+15:66 | ve kesin bildirdik | ona | bu | işi | ki | kökü | bunların | kesilecektir | sabaha çıkarken || {1|Ona} {6|bunların} {5|kökünün} {8|sabaha çıkarken} {7|kesileceği} {4|şeklindeki} {2|bu} {3|hükmü} {0|kesin olarak bildirdik.}
+15:67 | ve geldi | halkı | şehrin | sevinerek || {2|Şehir} {1|halkı} {3|sevinç içinde} {0|geldi.}
+15:68 | dedi | şüphesiz | bunlar | misafirlerimdir | öyleyse -meyin | beni rezil etmeyin || {0|Lut dedi ki}: "{1|Şüphesiz} {2|bunlar} {3|misafirlerimdir}, {5|beni rezil et}{4|meyin.}
+15:69 | ve sakının | Allah'tan | ve -meyin | beni utandırmayın || {1|Allah'tan} {0|sakının}, {3|beni utandır}{2|mayın.}"
+15:70 | dediler | -medik mi | seni men etmedik mi | -den | âlemler || {0|Dediler ki}: "{2|Seni} {4|âlemlerden} (insanları misafir etmekten) {2|men etmedik} {1|mi?}"
+15:71 | dedi | bunlar | kızlarımdır | eğer | iseniz | yapacaklar || {0|Dedi ki}: "{3|Eğer} {5|yapacak} {4|iseniz}, {1|işte} {2|kızlarım.}"
+15:72 | ömrüne andolsun | şüphesiz onlar | elbette içinde | sarhoşlukları | bocalıyorlardı || {0|Ömrüne andolsun ki}, {1|onlar} {3|sarhoşlukları} {2|içinde} {4|bocalıyorlardı.}
+15:73 | onları yakaladı | korkunç ses | güneş doğarken || {2|Güneş doğarken} {1|o korkunç ses} {0|onları yakaladı.}
+15:74 | kıldık | üstünü | altını | ve yağdırdık | üzerlerine | taşlar | -den | pişmiş çamur || {1|Oranın üstünü} {2|altına} {0|getirdik} {3|ve} {4|üzerlerine} {7|pişmiş çamurdan} {5|taşlar} {3|yağdırdık.}
+15:75 | şüphesiz | -de | bunda | elbette ayetler vardır | ibret alanlar için || {0|Şüphesiz} {2|bunda} {4|ibret alanlar için} {3|ayetler vardır.}
+15:76 | ve şüphesiz o | elbette yol üzerindedir | işlek || {0|O} (şehir) {2|hâlâ işlek} {1|bir yol üzerindedir.}
+15:77 | şüphesiz | -de | bunda | elbette bir ayet vardır | müminler için || {0|Şüphesiz} {2|bunda} {4|müminler için} {3|bir ayet vardır.}
+15:78 | ve gerçekten | idi | ashabı | Eyke | elbette zalimler || {0|Gerçekten} {3|Eyke} {2|halkı} {4|zalim} {1|idiler.}
+15:79 | intikam aldık | onlardan | ve şüphesiz ikisi | elbette bir yol üzerindedir | apaçık || {1|Onlardan} {0|intikam aldık.} {2|Bu iki şehir}, {4|apaçık} {3|bir yol üzerindedir.}
+15:80 | ve andolsun | yalanladı | ashabı | Hicr | peygamberleri || {0|Andolsun}, {3|Hicr} {2|halkı} {4|peygamberleri} {1|yalanladı.}
+15:81 | ve onlara verdik | ayetlerimizi | oldular | onlardan | yüz çevirenler || {1|Ayetlerimizi} {0|onlara verdik}, {2|fakat} {3|onlardan} {4|yüz çevirdiler.}
+15:82 | ve idiler | oyuyorlar | -den | dağlar | evler | güven içinde || {3|Dağlardan} {5|güven içinde} {4|evler} {1|oyuyor}{0|lardı.}
+15:83 | onları yakaladı | korkunç ses | sabaha çıkarken || {2|Sabaha çıkarken} {1|o korkunç ses} {0|onları yakaladı.}
+15:84 | -madı | fayda vermedi | onlara | şeyler | idiler | kazanıyor || {5|Kazanmakta} {4|oldukları} {3|şeyler} {2|onlara} {1|hiçbir fayda sağla}{0|madı.}
+15:85 | ve -medik | yaratmadık | gökleri | ve yeri | ve şeyleri | aralarındaki | başka | hak ile | ve şüphesiz | kıyamet | elbette gelecektir | öyleyse bağışla | bağışlama | güzel || {2|Gökleri}, {3|yeri} {4|ve} {5|ikisinin arasındakileri} {7|hak ile} {6|başka bir şekilde} {1|yarat}{0|madık.} {8|Şüphesiz} {9|kıyamet} {10|mutlaka gelecektir.} {11|Öyleyse} {13|güzel} {12|bir şekilde} {11|bağışla.}
+15:86 | şüphesiz | Rabbin | O | çok yaratandır | bilendir || {0|Şüphesiz} {1|Rabbin}, {2|O} {3|çok yaratandır}, {4|bilendir.}
+15:87 | ve andolsun | sana verdik | yedi | -den | tekrarlanan | ve Kur'an'ı | büyük || {0|Andolsun}, {1|sana} {4|tekrarlanan} {2|yediyi} (Fatiha'yı) {5|ve} {6|büyük} {5|Kur'an'ı} {1|verdik.}
+15:88 | -me | uzatma | gözlerini | -e | şeye | faydalandırdığımız | onunla | çiftlere | onlardan | ve -me | üzülme | onlara | ve indir | kanadını | müminlere || {8|Onlardan} {7|bazı çiftleri} {6|kendisiyle} {5|faydalandırdığımız} {4|şeylere} {2|gözlerini} {1|dikme}{0|.} {11|Onlar için} {10|üzül}{9|me}; {14|müminlere} {13|kanadını} {12|indir.}
+15:89 | ve de ki | şüphesiz ben | ben | uyarıcıyım | apaçık || {0|De ki}: "{1|Şüphesiz} {2|ben} {4|apaçık} {3|bir uyarıcıyım.}"
+15:90 | gibi | indirdiğimiz | üzerine | bölücüler || {3|Bölücülere} {2|-} {1|indirdiğimiz} (azap) {0|gibi.}
+15:91 | onlar ki | kıldılar | Kur'an'ı | parça parça || {0|Onlar} {2|Kur'an'ı} {3|parça parça} {1|ettiler.}
+15:92 | Rabbine andolsun | elbette onlara soracağız | hepsine || {0|Rabbine andolsun}, {2|onların hepsine} {1|mutlaka soracağız}
+15:93 | -den | idiler | yapıyor || {2|yapmakta} {1|olduklarından} {0|dolayı.}
+15:94 | açıkça bildir | şeyi | emrolunduğun | ve yüz çevir | -den | müşrikler || {2|Emrolunduğun} {1|şeyi} {0|açıkça bildir} {5|ve müşriklerden} {3|yüz çevir.}
+15:95 | şüphesiz biz | sana yeteriz | alay edenlere karşı || {0|Şüphesiz biz} {2|alay edenlere karşı} {1|sana yeteriz.}
+15:96 | onlar ki | kılarlar | ile | Allah | bir ilah | başka | yakında | bilecekler || {0|Onlar} {3|Allah} {2|ile beraber} {5|başka} {4|bir ilah} {1|edinirler.} {6|Yakında} {7|bilecekler.}
+15:97 | ve andolsun | biliyoruz | ki sen | daralıyor | göğsün | şeyden | söyledikleri || {0|Andolsun}, {6|söyledikleri} {5|şeyden dolayı} {2|senin} {4|göğsünün} {3|daraldığını} {1|biliyoruz.}
+15:98 | öyleyse tesbih et | hamdiyle | Rabbinin | ve ol | -den | secde edenler || {2|Rabbini} {1|hamd ile} {0|tesbih et} {3|ve} {5|secde edenlerden} {3|ol.}
+15:99 | ve ibadet et | Rabbine | ta ki | sana gelinceye | yakin (ölüm) || {4|Ölüm} {3|sana gelinceye} {2|kadar} {1|Rabbine} {0|ibadet et.}

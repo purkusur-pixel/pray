@@ -1,0 +1,6 @@
+114:1 | de ki | sığınırım | Rabbine | insanların || {0|De ki:} “{3|İnsanların} {2|Rabbine} {1|sığınırım},
+114:2 | Melik'i (hükümdarı) | insanların || {1|insanların} {0|Melik'ine (hükümdarına)},
+114:3 | İlâhı | insanların || {1|insanların} {0|İlâhına},
+114:4 | -den | şerri | vesvesecinin | sinsi || {3|o sinsi} {2|vesvesecinin} {1|şerrinden;}
+114:5 | o ki | vesvese verir | -e | göğüsleri | insanların || {0|o ki} {4|insanların} {3|göğüslerine} {1|vesvese verir;}
+114:6 | -den | cinler | ve insanlar || (Bu vesveseci) {1|cinlerden} {2|ve insanlardan} {0|olur.}”

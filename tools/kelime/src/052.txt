@@ -1,0 +1,49 @@
+52:1 | andolsun Tûr'a || {0|Tûr'a andolsun},
+52:2 | ve kitaba | satır satır yazılmış || {1|satır satır yazılmış} {0|kitaba},
+52:3 | içinde | ince deri | açılmış || {2|açılmış} {1|ince deri} {0|üzerinde};
+52:4 | ve Beyt'e | mamur || {1|Mamur} {0|Beyt'e},
+52:5 | ve tavana | yükseltilmiş || {1|yükseltilmiş} {0|tavana},
+52:6 | ve denize | kaynatılmış || {1|kaynatılmış} {0|denize} (andolsun ki),
+52:7 | şüphesiz | azabı | Rabbinin | elbette gerçekleşecektir || {0|şüphesiz} {2|Rabbinin} {1|azabı} {3|mutlaka gerçekleşecektir.}
+52:8 | yoktur | onun | hiçbir | savan || {1|Onu} {3|savacak} {2|hiçbir şey} {0|yoktur.}
+52:9 | gün | çalkalanacak | gök | çalkalanış || {0|O gün} {2|gök} {3|şiddetle} {1|çalkalanacak},
+52:10 | ve yürüyecek | dağlar | yürüyüş || {1|dağlar} {2|hızla} {0|yürüyecek.}
+52:11 | vay hâline | o gün | yalanlayanların || {1|O gün} {2|yalanlayanların} {0|vay hâline!}
+52:12 | kimseler | onlar | içinde | dalma | oynarlar || {0|Onlar ki} {3|boş şeylere} {2|dalıp} {4|oynarlar.}
+52:13 | gün | itilirler | -e | ateşi | cehennem | itilişle || {0|O gün} {4|cehennem} {3|ateşine} {5|şiddetle} {1|itilirler.}
+52:14 | bu | ateş | ki | idiniz | onu | yalanlıyor || {0|"İşte bu}, {5|yalanlamakta} {3|olduğunuz} {1|ateştir.}
+52:15 | büyü mü | bu | yoksa | siz | -mez misiniz | görmüyor musunuz || {1|Bu} {0|bir büyü mü}, {2|yoksa} {3|siz} {5|görmüyor mu}{4|sunuz?}
+52:16 | girin oraya | sabredin | veya | -meyin | sabretmeyin | eşittir | size | ancak | karşılık görürsünüz | şeyin | idiniz | yapıyor || {0|Girin oraya!} {1|Sabretseniz} {2|de} {4|sabret}{3|meseniz} {2|de} {6|sizin için} {5|birdir.} {11|Yapmakta} {10|olduğunuz} {9|şeylerin} {7|ancak} {8|karşılığını görüyorsunuz."}
+52:17 | şüphesiz | takva sahipleri | içindedir | cennetler | ve nimet || {0|Şüphesiz} {1|takva sahipleri} {3|cennetler} {4|ve nimet} {2|içindedirler.}
+52:18 | zevk içinde olanlar | şeylerle | verdiği onlara | Rableri | ve korudu onları | Rableri | azabından | cehennem || {3|Rablerinin} {2|kendilerine verdiği} {1|şeylerle} {0|zevk içindedirler.} {5|Rableri} {4|onları} {7|cehennem} {6|azabından} {4|korumuştur.}
+52:19 | yiyin | ve için | afiyetle | sebebiyle | idiniz | yapıyor || {5|Yapmakta} {4|olduğunuz} (işlere) {3|karşılık} {2|afiyetle} {0|yiyin} {1|için.}
+52:20 | yaslanmış olarak | üzerine | tahtlar | dizilmiş | ve eşlendirdik onları | hurilerle | iri gözlü || {3|Dizilmiş} {2|tahtlar} {1|üzerine} {0|yaslanırlar.} {4|Onları} {6|iri gözlü} {5|hurilerle} {4|eşlendirdik.}
+52:21 | ve kimseler | iman eden | ve uyan onlara | zürriyetleri | imanla | kattık | onlara | zürriyetlerini | ve -medik | eksiltmedik onlardan | -den | amelleri | -den | hiçbir şey | her | kişi | şeye | kazandığı | rehindir || {1|İman edenler} {2|ve} {4|imanda} {2|onlara uyan} {3|zürriyetleri} (var ya), {7|onların zürriyetlerini} {6|kendilerine} {5|kattık}; {11|onların amellerin}{10|den} {13|hiçbir şey} {9|eksilt}{8|medik.} {14|Her} {15|kişi} {17|kazandığına} {18|rehindir.}
+52:22 | ve verdik onlara | meyve | ve et | -den | arzu ettikleri || {1|Onlara} {4|arzu ettikleri} {3|türden} {1|meyve} {2|ve et} {0|verdik.}
+52:23 | kapışırlar | orada | kadeh | yoktur | boş söz | onda | ve ne de | günah || {1|Orada} {2|kadehleri} {0|kapışırlar}; {5|onda} {4|boş söz} {3|yoktur}, {7|günaha sokma} {6|da yoktur.}
+52:24 | ve dolaşır | etraflarında | gençler | onların | sanki onlar | inci | saklı || {1|Etraflarında}, {4|sanki} {6|saklı} {5|inciler} {4|gibi} {3|kendilerine ait} {2|genç hizmetçiler} {0|dolaşır.}
+52:25 | ve yöneldi | bir kısmı | -e | bir kısmı | birbirlerine sorarak || {1|Birbirlerine} {0|yönelip} {4|sorarlar.}
+52:26 | dediler | şüphesiz biz | idik | önce | içinde | ailemiz | korkanlar || {0|Derler ki}: {1|"Biz} {3|daha önce} {5|ailemiz}{4|in içinde} (Allah'tan) {6|korkar} {2|idik.}
+52:27 | lütfetti | Allah | bize | ve korudu bizi | azabından | kavurucu ateş || {1|Allah} {2|bize} {0|lütfetti} {3|ve bizi} {5|kavurucu ateşin} {4|azabından} {3|korudu.}
+52:28 | şüphesiz biz | idik | -den | önce | yalvarıyor O'na | şüphesiz O | O | iyilik edendir | merhametlidir || {0|Biz} {3|daha önce} {4|O'na yalvarıyor}{1|duk.} {5|Şüphesiz O}, {6|evet O} {7|iyilik edendir}, {8|çok merhametlidir."}
+52:29 | öğüt ver | değilsin | sen | nimetiyle | Rabbinin | kâhin | ve ne de | deli || {0|Öğüt ver}; {4|Rabbinin} {3|nimeti sayesinde} {2|sen} {5|ne kâhinsin} {6|ne de} {7|deli}{1|sin.}
+52:30 | yoksa | diyorlar mı | şair | bekliyoruz | onun | felaketini | zamanın || {0|Yoksa}: {2|"O bir şairdir}, {4|onun} {6|zamanın} {5|felaketine uğramasını} {3|bekliyoruz"} {1|mu diyorlar?}
+52:31 | de ki | bekleyin | şüphesiz ben | sizinle beraber | -den | bekleyenler || {0|De ki}: {1|"Bekleyin}, {2|ben de} {3|sizinle beraber} {5|bekleyenler}{4|denim."}
+52:32 | yoksa | emrediyor mu onlara | akılları | bunu | yoksa | onlar | bir kavim mi | azgın || {0|Yoksa} {2|akılları} {1|onlara} {3|bunu} {1|mı emrediyor?} {4|Yoksa} {5|onlar} {7|azgın} {6|bir kavim midir?}
+52:33 | yoksa | diyorlar mı | uydurdu onu | bilakis | -mezler | inanmazlar || {0|Yoksa}: {2|"Onu kendisi uydurdu"} {1|mu diyorlar?} {3|Bilakis} {5|inan}{4|mıyorlar.}
+52:34 | getirsinler | bir söz | benzeri | eğer | iseler | doğru söyleyenler || {3|Eğer} {5|doğru söyleyenler} {4|iseler} {2|onun benzeri} {1|bir söz} {0|getirsinler!}
+52:35 | yoksa | yaratıldılar mı | -den | olmaksızın | bir şey | yoksa | onlar mı | yaratıcılar || {0|Yoksa} {4|bir şey} {3|olmaksızın} {1|mı yaratıldılar}, {5|yoksa} {6|kendileri mi} {7|yaratıcıdırlar?}
+52:36 | yoksa | yarattılar mı | gökleri | ve yeri | bilakis | -mezler | kesin inanmazlar || {0|Yoksa} {2|gökleri} {3|ve yeri} {1|onlar mı yarattılar?} {4|Bilakis} {6|kesin olarak inan}{5|mıyorlar.}
+52:37 | yoksa | yanlarında mı | hazineleri | Rabbinin | yoksa | onlar mı | hâkimler || {0|Yoksa} {3|Rabbinin} {2|hazineleri} {1|onların yanında mı?} {4|Yoksa} {5|onlar mı} {6|hâkimdirler?}
+52:38 | yoksa | onların mı | merdiveni | dinliyorlar | onda | getirsin | dinleyenleri | delil | apaçık || {0|Yoksa} {1|onların} {4|üzerinde} (gökten) {3|dinledikleri} {2|bir merdivenleri mi var?} (Öyleyse) {6|dinleyenleri} {8|apaçık} {7|bir delil} {5|getirsin.}
+52:39 | yoksa | O'nun mu | kızlar | ve sizin mi | oğullar || {0|Yoksa} {2|kızlar} {1|O'nun}, {4|oğullar} {3|sizin mi?}
+52:40 | yoksa | istiyor musun onlardan | ücret | onlar | -den | borç | ağırlık altındalar || {0|Yoksa} {1|onlardan} {2|bir ücret} {1|istiyorsun da} {3|onlar} {5|borç}{4|tan} {6|ağır bir yük altında mı kalıyorlar?}
+52:41 | yoksa | yanlarında mı | gayb | onlar | yazıyorlar || {0|Yoksa} {2|gayb} {1|onların yanında mı} {3|ki onlar} {4|yazıyorlar?}
+52:42 | yoksa | istiyorlar mı | bir tuzak | kimseler | inkâr eden | onlar | tuzağa düşürülenlerdir || {0|Yoksa} {2|bir tuzak} {1|mı kurmak istiyorlar?} {4|İnkâr edenler}, {5|asıl} {6|tuzağa düşürülenlerdir.}
+52:43 | yoksa | onların var mı | ilah | başka | Allah'tan | münezzehtir | Allah | -den | ortak koştukları || {0|Yoksa} {4|Allah'tan} {3|başka} {1|onların} {2|bir ilahı mı var?} {6|Allah}, {8|onların ortak koştukları} {7|şeylerden} {5|münezzehtir.}
+52:44 | ve eğer | görseler | bir parça | -den | gök | düşen | derler | bulut | yığılmış || {0|Eğer} {4|gök}{3|ten} {5|düşen} {2|bir parça} {1|görseler}: {8|"Üst üste yığılmış} {7|bir bulut"} {6|derler.}
+52:45 | bırak onları | -e kadar | kavuşsunlar | günlerine | ki | onda | çarpılacaklar || {0|Onları bırak}, {5|içinde} {6|çarpılıp helak olacakları} {3|günlerine} {2|kavuşuncaya} {1|kadar.}
+52:46 | gün | -maz | fayda vermez | onlara | tuzakları | hiçbir şey | ve ne de | onlar | yardım olunurlar || {0|O gün} {4|tuzakları} {3|onlara} {5|hiçbir} {2|fayda ver}{1|mez}, {7|onlar} {8|yardım da görme}{6|zler.}
+52:47 | ve şüphesiz | kimseler için vardır | zulmeden | azap | başka | bundan | fakat | çoğu | -mez | bilir || {0|Şüphesiz} {2|zulmedenler} {1|için} {5|bundan} {4|başka} {3|bir azap} {1|vardır}; {6|fakat} {7|çoğu} {9|bil}{8|mez.}
+52:48 | ve sabret | hükmüne | Rabbinin | şüphesiz sen | gözlerimizin önündesin | ve tespih et | hamd ile | Rabbini | vakit | kalktığın || {2|Rabbinin} {1|hükmüne} {0|sabret}, {3|şüphesiz sen} {4|gözlerimizin önündesin.} {9|Kalktığın} {8|zaman} {7|Rabbini} {6|hamd ile} {5|tespih et.}
+52:49 | ve -den | gece | tespih et O'nu | ve batışında | yıldızların || {1|Gecenin} {0|bir kısmında} {4|ve yıldızların} {3|batışında} {2|da O'nu tespih et.}

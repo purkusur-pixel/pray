@@ -1,0 +1,44 @@
+70:1 | istedi | bir isteyen | azabı | vuku bulacak || {1|Bir isteyen}, {3|vuku bulacak} {2|bir azabı} {0|istedi};
+70:2 | kâfirler için | yoktur | onu | geri çeviren || {0|kâfirler için} (olan), {2|onu} {3|geri çevirecek} {1|hiçbir kimse yoktur};
+70:3 | -den | Allah | sahibi | yükselme yolları || {3|yükselme yollarının} {2|sahibi} {1|Allah}{0|'tan} (gelecek bir azabı).
+70:4 | yükselir | melekler | ve Ruh | O'na | -de | bir gün | olan | miktarı | elli | bin | yıl || {1|Melekler} {2|ve Ruh} (Cebrail) {3|O'na}, {7|miktarı} {8|elli} {9|bin} {10|yıl} {6|olan} {5|bir gün}{4|de} {0|yükselir.}
+70:5 | sabret | bir sabırla | güzel || {0|Sen} {2|güzel} {1|bir sabırla} {0|sabret.}
+70:6 | şüphesiz onlar | onu görüyorlar | uzak || {0|Şüphesiz onlar} {1|onu} {2|uzak} {1|görüyorlar};
+70:7 | ve onu görüyoruz | yakın || {0|biz ise onu} {1|yakın} {0|görüyoruz.}
+70:8 | gün | olur | gök | erimiş maden gibi || {2|Göğün} {3|erimiş maden gibi} {1|olacağı} {0|gün},
+70:9 | ve olur | dağlar | atılmış yün gibi || {1|dağlar} {2|atılmış yün gibi} {0|olur},
+70:10 | ve -maz | sorar | dost | dostu || {2|hiçbir dost} {3|dostunu} {1|sor}{0|maz.}
+70:11 | birbirine gösterilirler | ister | suçlu | keşke | fidye verse | -den | azabı | o gün | oğullarını || {0|Birbirlerine gösterilirler.} {2|Suçlu}, {7|o günün} {6|azabın}{5|dan} (kurtulmak için) {8|oğullarını} {4|fidye olarak verebilmeyi} {1|ister};
+70:12 | ve eşini | ve kardeşini || {0|eşini} {1|ve kardeşini},
+70:13 | ve akrabasını | ki | onu barındıran || {2|kendisini barındıran} {0|akrabasını},
+70:14 | ve kimseleri | -de | yer | hepsini | sonra | onu kurtarsa || {2|yeryüzün}{1|de} {0|olanların} {3|hepsini} (verip), {4|sonra} {5|kendisini kurtarmayı.}
+70:15 | asla | şüphesiz o | Lezâ || {0|Hayır!} {1|O}, {2|alevli bir ateştir};
+70:16 | soyan | deriyi || {1|derileri} {0|soyup kavurur.}
+70:17 | çağırır | kimseyi | sırt dönen | ve yüz çeviren || (Hakka) {2|sırt dönen} {3|ve yüz çeviren} {1|kimseyi} {0|çağırır};
+70:18 | ve topladı | ve yığdı || {0|mal toplayıp} {1|yığanı.}
+70:19 | şüphesiz | insan | yaratıldı | pek hırslı || {0|Şüphesiz} {1|insan} {3|pek hırslı} {2|yaratılmıştır.}
+70:20 | zaman | dokunduğunda ona | şer | çok sızlanan || {2|Kendisine kötülük} {1|dokunduğu} {0|zaman} {3|sızlanır},
+70:21 | ve zaman | dokunduğunda ona | hayır | çok engelleyen || {2|iyilik} {1|dokunduğu} {0|zaman} {3|da cimrilik eder.}
+70:22 | ancak | namaz kılanlar || {0|Ancak} {1|namaz kılanlar} böyle değildir;
+70:23 | ki | onlar | üzerine | namazları | devam edenler || {1|onlar} {3|namazlarına} {4|devam ederler.}
+70:24 | ve kimseler | -de | malları | hak | belli || {0|Onların} {2|mallarında} {4|belli} {3|bir hak} vardır;
+70:25 | isteyen için | ve mahrum || {0|isteyen} {1|ve mahrum} için.
+70:26 | ve kimseler | tasdik eden | gününü | din (hesap) || {0|Onlar} {3|hesap} {2|gününü} {1|tasdik ederler.}
+70:27 | ve kimseler | onlar | -den | azabı | Rableri | korkanlar || {0|Onlar} {4|Rablerinin} {3|azabın}{2|dan} {5|korkarlar.}
+70:28 | şüphesiz | azabı | Rablerinin | -maz | emin olunan || {0|Şüphesiz} {2|Rablerinin} {1|azabından} {4|emin olun}{3|maz.}
+70:29 | ve kimseler | onlar | iffetlerini | koruyanlar || {0|Onlar} {2|iffetlerini} {3|korurlar.}
+70:30 | ancak | üzerine | eşleri | veya | şey | sahip oldu | sağ elleri | şüphesiz onlar | -maz | kınanan || {2|Eşleri} {3|veya} {6|sağ ellerinin} {5|sahip olduğu} {4|cariyeleri} {0|hariç}; {7|çünkü onlar} (bundan dolayı) {9|kınan}{8|mazlar.}
+70:31 | kim | ararsa | ötesini | bunun | işte onlar | onlar | haddi aşanlar || {0|Kim} {3|bunun} {2|ötesini} {1|ararsa}, {4|işte onlar} {6|haddi aşanların} {5|ta kendileridir.}
+70:32 | ve kimseler | onlar | emanetlerine | ve ahitlerine | riayet edenler || {0|Onlar} {2|emanetlerine} {3|ve ahitlerine} {4|riayet ederler.}
+70:33 | ve kimseler | onlar | şahitliklerini | dosdoğru yapanlar || {0|Onlar} {2|şahitliklerini} {3|dosdoğru yaparlar.}
+70:34 | ve kimseler | onlar | üzerine | namazları | koruyanlar || {0|Onlar} {3|namazlarını} {4|korurlar.}
+70:35 | onlar | -de | cennetler | ikram edilenler || {0|İşte onlar} {2|cennetler}{1|de} {3|ağırlanırlar.}
+70:36 | ne oluyor | kimselere | inkâr eden | senin tarafına | koşuşan || {2|İnkâr edenlere} {0|ne oluyor} ki {3|sana doğru} {4|boyunlarını uzatarak koşuşuyorlar};
+70:37 | -den | sağ | ve -den | sol | bölük bölük || {1|sağ}{0|dan} {2|ve} {3|sol}{2|dan} {4|bölük bölük?}
+70:38 | umuyor mu | her | kişi | onlardan | -mesini | sokulmasını | cenneti | nimet || {3|Onlardan} {1|her} {2|biri} {7|nimet} {6|cennetine} {5|sokulmayı} {0|mı umuyor?}
+70:39 | asla | şüphesiz biz | onları yarattık | -den | bildikleri || {0|Hayır!} {1|Şüphesiz biz} {2|onları} {4|bildikleri} {3|şeyden} {2|yarattık.}
+70:40 | hayır | yemin ederim | Rabbine | doğuların | ve batıların | şüphesiz biz | elbette güç yetireniz || {0|Hayır!} {3|Doğuların} {4|ve batıların} {2|Rabbine} {1|yemin ederim ki} {5|biz} {6|elbette güç yetiririz};
+70:41 | üzerine | -mesine | yerlerine getirmeye | daha hayırlı | onlardan | ve değiliz | biz | önüne geçilenler || {4|onlardan} {3|daha hayırlılarını} {2|yerlerine getirmeye} (gücümüz yeter) {5|ve} {6|biz} {7|önüne geçilecek} {5|değiliz.}
+70:42 | onları bırak | dalsınlar | ve oynasınlar | -e kadar | kavuşuncaya | günlerine | ki | tehdit edildikleri || {0|Onları bırak}, {7|tehdit edildikleri} {5|günlerine} {4|kavuşuncaya} {3|kadar} {1|dalsınlar} {2|ve oynasınlar.}
+70:43 | gün | çıkarlar | -den | kabirler | koşarak | sanki onlar | -e | dikili taşlar | koşuşan || {0|O gün} {3|kabirler}{2|den} {4|hızla} {1|çıkarlar}, {5|sanki onlar} {7|dikili taşlar}{6|a} {8|koşuşuyorlar.}
+70:44 | düşük | gözleri | onları sarar | zillet | bu | gün | ki | idiler | tehdit edilirler || {1|Gözleri} {0|düşmüş}, {3|zillet} {2|onları sarmıştır.} {4|İşte bu}, {8|tehdit edil}{7|dikleri} {5|gündür.}

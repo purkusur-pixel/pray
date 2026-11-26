@@ -1,0 +1,31 @@
+76:1 | mi | geldi | üzerine | insan | bir süre | -den | zaman | -medi | oldu | bir şey | anılan || {3|İnsanın} {2|üzerinden}, {10|anılan} {9|bir şey} {8|ol}{7|madığı} {6|uzun zaman}{5|dan} {4|bir süre} {1|geçmedi} {0|mi?}
+76:2 | şüphesiz biz | yarattık | insanı | -den | bir nutfe | karışık | onu denemek için | onu yaptık | işiten | gören || {0|Şüphesiz biz} {2|insanı} {5|karışık} {4|bir nutfe}{3|den} {1|yarattık}; {6|onu deneyeceğiz}, {7|bu yüzden onu} {8|işiten}, {9|gören} {7|yaptık.}
+76:3 | şüphesiz biz | ona gösterdik | yolu | ya | şükreden | ya da | nankör || {0|Şüphesiz biz} {1|ona} {2|yolu} {1|gösterdik}; {3|ister} {4|şükredici} olsun, {5|ister} {6|nankör.}
+76:4 | şüphesiz biz | hazırladık | kâfirler için | zincirler | ve bukağılar | ve çılgın ateş || {0|Şüphesiz biz} {2|kâfirler için} {3|zincirler}, {4|bukağılar} {5|ve çılgın bir ateş} {1|hazırladık.}
+76:5 | şüphesiz | iyiler | içerler | -den | bir kadeh | olan | katkısı | kâfur || {0|Şüphesiz} {1|iyiler}, {6|katkısı} {7|kâfur} {5|olan} {4|bir kadeh}{3|ten} {2|içerler};
+76:6 | bir pınar | içer | ondan | kulları | Allah'ın | onu akıtırlar | akıtmak || {4|Allah'ın} {3|kullarının} {2|ondan} {1|içtiği}, {6|diledikleri gibi} {5|akıttıkları} {0|bir pınardan.}
+76:7 | yerine getirirler | adağı | ve korkarlar | bir günden | olan | şerri | yayılan || {0|Onlar} {1|adaklarını} {0|yerine getirirler} {2|ve} {5|şerri} {6|her yanı saran} {4|bir} {3|günden} {2|korkarlar.}
+76:8 | ve yedirirler | yemeği | üzerine | sevgisi | yoksula | ve yetime | ve esire || {1|Yemeği}, {3|ona duydukları sevgiye} {2|rağmen}, {4|yoksula}, {5|yetime} {6|ve esire} {0|yedirirler.}
+76:9 | ancak | sizi doyuruyoruz | rızası için | Allah'ın | -meyiz | istemeyiz | sizden | karşılık | ve -maz | teşekkür || (Derler ki:) {2|"Biz sizi} {0|ancak} {3|Allah'ın} {2|rızası için} {1|doyuruyoruz}; {6|sizden} {7|bir karşılık} {8|ve} {9|bir teşekkür} {5|iste}{4|miyoruz.}
+76:10 | şüphesiz biz | korkarız | -den | Rabbimiz | bir gün | çatık | çetin || {0|Biz} {3|Rabbimiz}{2|den}, {5|asık suratlı}, {6|çetin} {4|bir gün}den {1|korkarız."}
+76:11 | onları korudu | Allah | şerrinden | o | gün | ve onlara kavuşturdu | parlaklık | ve sevinç || {1|Allah} {3|o} {4|günün} {2|şerrinden} {0|onları korudu}, {5|onlara} {6|parlaklık} {7|ve sevinç} {5|verdi.}
+76:12 | ve onları mükâfatlandırdı | şeyler karşılığı | sabrettikleri | cennet | ve ipek || {2|Sabretmelerine} {1|karşılık} {0|onları} {3|cennet} {4|ve ipek} {0|ile mükâfatlandırdı.}
+76:13 | yaslanmış olarak | orada | üzerine | koltuklar | -mazlar | görürler | orada | güneş | ve -maz | dondurucu soğuk || {1|Orada} {3|koltuklar} {2|üzerine} {0|yaslanırlar}; {6|orada} {7|ne güneş} {8|ne de} {9|dondurucu soğuk} {5|gör}{4|ürler.}
+76:14 | ve yakındır | üzerlerine | gölgeleri | ve boyun eğdirilmiş | meyveleri | boyun eğdirilmek || {2|Ağaçların gölgeleri} {1|üzerlerine} {0|sarkmış}, {4|meyveleri} {5|iyice} {3|boyun eğdirilmiştir.}
+76:15 | ve dolaştırılır | etraflarında | kaplar | -den | gümüş | ve kadehler | olan | billurlar || {1|Etraflarında} {4|gümüş}{3|ten} {2|kaplar} {5|ve} {7|billur} {6|gibi} {5|kadehler} {0|dolaştırılır};
+76:16 | billurlar | -den | gümüş | onu ölçtüler | ölçmek || {2|gümüş}{1|ten} {0|billurlar}; {3|onları} {4|tam} {3|ölçüsünde ayarlamışlardır.}
+76:17 | ve içirilirler | orada | bir kadeh | olan | katkısı | zencefil || {1|Orada} {4|katkısı} {5|zencefil} {3|olan} {2|bir kadehle} {0|içirilirler};
+76:18 | bir pınar | orada | adlandırılan | Selsebil || {1|orada} {3|Selsebil} {2|denilen} {0|bir pınardan.}
+76:19 | ve dolaşır | etraflarında | gençler | ölümsüz | zaman | onları gördüğün | onları sanırsın | inci | saçılmış || {1|Etraflarında} {3|ölümsüz} {2|gençler} {0|dolaşır.} {5|Onları gördüğün} {4|zaman} {8|saçılmış} {7|inci} {6|sanırsın.}
+76:20 | ve zaman | gördüğün | orada | görürsün | nimet | ve mülk | büyük || {2|Orayı} {1|gördüğün} {0|zaman} {4|nimet} {5|ve} {6|büyük} {5|bir mülk} {3|görürsün.}
+76:21 | üzerlerinde | elbiseler | ince ipek | yeşil | ve kalın ipek | ve takılmıştır | bilezikler | -den | gümüş | ve onlara içirdi | Rableri | bir içecek | tertemiz || {0|Üzerlerinde} {3|yeşil} {2|ince ipekten} {4|ve kalın ipekten} {1|elbiseler} vardır; {8|gümüş}{7|ten} {6|bileziklerle} {5|süslenmişlerdir.} {10|Rableri} {9|onlara} {12|tertemiz} {11|bir içecek} {9|içirmiştir.}
+76:22 | şüphesiz | bu | oldu | sizin için | bir mükâfat | ve oldu | çabanız | şükranla karşılanan || {0|Şüphesiz} {1|bu}, {3|sizin için} {4|bir mükâfattır}; {6|çabanız} {7|şükranla karşılanmıştır.}
+76:23 | şüphesiz biz | biz | indirdik | sana | Kur'an'ı | indirmek || {0|Şüphesiz} {3|sana} {4|Kur'an'ı} {5|kısım kısım} {2|indiren} {1|biziz.}
+76:24 | sabret | hükmüne | Rabbinin | ve -me | itaat etme | onlardan | günahkâra | veya | nankör || {2|Rabbinin} {1|hükmüne} {0|sabret}; {5|onlardan} {6|hiçbir günahkâra} {7|veya} {8|nankör} (birine) {4|itaat et}{3|me.}
+76:25 | ve an | adını | Rabbinin | sabah | ve akşam || {3|Sabah} {4|akşam} {2|Rabbinin} {1|adını} {0|an.}
+76:26 | ve -den | gece | secde et | O'na | ve O'nu tesbih et | gece | uzun || {1|Gece}{0|nin bir kısmında} {3|O'na} {2|secde et}, {6|uzun} {5|gece} {4|boyunca O'nu tesbih et.}
+76:27 | şüphesiz | bunlar | seviyorlar | çabuk geçeni | ve bırakıyorlar | arkalarına | bir gün | ağır || {0|Şüphesiz} {1|bunlar} {3|çabuk geçeni} (dünyayı) {2|seviyorlar}, {7|ağır} {6|bir günü} {5|arkalarına} {4|atıyorlar.}
+76:28 | biz | onları yarattık | ve sağlamlaştırdık | yapılarını | ve zaman | dilediğimiz | getiririz | benzerlerini | getirmek || {1|Onları} {0|biz} {1|yarattık}, {3|yapılarını} {2|sağlamlaştırdık.} {5|Dilediğimiz} {4|zaman} {7|benzerlerini} {8|onların yerine} {6|getiririz.}
+76:29 | şüphesiz | bu | bir öğüttür | kim | dilerse | tutar | -e | Rabbine | yol || {0|Şüphesiz} {1|bu} {2|bir öğüttür.} {3|Dileyen} {7|Rabbine} {6|doğru} {8|bir yol} {5|tutar.}
+76:30 | ve -mezsiniz | dileyemezsiniz | ancak | -mesi | dilemesi | Allah'ın | şüphesiz | Allah | oldu | bilendir | hikmet sahibidir || {5|Allah} {4|dilemedikçe} {1|siz dileye}{0|mezsiniz.} {6|Şüphesiz} {7|Allah} {9|hakkıyla bilendir}, {10|hüküm ve hikmet sahibidir.}
+76:31 | sokar | kimseyi | dilediği | -e | rahmeti | ve zalimler | hazırladı | onlara | azap | acıklı || {2|Dilediğini} {4|rahmetin}{3|e} {0|sokar.} {5|Zalimlere} gelince, {7|onlar için} {9|acıklı} {8|bir azap} {6|hazırlamıştır.}

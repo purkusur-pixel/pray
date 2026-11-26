@@ -1,0 +1,8 @@
+102:1 | oyaladı sizi | çoklukla övünme || {1|Çoklukla övünmek} {0|sizi oyaladı},
+102:2 | -e kadar | ziyaret ettiniz | kabirleri || {2|kabirleri} {1|ziyaret edinceye} {0|kadar.}
+102:3 | hayır | -acaksınız | bileceksiniz || {0|Hayır!} {1|İleride} {2|bileceksiniz!}
+102:4 | sonra | hayır | -acaksınız | bileceksiniz || {0|Sonra} {1|hayır!} {2|İleride} {3|bileceksiniz!}
+102:5 | hayır | eğer | bilseydiniz | bilgisiyle | kesin || {0|Hayır!} {1|Eğer} {4|kesin} {3|bilgiyle} {2|bilseydiniz!}
+102:6 | elbette göreceksiniz | cehennemi || {1|Cehennemi} {0|mutlaka göreceksiniz.}
+102:7 | sonra | elbette onu göreceksiniz | gözüyle | kesin || {0|Sonra} {1|onu} {3|kesin} {2|bir gözle} {1|göreceksiniz.}
+102:8 | sonra | elbette sorulacaksınız | o gün | -den | nimetler || {0|Sonra} {2|o gün} {4|nimetlerden} {1|mutlaka sorguya çekileceksiniz.}

@@ -1,0 +1,21 @@
+92:1 | andolsun geceye | -diği zaman | örter || {2|(Her şeyi) örttüğü} {1|zaman} {0|geceye},
+92:2 | ve gündüze | -diği zaman | açıldı (aydınlandı) || {2|açılıp aydınlandığı} {1|zaman} {0|gündüze},
+92:3 | ve şeye | yarattı | erkeği | ve dişiyi || {2|erkeği} {3|ve dişiyi} {1|yaratana} {0|andolsun ki},
+92:4 | şüphesiz | çabalarınız | elbette farklıdır || {0|şüphesiz} {1|sizin çabalarınız} {2|farklı farklıdır.}
+92:5 | ama | kim | verdi | ve sakındı || {0|Ama} {1|kim} {2|verir} {3|ve sakınırsa},
+92:6 | ve doğruladı | en güzeli || {1|en güzeli} {0|de tasdik ederse},
+92:7 | ona kolaylaştıracağız | en kolaya || {0|biz onu} {1|en kolaya} {0|muvaffak kılarız.}
+92:8 | ama | kim | cimrilik etti | ve kendini yeterli gördü || {0|Ama} {1|kim} {2|cimrilik eder} {3|ve kendini müstağni görürse},
+92:9 | ve yalanladı | en güzeli || {1|en güzeli} {0|de yalanlarsa},
+92:10 | ona kolaylaştıracağız | en zora || {0|biz de onu} {1|en zora} {0|kolayca hazırlarız.}
+92:11 | ve -mez | fayda verir | ona | malı | -diği zaman | yuvarlandı || {5|(Çukura) yuvarlandığı} {4|zaman} {3|malı} {2|ona} {1|hiçbir fayda} {0|sağlamaz.}
+92:12 | şüphesiz | bize düşer | elbette doğru yolu göstermek || {0|Şüphesiz} {2|doğru yolu göstermek} {1|bize düşer.}
+92:13 | ve şüphesiz | bizimdir | elbette ahiret | ve dünya (ilk) || {0|Şüphesiz} {2|ahiret} {3|de dünya da} {1|bizimdir.}
+92:14 | sizi uyardım | bir ateşle | alev alev yanan || {0|İşte sizi} {2|alev alev yanan} {1|bir ateşe karşı} {0|uyardım.}
+92:15 | -mez | ona girer | ancak | en bedbaht || {1|Ona} {3|en bedbaht olandan} {2|başkası} {1|gir}{0|mez};
+92:16 | o ki | yalanladı | ve yüz çevirdi || {0|o ki} {1|yalanlamış} {2|ve yüz çevirmiştir.}
+92:17 | ve ondan uzak tutulacak | en takvalı || {1|En takvalı olan ise} {0|ondan uzak tutulacaktır};
+92:18 | o ki | verir | malını | arınır || {0|o ki} {3|arınmak için} {2|malını} {1|verir.}
+92:19 | ve -mez | hiç kimse için | yanında | -den | nimet | karşılık verilir || {2|Onun yanında} {1|hiç kimsenin} {5|karşılığı ödenecek} {4|bir nimeti} {0|yoktur};
+92:20 | ancak | arayarak | rızasını (yüzünü) | Rabbinin | en yüce || {0|o, ancak} {4|en yüce} {3|Rabbinin} {2|rızasını} {1|arayarak} (verir).
+92:21 | ve elbette ileride | razı olacak || {0|Elbette o da} {1|razı olacaktır.}

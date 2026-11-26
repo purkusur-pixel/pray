@@ -1,0 +1,60 @@
+51:1 | andolsun savuranlara | savuruş || {1|Savurdukça} {0|savuran rüzgârlara andolsun},
+51:2 | taşıyanlara | yük || {1|ağır yük} {0|taşıyan bulutlara},
+51:3 | akanlara | kolaylıkla || {1|kolayca} {0|akıp giden gemilere},
+51:4 | paylaştıranlara | iş || {1|işleri} {0|paylaştıran meleklere} (andolsun ki),
+51:5 | ancak | vaat olunduğunuz | elbette doğrudur || {1|size vaat edilen} {0|şey} {2|elbette doğrudur.}
+51:6 | ve şüphesiz | ceza | elbette gerçekleşecektir || {0|Şüphesiz} {1|ceza} {2|mutlaka gerçekleşecektir.}
+51:7 | andolsun göğe | sahip | yollar || {2|Yolları} {1|olan} {0|göğe andolsun ki},
+51:8 | şüphesiz siz | elbette içindesiniz | söz | çelişkili || {0|siz} {3|çelişkili} {2|bir söz} {1|içindesiniz.}
+51:9 | çevrilir | ondan | kimse | çevrilen || {1|Ondan} (Kur'an'dan) {3|çevrilen} {2|kimse} {0|çevrilir.}
+51:10 | kahrolsun | yalancılar || {1|Kahrolsun} {0|yalancılar},
+51:11 | kimseler | onlar | içinde | dalgınlık | gafillerdir || {0|ki} {1|onlar} {3|bir dalgınlık} {2|içinde} {4|gafildirler.}
+51:12 | sorarlar | ne zaman | günü | ceza || {0|Soruyorlar}: {3|"Ceza} {2|günü} {1|ne zaman?"}
+51:13 | gün | onlar | üzerinde | ateş | yakılırlar || {0|O gün} {1|onlar} {3|ateş}{2|in üzerinde} {4|yakılacaklar.}
+51:14 | tadın | azabınızı | bu | şeydir | idiniz | onu | acele istiyor || {0|"Tadın} {1|azabınızı!} {2|Bu}, {5|çabucak gelmesini} {6|istemekte} {4|olduğunuz} {3|şeydir."}
+51:15 | şüphesiz | takva sahipleri | içindedir | bahçeler | ve pınarlar || {0|Şüphesiz} {1|takva sahipleri} {3|bahçelerde} {4|ve pınarlarda}{2|dır.}
+51:16 | alarak | şeyi | verdiği onlara | Rableri | şüphesiz onlar | idiler | önce | bundan | iyilik yapanlar || {3|Rablerinin} {2|kendilerine verdiği} {1|şeyleri} {0|alırlar.} {4|Çünkü onlar} {7|bundan} {6|önce} {8|iyilik yapan} {5|kimselerdi.}
+51:17 | idiler | az | -den | gece | şey | uyuyorlar || {3|Gecenin} {1|pek azında} {5|uyurlar}{0|dı.}
+51:18 | ve seherlerde | onlar | bağışlanma dilerler || {0|Seherlerde} {1|onlar} {2|bağışlanma dilerlerdi.}
+51:19 | ve -de | mallarında | hak vardır | isteyen için | ve yoksun || {1|Mallarında} {3|isteyen} {4|ve yoksun} (için) {2|bir hak vardı.}
+51:20 | ve -de | yer | ayetler vardır | kesin inananlar için || {1|Yeryüzünde} {3|kesin inananlar için} {2|ayetler vardır.}
+51:21 | ve -de | kendiniz | hâlâ -mez misiniz | görmez misiniz || {1|Kendi nefislerinizde} {0|de} (ayetler vardır). {2|Hâlâ} {3|görmüyor musunuz?}
+51:22 | ve -de | gök | rızkınız | ve şey | vaat olunduğunuz || {1|Gökte} {0|de} {2|rızkınız} {3|ve} {4|size vaat edilen} {3|şey} (vardır).
+51:23 | Rabbine andolsun | göğün | ve yerin | şüphesiz o | elbette haktır | gibi | şey | ki siz | konuşuyorsunuz || {1|Göğün} {2|ve yerin} {0|Rabbine andolsun ki} {3|o}, {7|sizin} {8|konuşmanız} {5|gibi} {4|gerçektir.}
+51:24 | mı | geldi sana | haberi | misafirlerinin | İbrahim'in | ağırlanan || {4|İbrahim'in} {5|ağırlanan} {3|misafirlerinin} {2|haberi} {1|sana geldi} {0|mi?}
+51:25 | hani | girdiler | yanına | dediler | selam | dedi | selam | bir kavim | tanınmayan || {0|Hani} {2|yanına} {1|girmişler}, {4|"Selam"} {3|demişlerdi.} (O da): {6|"Selam}, {8|tanınmayan} {7|bir topluluk"} {5|demişti.}
+51:26 | gizlice gitti | -e | ailesi | getirdi | buzağı | semiz || {2|Ailesine} {0|gizlice gidip} {5|semiz} {4|bir buzağı} {3|getirdi.}
+51:27 | yaklaştırdı onu | onlara | dedi | -mez misiniz | yemez misiniz || {0|Onu} {1|onlara} {0|yaklaştırdı}, {2|dedi ki}: {4|"Yemez}{3|misiniz?"}
+51:28 | hissetti | onlardan | korku | dediler | -me | korkma | ve müjdelediler onu | bir oğulla | bilgin || {1|Onlardan} (içinde) {2|bir korku} {0|hissetti.} {3|Dediler ki}: {5|"Kork}{4|ma."} {6|Ona} {8|bilgin} {7|bir oğul} {6|müjdelediler.}
+51:29 | yöneldi | karısı | içinde | çığlık | vurdu | yüzüne | ve dedi | kocakarı | kısır || {1|Karısı} {3|bağırarak} {0|geldi}, {5|yüzüne} {4|vurdu} {6|ve dedi ki}: {7|"Ben kocakarı}, {8|kısır} (bir kadınım)."
+51:30 | dediler | böyle | dedi | Rabbin | şüphesiz O | O | hikmet sahibidir | bilendir || {0|Dediler ki}: {3|"Rabbin} {1|böyle} {2|buyurdu.} {4|Şüphesiz O}, {5|evet O} {6|hüküm ve hikmet sahibidir}, {7|hakkıyla bilendir."}
+51:31 | dedi | nedir | işiniz | ey | elçiler || (İbrahim) {0|dedi ki}: {3|"Ey} {4|elçiler!} {2|Asıl işiniz} {1|nedir?"}
+51:32 | dediler | şüphesiz biz | gönderildik | -e | bir kavim | suçlu || {0|Dediler ki}: {1|"Biz} {5|suçlu} {4|bir kavm}{3|e} {2|gönderildik};
+51:33 | göndermek için | üzerlerine | taşlar | -den | çamur || {1|üzerlerine} {4|çamur}{3|dan} (pişirilmiş) {2|taşlar} {0|yağdıralım diye};
+51:34 | işaretlenmiş | katında | Rabbinin | aşırı gidenler için || {2|Rabbinin} {1|katında} {3|aşırı gidenler için} {0|işaretlenmiş} (taşlar)."
+51:35 | çıkardık | kimseleri | idi | orada | -den | müminler || {3|Orada} {2|bulunan} {5|müminleri} {0|çıkardık.}
+51:36 | -medik | bulmadık | orada | başka | ev | -den | Müslümanlar || {2|Orada} {6|Müslümanlar}{5|dan} (oluşan) {4|bir ev}{3|den başka} {1|bul}{0|madık.}
+51:37 | ve bıraktık | orada | bir ayet | kimseler için | korkan | azaptan | elem dolu || {6|Elem dolu} {5|azaptan} {4|korkanlar} {3|için} {1|orada} {2|bir ibret} {0|bıraktık.}
+51:38 | ve -de | Musa | hani | gönderdik onu | -e | Firavun | delille | apaçık || {1|Musa}{0|'da da} (ibret vardır). {2|Hani} {3|onu} {5|Firavun'a} {7|apaçık} {6|bir delille} {3|göndermiştik.}
+51:39 | yüz çevirdi | kuvvetine güvenerek | ve dedi | büyücü | veya | deli || {1|O ise kuvvetine güvenerek} {0|yüz çevirdi} {2|ve}: {3|"Bir büyücü} {4|ya da} {5|bir deli"} {2|dedi.}
+51:40 | yakaladık onu | ve ordularını | attık onları | içine | deniz | ve o | kınanacak durumdaydı || {0|Biz de onu} {1|ve ordularını} {0|yakalayıp} {4|deniz}{3|e} {2|attık}; {5|o} {6|kınanacak bir durumdaydı.}
+51:41 | ve -de | Âd | hani | gönderdik | üzerlerine | rüzgârı | kısır || {1|Âd}{0|'da da} (ibret vardır). {2|Hani} {4|üzerlerine} {6|kısır} {5|rüzgârı} {3|göndermiştik.}
+51:42 | -mazdı | bırakmazdı | -den | şey | geldiği | üzerine | ancak | yapardı onu | çürümüş gibi || {5|Üzerine} {4|geldiği} {3|hiçbir şeyi} {1|bırak}{0|mıyor}, {6|mutlaka} {7|onu} {8|çürümüş kemik gibi} {7|yapıyordu.}
+51:43 | ve -de | Semûd | hani | denildi | onlara | faydalanın | -e kadar | bir süre || {1|Semûd}{0|'da da} (ibret vardır). {2|Hani} {4|onlara}: {7|"Bir süreye} {6|kadar} {5|faydalanın"} {3|denilmişti.}
+51:44 | baş kaldırdılar | -den | emri | Rablerinin | yakaladı onları | yıldırım | ve onlar | bakıyorlardı || {3|Rablerinin} {2|emrin}{1|den} {0|baş kaldırdılar}; {6|onlar} {7|bakıp dururken} {5|yıldırım} {4|onları yakaladı.}
+51:45 | -medi | güç yetiremediler | -den | kalkmak | ve -medi | olmadılar | yardım alanlar || {3|Ayağa kalkmaya} {1|güç yetireme}{0|diler}, {6|kendilerini kurtar}{4|a}{5|madılar da.}
+51:46 | ve kavmini | Nuh | -den | önce | şüphesiz onlar | idiler | bir kavim | yoldan çıkmış || {3|Daha önce} {1|Nuh} {0|kavmini de} (helak etmiştik). {4|Şüphesiz onlar} {7|yoldan çıkmış} {6|bir kavim} {5|idiler.}
+51:47 | ve göğü | bina ettik onu | kudretle | ve şüphesiz biz | elbette genişleticiyiz || {0|Göğü} {2|kudretimizle} {1|bina ettik}; {3|şüphesiz biz} {4|onu genişleticiyiz.}
+51:48 | ve yeri | döşedik onu | ne güzel | döşeyicileriz || {0|Yeri} {1|döşedik}; {2|ne güzel} {3|döşeyiciyiz!}
+51:49 | ve -den | her | şey | yarattık | iki eş | umulur ki siz | düşünürsünüz || {1|Her} {2|şey}{0|den} {4|iki eş} {3|yarattık} ki {5|belki} {6|düşünüp öğüt alırsınız.}
+51:50 | kaçın | -e | Allah | şüphesiz ben | size | O'ndan | uyarıcıyım | apaçık || {2|O hâlde Allah'a} {0|kaçın.} {3|Şüphesiz ben} {5|O'ndan} (gelen), {4|sizin için} {7|apaçık} {6|bir uyarıcıyım.}
+51:51 | ve -meyin | koşmayın | ile | Allah | ilah | başka | şüphesiz ben | size | O'ndan | uyarıcıyım | apaçık || {3|Allah} {2|ile beraber} {5|başka} {4|bir ilah} {1|koş}{0|mayın.} {6|Şüphesiz ben} {8|O'ndan} (gelen), {7|sizin için} {10|apaçık} {9|bir uyarıcıyım.}
+51:52 | böyle | -medi | gelmedi | kimselere | -den | önceleri | hiçbir | elçi | ancak | dediler | büyücü | veya | deli || {0|İşte böyle}, {5|onlardan öncekilere} {6|hiçbir} {7|elçi} {2|gel}{1|medi} {8|ki}: {10|"Büyücüdür} {11|ya da} {12|delidir"} {9|demiş olmasınlar.}
+51:53 | birbirlerine mi tavsiye ettiler | onu | bilakis | onlar | bir kavimdir | azgın || {1|Bunu} {0|birbirlerine mi tavsiye ettiler?} {2|Bilakis} {3|onlar} {5|azgın} {4|bir kavimdir.}
+51:54 | yüz çevir | onlardan | değilsin | sen | kınanacak || {1|Onlardan} {0|yüz çevir}; {3|sen} {4|kınanacak} {2|değilsin.}
+51:55 | ve öğüt ver | şüphesiz | öğüt | fayda verir | müminlere || {0|Öğüt ver}, {1|çünkü} {2|öğüt} {4|müminlere} {3|fayda verir.}
+51:56 | ve -medim | yaratmadım | cinleri | ve insanları | başka | kulluk etmeleri için Bana || {2|Cinleri} {3|ve insanları}, {5|ancak Bana kulluk etsinler} {4|diye} {1|yarat}{0|tım.}
+51:57 | -mem | istemem | onlardan | hiçbir | rızık | ve -mem | istemem | -melerini | doyurmalarını Beni || {2|Onlardan} {3|hiçbir} {4|rızık} {1|iste}{0|miyorum}, {8|Beni doyurmalarını} {6|da iste}{5|miyorum.}
+51:58 | şüphesiz | Allah | O | rızık verendir | sahibi | kuvvet | sağlam || {0|Şüphesiz} {1|Allah}, {2|evet O}, {3|bol rızık veren}, {5|kuvvet} {4|sahibi}, {6|sapasağlam olandır.}
+51:59 | şüphesiz | kimseler için vardır | zulmeden | pay | benzeri | payı | arkadaşlarının | -mesinler | acele istemesinler Benden || {0|Şüphesiz} {2|zulmedenler için}, {6|arkadaşlarının} {5|payı} {4|gibi} (azaptan) {3|bir pay} {1|vardır.} {8|O hâlde Benden acele iste}{7|mesinler.}
+51:60 | vay hâline | kimselerin | inkâr eden | -den | günleri | ki | vaat edildikleri || {6|Tehdit edildikleri} {4|günlerin}{3|den dolayı} {2|inkâr edenlerin} {0|vay hâline!}

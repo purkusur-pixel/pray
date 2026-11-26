@@ -1,0 +1,30 @@
+89:1 | andolsun fecre (tan yerine) || {0|Fecre andolsun},
+89:2 | ve gecelere | on || {1|on} {0|geceye},
+89:3 | ve çifte | ve teke || {0|çifte} {1|ve teke},
+89:4 | ve geceye | -diği zaman | geçip gider || {2|geçip gittiği} {1|zaman} {0|geceye andolsun ki},
+89:5 | -mi | -de | bunlar | yemin | akıl sahibi için | akıl || {2|bunlarda} {4|akıl sahibi} için {3|bir yemin} var {0|mı?}
+89:6 | görmedin mi | gördün | nasıl | yaptı | Rabbin | Âd kavmine || {4|Rabbinin} {5|Âd kavmine} {2|ne} {3|yaptığını} {0|görmedin mi?}
+89:7 | İrem | sahibi | sütunlar || {1|O} {2|sütunlarla} {1|dolu} {0|İrem şehrine},
+89:8 | o ki | -medi | yaratıldı | benzeri | -de | ülkeler || {0|ki} {5|ülkeler} {4|içinde} {3|benzeri} {2|yaratıl}{1|mamıştı.}
+89:9 | ve Semûd'a | onlar ki | oydular | kayaları | vadide || {2|Vadide} {3|kayaları} {2|oyan} {0|Semûd'a},
+89:10 | ve Firavun'a | sahibi | kazıklar || {2|kazıklar} {1|sahibi} {0|Firavun'a?}
+89:11 | onlar ki | azdılar | -de | ülkeler || {0|Onlar ki} {3|ülkelerde} {1|azdılar},
+89:12 | ve çoğalttılar | oralarda | bozgunculuğu || {1|oralarda} {2|bozgunculuğu} {0|çoğalttılar.}
+89:13 | ve yağdırdı | üzerlerine | Rabbin | kamçısını | azap || {2|Rabbin} de {1|onların üzerine} {4|azap} {3|kamçısı} {0|yağdırdı.}
+89:14 | şüphesiz | Rabbin | elbette gözetleme yerindedir || {0|Şüphesiz} {1|Rabbin} {2|her an gözetlemektedir.}
+89:15 | ama | insan | -diğinde | -ki | onu sınadı | Rabbi | ve ona ikram etti | ve onu nimetlendirdi | der ki | Rabbim | bana ikram etti || {0|Ama} {1|insan}, {5|Rabbi} {4|onu sınayıp} {6|ona ikram ettiği} {7|ve nimet verdiği} {2|zaman}, “{9|Rabbim} {10|bana ikram etti}” {8|der.}
+89:16 | ama | -diğinde | -ki | onu sınadı | ve daralttı | ona | rızkını | der ki | Rabbim | beni aşağıladı || {0|Ama} {3|onu sınayıp} {5|onun} {6|rızkını} {4|daralttığı} {1|zaman} da “{8|Rabbim} {9|beni aşağıladı}” {7|der.}
+89:17 | hayır | bilakis | -mezsiniz | ikram edersiniz | yetime || {0|Hayır!} {1|Bilakis siz} {4|yetime} {3|ikram} {2|etmiyorsunuz};
+89:18 | ve -mezsiniz | birbirinizi teşvik edersiniz | -e | yedirmeye | yoksulu || {4|yoksulu} {3|doyurmaya} {1|birbirinizi teşvik} {0|etmiyorsunuz};
+89:19 | ve yersiniz | mirası | yemekle | hepsini toplayarak || {1|mirası} {3|hepsini silip süpürerek} {0|yiyorsunuz}
+89:20 | ve seversiniz | malı | sevgiyle | çok || {1|ve malı} {3|aşırı} {2|bir sevgiyle} {0|seviyorsunuz.}
+89:21 | hayır | -diği zaman | parça parça edildi | yer | dövülerek | dövülerek || {0|Hayır!} {3|Yer} {4|dövüldükçe} {5|dövülüp} {2|parça parça edildiği} {1|zaman},
+89:22 | ve geldiğinde | Rabbin | ve melekler | saf | saf || {1|Rabbinin (emri)} {2|ve melekler} {3|saf} {4|saf} {0|geldiği} zaman,
+89:23 | ve getirildi | o gün | cehennem | o gün | düşünür (anlar) | insan | ve nerede | onun için | öğüt (fayda) || {1|o gün} {2|cehennem de} {0|getirildiği} zaman, {3|işte o gün} {5|insan} {4|düşünüp anlar}; {6|ama} {7|ona} {8|bu anlamanın} {6|ne faydası var?}
+89:24 | der | keşke | önceden gönderseydim | hayatım için || “{1|Keşke} {3|bu hayatım için} {2|önceden (iyilik) gönderseydim!}” {0|der.}
+89:25 | o gün | -mez | azap eder | azabı gibi | hiç kimse || {0|O gün} (Allah'ın) {3|azabı gibi} {4|hiç kimse} {2|azap edemez};
+89:26 | ve -mez | bağlar | bağlaması gibi | hiç kimse || {3|hiç kimse} de (O'nun) {2|bağlaması gibi} {1|bağlayamaz.}
+89:27 | ey | nefs | huzura kavuşmuş || “{0|Ey} {2|huzura kavuşmuş} {1|nefis!}
+89:28 | dön | -e | Rabbine | razı olmuş olarak | razı olunmuş olarak || {2|Rabbine}, {3|sen O'ndan razı}, {4|O da senden razı olarak} {0|dön!}
+89:29 | gir | arasına | kullarımın || {1|Kullarımın} {2|arasına} {0|gir}
+89:30 | ve gir | cennetime || {1|ve cennetime} {0|gir!}”

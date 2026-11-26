@@ -1,0 +1,78 @@
+55:1 | Rahmân || {0|Rahmân},
+55:2 | öğretti | Kur'an'ı || {1|Kur'an'ı} {0|öğretti.}
+55:3 | yarattı | insanı || {1|İnsanı} {0|yarattı.}
+55:4 | ona öğretti | beyanı || {0|Ona} {1|beyanı} (açıklamayı) {0|öğretti.}
+55:5 | güneş | ve ay | bir hesapla || {0|Güneş} {1|ve ay} {2|bir hesaba göre} (hareket eder).
+55:6 | ve yıldız (bitki) | ve ağaç | secde ederler || {0|Bitkiler} {1|ve ağaçlar} (O'na) {2|secde ederler.}
+55:7 | ve göğü | onu yükseltti | ve koydu | mizanı || {0|Göğü} {1|yükseltti} {2|ve} {3|mizanı} (ölçüyü) {2|koydu},
+55:8 | ki -mayın | aşmayın | -de | mizan || {0|ki} {3|ölçü}{2|de} {1|haddi aşma}{0|yasınız.}
+55:9 | ve doğru tutun | tartıyı | adaletle | ve -meyin | eksik tutun | teraziyi || {1|Tartıyı} {2|adaletle} {0|yapın} {3|ve} {5|teraziyi} {4|eksik tut}{3|mayın.}
+55:10 | ve yeri | onu koydu | yaratıklar için || {0|Yeri} {2|yaratıklar için} {1|yerleştirdi.}
+55:11 | orada | meyve | ve hurma ağaçları | sahibi | salkım kabukları || {0|Orada} {1|meyveler} {2|ve} {4|salkım kabukları} {3|olan} {2|hurma ağaçları} vardır;
+55:12 | ve tane | sahibi | yaprak (saman) | ve güzel kokulu bitkiler || {1|yapraklı (saplı)} {0|taneler} {3|ve güzel kokulu bitkiler} de.
+55:13 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:14 | yarattı | insanı | -den | kuru çamur | pişmiş toprak gibi || (Allah) {1|insanı} {4|pişmiş toprak gibi} {3|kuru bir çamur}{2|dan} {0|yarattı.}
+55:15 | ve yarattı | cinni | -den | dumansız alev | -den | ateş || {1|Cinni} {0|de} {5|ateş}{4|ten} (olan) {3|dumansız bir alev}{2|den} {0|yarattı.}
+55:16 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:17 | Rabbi | iki doğunun | ve Rabbi | iki batının || (O,) {1|iki doğunun} {0|Rabbi} {2|ve} {3|iki batının} {2|Rabbidir.}
+55:18 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:19 | salıverdi | iki denizi | birbirine kavuşan || {0|Birbirine kavuşmak üzere} {1|iki denizi} {0|salıverdi.}
+55:20 | aralarında | bir engel | -mazlar | birbirine taşmaz || {0|Aralarında} {1|bir engel} vardır, {3|birbirine taş}{2|mazlar.}
+55:21 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:22 | çıkar | ikisinden | inci | ve mercan || {1|İkisinden de} {2|inci} {3|ve mercan} {0|çıkar.}
+55:23 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:24 | ve O'nundur | akan gemiler | yükseltilmiş | -de | deniz | dağlar gibi || {4|Denizde} {5|dağlar gibi} {2|yükselen} {1|gemiler} {0|de O'nundur.}
+55:25 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:26 | her | kim | üzerinde | yok olucudur || {2|Yeryüzünde} {1|bulunan} {0|her şey} {3|yok olucudur.}
+55:27 | ve kalacak | yüzü | Rabbinin | sahibi | celal | ve ikram || {4|Celal} {5|ve ikram} {3|sahibi} {2|Rabbinin} {1|zatı} {0|ise baki kalacaktır.}
+55:28 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:29 | O'ndan ister | kim | -de | göklerde | ve yerde | her | gün | O | -de | iş || {3|Göklerde} {4|ve yerde} {1|olan herkes} {0|O'ndan ister.} {7|O,} {5|her} {6|an} {9|bir iş}{8|tedir.}
+55:30 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:31 | yakında ele alacağız | sizi | ey | iki ağır topluluk || {2|Ey} {3|insanlar ve cinler!} {1|Sizin} (hesabınızı görmeye) {0|yakında el atacağız.}
+55:32 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:33 | ey topluluğu | cin | ve insan | eğer | güç yetirirseniz | -meye | geçip çıkmaya | -den | bucakları | göklerin | ve yerin | çıkın | -mezsiniz | çıkamazsınız | ancak | bir güçle || {0|Ey} {1|cin} {2|ve insan} {0|topluluğu!} {4|Eğer} {9|göklerin} {10|ve yerin} {8|bucakların}{7|dan} {6|geçip çıkma}{5|ya} {4|gücünüz yetiyorsa} {11|çıkın.} (Fakat) {15|büyük bir güç} {14|olmadan} {13|çıkama}{12|zsınız.}
+55:34 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:35 | gönderilir | üzerinize | bir alev | -den | ateş | ve erimiş bakır | -mezsiniz | kendinizi kurtarabilirsiniz || {1|Üzerinize} {4|ateş}{3|ten} {2|bir alev} {5|ve erimiş bakır} {0|gönderilir}, {7|kendinizi kurtara}{6|mazsınız.}
+55:36 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:37 | zaman | yarıldı | gök | oldu | gül renkli | erimiş yağ gibi || {2|Gök} {1|yarılıp} {5|erimiş yağ gibi} {4|kıpkırmızı bir gül} {3|olduğu} {0|zaman} (dehşet büyüktür).
+55:38 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:39 | o gün | -maz | sorulur | -den | günahı | insan | ve -maz | cin || {0|O gün} {4|günahın}{3|dan} {5|ne insana} {6|ne de} {7|cinne} {2|soru} {1|sorulmaz.}
+55:40 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:41 | tanınır | suçlular | simalarından | yakalanır | perçemlerden | ve ayaklar || {1|Suçlular} {2|simalarından} {0|tanınır} {3|da} {4|perçemlerinden} {5|ve ayaklarından} {3|yakalanırlar.}
+55:42 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:43 | bu | cehennem | ki | yalanlar | onu | suçlular || {0|İşte bu}, {5|suçluların} {3|yalanladığı} {2|o} {1|cehennemdir.}
+55:44 | dolaşırlar | onun arasında | ve arasında | kaynar su | kızgın || {1|Onunla} {3|kaynar} {4|kızgın} {3|su} {2|arasında} {0|dolaşıp dururlar.}
+55:45 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:46 | ve kimse için | korkan | makamı | Rabbinin | iki cennet || {3|Rabbinin} {2|huzuruna çıkmaktan} {1|korkan} {0|kimse için} {4|iki cennet} vardır.
+55:47 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:48 | sahibi | dallar || (O cennetler) {1|türlü dallara} {0|sahiptir.}
+55:49 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:50 | ikisinde | iki pınar | akan || {0|İkisinde de} {2|akan} {1|iki pınar} vardır.
+55:51 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:52 | ikisinde | -den | her | meyve | iki çeşit || {0|İkisinde de} {2|her} {3|meyve}{1|den} {4|iki çeşit} vardır.
+55:53 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:54 | yaslanmış olarak | üzerine | döşekler | astarları | -den | kalın ipek | ve devşirilecek meyveler | iki cennetin | yakın || {3|Astarları} {5|kalın ipek}{4|ten} {2|döşekler} {1|üzerine} {0|yaslanırlar.} {7|İki cennetin} {6|meyveleri} {8|el altındadır.}
+55:55 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:56 | onlarda | dizen | bakışlarını | -medi | dokunmadı onlara | insan | onlardan önce | ve -medi | cin || {0|Oralarda} {2|bakışlarını} (yalnız eşlerine) {1|dikmiş} (huriler) vardır ki {6|onlardan önce} {4|onlara} {5|ne bir insan} {7|ne de} {8|bir cin} {4|dokun}{3|muştur.}
+55:57 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:58 | sanki onlar | yakut | ve mercan || {0|Sanki onlar} {1|yakut} {2|ve mercandır.}
+55:59 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:60 | mi | karşılığı | iyiliğin | başka | iyilik || {2|İyiliğin} {1|karşılığı} {4|iyilik}{3|ten başka} {0|bir şey midir?}
+55:61 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:62 | ve -den | berisinde | iki cennet || {1|Bu ikisinin} {0|dışında} {2|iki cennet} daha vardır.
+55:63 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:64 | koyu yeşil || {0|İkisi de koyu yeşildir.}
+55:65 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:66 | ikisinde | iki pınar | fışkıran || {0|İkisinde de} {2|fışkıran} {1|iki pınar} vardır.
+55:67 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:68 | ikisinde | meyve | ve hurma | ve nar || {0|İkisinde de} {1|meyve}, {2|hurma} {3|ve nar} vardır.
+55:69 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:70 | onlarda | hayırlılar | güzeller || {0|Oralarda} {1|huyları} {2|güzel}, {1|hayırlı} (kadınlar) vardır.
+55:71 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:72 | huriler | korunmuş | -de | çadırlar || {3|Çadırlar}{2|da} {1|korunmuş} {0|huriler} vardır.
+55:73 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:74 | -medi | dokunmadı onlara | insan | onlardan önce | ve -medi | cin || {3|Onlardan önce} {1|onlara} {2|ne bir insan} {4|ne de} {5|bir cin} {1|dokun}{0|muştur.}
+55:75 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:76 | yaslanmış olarak | üzerine | yastıklar | yeşil | ve döşemeler | güzel || {3|Yeşil} {2|yastıklar} {4|ve} {5|güzel} {4|döşemeler} {1|üzerine} {0|yaslanırlar.}
+55:77 | hangisini | nimetlerinin | Rabbinizin | yalanlıyorsunuz || {0|O halde} {2|Rabbinizin} {0|hangi} {1|nimetlerini} {3|yalanlıyorsunuz?}
+55:78 | yücedir | adı | Rabbinin | sahibi | celal | ve ikram || {4|Celal} {5|ve ikram} {3|sahibi} {2|Rabbinin} {1|adı} {0|ne yücedir!}

@@ -1,0 +1,46 @@
+79:1 | andolsun söküp çıkaranlara | şiddetle || {1|Şiddetle} {0|söküp çıkaranlara},
+79:2 | ve çözüp alanlara | kolayca || {1|kolayca} {0|çözüp alanlara},
+79:3 | ve yüzenlere | yüzdükçe || {1|yüzdükçe} {0|yüzenlere},
+79:4 | ve yarışıp geçenlere | yarışarak || {1|yarışarak} {0|öne geçenlere},
+79:5 | ve düzenleyenlere | iş || {1|işi} {0|düzenleyenlere andolsun ki},
+79:6 | gün | sarsar | sarsıcı || {2|Sarsıcının (ilk Sûr'un)} {1|sarstığı} {0|gün},
+79:7 | onu izler | ardından gelen || {0|Onu} {1|ardından gelen (ikinci Sûr)} {0|izler.}
+79:8 | kalpler | o gün | çarpar (titrer) || {1|O gün} {0|kalpler} {2|titrer};
+79:9 | gözleri | zillet içinde || {0|onların gözleri} {1|zilletle yere bakar.}
+79:10 | derler | biz mi | elbette döndürülecekler | -e | ilk hal || {0|Derler ki:} “{1|Biz mi} {4|ilk hâlimize} {2|döndürüleceğiz?}
+79:11 | -diği zaman mı | olduk | kemikler | çürümüş || {2|Çürümüş} {3|kemikler} {1|olduğumuz} {0|zaman mı?}”
+79:12 | dediler | bu | o halde | dönüş | ziyanlı || {0|Dediler ki:} “{2|O halde} {1|bu}, {4|ziyanlı} {3|bir dönüştür.}”
+79:13 | şüphesiz ancak | o | sayha | tek || {0|O, ancak} {3|tek} {2|bir haykırıştır};
+79:14 | birden | onlar | yeryüzünde (uyanık) || {0|bir de bakarsın ki} {1|onlar} {2|yeryüzündedirler.}
+79:15 | -mi | sana geldi | haberi | Musa'nın || {3|Musa'nın} {2|haberi} {1|sana geldi} {0|mi?}
+79:16 | hani | ona seslendi | Rabbi | vadide | mukaddes | Tuvâ || {0|Hani} {2|Rabbi} {1|ona}, {4|mukaddes} {5|Tuvâ} {3|vadisinde} {1|seslenmişti}:
+79:17 | git | -e | Firavun | şüphesiz o | azdı || “{2|Firavun'a} {0|git}; {3|çünkü o} {4|azdı.}
+79:18 | de ki | -mi | senin için var | -e | -mak | arınmak || {0|De ki:} “{2|Senin} {5|arınmaya} {1|niyetin var mı?}
+79:19 | ve sana yol göstereyim | -e | Rabbin | sonra korkasın || {0|Seni} {2|Rabbine} {0|ileteyim} {3|de (O'ndan) korkasın.}”
+79:20 | ona gösterdi | mucizeyi | en büyük || (Musa) {0|ona} {2|en büyük} {1|mucizeyi} {0|gösterdi.}
+79:21 | yalanladı | ve isyan etti || {0|Fakat o, yalanladı} {1|ve isyan etti.}
+79:22 | sonra | sırt çevirdi | koşarak (çabalayarak) || {0|Sonra} {2|(fesat için) koşarak} {1|sırt çevirdi.}
+79:23 | topladı | ve seslendi || {0|(Halkını) topladı} {1|ve seslendi:}
+79:24 | dedi | ben | Rabbinizim | en yüce || “{1|Ben} {3|sizin en yüce} {2|Rabbinizim!}” {0|dedi.}
+79:25 | onu yakaladı | Allah | cezasıyla | ahiret | ve dünya || {1|Allah} da {0|onu} {3|ahiret} {4|ve dünya} {2|cezasıyla} {0|yakaladı.}
+79:26 | şüphesiz | -de | bu | elbette ibret | kimse için | korkar || {0|Şüphesiz} {2|bunda}, {5|(Allah'tan) korkan} {4|kimse için} {3|bir ibret vardır.}
+79:27 | siz mi | daha zor | yaratılış(ça) | yoksa | gök | onu bina etti || {2|Yaratılış bakımından} {0|siz mi} {1|daha zorsunuz}, {3|yoksa} {4|gök mü?} (Allah) {5|onu bina etti.}
+79:28 | yükseltti | tavanını | ve onu düzenledi || {1|Onun tavanını} {0|yükseltti} {2|ve onu düzenledi.}
+79:29 | ve karanlık yaptı | gecesini | ve çıkardı | kuşluğunu (aydınlığını) || {1|Gecesini} {0|karanlık yaptı}, {3|kuşluğunu (aydınlığını)} {2|ortaya çıkardı.}
+79:30 | ve yeri | sonra | bunun | onu yaydı || {0|Yeri de} {2|bundan} {1|sonra} {3|yayıp döşedi.}
+79:31 | çıkardı | ondan | suyunu | ve otlağını || {1|Ondan} {2|suyunu} {3|ve otlağını} {0|çıkardı.}
+79:32 | ve dağları | onu sabitledi || {0|Dağları da} {1|sağlamca yerleştirdi};
+79:33 | fayda (geçimlik) | sizin için | ve hayvanlarınız için || {1|sizin} {2|ve hayvanlarınızın} {0|faydalanması için.}
+79:34 | -diği zaman | geldi | felaket | en büyük || {3|En büyük} {2|felaket (kıyamet)} {1|geldiği} {0|zaman},
+79:35 | gün | hatırlar | insan | şeyi | çalıştı || {0|o gün} {2|insan} {4|yaptığı} {3|şeyleri} {1|hatırlar.}
+79:36 | ve ortaya çıkarıldı | cehennem | kimse için | görür || {2|Gören} {3|herkes için} {1|cehennem} {0|ortaya çıkarılır.}
+79:37 | ama | kim | azdı || {0|Artık} {2|azan} {1|kimse},
+79:38 | ve tercih etti | hayatını | dünya || {2|dünya} {1|hayatını} {0|tercih eden},
+79:39 | şüphesiz | cehennem | o | barınak || {1|Cehennem}, {2|onun} {3|barınağının} {0|ta kendisidir.}
+79:40 | ama | kim | korktu | makamından | Rabbinin | ve alıkoydu | nefsi | -den | heva (arzu) || {0|Ama} {4|Rabbinin} {3|makamından (huzuruna çıkmaktan)} {2|korkan} {5|ve} {6|nefsini} {8|kötü arzularından} {5|alıkoyan} {1|kimse},
+79:41 | şüphesiz | cennet | o | barınak || {1|Cennet}, {2|onun} {3|barınağının} {0|ta kendisidir.}
+79:42 | sana sorarlar | -den | Saat (kıyamet) | ne zaman | demir atması (gelişi) || {0|Sana} {2|kıyametten}, “{4|Onun gelişi} {3|ne zaman?}” {0|diye soruyorlar.}
+79:43 | ne -de | sen | -den | onu anma || {1|Sen} {3|onu anlatacak} {0|ne (bilgi) içindesin?}
+79:44 | -e | Rabbin | son noktası || {2|Onun son ucu} (bilgisi) {1|Rabbine} {0|aittir.}
+79:45 | ancak | sen | uyarıcısın | kimsenin | ondan korkar || {1|Sen} {4|ondan korkan} {3|kimsenin} {0|ancak} {2|uyarıcısısın.}
+79:46 | sanki onlar | gün | onu görürler | -medi | kaldılar | ancak | bir akşam | yahut | kuşluğu || {2|Onu gördükleri} {1|gün} {0|sanki} (dünyada) {6|bir akşam} {7|ya da} {8|onun kuşluğu} {5|kadar} {4|kal}{3|mamış} gibidirler.

@@ -1,0 +1,40 @@
+75:1 | hayır | yemin ederim | gününe | kıyamet || {0|Hayır!} {3|Kıyamet} {2|gününe} {1|yemin ederim.}
+75:2 | ve hayır | yemin ederim | nefse | kınayan || {0|Hayır!} {3|Kendini kınayan} {2|nefse} {1|yemin ederim.}
+75:3 | sanıyor mu | insan | ki asla | toplamayacağımızı | kemiklerini || {1|İnsan}, {4|kemiklerini} {3|toplaya}{2|mayacağımızı} {0|mı sanıyor?}
+75:4 | evet | gücü yetenler olarak | üzerine | -meye | düzeltmeye | parmak uçlarını || {0|Evet}, {5|parmak uçlarını} {3|bile} {4|düzeltmeye} {1|gücümüz yeter.}
+75:5 | bilakis | ister | insan | günaha dalmak | önündekine || {0|Bilakis} {2|insan} {4|önündeki} (günlerde) {3|günaha dalmak} {1|ister.}
+75:6 | sorar | ne zaman | günü | kıyamet || {3|"Kıyamet} {2|günü} {1|ne zaman?"} {0|diye sorar.}
+75:7 | zaman | kamaştığında | göz || {2|Göz} {1|kamaştığı},
+75:8 | ve tutulduğunda | ay || {1|ay} {0|tutulduğu},
+75:9 | ve bir araya getirildiğinde | güneş | ve ay || {1|güneş} {2|ve ay} {0|bir araya getirildiği} zaman,
+75:10 | der | insan | o gün | nerede | kaçış || {2|o gün} {1|insan}: {4|"Kaçacak yer} {3|nerede?"} {0|der.}
+75:11 | asla | yoktur | sığınak || {0|Asla!} {2|Sığınacak bir yer} {1|yoktur!}
+75:12 | -e | Rabbin | o gün | karar yeri || {2|O gün} {3|varılacak yer} {1|ancak Rabbin}{0|in huzurudur.}
+75:13 | haber verilir | insana | o gün | şeyler | önden gönderdiği | ve geride bıraktığı || {2|O gün} {1|insana} {4|önden gönderdiği} {5|ve geride bıraktığı} {3|şeyler} {0|haber verilir.}
+75:14 | bilakis | insan | üzerine | kendisi | bir şahittir || {0|Bilakis} {1|insan} {3|kendi} {3|nefsine} {2|karşı} {4|bir şahittir};
+75:15 | ve -se bile | ortaya koysa | mazeretlerini || {2|mazeretlerini} {1|ortaya koysa} {0|bile.}
+75:16 | -me | kımıldatma | onunla | dilini | acele etmek için | onu || (Ey Peygamber!) {5|Onu} (Kur'an'ı) {4|acele} (ezberlemek) {4|için} {3|dilini} {2|onunla} {1|kımıldat}{0|ma.}
+75:17 | şüphesiz | bize aittir | toplanması | ve okunması || {0|Şüphesiz} {2|onu toplamak} {3|ve okutmak} {1|bize aittir.}
+75:18 | zaman | onu okuduğumuzda | uy | okunuşuna || {1|Onu okuduğumuz} {0|zaman} {3|okunuşunu} {2|takip et.}
+75:19 | sonra | şüphesiz | bize aittir | açıklanması || {0|Sonra} {1|şüphesiz} {3|onu açıklamak} {2|da bize aittir.}
+75:20 | hayır | bilakis | seviyorsunuz | çabuk geçeni || {0|Hayır!} {1|Bilakis} {3|çabuk geçeni} (dünyayı) {2|seviyorsunuz},
+75:21 | ve bırakıyorsunuz | ahireti || {1|ahireti} {0|bırakıyorsunuz.}
+75:22 | yüzler | o gün | parlak || {0|Yüzler} {1|vardır ki o gün} {2|ışıl ışıldır};
+75:23 | -e | Rablerine | bakan || {1|Rablerine} {2|bakmaktadır.}
+75:24 | ve yüzler | o gün | asık || {0|Yüzler de} {1|vardır ki o gün} {2|asıktır};
+75:25 | sanır | ki | yapılacağını | ona | bel kemiği kıran bir bela || {3|kendilerine} {4|bel kemiği kıran bir bela} {2|geleceğini} {0|anlarlar.}
+75:26 | hayır | zaman | ulaştığında | köprücük kemikleri || {0|Hayır!} (Can) {3|köprücük kemiklerine} {2|dayandığı} {1|zaman},
+75:27 | ve denildi | kim | tedavi eden || {0|ve}: {2|"Tedavi edecek} {1|kim var?"} {0|denildiğinde},
+75:28 | ve anladı | ki o | ayrılık || {1|bunun} {2|ayrılık} {1|olduğunu} {0|anladığında},
+75:29 | ve dolaştı | bacak | bacağa || {1|bacak} {2|bacağa} {0|dolaştığında},
+75:30 | -e | Rabbin | o gün | sevk || {2|o gün} {3|sevk} {1|ancak Rabbin}{0|edir.}
+75:31 | -madı | tasdik etti | ve -madı | namaz kıldı || {0|O} {1|ne tasdik etti} {2|ne de} {3|namaz kıldı};
+75:32 | fakat | yalanladı | ve yüz çevirdi || {0|fakat} {1|yalanladı} {2|ve yüz çevirdi.}
+75:33 | sonra | gitti | -e | ailesi | çalım satarak || {0|Sonra} {4|çalım satarak} {3|ailesin}{2|e} {1|gitti.}
+75:34 | layıktır | sana | ve layıktır || {0|Yazıklar olsun} {1|sana}, {2|yazıklar olsun!}
+75:35 | sonra | layıktır | sana | ve layıktır || {0|Yine} {1|yazıklar olsun} {2|sana}, {3|yazıklar olsun!}
+75:36 | sanıyor mu | insan | -sini | bırakılacağını | başıboş || {1|İnsan} {4|başıboş} {3|bırakılacağını} {0|mı sanıyor?}
+75:37 | -medi mi | idi | bir nutfe | -den | meni | akıtılan || {1|O}, {5|akıtılan} {4|meni}{3|den} {2|bir nutfe} {1|değil} {0|miydi?}
+75:38 | sonra | oldu | bir alaka | yarattı | ve düzenledi || {0|Sonra} {2|bir alaka} {1|oldu}; (Allah onu) {3|yarattı} {4|ve düzenledi.}
+75:39 | ve yaptı | ondan | iki eş | erkek | ve dişi || {1|Ondan} {3|erkek} {4|ve dişi} {2|iki eş} {0|yaptı.}
+75:40 | değil mi | O | gücü yeten | üzerine | -meye | diriltmeye | ölüleri || {1|Bunu yapan} {6|ölüleri} {5|diriltmeye} {2|kadir} {0|değil midir?}

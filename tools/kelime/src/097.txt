@@ -1,0 +1,5 @@
+97:1 | şüphesiz biz | onu indirdik | -de | gecesi | Kadir || {0|Şüphesiz biz} {1|onu (Kur'an'ı)} {4|Kadir} {3|gecesinde} {1|indirdik.}
+97:2 | ve ne | bildirdi sana | nedir | gecesi | Kadir || {4|Kadir} {3|gecesinin} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+97:3 | gecesi | Kadir | daha hayırlıdır | -den | bin | ay || {1|Kadir} {0|gecesi} {4|bin} {5|aydan} {2|daha hayırlıdır.}
+97:4 | iner | melekler | ve Ruh (Cebrail) | onda | izniyle | Rablerinin | -den (için) | her | iş || {3|O gecede} {1|melekler} {2|ve Ruh (Cebrail)}, {5|Rablerinin} {4|izniyle} {7|her} {8|iş} {6|için} {0|iner de iner.}
+97:5 | esenliktir | o | -e kadar | doğuşu | fecrin || {1|O gece} {4|fecrin} {3|doğuşuna} {2|kadar} {0|bir esenliktir.}

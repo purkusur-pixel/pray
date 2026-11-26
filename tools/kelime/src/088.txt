@@ -1,0 +1,26 @@
+88:1 | -mi | sana geldi | haberi | Gâşiye (kuşatan) || {3|Her şeyi kuşatacak olanın (kıyametin)} {2|haberi} {1|sana geldi} {0|mi?}
+88:2 | yüzler | o gün | zillet içinde || {1|O gün} {0|bir takım yüzler} {2|zillet içindedir};
+88:3 | çalışmış | yorgun düşmüş || {0|çalışmış}, {1|yorgun düşmüştür.}
+88:4 | girer | bir ateşe | kızgın || {2|Kızgın} {1|bir ateşe} {0|girerler.}
+88:5 | içirilir | -den | pınar | kaynar || {3|Kaynar} {2|bir pınardan} {0|içirilirler.}
+88:6 | yoktur | onlar için | yiyecek | ancak | -den | darî' (dikenli bitki) || {1|Onlar için} {5|darî'den (kuru, dikenli bir bitkiden)} {3|başka} {2|yiyecek} {0|yoktur};
+88:7 | -mez | besler (şişmanlatır) | ve -mez | giderir | -den | açlık || (o,) {1|ne besle}{0|r}, {2|ne de} {5|açlığı} {3|giderir.}
+88:8 | yüzler | o gün | nimet içinde || {1|O gün} {0|bir takım yüzler} {2|nimet içinde (sevinçli)dir};
+88:9 | çabasından | hoşnut || {0|(dünyadaki) çabalarından} {1|hoşnuttur};
+88:10 | -de | cennet | yüce || {2|yüce} {1|bir cennet}{0|tedirler.}
+88:11 | -mez | işitir | orada | boş söz || {2|Orada} {3|boş bir söz} {1|işit}{0|mezler.}
+88:12 | orada | pınar | akan || {0|Orada} {2|akan} {1|bir pınar vardır.}
+88:13 | orada | tahtlar | yükseltilmiş || {0|Orada} {2|yükseltilmiş} {1|tahtlar},
+88:14 | ve kadehler | konulmuş || {1|konulmuş} {0|kadehler},
+88:15 | ve yastıklar | dizilmiş || {1|dizilmiş} {0|yastıklar},
+88:16 | ve halılar | serilmiş || {1|serilmiş} {0|halılar vardır.}
+88:17 | bakmazlar mı | bakarlar | -e | deve(ye) | nasıl | yaratıldı || {0|Hiç} {3|deveye} {1|bakmazlar mı}, {4|nasıl} {5|yaratılmıştır?}
+88:18 | ve -e | göğe | nasıl | yükseltildi || {1|Göğe} {0|(bakmazlar mı)}, {2|nasıl} {3|yükseltilmiştir?}
+88:19 | ve -e | dağlara | nasıl | dikildi || {1|Dağlara}, {2|nasıl} {3|dikilmiştir?}
+88:20 | ve -e | yere | nasıl | yayıldı || {1|Yere}, {2|nasıl} {3|yayılmıştır?}
+88:21 | öyleyse öğüt ver | ancak | sen | öğüt verensin || {0|Öyleyse öğüt ver}; {2|sen} {1|ancak} {3|bir öğüt vericisin.}
+88:22 | değilsin | onların üzerinde | zorba (zorlayıcı) || {1|Onların üzerinde} {2|bir zorba} {0|değilsin.}
+88:23 | ancak | kimse | yüz çevirdi | ve inkâr etti || {0|Ancak} {2|yüz çeviren} {3|ve inkâr eden} {1|kimse olursa},
+88:24 | onu azaplandırır | Allah | azapla | en büyük || {1|Allah} {0|onu} {3|en büyük} {2|azapla} {0|azaplandırır.}
+88:25 | şüphesiz | bizedir | dönüşleri || {0|Şüphesiz} {2|onların dönüşü} {1|bizedir.}
+88:26 | sonra | şüphesiz | bize aittir | hesapları || {0|Sonra} {1|şüphesiz} {3|onların hesabı da} {2|bize aittir.}

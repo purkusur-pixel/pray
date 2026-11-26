@@ -1,0 +1,59 @@
+44:1 | Hâ Mîm || {0|Hâ Mîm.}
+44:2 | andolsun kitaba | apaçık || {1|Apaçık} {0|kitaba andolsun ki},
+44:3 | şüphesiz biz | indirdik onu | içinde | bir gece | mübarek | şüphesiz biz | idik | uyarıcılar || {0|biz} {1|onu} {4|mübarek} {3|bir gece}{2|de} {1|indirdik.} {5|Şüphesiz biz} {7|uyarıcılar} {6|idik.}
+44:4 | onda | ayrılır | her | iş | hikmetli || {0|O gecede} {2|her} {4|hikmetli} {3|iş} {1|ayırt edilir};
+44:5 | bir emir | -den | katımız | şüphesiz biz | idik | gönderenler || {2|katımız}{1|dan} {0|bir emirle.} {3|Şüphesiz biz} {5|peygamber gönderen} {4|idik};
+44:6 | rahmet | -den | Rabbin | şüphesiz O | O | işitendir | bilendir || {2|Rabbin}{1|den} {0|bir rahmet olarak.} {3|Şüphesiz O}, {4|evet O} {5|hakkıyla işitendir}, {6|hakkıyla bilendir.}
+44:7 | Rabbi | göklerin | ve yerin | ve şeylerin | aralarındaki | eğer | iseniz | kesin inananlar || (O), {1|göklerin}, {2|yerin} {3|ve} {4|ikisi arasındakilerin} {0|Rabbidir}; {5|eğer} {7|kesin inanan} {6|kimselerseniz.}
+44:8 | yoktur | ilah | başka | O'ndan | diriltir | ve öldürür | Rabbinizdir | ve Rabbidir | atalarınızın | önceki || {3|O'ndan} {2|başka} {1|ilah} {0|yoktur.} {4|Diriltir} {5|ve öldürür.} {6|Sizin de Rabbiniz}, {9|önceki} {8|atalarınızın} {7|da Rabbidir.}
+44:9 | bilakis | onlar | içinde | şüphe | oynuyorlar || {0|Bilakis} {1|onlar} {3|şüphe} {2|içinde} {4|oyalanıyorlar.}
+44:10 | gözetle | günü | getirecek | gök | duman | apaçık || {3|Göğün} {5|apaçık} {4|bir duman} {2|getireceği} {1|günü} {0|gözetle};
+44:11 | kaplar | insanları | bu | azap | elem dolu || {1|insanları} {0|kaplar.} {2|Bu}, {4|elem dolu} {3|bir azaptır.}
+44:12 | Rabbimiz | kaldır | bizden | azabı | şüphesiz biz | inananlarız || {0|"Rabbimiz!} {2|Bizden} {3|azabı} {1|kaldır}, {4|şüphesiz biz} {5|iman edeceğiz."}
+44:13 | nerede | onlar için | öğüt almak | ve gerçekten | geldi onlara | elçi | apaçık || {1|Onlar için} {2|öğüt almak} {0|nerede!} {3|Oysa} {4|kendilerine} {6|apaçık} {5|bir elçi} {4|gelmişti.}
+44:14 | sonra | yüz çevirdiler | ondan | ve dediler | öğretilmiş | deli || {0|Sonra} {2|ondan} {1|yüz çevirdiler} {3|ve}: {4|"Öğretilmiş} {5|bir deli"} {3|dediler.}
+44:15 | şüphesiz biz | kaldıranlarız | azabı | az | şüphesiz siz | dönenlersiniz || {0|Biz} {2|azabı} {3|azıcık} {1|kaldıracağız}, {4|ama siz} (eski hâlinize) {5|döneceksiniz.}
+44:16 | gün | yakalarız | yakalayış | en büyük | şüphesiz biz | intikam alanlarız || {3|En büyük} {2|yakalayışla} {1|yakalayacağımız} {0|gün}, {4|şüphesiz} {5|intikam alacağız.}
+44:17 | andolsun | imtihan ettik | öncelerinde | kavmini | Firavun'un | ve geldi onlara | elçi | değerli || {0|Andolsun}, {2|onlardan önce} {4|Firavun} {3|kavmini} {1|imtihan ettik}; {5|onlara} {7|değerli} {6|bir elçi} {5|gelmişti.}
+44:18 | ki | teslim edin | bana | kullarını | Allah'ın | şüphesiz ben | size | elçiyim | güvenilir || (Dedi ki): "{4|Allah'ın} {3|kullarını} {2|bana} {1|teslim edin.} {5|Şüphesiz ben} {6|size} (gönderilmiş) {8|güvenilir} {7|bir elçiyim.}
+44:19 | ve ki | -meyin | büyüklenmeyin | karşı | Allah'a | şüphesiz ben | getiriyorum size | bir delil | apaçık || {4|Allah'a} {3|karşı} {2|büyüklen}{1|meyin.} {5|Şüphesiz ben} {6|size} {8|apaçık} {7|bir delil} {6|getiriyorum.}
+44:20 | ve şüphesiz ben | sığındım | Rabbime | ve Rabbinize | -menizden | taşlamanızdan beni || {0|Şüphesiz ben}, {5|beni taşla}{4|manızdan} {2|benim Rabbim} {3|ve sizin Rabbiniz} (olan Allah'a) {1|sığındım.}
+44:21 | ve eğer | -mezseniz | inanmazsanız | bana | uzak durun benden || {0|Eğer} {3|bana} {2|inan}{1|mıyorsanız} {4|benden uzak durun."}
+44:22 | dua etti | Rabbine | ki | bunlar | bir kavimdir | suçlu || {0|Bunun üzerine} {1|Rabbine}: {3|"Bunlar} {5|suçlu} {4|bir kavimdir"} {0|diye dua etti.}
+44:23 | yürüt | kullarımı | geceleyin | şüphesiz siz | takip edileceksiniz || (Allah buyurdu ki:) "{1|Kullarımı} {2|geceleyin} {0|yürüt}; {3|şüphesiz} {4|takip edileceksiniz.}
+44:24 | ve bırak | denizi | açık | şüphesiz onlar | bir ordudur | boğulacak || {1|Denizi} {2|açık} {0|bırak}; {3|şüphesiz onlar} {5|boğulacak} {4|bir ordudur."}
+44:25 | nice | bıraktılar | -den | bahçeler | ve pınarlar || {0|Nice} {3|bahçeler} {4|ve pınarlar} {1|bıraktılar},
+44:26 | ve ekinler | ve makam | değerli || {0|ekinler} {2|ve değerli} {1|makamlar},
+44:27 | ve nimet | idiler | onda | zevk sürenler || {2|içinde} {3|zevk sürdükleri} {0|nimetler} (bıraktılar).
+44:28 | böyle | ve miras verdik onu | bir kavme | başka || {0|İşte böyle} (oldu). {1|Onları} {3|başka} {2|bir kavme} {1|miras olarak verdik.}
+44:29 | ağlamadı | ağladı | onlara | gök | ve yer | ve -medi | olmadı | mühlet verilenler || {3|Gök} {4|ve yer} {2|onlara} {1|ağla}{0|madı}; {7|mühlet} {6|de} {5|verilmedi.}
+44:30 | andolsun | kurtardık | oğullarını | İsrail | -den | azap | alçaltıcı || {0|Andolsun}, {3|İsrail} {2|oğullarını} {6|alçaltıcı} {5|azap}{4|tan} {1|kurtardık},
+44:31 | -den | Firavun | şüphesiz o | idi | büyüklenen | -den | aşırı gidenler || {1|Firavun}{0|'dan.} {2|Şüphesiz o} {4|büyüklenen}, {6|aşırı gidenler}{5|den} {3|biriydi.}
+44:32 | andolsun | seçtik onları | üzerine | bir bilgi | üzerine | âlemler || {0|Andolsun}, {1|onları} {3|bir bilgiye} {2|dayanarak} {5|âlemlere} {4|üstün} {1|seçtik.}
+44:33 | ve verdik onlara | -den | ayetler | şey | içinde | imtihan | apaçık || {0|Onlara} {2|ayetler}{1|den}, {4|içinde} {6|apaçık} {5|bir imtihan} {3|bulunan şeyler} {0|verdik.}
+44:34 | şüphesiz | bunlar | elbette diyorlar || {0|Şüphesiz} {1|bunlar} {2|diyorlar ki}:
+44:35 | değildir | o | başka | ölümümüz | ilk | ve değiliz | biz | diriltilecekler || {1|"Bu} {4|ilk} {3|ölümümüz}{2|den başka bir şey} {0|değildir}; {6|biz} {7|diriltilecek} {5|değiliz.}
+44:36 | getirin | atalarımızı | eğer | iseniz | doğru söyleyenler || {2|Eğer} {4|doğru söyleyenler} {3|iseniz} {1|atalarımızı} {0|getirin!"}
+44:37 | onlar mı | hayırlı | yoksa | kavmi | Tübba' | ve kimseler | -den | öncelerinde | helak ettik onları | şüphesiz onlar | idiler | suçlular || {0|Onlar mı} {1|daha hayırlı}, {2|yoksa} {4|Tübba'} {3|kavmi} {5|ve} {7|onlardan öncekiler mi?} {8|Onları helak ettik}; {9|çünkü onlar} {11|suçlu} {10|kimselerdi.}
+44:38 | ve -medik | yaratmadık | gökleri | ve yeri | ve şeyleri | aralarındaki | oyuncular olarak || {2|Gökleri}, {3|yeri} {4|ve} {5|ikisi arasındakileri} {6|oyun olsun diye} {1|yarat}{0|madık.}
+44:39 | değil | yaratmadık onları | başka | hak ile | fakat | çoğu | -mez | bilir || {1|Onları} {3|hak ile} {2|başka bir şey için} {1|yarat}{0|madık.} {4|Fakat} {5|çoğu} {7|bil}{6|mez.}
+44:40 | şüphesiz | günü | ayırma | buluşma vaktidir | hepsinin || {0|Şüphesiz} {2|hüküm} {1|günü}, {4|hepsinin} {3|buluşma vaktidir.}
+44:41 | gün | -mez | fayda vermez | dost | -den | dost | hiçbir şey | ve ne de | onlar | yardım olunurlar || {0|O gün} {3|dostun} {5|dosta} {6|hiçbir} {2|fayda} {1|olmaz}, {8|onlar} {9|yardım} {7|da görmezler};
+44:42 | ancak | kimse | merhamet etti | Allah | şüphesiz O | O | mutlak güçlüdür | merhametlidir || {3|Allah'ın} {2|merhamet ettiği} {1|kimseler} {0|müstesna.} {4|Şüphesiz O}, {5|evet O} {6|mutlak güç sahibidir}, {7|çok merhametlidir.}
+44:43 | şüphesiz | ağacı | zakkum || {0|Şüphesiz} {2|zakkum} {1|ağacı},
+44:44 | yemeğidir | günahkârın || {1|günahkârın} {0|yemeğidir.}
+44:45 | erimiş maden gibi | kaynar | içinde | karınlar || {0|Erimiş maden gibi} {3|karınlar}{2|da} {1|kaynar};
+44:46 | kaynaması gibi | kaynar suyun || {1|kaynar suyun} {0|kaynaması gibi.}
+44:47 | tutun onu | sürükleyin onu | -e | ortası | cehennem || {0|"Tutun onu}, {4|cehennemin} {3|ortasına} {2|kadar} {1|sürükleyin!}
+44:48 | sonra | dökün | üstüne | başının | -den | azabı | kaynar su || {0|Sonra} {3|başının} {2|üstüne} {6|kaynar su} {5|azabın}{4|dan} {1|dökün!}
+44:49 | tat | şüphesiz sen | sen | güçlüsün | değerlisin || {0|Tat!} {1|Hani sen}, {2|evet sen} {3|güçlüydün}, {4|değerliydin!}
+44:50 | şüphesiz | bu | şeydir | idiniz | onda | şüphe ediyor || {0|Şüphesiz} {1|bu}, {4|hakkında} {5|şüphe etmekte} {3|olduğunuz} {2|şeydir."}
+44:51 | şüphesiz | takva sahipleri | içindedir | makam | güvenli || {0|Şüphesiz} {1|takva sahipleri} {4|güvenli} {3|bir makam}{2|dadırlar};
+44:52 | içinde | bahçeler | ve pınarlar || {1|bahçelerde} {2|ve pınarlarda}{0|dırlar.}
+44:53 | giyerler | -den | ince ipek | ve kalın ipek | karşılıklı || {4|Karşılıklı} (otururlar), {2|ince ipek}{1|ten} {3|ve kalın ipekten} {0|giyerler.}
+44:54 | böyle | ve eşlendirdik onları | hurilerle | iri gözlü || {0|İşte böyle.} {1|Onları} {3|iri gözlü} {2|hurilerle} {1|eşlendirdik.}
+44:55 | isterler | orada | her | meyveden | güven içinde || {1|Orada} {4|güven içinde} {2|her türlü} {3|meyveyi} {0|isterler.}
+44:56 | -mazlar | tatmazlar | orada | ölümü | başka | ölüm | ilk | ve korudu onları | azabından | cehennem || {2|Orada} {6|ilk} {5|ölüm}{4|den başka} {3|ölüm} {1|tat}{0|mazlar.} (Allah) {7|onları} {9|cehennem} {8|azabından} {7|korumuştur.}
+44:57 | lütuf olarak | -den | Rabbin | bu | o | kurtuluş | büyük || (Bu), {2|Rabbin}{1|den} {0|bir lütuftur.} {3|İşte bu}, {6|büyük} {5|kurtuluşun} {4|ta kendisidir.}
+44:58 | ancak | kolaylaştırdık onu | senin dilinle | umulur ki onlar | düşünürler || {0|Biz onu} {2|senin dilinle} {1|kolaylaştırdık}; {3|umulur ki} {4|düşünüp öğüt alırlar.}
+44:59 | gözetle | şüphesiz onlar | gözetleyenlerdir || {0|Sen gözetle}, {1|şüphesiz onlar} {2|da gözetlemektedirler.}

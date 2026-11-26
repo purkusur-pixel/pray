@@ -1,0 +1,22 @@
+85:1 | andolsun göğe | sahibi | burçlar || {2|Burçlar} {1|sahibi} {0|göğe},
+85:2 | ve güne | vaat edilen || {1|vaat edilen} {0|güne},
+85:3 | ve şahitlik edene | ve şahitlik edilene || {0|şahitlik edene} {1|ve şahitlik edilene andolsun ki},
+85:4 | kahroldu | sahipleri | hendek || {2|hendek} {1|sahipleri} {0|kahrolsun!}
+85:5 | ateş | sahibi | yakıt || {2|bol yakıtlı} {0|ateşin} sahipleri;
+85:6 | hani | onlar | onun başında | oturuyorlardı || {0|hani} {1|onlar} {2|onun başında} {3|oturuyorlardı},
+85:7 | ve onlar | üzerine | şeyler | yapıyorlar | müminlere | şahitlerdi || {0|ve} {4|müminlere} {3|yaptıklarına} {1|karşı} {5|şahit idiler.}
+85:8 | ve -medi | kin güttüler | onlardan | ancak | -dıkları için | iman ettiler | Allah'a | Aziz | Hamîd || {2|Onlardan (müminlerden)} {1|intikam almalarının} {3|tek} sebebi, {7|Aziz}, {8|Hamîd} {6|Allah'a} {5|iman etmeleri}{4|ydi.}
+85:9 | o ki | O'nundur | mülkü | göklerin | ve yerin | ve Allah | üzerinde | her | şey | şahittir || {0|O ki} {3|göklerin} {4|ve yerin} {2|mülkü} {1|O'nundur.} {5|Allah} {7|her} {8|şeye} {9|şahittir.}
+85:10 | şüphesiz | kimseler | işkence ettiler | mümin erkeklere | ve mümin kadınlara | sonra | -medi | tövbe ettiler | onlar için | azabı | cehennem | ve onlar için | azabı | yangın || {0|Şüphesiz} {3|mümin erkeklere} {4|ve mümin kadınlara} {2|işkence edip} {5|sonra} {7|tövbe et}{6|meyenler} {1|için}, {8|onlar için} {10|cehennem} {9|azabı} {11|ve onlar için} {13|yangın} {12|azabı vardır.}
+85:11 | şüphesiz | kimseler | iman eden | ve yapan | salih ameller | onlar için | cennetler | akar | -den | altlarından | ırmaklar | bu | kurtuluş | büyük || {0|Şüphesiz} {2|iman edip} {4|salih ameller} {3|işleyenler} için, {9|altlarından} {10|ırmaklar} {7|akan} {6|cennetler vardır.} {11|İşte bu}, {13|büyük} {12|kurtuluştur.}
+85:12 | şüphesiz | yakalaması | Rabbinin | elbette çetindir || {0|Şüphesiz} {2|Rabbinin} {1|yakalaması} {3|çok çetindir.}
+85:13 | şüphesiz O | O | ilk başlatır | ve iade eder || {0|Şüphesiz} {1|O}, {2|(yaratmayı) başlatır} {3|ve tekrarlar.}
+85:14 | ve O | çok bağışlayan | çok seven || {0|O}, {1|çok bağışlayandır}, {2|çok sevendir};
+85:15 | sahibi | Arş | şanı yüce || {1|Arş'ın} {0|sahibidir}, {2|şanı yücedir};
+85:16 | yapan | şeyi | diler || {2|dilediğini} {0|yapandır.}
+85:17 | -mi | sana geldi | haberi | ordular || {3|Orduların} {2|haberi} {1|sana geldi} {0|mi?}
+85:18 | Firavun | ve Semûd || {0|Firavun'un} {1|ve Semûd'un?}
+85:19 | bilakis | kimseler | inkâr eden | -de | yalanlama || {0|Bilakis} {2|inkâr edenler} {4|yalanlama} {3|içindedirler.}
+85:20 | ve Allah | -den | arkaları | kuşatandır || {0|Allah} {2|onları arkalarından} {3|kuşatmıştır.}
+85:21 | bilakis | o | Kur'an | şanlı || {0|Bilakis} {1|o}, {3|şanlı} {2|bir Kur'an'dır};
+85:22 | -de | levha | korunmuş || {2|korunmuş} {1|bir levha} {0|içindedir.}

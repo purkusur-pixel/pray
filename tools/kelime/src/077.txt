@@ -1,0 +1,50 @@
+77:1 | andolsun gönderilenlere | ardı ardına || {1|Ardı ardına} {0|gönderilenlere andolsun},
+77:2 | esenlere | şiddetle || {1|şiddetle} {0|esenlere},
+77:3 | ve yayanlara | yaymakla || {1|iyice} {0|yayanlara},
+77:4 | ayıranlara | ayırmakla || {1|tam} {0|ayıranlara},
+77:5 | bırakanlara | zikri || {1|vahyi} {0|bırakanlara};
+77:6 | özür | veya | uyarı || {0|özür} {1|ya da} {2|uyarı} için.
+77:7 | şüphesiz | tehdit edildiğiniz | elbette gerçekleşecektir || {1|Size vaat edilen} {0|mutlaka} {2|gerçekleşecektir.}
+77:8 | zaman | yıldızlar | silindiğinde || {1|Yıldızlar} {2|söndürüldüğü} {0|zaman},
+77:9 | ve zaman | gök | yarıldığında || {1|gök} {2|yarıldığı} {0|zaman},
+77:10 | ve zaman | dağlar | savrulduğunda || {1|dağlar} {2|savrulduğu} {0|zaman},
+77:11 | ve zaman | elçiler | vakti belirlendiğinde || {1|peygamberler} {2|vakti belirlenip toplandığı} {0|zaman};
+77:12 | hangi | gün için | ertelendi || {0|Hangi} {1|gün için} {2|ertelendi} (bunlar)?
+77:13 | günü için | ayırma || {1|Hüküm} {0|günü için.}
+77:14 | ve ne | sana bildirdi | nedir | günü | ayırma || {4|Hüküm} {3|gününün} {2|ne olduğunu} {1|sana} {0|ne} {1|bildirdi?}
+77:15 | vay haline | o gün | yalanlayanların || {1|O gün} {2|yalanlayanların} {0|vay haline!}
+77:16 | -medik mi | helak etmedik | öncekileri || {2|Öncekileri} {1|helak et}{0|medik mi?}
+77:17 | sonra | ardlarından götürürüz | sonrakileri || {0|Sonra} {2|sonrakileri} {1|da onların ardından götürürüz.}
+77:18 | böyle | yaparız | suçlulara || {2|Suçlulara} {0|işte böyle} {1|yaparız.}
+77:19 | vay haline | o gün | yalanlayanların || {1|O gün} {2|yalanlayanların} {0|vay haline!}
+77:20 | -medik mi | sizi yaratmadık | -den | su | değersiz || {1|Sizi} {4|değersiz} {3|bir su}{2|dan} {1|yarat}{0|madık mı?}
+77:21 | onu koyduk | -e | karar yeri | sağlam || {0|Onu} {3|sağlam} {2|bir karar yerin}{1|e} {0|koyduk},
+77:22 | -e kadar | süre | belli || {2|belli} {1|bir süre}{0|ye kadar.}
+77:23 | takdir ettik | ne güzel | takdir edenleriz || {0|Böylece takdir ettik}; {1|ne güzel} {2|takdir edicileriz!}
+77:24 | vay haline | o gün | yalanlayanların || {1|O gün} {2|yalanlayanların} {0|vay haline!}
+77:25 | -medik mi | kılmadık | yeri | toplayıcı || {2|Yeri} {3|toplayıcı} {1|kıl}{0|madık mı?}
+77:26 | dirileri | ve ölüleri || {0|Dirileri} {1|ve ölüleri.}
+77:27 | ve kıldık | orada | sabit dağlar | yüksek | ve size içirdik | su | tatlı || {1|Orada} {3|yüksek} {2|sabit dağlar} {0|kıldık}, {4|size} {6|tatlı} {5|su} {4|içirdik.}
+77:28 | vay haline | o gün | yalanlayanların || {1|O gün} {2|yalanlayanların} {0|vay haline!}
+77:29 | gidin | -e | şey | idiniz | onu | yalanlıyor || {5|Yalanlayıp} {3|durduğunuz} {2|şeye} {1|doğru} {0|gidin!}
+77:30 | gidin | -e | gölge | sahibi | üç | kol || {4|Üç} {5|kollu} {3|olan} {2|bir gölgeye} {1|doğru} {0|gidin!}
+77:31 | -maz | gölgelendirici | ve -maz | korur | -den | alev || (O gölge) {1|serinletici} {0|değildir}, {5|alev}{4|den} {2|de} {3|korumaz.}
+77:32 | şüphesiz o | atar | kıvılcımlar | saray gibi || {0|Şüphesiz o}, {3|saray gibi} {2|kıvılcımlar} {1|atar};
+77:33 | sanki onlar | develer | sarı || {0|sanki onlar} {2|sarı} {1|develerdir.}
+77:34 | vay haline | o gün | yalanlayanların || {1|O gün} {2|yalanlayanların} {0|vay haline!}
+77:35 | bu | gündür | -mazlar | konuşurlar || {0|Bu}, {3|konuşa}{2|mayacakları} {1|gündür.}
+77:36 | ve -maz | izin verilir | onlara | özür dilesinler || {2|Onlara} {3|özür dilemeleri için} {1|izin} {0|de verilmez.}
+77:37 | vay haline | o gün | yalanlayanların || {1|O gün} {2|yalanlayanların} {0|vay haline!}
+77:38 | bu | günü | ayırma | sizi topladık | ve öncekileri || {0|Bu}, {2|hüküm} {1|günüdür}; {3|sizi} {4|ve öncekileri} {3|bir araya topladık.}
+77:39 | eğer | varsa | sizin | bir tuzak | bana tuzak kurun || {0|Eğer} {2|sizin} {3|bir tuzağınız} {1|varsa}, {4|bana tuzak kurun!}
+77:40 | vay haline | o gün | yalanlayanların || {1|O gün} {2|yalanlayanların} {0|vay haline!}
+77:41 | şüphesiz | takva sahipleri | içindedir | gölgeler | ve pınarlar || {0|Şüphesiz} {1|takva sahipleri} {3|gölgeler} {4|ve pınarlar} {2|içindedirler};
+77:42 | ve meyveler | -den | arzu ettikleri || {2|arzu ettikleri} {0|meyveler} {1|arasında.}
+77:43 | yiyin | ve için | afiyetle | şeyler karşılığı | idiniz | yapıyor || {5|Yapmakta} {4|olduklarınıza} {3|karşılık} {2|afiyetle} {0|yiyin} {1|için!}
+77:44 | şüphesiz biz | böyle | mükâfatlandırırız | iyilik yapanları || {0|Şüphesiz biz} {3|iyilik yapanları} {1|işte böyle} {2|mükâfatlandırırız.}
+77:45 | vay haline | o gün | yalanlayanların || {1|O gün} {2|yalanlayanların} {0|vay haline!}
+77:46 | yiyin | ve faydalanın | az | şüphesiz siz | suçlularsınız || {0|Yiyin} {1|ve} {2|biraz} {1|faydalanın}; {3|şüphesiz siz} {4|suçlularsınız!}
+77:47 | vay haline | o gün | yalanlayanların || {1|O gün} {2|yalanlayanların} {0|vay haline!}
+77:48 | ve zaman | denildiğinde | onlara | rükû edin | -mazlar | rükû ederler || {2|Onlara}: {3|"Rükû edin"} {1|denildiği} {0|zaman} {5|rükû et}{4|mezler.}
+77:49 | vay haline | o gün | yalanlayanların || {1|O gün} {2|yalanlayanların} {0|vay haline!}
+77:50 | hangi | söze | ondan sonra | iman edecekler || {2|Bundan sonra} {0|artık hangi} {1|söze} {3|iman edecekler?}

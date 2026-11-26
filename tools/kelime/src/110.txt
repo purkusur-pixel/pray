@@ -1,0 +1,3 @@
+110:1 | -diği zaman | geldi | yardımı | Allah'ın | ve fetih || {3|Allah'ın} {2|yardımı} {4|ve fetih} {1|geldiği} {0|zaman},
+110:2 | ve gördüğünde | insanları | girerlerken | -e | dinine | Allah'ın | bölük bölük || {1|insanların} {5|Allah'ın} {4|dinine} {6|bölük bölük} {2|girdiklerini} {0|gördüğünde},
+110:3 | (o zaman) tesbih et | hamd ile | Rabbini | ve O'ndan bağışlanma dile | şüphesiz O | -dır | tövbeleri çok kabul eden || {2|Rabbini} {1|hamd ile} {0|tesbih et} {3|ve O'ndan bağışlanma dile.} {4|Şüphesiz O}, {6|tövbeleri çok kabul eden}{5|dir.}

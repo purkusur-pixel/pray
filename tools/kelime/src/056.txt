@@ -1,0 +1,96 @@
+56:1 | zaman | vuku bulduğu | vakıa (kıyamet) || {2|Kıyamet} {1|koptuğu} {0|zaman},
+56:2 | yoktur | onun vukuuna | yalanlayan || {1|onun vukuunu} {2|yalanlayacak} {0|kimse yoktur.}
+56:3 | alçaltan | yükselten || (O,) {0|alçaltıcıdır}, {1|yükselticidir.}
+56:4 | zaman | sarsıldı | yer | şiddetle || {2|Yer} {3|şiddetle} {1|sarsıldığı} {0|zaman},
+56:5 | ve ufalandı | dağlar | ufalanış || {1|dağlar} {2|parça parça} {0|ufalandığı},
+56:6 | oldu | toz | dağılmış || {0|ve} {2|dağılmış} {1|toz} {0|haline geldiği zaman},
+56:7 | ve oldunuz | sınıflar | üç || {0|siz de} {2|üç} {1|sınıf} {0|olursunuz.}
+56:8 | ehli | sağ | nedir | ehli | sağ || {1|Sağ} {0|tarafın ehli}; {2|ne} (mutludur) {4|sağ} {3|tarafın ehli!}
+56:9 | ve ehli | sol (uğursuzluk) | nedir | ehli | sol || {1|Sol} {0|tarafın ehli}; {2|ne} (bedbahttır) {4|sol} {3|tarafın ehli!}
+56:10 | ve öne geçenler | öne geçenler || {0|Öne geçenler} {1|ise} (ahirette de) {1|öne geçenlerdir.}
+56:11 | onlar | yakınlaştırılmışlar || {0|İşte onlar} (Allah'a) {1|yakın kılınmış olanlardır.}
+56:12 | -de | cennetleri | nimet || {2|Naîm} {1|cennetlerin}{0|dedirler.}
+56:13 | bir topluluk | -den | öncekiler || (Onların) {0|çoğu} {2|öncekiler}{1|den},
+56:14 | ve az | -den | sonrakiler || {0|azı da} {2|sonrakiler}{1|dendir.}
+56:15 | üzerinde | tahtlar | işlenmiş || {2|Mücevherlerle işlenmiş} {1|tahtlar} {0|üzerinde},
+56:16 | yaslanırlar | üzerine | karşılıklı || {1|onlara} {2|karşılıklı} {0|yaslanırlar.}
+56:17 | dolaşır | etraflarında | gençler | ölümsüz || {1|Etraflarında} {3|ölümsüz} {2|gençler} {0|dolaşır};
+56:18 | kadehlerle | ve ibriklerle | ve kâse | -den | akan pınar || {0|kadehler}, {1|ibrikler} {2|ve} {4|pınardan} (doldurulmuş) {2|bir kâse ile};
+56:19 | -maz | başları ağrır | ondan | ve -maz | sarhoş olurlar || {2|Ondan} {1|başları ağrı}{0|maz} {3|ve} {4|sarhoş da olmazlar.}
+56:20 | ve meyveler | -den | seçtikleri || {2|Seçtikleri} {0|meyveler}
+56:21 | ve eti | kuş | -den | arzu ettikleri || {3|ve arzu ettikleri} {1|kuş} {0|etleri} (ile dolaşırlar).
+56:22 | ve huriler | iri gözlü || {1|İri gözlü} {0|huriler} vardır;
+56:23 | benzeri gibi | inci | saklı || {2|saklı} {1|inciler} {0|gibi.}
+56:24 | karşılık | şeyler | idiler | yapıyorlar || (Bunlar) {3|yapmakta} {2|oldukları} {1|şeylerin} {0|karşılığıdır.}
+56:25 | -mazlar | işitirler | orada | boş söz | ve -maz | günaha sokan söz || {2|Orada} {3|boş} {4|ve} {5|günaha sokan} (bir söz) {1|işit}{0|mezler};
+56:26 | ancak | söz | selam | selam || {0|ancak} {2|"selam}, {3|selam"} {1|sözü} (işitirler).
+56:27 | ve ehli | sağ | nedir | ehli | sağ || {1|Sağ} {0|tarafın ehli}; {2|ne} (mutludur) {4|sağ} {3|tarafın ehli!}
+56:28 | -de | sidre ağacı | dikensiz || {2|Dikensiz} {1|sidre ağaçları} {0|arasında},
+56:29 | ve muz ağaçları | dizili || {1|meyveleri dizili} {0|muz ağaçları},
+56:30 | ve gölge | uzanmış || {1|uzayıp giden} {0|gölge},
+56:31 | ve su | çağlayan || {1|çağlayan} {0|su},
+56:32 | ve meyve | çok || {1|bol} {0|meyve} (arasındadırlar);
+56:33 | -maz | kesilen | ve -maz | yasaklanan || {1|tükenmeyen} {2|ve} {3|yasaklanmayan.}
+56:34 | ve döşekler | yükseltilmiş || {1|Yükseltilmiş} {0|döşekler} üzerindedirler.
+56:35 | şüphesiz biz | onları yarattık | yeni bir yaratılışla || {0|Şüphesiz biz} {1|onları} (huriler) {2|yeni bir yaratılışla} {1|yarattık};
+56:36 | onları kıldık | bakireler || {0|onları} {1|bakireler} {0|kıldık};
+56:37 | eşlerine düşkün | yaşıt || {0|eşlerine düşkün}, {1|yaşıtlar} (kıldık);
+56:38 | ehli için | sağ || {1|sağ} {0|tarafın ehli için.}
+56:39 | bir topluluk | -den | öncekiler || (Onlar) {0|bir kısmı} {2|öncekiler}{1|den},
+56:40 | ve bir topluluk | -den | sonrakiler || {0|bir kısmı da} {2|sonrakiler}{1|dendir.}
+56:41 | ve ehli | sol | nedir | ehli | sol || {1|Sol} {0|tarafın ehli}; {2|ne} (bedbahttır) {4|sol} {3|tarafın ehli!}
+56:42 | -de | kavurucu rüzgâr | ve kaynar su || {1|Kavurucu bir rüzgâr} {2|ve kaynar su} {0|içindedirler},
+56:43 | ve gölge | -den | kapkara duman || {2|kapkara duman}{1|dan} {0|bir gölge} içinde;
+56:44 | -maz | serin | ve -maz | ferahlatıcı || {1|serin} {0|değil}, {2|ne de} {3|ferahlatıcı.}
+56:45 | şüphesiz onlar | idiler | önce | bundan | şımarık || {0|Çünkü onlar} {3|bundan} {2|önce} {4|refah içinde şımarmış} {1|kimselerdi.}
+56:46 | ve idiler | ısrar ediyorlar | üzerinde | günah | büyük || {4|Büyük} {3|günah} {2|üzerinde} {1|ısrar ediyorlar}{0|dı.}
+56:47 | ve idiler | diyorlar | zaman mı | öldük | ve olduk | toprak | ve kemikler | biz mi | elbette diriltileceğiz || {1|Diyorlar}{0|dı ki}: {2|"Biz} {3|öldüğümüz} {4|ve} {5|toprak} {6|ve kemik} {4|olduğumuz} {2|zaman mı} {7|biz} {8|gerçekten diriltileceğiz} {7|mi?}
+56:48 | ve atalarımız da mı | önceki || {1|Önceki} {0|atalarımız da mı?"}
+56:49 | de ki | şüphesiz | öncekiler | ve sonrakiler || {0|De ki}: {1|"Şüphesiz} {2|öncekiler} {3|de sonrakiler de},
+56:50 | elbette toplanacaklar | -e | vakti | gün | belli || {4|belli} {3|bir günün} {2|vaktin}{1|de} {0|mutlaka bir araya toplanacaklardır."}
+56:51 | sonra | şüphesiz siz | ey | sapıklar | yalanlayanlar || {0|Sonra} {2|ey} {3|sapık} {4|yalanlayıcılar}, {1|şüphesiz siz}
+56:52 | elbette yiyeceksiniz | -den | ağaç | -den | zakkum || {4|zakkum} {2|ağacın}{1|dan} {0|elbette yiyeceksiniz};
+56:53 | dolduracaksınız | ondan | karınları || {1|ondan} {2|karınlarınızı} {0|dolduracaksınız};
+56:54 | içeceksiniz | üstüne | -den | kaynar su || {1|üstüne de} {3|kaynar su}{2|dan} {0|içeceksiniz};
+56:55 | içeceksiniz | içişi | susamış develer || {2|susamış develerin} {1|içişi gibi} {0|içeceksiniz.}
+56:56 | bu | ikramlarıdır | gün | din (ceza) || {0|İşte bu}, {3|hesap} {2|günü} {1|onlara yapılacak ikramdır.}
+56:57 | biz | sizi yarattık | -meli değil mi | tasdik edersiniz || {1|Sizi} {0|biz} {1|yarattık}; {2|tasdik etmeniz gerekmez mi?}
+56:58 | gördünüz mü | şeyi | döktüğünüz (meni) || {0|Gördünüz mü} {2|akıttığınız} {1|meniyi?}
+56:59 | siz mi | onu yaratıyorsunuz | yoksa | biz | yaratanlar || {1|Onu} {0|siz mi} {1|yaratıyorsunuz}, {2|yoksa} {4|yaratan} {3|biz miyiz?}
+56:60 | biz | takdir ettik | aranızda | ölümü | ve değiliz | biz | önüne geçilecek || {3|Ölümü} {2|aranızda} {0|biz} {1|takdir ettik} {4|ve} {5|biz} {6|önüne geçilecek} {4|değiliz},
+56:61 | üzere | -mekten | yerine getirmek | benzerlerinizi | ve sizi yaratmaktan | -de | şey | -mediğiniz | bileceğiniz || {3|benzerlerinizi} {2|getirme}{1|kten} {4|ve sizi} {8|bileme}{7|yeceğiniz} {6|bir şekil}{5|de} {4|yeniden yaratmaktan} (aciz değiliz).
+56:62 | andolsun | bildiniz | yaratılışı | ilk | -meli değil mi | düşünürsünüz || {0|Andolsun} {3|ilk} {2|yaratılışı} {1|bildiniz}; {5|düşünmeniz} {4|gerekmez mi?}
+56:63 | gördünüz mü | şeyi | ektiğiniz || {0|Gördünüz mü} {2|ektiğiniz} {1|tohumu?}
+56:64 | siz mi | onu bitiriyorsunuz | yoksa | biz | bitirenler || {1|Onu} {0|siz mi} {1|bitiriyorsunuz}, {2|yoksa} {4|bitiren} {3|biz miyiz?}
+56:65 | eğer | dileseydik | onu yapardık | çer çöp | kalırdınız | şaşkınlıkla söylenir || {0|Eğer} {1|dileseydik} {2|onu} {3|kuru bir çer çöp} {2|yapardık} {4|da} {5|şaşırıp söylenir} {4|dururdunuz}:
+56:66 | şüphesiz biz | ziyana uğratıldık || {0|"Şüphesiz biz} {1|ziyana uğratıldık};
+56:67 | hayır | biz | mahrum bırakıldık || {0|hatta} {1|biz} {2|büsbütün mahrum kaldık."}
+56:68 | gördünüz mü | suyu | ki | içtiğiniz || {0|Gördünüz mü} {3|içtiğiniz} {1|suyu?}
+56:69 | siz mi | onu indirdiniz | -den | bulut | yoksa | biz | indirenler || {1|Onu} {3|bulut}{2|tan} {0|siz mi} {1|indirdiniz}, {4|yoksa} {6|indiren} {5|biz miyiz?}
+56:70 | eğer | dileseydik | onu yapardık | tuzlu acı | -meli değil mi | şükredersiniz || {0|Eğer} {1|dileseydik} {2|onu} {3|tuzlu ve acı} {2|yapardık}; {5|şükretmeniz} {4|gerekmez mi?}
+56:71 | gördünüz mü | ateşi | ki | yaktığınız || {0|Gördünüz mü} {3|yaktığınız} {1|ateşi?}
+56:72 | siz mi | yarattınız | ağacını | yoksa | biz | yaratanlar || {2|Onun ağacını} {0|siz mi} {1|yarattınız}, {3|yoksa} {5|yaratan} {4|biz miyiz?}
+56:73 | biz | onu kıldık | bir ibret | ve fayda | yolcular için || {1|Onu} {0|biz} {2|bir ibret} {3|ve} {4|çöldeki yolcular için} {3|bir fayda} {1|kıldık.}
+56:74 | tesbih et | adını | Rabbinin | büyük || {0|Öyleyse} {3|büyük} {2|Rabbinin} {1|adını} {0|tesbih et.}
+56:75 | hayır | yemin ederim | yerlerine | yıldızların || {0|Hayır!} {3|Yıldızların} {2|yerlerine} {1|yemin ederim.}
+56:76 | ve şüphesiz o | bir yemin | eğer | bilirseniz | büyük || {0|Şüphesiz bu}, {2|eğer} {3|bilirseniz}, {4|büyük} {1|bir yemindir.}
+56:77 | şüphesiz o | bir Kur'an'dır | değerli || {0|Şüphesiz o}, {2|değerli} {1|bir Kur'an'dır};
+56:78 | -de | kitap | korunmuş || {2|korunmuş} {1|bir kitap}{0|tadır.}
+56:79 | -maz | ona dokunur | başkası | temizlenmişler || {1|Ona} {3|temizlenmiş olanlar}{2|dan başkası} {1|dokun}{0|amaz.}
+56:80 | indirilmiştir | -den | Rabbi | âlemler || {3|Âlemlerin} {2|Rabbi} {1|tarafından} {0|indirilmiştir.}
+56:81 | bu mu | söz | siz | hafife alıyorsunuz || {0|Şimdi bu} {1|sözü mü} {2|siz} {3|hafife alıyorsunuz?}
+56:82 | ve kılıyorsunuz | rızkınızı | ki siz | yalanlıyorsunuz || {1|Rızkınızı} (şükrünüzü) {2|onu} {3|yalanlamak} {0|mı kılıyorsunuz?}
+56:83 | -meli değil mi | zaman | ulaştı | gırtlak || {0|Hele} (can) {3|boğaza} {2|geldiği} {1|zaman},
+56:84 | ve siz | o vakit | bakıyorsunuz || {0|ve siz} {1|o vakit} {2|bakıp dururken},
+56:85 | ve biz | daha yakınız | ona | sizden | fakat | -mezsiniz | görürsünüz || {0|biz} {2|ona} {3|sizden} {1|daha yakınız}; {4|fakat} {6|göre}{5|mezsiniz.}
+56:86 | -meli değil mi | eğer | iseniz | başka | ceza görmeyecek || {1|Eğer} {3|siz} {4|hesaba çekilmeyecek} {2|iseniz} {0|o halde},
+56:87 | onu geri döndürürsünüz | eğer | iseniz | doğru sözlüler || {1|eğer} {3|doğru sözlü} {2|iseniz}, {0|onu} (canı) {0|geri çevirsenize!}
+56:88 | ama | eğer | ise | -den | yakın kılınanlar || {0|Eğer} (ölen) {4|Allah'a yakın kılınanlar}{3|dan} {2|ise},
+56:89 | rahatlık | ve güzel rızık | ve cenneti | nimet || {0|ona rahatlık}, {1|güzel rızık} {2|ve} {3|nimet} {2|cenneti} vardır.
+56:90 | ve ama | eğer | ise | -den | ehli | sağ || {0|Eğer} {5|sağ} {4|tarafın ehlin}{3|den} {2|ise},
+56:91 | selam | sana | -den | ehli | sağ || {4|"Sağ} {3|tarafın ehlin}{2|den} {1|sana} {0|selam!"} denir.
+56:92 | ve ama | eğer | ise | -den | yalanlayanlar | sapıklar || {0|Ama} {1|eğer} {4|yalanlayan} {5|sapıklar}{3|dan} {2|ise},
+56:93 | ikram | -den | kaynar su || {0|ona ikram} {2|kaynar su}{1|dan}{0|dır},
+56:94 | ve atılmak | cehenneme || {1|cehenneme} {0|atılmaktır.}
+56:95 | şüphesiz | bu | elbette o | gerçeği | kesin bilginin || {0|Şüphesiz} {1|bu}, {4|kesin bilginin} {3|ta kendisidir.}
+56:96 | tesbih et | adını | Rabbinin | büyük || {0|Öyleyse} {3|büyük} {2|Rabbinin} {1|adını} {0|tesbih et.}

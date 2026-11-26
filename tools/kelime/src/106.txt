@@ -1,0 +1,4 @@
+106:1 | ısındırıldığı için | Kureyş'in || {1|Kureyş'in} {0|alıştırılması (ısındırılması) için},
+106:2 | ısındırılmaları | yolculuğuna | kış | ve yaz || {2|kış} {3|ve yaz} {1|yolculuklarına} {0|alıştırılmaları için},
+106:3 | ibadet etsinler | Rabbine | bu | Ev (Kâbe) || {2|bu} {3|Evin (Kâbe'nin)} {1|Rabbine} {0|ibadet etsinler};
+106:4 | o ki | onları doyurdu | -den | açlık | ve onları emin kıldı | -den | korku || {0|O ki} {1|onları} {3|açlıktan} kurtarıp {1|doyurdu} {4|ve onları} {6|korkudan} emin kılıp {4|güvene kavuşturdu.}

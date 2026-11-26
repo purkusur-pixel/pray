@@ -1,0 +1,5 @@
+113:1 | de ki | sığınırım | Rabbine | sabahın (yarılan aydınlığın) || {0|De ki:} “{3|Sabahın} {2|Rabbine} {1|sığınırım},
+113:2 | -den | şerri | şeyin | yarattığı || {3|yarattığı} {2|şeylerin} {1|şerrinden},
+113:3 | ve -den | şerri | karanlığı | -diği zaman | çöktü || {3|çöktüğü} {4|zaman} {2|karanlığın} {1|şerrinden},
+113:4 | ve -den | şerri | üfleyenler | -e | düğümler || {4|düğümlere} {2|üfleyenlerin} {1|şerrinden},
+113:5 | ve -den | şerri | hasetçi | -diği zaman | haset etti || {4|haset ettiği} {3|zaman} {2|hasetçinin} {1|şerrinden.}”

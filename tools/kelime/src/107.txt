@@ -1,0 +1,7 @@
+107:1 | gördün mü | kimseyi | yalanlayan | dini (hesap gününü) || {3|Dini (hesap gününü)} {2|yalanlayanı} {0|gördün mü?}
+107:2 | işte o | kimse | iter | yetimi || {0|İşte o}, {3|yetimi} {2|itip kakan} {1|kimsedir};
+107:3 | ve -mez | teşvik eder | -e | yedirmeye | yoksulu || {4|yoksulu} {3|doyurmaya} {1|teşvik} {0|etmez.}
+107:4 | vay haline | namaz kılanların || {1|Namaz kılanların} {0|vay haline!}
+107:5 | onlar ki | onlar | -den | namazlarını | gafildirler || {0|Onlar ki} {3|namazlarından} {4|gafildirler};
+107:6 | onlar ki | onlar | gösteriş yaparlar || {0|onlar ki} {2|gösteriş yaparlar}
+107:7 | ve engellerler | yardımı (zekâtı, ufak tefek eşyayı) || {1|ve en küçük yardımı} {0|bile engellerler.}

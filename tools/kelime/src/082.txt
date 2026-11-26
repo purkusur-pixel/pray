@@ -1,0 +1,19 @@
+82:1 | -diği zaman | gök | yarıldı || {1|Gök} {2|yarıldığı} {0|zaman},
+82:2 | ve -diği zaman | yıldızlar | saçılıp döküldü || {1|yıldızlar} {2|saçılıp döküldüğü} {0|zaman},
+82:3 | ve -diği zaman | denizler | fışkırtıldı || {1|denizler} {2|birbirine akıtıldığı} {0|zaman},
+82:4 | ve -diği zaman | kabirler | altüst edildi || {1|kabirler} {2|altüst edildiği} {0|zaman},
+82:5 | bildi | her can | şeyi | önden gönderdi | ve geri bıraktı || {1|her can} {3|önden gönderdiğini} {4|ve geride bıraktığını} {0|bilir.}
+82:6 | ey | insan | ne | seni aldattı | Rabbine karşı | kerim || {0|Ey} {1|insan!} {5|Kerîm olan} {4|Rabbine karşı} {3|seni aldatan} {2|nedir?}
+82:7 | o ki | seni yarattı | ve seni düzenledi | ve seni dengeli kıldı || {0|O ki} {1|seni yarattı}, {2|seni düzenledi} {3|ve seni dengeli kıldı};
+82:8 | -de | hangi | suret | -ki | diledi | seni terkip etti || {4|dilediği} {1|bir} {2|surette} {5|seni terkip etti.}
+82:9 | hayır | bilakis | yalanlıyorsunuz | dini (hesap gününü) || {0|Hayır!} {1|Bilakis siz} {3|dini (hesap gününü)} {2|yalanlıyorsunuz.}
+82:10 | ve şüphesiz | üzerinizde | elbette koruyucular || {0|Şüphesiz} {1|üzerinizde} {2|koruyucular vardır};
+82:11 | şerefli | yazıcılar || {0|şerefli} {1|yazıcılar};
+82:12 | bilirler | şeyi | yapıyorsunuz || {2|yaptıklarınızı} {0|bilirler.}
+82:13 | şüphesiz | iyiler | elbette -de | nimet || {0|Şüphesiz} {1|iyiler} {3|nimet} {2|içindedir};
+82:14 | ve şüphesiz | günahkârlar | elbette -de | cehennem || {0|şüphesiz} {1|günahkârlar da} {3|cehennem} {2|içindedir.}
+82:15 | ona girerler | günü | din (hesap) || {2|Hesap} {1|günü} {0|oraya girerler.}
+82:16 | ve değiller | onlar | ondan | uzak kalanlar || {1|Onlar} {2|oradan} {3|uzak kalacak} {0|değillerdir.}
+82:17 | ve ne | sana bildirdi | nedir | günü | din || {4|Din} {3|gününün} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+82:18 | sonra | ne | sana bildirdi | nedir | günü | din || {0|Sonra}, {5|din} {4|gününün} {3|ne olduğunu} {1|sana ne} {2|bildirdi?}
+82:19 | gün | -mez | malik olur | bir can | bir can için | hiçbir şey | ve emir | o gün | Allah'ındır || {0|O gün} {3|hiçbir kimse} {4|başkası için} {5|hiçbir şeye} {2|malik} {1|olamaz}; {7|o gün} {6|emir} {8|yalnız Allah'ındır.}

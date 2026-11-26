@@ -1,0 +1,4 @@
+112:1 | de ki | O | Allah | birdir || {0|De ki:} “{1|O,} {2|Allah'tır}, {3|bir tektir.}
+112:2 | Allah | Samed (her şey O'na muhtaç, O hiçbir şeye muhtaç değil) || {0|Allah} {1|Samed'dir} (her şey O'na muhtaçtır, O hiçbir şeye muhtaç değildir).
+112:3 | -medi | doğurdu | ve -medi | doğuruldu || O, {1|doğur}{0|mamış} {2|ve} {3|doğurulmamıştır.}
+112:4 | ve -medi | oldu | O'na | denk | hiçbir kimse || {3|O'na denk} {4|hiçbir kimse} {1|de} {0|yoktur.}”

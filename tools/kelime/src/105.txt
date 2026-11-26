@@ -1,0 +1,5 @@
+105:1 | görmedin mi | gördün | nasıl | yaptı | Rabbin | sahiplerine | fil || {4|Rabbinin} {6|fil} {5|sahiplerine} {2|nasıl} {3|ne yaptığını} {0|görmedin mi?}
+105:2 | -medi mi | kıldı | tuzaklarını | -de | boşa çıkma || {2|Onların tuzaklarını} {4|boşa} {1|çıkarmadı} {0|mı?}
+105:3 | ve gönderdi | üzerlerine | kuşlar | sürü sürü || {1|Üzerlerine} {3|sürü sürü} {2|kuşlar} {0|gönderdi.}
+105:4 | onlara atıyorlardı | taşlar | -den | pişkin çamur || {0|Onlar (kuşlar), onlara} {3|pişkin çamurdan} {1|taşlar} {0|atıyorlardı.}
+105:5 | ve onları kıldı | ekin yaprağı gibi | yenilmiş || {0|Sonunda onları} {2|yenilmiş} {1|ekin yaprağı gibi} {0|yaptı.}

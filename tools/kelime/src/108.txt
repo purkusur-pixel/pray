@@ -1,0 +1,3 @@
+108:1 | şüphesiz biz | sana verdik | Kevser'i || {0|Şüphesiz biz} {1|sana} {2|Kevser'i} {1|verdik.}
+108:2 | öyleyse namaz kıl | Rabbin için | ve kurban kes || {0|Öyleyse} {1|Rabbin için} {0|namaz kıl} {2|ve kurban kes.}
+108:3 | şüphesiz | sana buğzeden | o | soyu kesik olan || {0|Şüphesiz} {1|sana buğzeden}, {3|soyu kesik olanın} {2|ta kendisidir.}

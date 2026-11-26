@@ -1,0 +1,8 @@
+95:1 | andolsun incire | ve zeytine || {0|İncire} {1|ve zeytine} andolsun,
+95:2 | ve Tûr'a | Sînâ || {1|Sînâ} {0|Dağına (Tûr'a)},
+95:3 | ve bu | belde(ye) | güvenli || {0|ve bu} {2|güvenli} {1|beldeye} andolsun ki,
+95:4 | andolsun | yarattık | insanı | -de | en güzel | biçim || {0|Andolsun ki biz} {2|insanı} {4|en güzel} {5|biçimde} {1|yarattık.}
+95:5 | sonra | onu çevirdik | en aşağısına | aşağıların || {0|Sonra} {1|onu} {3|aşağıların} {2|en aşağısına} {1|çevirdik.}
+95:6 | ancak | kimseler | iman eden | ve yapan | salih ameller | onlar için vardır | bir ecir | -siz | kesintisiz (minnet edilmeyen) || {0|Ancak} {2|iman edip} {4|salih ameller} {3|işleyenler} {0|başka}; {5|onlar için} {8|kesintisiz} {6|bir mükâfat vardır.}
+95:7 | artık ne | seni yalanlatır | bundan sonra | dini (hesap gününü) || {2|Bundan sonra} {3|hesap gününü} {1|yalanlamana} {0|ne sebep olabilir?}
+95:8 | değil mi | Allah | en hükmedeni | hükmedenlerin || {1|Allah} {3|hâkimlerin} {2|en hâkimi} {0|değil mi?}

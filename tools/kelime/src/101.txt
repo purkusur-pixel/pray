@@ -1,0 +1,11 @@
+101:1 | Kâria (kapıyı çalan) || {0|Kâria (kapıları çalan büyük felaket)!}
+101:2 | nedir | Kâria || {1|Nedir} {0|o Kâria?}
+101:3 | ve ne | bildirdi sana | nedir | Kâria || {3|Kâria'nın} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+101:4 | gün | olur | insanlar | pervaneler gibi | yayılmış || {0|O gün} {2|insanlar} {4|yayılmış} {3|pervaneler gibi} {1|olur};
+101:5 | ve olur | dağlar | yün gibi | atılmış (didilmiş) || {1|dağlar} {3|atılmış} {2|renkli yün gibi} {0|olur.}
+101:6 | işte | kim | ağır geldi | tartıları || {0|İşte} {3|tartıları} {2|ağır gelen} {1|kimse},
+101:7 | o | -de | hayat | hoşnut olunan || {0|o} {3|hoşnut olacağı} {2|bir hayat} {1|içindedir.}
+101:8 | ve | kim | hafif geldi | tartıları || {0|Ama} {3|tartıları} {2|hafif gelen} {1|kimse},
+101:9 | anası (varacağı yer) | Hâviye || {0|onun anası (yeri)} {1|Hâviye'dir.}
+101:10 | ve ne | bildirdi sana | nedir | o || {3|Onun} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+101:11 | bir ateş | kızgın || {1|Kızgın} {0|bir ateştir!}

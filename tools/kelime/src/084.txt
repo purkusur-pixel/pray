@@ -1,0 +1,25 @@
+84:1 | -diği zaman | gök | yarıldı || {1|Gök} {2|yarıldığı} {0|zaman},
+84:2 | ve dinledi (itaat etti) | Rabbine | ve layık görüldü || {1|Rabbine} {0|kulak verip itaat ettiği} {2|ki buna layıktır},
+84:3 | ve -diği zaman | yer | uzatıldı || {1|yer} {2|uzatıldığı} {0|zaman},
+84:4 | ve attı | şeyi | içinde | ve boşaldı || {2|içindekileri} {0|dışarı atıp} {3|boşaldığı},
+84:5 | ve dinledi | Rabbine | ve layık görüldü || {1|Rabbine} {0|kulak verip itaat ettiği} {2|ki buna layıktır},
+84:6 | ey | insan | şüphesiz sen | çabalayansın | -e | Rabbin | çabalamakla | ve O'na kavuşacaksın || {0|ey} {1|insan!} {2|Şüphesiz sen} {5|Rabbine} {4|doğru} {6|çetin} {3|bir çaba içindesin} {7|ve sonunda O'na kavuşacaksın.}
+84:7 | ama | kimse | verildi | kitabı | sağından || {0|Kimin} {3|kitabı} {4|sağından} {2|verilirse},
+84:8 | ileride | hesaba çekilir | hesapla | kolay || {0|o} {3|kolay} {2|bir hesapla} {1|hesaba çekilir}
+84:9 | ve döner | -e | ailesine | sevinçli || {3|ve sevinçli olarak} {2|ailesine} {0|döner.}
+84:10 | ama | kimse | verildi | kitabı | arkasından | sırtının || {0|Kimin de} {3|kitabı} {5|sırtının} {4|arkasından} {2|verilirse},
+84:11 | ileride | çağırır | helak || {0|o} {2|helak (ölüm)} {1|çağırır}
+84:12 | ve girer | alevli ateşe || {1|ve alevli ateşe} {0|girer.}
+84:13 | şüphesiz o | idi | -de | ailesi | sevinçli || {0|Çünkü o}, {3|ailesi} {2|içinde} {4|sevinçli} {1|idi.}
+84:14 | şüphesiz o | sandı | -ı | asla | dönmez || {0|O}, {4|(Rabbine) asla dönmeyeceğini} {1|sanmıştı.}
+84:15 | hayır (öyle değil) | şüphesiz | Rabbi | idi | onu | görendir || {0|Hayır!} {1|Şüphesiz} {2|Rabbi} {4|onu} {3|hep} {5|görmekteydi.}
+84:16 | hayır | yemin ederim | şafağa || {1|Yemin ederim} {2|akşamki kızıllığa},
+84:17 | ve geceye | ve şeye | topladı || {0|geceye} {1|ve} {2|onun bir araya topladıklarına},
+84:18 | ve aya | -diği zaman | dolunay oldu || {2|dolunay olduğu} {1|zaman} {0|aya ki},
+84:19 | elbette bineceksiniz | hal | -den | hal(e) || {3|halden} {1|hale} {0|geçeceksiniz.}
+84:20 | ne oluyor | onlara | -mezler | iman ederler || {1|Onlara} {0|ne oluyor ki} {3|iman et}{2|miyorlar?}
+84:21 | ve -diği zaman | okundu | onlara | Kur'an | -mezler | secde ederler || {2|Onlara} {3|Kur'an} {1|okunduğu} {0|zaman} {5|secde et}{4|miyorlar.}
+84:22 | bilakis | kimseler | inkâr eden | yalanlıyorlar || {0|Bilakis} {2|inkâr edenler} {3|yalanlıyorlar.}
+84:23 | ve Allah | en iyi bilendir | şeyi | içlerinde topluyorlar || {0|Allah} {3|onların içlerinde gizlediklerini} {1|en iyi bilendir.}
+84:24 | onları müjdele | azapla | acı || {0|Öyleyse onları} {2|acı} {1|bir azapla} {0|müjdele.}
+84:25 | ancak | kimseler | iman eden | ve yapan | salih ameller | onlar için | ecir | -siz | kesintisiz || {0|Ancak} {2|iman edip} {4|salih ameller} {3|işleyenler} başka; {5|onlar için} {8|kesintisiz} {6|bir mükâfat vardır.}

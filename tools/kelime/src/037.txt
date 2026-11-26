@@ -1,0 +1,182 @@
+37:1 | andolsun saf tutanlara | saf saf || {1|Saf saf} {0|dizilenlere andolsun},
+37:2 | sevk edenlere | sevk ederek || {1|sürüp} {0|sevk edenlere},
+37:3 | okuyanlara | zikri || {1|zikri} {0|okuyanlara} (andolsun ki),
+37:4 | şüphesiz | ilahınız | elbette birdir || {0|şüphesiz} {1|ilahınız} {2|birdir.}
+37:5 | Rabbi | göklerin | ve yerin | ve şeylerin | aralarındaki | ve Rabbi | doğuların || (O), {1|göklerin}, {2|yerin} {3|ve} {4|ikisi arasındakilerin} {0|Rabbi} {6|ve doğuların} {5|Rabbidir.}
+37:6 | şüphesiz biz | süsledik | göğü | dünya | süsüyle | yıldızların || {0|Şüphesiz biz} {3|dünya} {2|semasını} {5|yıldızların} {4|süsüyle} {1|süsledik.}
+37:7 | ve korumak için | -den | her | şeytan | azgın || {2|Her} {4|azgın} {3|şeytan}{1|dan} {0|da koruduk.}
+37:8 | -mazlar | dinleyemezler | -e | topluluk | yüce | ve atılırlar | -den | her | yan || (Onlar) {4|yüce} {3|topluluğa} {2|kulak} {1|vere}{0|mezler}; {7|her} {8|yan}{6|dan} {5|taşa tutulurlar}
+37:9 | kovulmak için | ve onlar için vardır | azap | sürekli || {0|kovulup} (atılırlar). {1|Onlar için} {3|sürekli} {2|bir azap} {1|vardır.}
+37:10 | ancak | kim | kaparsa | bir kapış | izler onu | alev | delici || {0|Ancak} {1|kim} {3|bir şey} {2|kaparsa}, {6|delip geçen} {5|bir alev} {4|onu izler.}
+37:11 | sor onlara | onlar mı | daha zordur | yaratılışça | yoksa | kimseler | yarattığımız | şüphesiz biz | yarattık onları | -den | çamur | yapışkan || {0|Onlara sor}: {3|Yaratılışça} {1|kendileri mi} {2|daha zor}, {4|yoksa} {6|yarattığımız} {5|şeyler mi?} {7|Şüphesiz biz} {8|onları} {11|yapışkan} {10|bir çamur}{9|dan} {8|yarattık.}
+37:12 | hayır | şaştın | ve alay ediyorlar || {0|Hayır}, {1|sen şaştın}, {2|onlar ise alay ediyorlar.}
+37:13 | ve ne zaman | öğüt verildi | -mezler | öğüt almazlar || {1|Kendilerine öğüt verildiği} {0|zaman} {3|öğüt al}{2|mazlar.}
+37:14 | ve ne zaman | gördüler | bir ayet | alaya alırlar || {2|Bir ayet} {1|gördükleri} {0|zaman} {3|alaya alırlar.}
+37:15 | ve dediler | değildir | bu | başka | büyü | apaçık || {0|Derler ki}: {2|"Bu}, {5|apaçık} {4|bir büyü}{3|den başka bir şey} {1|değildir.}
+37:16 | mı ne zaman | öldük | ve olduk | toprak | ve kemikler | biz mi | elbette diriltilecekler || {1|Biz öldüğümüz} {2|ve} {3|toprak} {4|ve kemik} {2|olduğumuz} {0|zaman} {5|mı} {6|diriltileceğiz?}
+37:17 | ve atalarımız mı | önceki || {1|Önceki} {0|atalarımız da mı?"}
+37:18 | de ki | evet | ve siz | zelil olanlarsınız || {0|De ki}: {1|"Evet}, {2|hem de} {3|zelil olarak!"}
+37:19 | ancak | o | bir sayha | tek | bir de bakarsın | onlar | bakarlar || {1|O} (diriliş), {0|ancak} {3|tek} {2|bir haykırıştır}; {4|bir de bakarsın ki} {5|onlar} {6|bakıp duruyorlar.}
+37:20 | ve dediler | eyvah bize | bu | günü | ceza || {0|Derler ki}: {1|"Eyvah bize!} {2|Bu}, {4|ceza} {3|günüdür."}
+37:21 | bu | günü | hüküm | ki | idiniz | onu | yalanlıyor || {0|"Bu}, {5|sizin} {6|yalanlamakta} {4|olduğunuz} {2|hüküm} {1|günüdür."}
+37:22 | toplayın | kimseleri | zulmeden | ve eşlerini | ve şeyleri | idiler | tapıyorlar || {0|"Toplayın} {2|zulmedenleri}, {3|eşlerini} {4|ve} {6|tapmakta} {5|oldukları} {4|şeyleri}
+37:23 | -den | başka | Allah | götürün onları | -e | yolu | cehennem || {2|Allah'ı} {1|bırakıp} (taptıklarını); {3|onları} {6|cehennemin} {5|yoluna} {3|götürün!}
+37:24 | ve durdurun onları | şüphesiz onlar | sorguya çekilecekler || {0|Onları durdurun}, {1|çünkü onlar} {2|sorguya çekilecekler.}
+37:25 | ne | oluyor size | -mıyorsunuz | yardımlaşmıyorsunuz || {0|Ne} {1|oluyor size} ki {3|birbirinize yardım et}{2|miyorsunuz?"}
+37:26 | bilakis | onlar | bugün | teslim olmuşlardır || {0|Bilakis} {1|onlar} {2|bugün} {3|teslim olmuşlardır.}
+37:27 | ve yöneldi | bir kısmı | -e | bir kısmı | birbirlerine sorarak || {1|Birbirlerine} {0|yönelip} {4|soru sorarlar.}
+37:28 | dediler | şüphesiz siz | idiniz | geliyordunuz bize | -den | sağ || {0|Derler ki}: {1|"Şüphesiz siz} {5|sağ}{4|dan} (güçlü görünerek) {3|bize gel}{2|iyordunuz."}
+37:29 | dediler | bilakis | -mediniz | olmadınız | müminler || {0|Onlar da derler ki}: {1|"Bilakis} {4|siz mümin} {3|ol}{2|madınız.}
+37:30 | ve -medi | yoktu | bizim | üzerinizde | hiçbir | hâkimiyet | bilakis | idiniz | bir kavim | azgın || {2|Bizim} {3|sizin üzerinizde} {4|hiçbir} {5|hâkimiyetimiz} {1|yok}{0|tu.} {6|Bilakis} {9|azgın} {8|bir kavim} {7|idiniz.}
+37:31 | hak oldu | üzerimize | sözü | Rabbimizin | şüphesiz biz | elbette tadacaklarız || {3|Rabbimizin} {2|sözü} {1|aleyhimize} {0|hak oldu}; {4|şüphesiz biz} (azabı) {5|tadacağız.}
+37:32 | azdırdık sizi | şüphesiz biz | idik | azgınlar || {0|Biz sizi azdırdık}; {1|çünkü biz} {3|azgın} {2|kimselerdik."}
+37:33 | şüphesiz onlar | o gün | içinde | azap | ortaktırlar || {0|Şüphesiz onlar} {1|o gün} {3|azap}{2|ta} {4|ortaktırlar.}
+37:34 | şüphesiz biz | böyle | yaparız | suçlulara || {0|Şüphesiz biz} {3|suçlulara} {1|böyle} {2|yaparız.}
+37:35 | şüphesiz onlar | idiler | zaman | denildi | onlara | yoktur | ilah | başka | Allah'tan | büyüklük taslıyorlar || {0|Çünkü onlara}: {8|"Allah'tan} {7|başka} {6|ilah} {5|yoktur"} {3|denildiği} {2|zaman} {9|büyüklük taslıyorlar}{1|dı.}
+37:36 | ve diyorlar | biz mi | elbette bırakacaklar | ilahlarımızı | bir şair için | deli || {0|Ve diyorlardı ki}: {1|"Biz} {5|deli} {4|bir şair için} {3|ilahlarımızı} {2|bırakacak mıyız?"}
+37:37 | bilakis | geldi | hak ile | ve doğruladı | elçileri || {0|Bilakis} {1|o} {2|hakkı} {1|getirdi} {3|ve} (önceki) {4|peygamberleri} {3|doğruladı.}
+37:38 | şüphesiz siz | elbette tadacaklarsınız | azabı | elem dolu || {0|Şüphesiz siz} {3|elem dolu} {2|azabı} {1|tadacaksınız.}
+37:39 | ve -mazsınız | karşılık görmezsiniz | başka | şeyden | idiniz | yapıyor || {5|Yapmakta} {4|olduğunuz} {3|şeyler}{2|den başkasıyla} {1|cezalandırıl}{0|mazsınız.}
+37:40 | ancak | kulları | Allah'ın | ihlaslı kılınmış || {0|Ancak} {2|Allah'ın} {3|ihlaslı} {1|kulları} (başkadır).
+37:41 | işte onlar | onlar için vardır | rızık | bilinen || {0|İşte onlar} {1|için} {3|bilinen} {2|bir rızık} {1|vardır};
+37:42 | meyveler | ve onlar | ikram edilenlerdir || {0|türlü meyveler.} {1|Onlar} {2|ikram görürler},
+37:43 | içinde | cennetleri | nimet || {2|nimet} {1|cennetlerin}{0|de},
+37:44 | üzerinde | tahtlar | karşılıklı || {1|tahtlar} {0|üzerinde} {2|karşılıklı otururlar.}
+37:45 | dolaştırılır | etraflarında | bir kadeh | -den | akan pınar || {4|Akan bir pınar}{3|dan} (doldurulmuş) {2|bir kadeh} {1|etraflarında} {0|dolaştırılır};
+37:46 | bembeyaz | lezzet | içenler için || {0|bembeyaz}, {2|içenlere} {1|lezzet veren} (bir içki).
+37:47 | yoktur | onda | sersemlik | ve ne de | onlar | ondan | sarhoş olurlar || {1|Onda} {2|sersemletme} {0|yoktur}; {4|onlar} {5|ondan} {6|sarhoş da ol}{3|mazlar.}
+37:48 | ve yanlarında | sınırlayanlar | bakışları | iri gözlüler || {0|Yanlarında} {2|bakışlarını} (yalnız eşlerine) {1|dikmiş}, {3|iri gözlü} (huriler) vardır.
+37:49 | sanki onlar | yumurta | saklanmış || {0|Sanki onlar} {2|saklı} {1|yumurtalardır.}
+37:50 | yöneldi | bir kısmı | -e | bir kısmı | birbirlerine sorarak || {1|Birbirlerine} {0|yönelip} {4|soru sorarlar.}
+37:51 | dedi | söyleyen biri | onlardan | şüphesiz ben | vardı | benim | bir arkadaş || {2|Onlardan} {1|biri} {0|der ki}: {3|"Benim} {6|bir arkadaşım} {4|vardı.}
+37:52 | derdi | sen mi | elbette -densin | doğrulayanlar || {0|Derdi ki}: {1|"Sen} {3|gerçekten} (dirilişi) {3|doğrulayanlar}{2|dan mısın?}
+37:53 | mı ne zaman | öldük | ve olduk | toprak | ve kemikler | biz mi | elbette ceza görecekler || {1|Biz öldüğümüz}, {3|toprak} {4|ve kemik} {2|olduğumuz} {0|zaman} {5|mı} {6|cezalandırılacağız?"}
+37:54 | dedi | mı | siz | bakanlar || {0|Der ki}: {2|"Siz} (onu) {3|görmek ister} {1|misiniz?"}
+37:55 | baktı | gördü onu | içinde | ortası | cehennem || {0|Bakar} {1|ve onu} {4|cehennemin} {3|ortasında} {1|görür.}
+37:56 | dedi | Allah'a andolsun | gerçekten | az kalsın | beni helak edecektin || {0|Der ki}: {1|"Allah'a andolsun}, {2|sen} {3|az kalsın} {4|beni de helak edecektin.}
+37:57 | ve olmasaydı | nimeti | Rabbimin | elbette olurdum | -den | hazır bulundurulanlar || {2|Rabbimin} {1|nimeti} {0|olmasaydı}, {3|ben de} (cehenneme) {5|getirilenler}{4|den} {3|olurdum.}
+37:58 | değil miyiz | biz | ölecekler || {1|Biz} {2|ölecek} {0|değil miyiz}
+37:59 | başka | ölümümüz | ilk | ve değiliz | biz | azap edilecekler || {2|ilk} {1|ölümümüz}{0|den başka?} {4|Biz} {5|azap da görmeyecek} {3|miyiz?"}
+37:60 | şüphesiz | bu | elbette o | kurtuluş | büyük || {0|Şüphesiz} {1|bu}, {4|büyük} {3|kurtuluşun} {2|ta kendisidir.}
+37:61 | benzeri için | bunun | çalışsın | çalışanlar || {3|Çalışanlar} {1|böylesi} {0|için} {2|çalışsın.}
+37:62 | o mu | daha hayırlıdır | konukluk olarak | yoksa | ağacı | zakkum || {2|Konukluk olarak} {0|bu mu} {1|daha hayırlıdır}, {3|yoksa} {5|zakkum} {4|ağacı mı?}
+37:63 | şüphesiz biz | kıldık onu | bir fitne | zalimler için || {0|Şüphesiz biz} {1|onu} {3|zalimler için} {2|bir imtihan} {1|kıldık.}
+37:64 | şüphesiz o | bir ağaçtır | çıkar | -de | dibi | cehennem || {0|O}, {5|cehennemin} {4|dibin}{3|de} {2|çıkan} {1|bir ağaçtır.}
+37:65 | tomurcukları | sanki o | başları | şeytanların || {0|Tomurcukları} {1|sanki} {3|şeytanların} {2|başları} {1|gibidir.}
+37:66 | şüphesiz onlar | elbette yiyecekler | ondan | dolduracaklar | ondan | karınları || {0|Şüphesiz onlar} {2|ondan} {1|yiyecekler} {4|ve ondan} {5|karınlarını} {3|dolduracaklar.}
+37:67 | sonra | şüphesiz | onlar için vardır | üzerine | elbette bir karışım | -den | kaynar su || {0|Sonra} {1|şüphesiz} {3|onun üzerine} {2|onlar için} {6|kaynar su}{5|dan} {4|bir karışım} {2|vardır.}
+37:68 | sonra | şüphesiz | dönüşleri | elbette -edir | cehennem || {0|Sonra} {1|şüphesiz} {2|dönüşleri} {4|cehennem}{3|edir.}
+37:69 | şüphesiz onlar | buldular | atalarını | sapıklar || {0|Çünkü onlar} {2|atalarını} {3|sapık} (kimseler olarak) {1|buldular};
+37:70 | onlar | üzerinde | izleri | koşturuluyorlar || {0|onlar da} {2|onların izleri} {1|üzerinde} {3|koşturuluyorlar.}
+37:71 | andolsun | saptı | önlerinde | çoğu | öncekilerin || {0|Andolsun}, {2|onlardan önce} {4|öncekilerin} {3|çoğu} {1|sapmıştı.}
+37:72 | andolsun | gönderdik | aralarına | uyarıcılar || {0|Andolsun}, {2|onların arasına} {3|uyarıcılar} {1|göndermiştik.}
+37:73 | bak | nasıl | oldu | sonu | uyarılanların || {0|Bak}, {4|uyarılanların} {3|sonu} {1|nasıl} {2|oldu!}
+37:74 | ancak | kulları | Allah'ın | ihlaslı kılınmış || {0|Ancak} {2|Allah'ın} {3|ihlaslı} {1|kulları} (başkadır).
+37:75 | andolsun | seslendi bize | Nuh | ne güzel | icabet edenleriz || {0|Andolsun}, {2|Nuh} {1|bize seslenmişti}; {3|ne güzel} {4|icabet edeniz!}
+37:76 | ve kurtardık onu | ve ailesini | -den | sıkıntı | büyük || {0|Onu} {1|ve ailesini} {4|büyük} {3|sıkıntı}{2|dan} {0|kurtardık.}
+37:77 | ve kıldık | soyunu | onlar | kalıcılar || {1|Onun soyunu} {3|kalıcı} {2|olanlar} {0|kıldık.}
+37:78 | ve bıraktık | onun için | arasında | sonrakiler || {3|Sonrakiler} {2|arasında} {1|onun için} (güzel bir ün) {0|bıraktık}:
+37:79 | selam | üzerine | Nuh | içinde | âlemler || {4|Âlemler} {3|içinde} {2|Nuh'a} {0|selam olsun!}
+37:80 | şüphesiz biz | böyle | mükâfatlandırırız | iyilik yapanları || {0|Şüphesiz biz} {3|iyilik yapanları} {1|böyle} {2|mükâfatlandırırız.}
+37:81 | şüphesiz o | -den | kullarımız | mümin || {0|Şüphesiz o}, {3|mümin} {2|kullarımız}{1|dandı.}
+37:82 | sonra | boğduk | diğerlerini || {0|Sonra} {2|diğerlerini} {1|suda boğduk.}
+37:83 | ve şüphesiz | -den | taraftarları | elbette İbrahim || {3|İbrahim} {0|de şüphesiz} {2|onun yolunu izleyenler}{1|dendi.}
+37:84 | hani | geldi | Rabbine | bir kalple | selim || {0|Hani} {2|Rabbine} {4|arınmış} {3|bir kalple} {1|gelmişti.}
+37:85 | hani | dedi | babasına | ve kavmine | neye | tapıyorsunuz || {0|Hani} {2|babasına} {3|ve kavmine}: {4|"Neye} {5|tapıyorsunuz?} {1|demişti.}
+37:86 | bir yalan olarak mı | ilahları | başka | Allah'tan | istiyorsunuz || {3|Allah'ı} {2|bırakıp} {0|uydurma} {1|ilahlar mı} {4|istiyorsunuz?}
+37:87 | nedir | zannınız | hakkında Rabbi | âlemlerin || {3|Âlemlerin} {2|Rabbi hakkında} {1|zannınız} {0|nedir?"}
+37:88 | baktı | bir bakış | -e | yıldızlar || {0|Sonra} {3|yıldızlar}{2|a} {1|bir göz} {0|attı}
+37:89 | dedi | şüphesiz ben | hastayım || {0|ve dedi ki}: {1|"Ben} {2|hastayım."}
+37:90 | döndüler | ondan | arkalarını dönerek || {2|Arkalarını dönüp} {1|ondan} {0|uzaklaştılar.}
+37:91 | gizlice yöneldi | -e | ilahları | dedi | -mez misiniz | yemiyor musunuz || {2|Onların ilahlarına} {0|gizlice yöneldi} {3|ve dedi ki}: {5|"Yemiyor mu}{4|sunuz?}
+37:92 | ne | oluyor size | -mıyorsunuz | konuşmuyorsunuz || {0|Ne} {1|oluyor size} ki {3|konuş}{2|muyorsunuz?"}
+37:93 | yöneldi | üzerlerine | vurarak | sağ eliyle || {1|Üzerlerine} {0|yönelip} {3|sağ eliyle} {2|vurdu.}
+37:94 | geldiler | ona | koşarak || (Kavmi) {2|koşarak} {1|ona} {0|geldi.}
+37:95 | dedi | tapar mısınız | şeye | yonttuğunuz || {0|Dedi ki}: {3|"Kendi yonttuğunuz} {2|şeylere mi} {1|tapıyorsunuz?}
+37:96 | ve Allah | yarattı sizi | ve şeyleri | yaptığınız || {0|Oysa Allah} {1|sizi de} {3|yaptığınız} {2|şeyleri de} {1|yaratmıştır."}
+37:97 | dediler | yapın | onun için | bir bina | atın onu | içine | ateş || {0|Dediler ki}: {2|"Onun için} {3|bir bina} {1|yapın} {4|ve onu} {6|alevli ateşin} {5|içine} {4|atın!"}
+37:98 | istediler | ona | bir tuzak | kıldık onları | en alçaklar || {1|Ona} {2|bir tuzak} {0|kurmak istediler}; {3|biz de onları} {4|en alçaklar} {3|yaptık.}
+37:99 | ve dedi | şüphesiz ben | gidiyorum | -e | Rabbim | yol gösterecek bana || {0|Dedi ki}: {1|"Ben} {4|Rabbime} {2|gidiyorum}; {5|O bana yol gösterecektir.}
+37:100 | Rabbim | bağışla | bana | -den | salihler || {0|Rabbim!} {2|Bana} {4|salihler}{3|den} (bir evlat) {1|bağışla."}
+37:101 | müjdeledik onu | bir oğulla | halim || {0|Biz de onu} {2|halim} {1|bir oğulla} {0|müjdeledik.}
+37:102 | ne zaman ki | ulaştı | onunla | koşma çağına | dedi | yavrucuğum | şüphesiz ben | görüyorum | -de | rüya | ki ben | boğazlıyorum seni | bak | ne | görürsün | dedi | babacığım | yap | şeyi | emrolunduğun | bulacaksın beni | eğer | dilerse | Allah | -den | sabredenler || {2|Onunla birlikte} {3|koşma çağına} {1|ulaşınca} {4|dedi ki}: {5|"Yavrucuğum!} {6|Ben} {9|rüyamda} {10|seni} {11|boğazladığımı} {7|görüyorum}; {12|bir bak}, {13|ne} {14|düşünürsün?"} {15|Dedi ki}: {16|"Babacığım!} {19|Emrolunduğun} {18|şeyi} {17|yap.} {21|İnşallah} ({23|Allah} {22|dilerse}) {20|beni} {25|sabredenler}{24|den} {20|bulacaksın."}
+37:103 | ne zaman ki | teslim oldular | ve yatırdı onu | alnı üzerine || {0|İkisi} {1|de teslim olup} {2|o, oğlunu} {3|alnı üzerine} {2|yatırınca},
+37:104 | ve seslendik ona | ki | ey İbrahim || {0|biz ona} {1|şöyle} {0|seslendik}: {2|"Ey İbrahim!}
+37:105 | gerçekten | doğruladın | rüyayı | şüphesiz biz | böyle | mükâfatlandırırız | iyilik yapanları || {2|Rüyayı} {0|gerçekten} {1|doğruladın.} {3|Şüphesiz biz} {6|iyilik yapanları} {4|böyle} {5|mükâfatlandırırız."}
+37:106 | şüphesiz | bu | elbette o | imtihan | apaçık || {0|Şüphesiz} {1|bu}, {4|apaçık} {3|bir imtihanın} {2|ta kendisiydi.}
+37:107 | ve fidye verdik onun yerine | bir kurbanlık | büyük || {0|Ona} {2|büyük} {1|bir kurbanlığı} {0|fidye olarak verdik.}
+37:108 | ve bıraktık | onun için | arasında | sonrakiler || {3|Sonrakiler} {2|arasında} {1|onun için} (güzel bir ün) {0|bıraktık}:
+37:109 | selam | üzerine | İbrahim || {2|İbrahim'e} {0|selam olsun!}
+37:110 | böyle | mükâfatlandırırız | iyilik yapanları || {2|İyilik yapanları} {0|böyle} {1|mükâfatlandırırız.}
+37:111 | şüphesiz o | -den | kullarımız | mümin || {0|Şüphesiz o}, {3|mümin} {2|kullarımız}{1|dandı.}
+37:112 | ve müjdeledik onu | İshak ile | bir peygamber | -den | salihler || {0|Onu}, {4|salihler}{3|den} {2|bir peygamber olarak} {1|İshak ile} {0|müjdeledik.}
+37:113 | ve bereket verdik | ona | ve -e | İshak | ve -den | soyları | iyilik yapan | ve zalim | kendine | apaçık || {1|Ona} {2|ve} {3|İshak'a} {0|bereket verdik.} {5|İkisinin soyun}{4|dan} {6|iyilik yapan} (vardır), {8|kendine} {9|açıkça} {7|zulmeden} (de vardır).
+37:114 | andolsun | lütufta bulunduk | -e | Musa | ve Harun || {0|Andolsun}, {3|Musa'ya} {4|ve Harun'a} {1|lütufta bulunduk.}
+37:115 | ve kurtardık ikisini | ve kavimlerini | -den | sıkıntı | büyük || {0|Onları} {1|ve kavimlerini} {4|büyük} {3|sıkıntı}{2|dan} {0|kurtardık.}
+37:116 | ve yardım ettik onlara | oldular | onlar | galip gelenler || {0|Onlara yardım ettik}; {2|onlar} {3|galip gelenler} {1|oldular.}
+37:117 | ve verdik ikisine | kitabı | apaçık || {0|İkisine} {2|apaçık} {1|kitabı} {0|verdik.}
+37:118 | ve ilettik ikisini | yola | dosdoğru || {0|İkisini} {2|dosdoğru} {1|yola} {0|ilettik.}
+37:119 | ve bıraktık | onlar için | arasında | sonrakiler || {3|Sonrakiler} {2|arasında} {1|onlar için} (güzel bir ün) {0|bıraktık}:
+37:120 | selam | üzerine | Musa | ve Harun || {2|Musa'ya} {3|ve Harun'a} {0|selam olsun!}
+37:121 | şüphesiz biz | böyle | mükâfatlandırırız | iyilik yapanları || {0|Şüphesiz biz} {3|iyilik yapanları} {1|böyle} {2|mükâfatlandırırız.}
+37:122 | şüphesiz ikisi | -den | kullarımız | mümin || {0|Şüphesiz ikisi de} {3|mümin} {2|kullarımız}{1|dandı.}
+37:123 | ve şüphesiz | İlyas | elbette -dendir | gönderilenler || {0|Şüphesiz} {1|İlyas da} {3|gönderilen peygamberler}{2|dendi.}
+37:124 | hani | dedi | kavmine | -mez misiniz | sakınmaz mısınız || {0|Hani} {2|kavmine} {1|demişti ki}: {4|"Allah'tan sakın}{3|maz mısınız?}
+37:125 | yalvarır mısınız | Ba'l'e | ve bırakır mısınız | en güzelini | yaratıcıların || {1|Ba'l'e} {0|yalvarıyor}, {4|yaratıcıların} {3|en güzelini} {2|bırakıyor musunuz?}
+37:126 | Allah'ı | Rabbinizi | ve Rabbini | atalarınızın | önceki || {1|Sizin Rabbiniz} {4|ve önceki} {3|atalarınızın} {2|Rabbi} {0|olan Allah'ı}?"
+37:127 | yalanladılar onu | şüphesiz onlar | elbette hazır bulundurulacaklar || {0|Onu yalanladılar}; {1|bu yüzden onlar} (azaba) {2|elbette getirileceklerdir.}
+37:128 | ancak | kulları | Allah'ın | ihlaslı kılınmış || {0|Ancak} {2|Allah'ın} {3|ihlaslı} {1|kulları} (başkadır).
+37:129 | ve bıraktık | onun için | arasında | sonrakiler || {3|Sonrakiler} {2|arasında} {1|onun için} (güzel bir ün) {0|bıraktık}:
+37:130 | selam | üzerine | İl | Yâsîn || {2|İl}{3|yâsîn'e} {0|selam olsun!}
+37:131 | şüphesiz biz | böyle | mükâfatlandırırız | iyilik yapanları || {0|Şüphesiz biz} {3|iyilik yapanları} {1|böyle} {2|mükâfatlandırırız.}
+37:132 | şüphesiz o | -den | kullarımız | mümin || {0|Şüphesiz o}, {3|mümin} {2|kullarımız}{1|dandı.}
+37:133 | ve şüphesiz | Lût | elbette -dendir | gönderilenler || {0|Şüphesiz} {1|Lût da} {3|gönderilen peygamberler}{2|dendi.}
+37:134 | hani | kurtardık onu | ve ailesini | hepsini || {0|Hani} {1|onu} {2|ve ailesini} {3|hep birlikte} {1|kurtarmıştık};
+37:135 | hariç | bir kocakarı | arasında | geride kalanlar || {2|geride kalanlar} {3|arasında kalan} {1|bir kocakarı} {0|hariç.}
+37:136 | sonra | helak ettik | diğerlerini || {0|Sonra} {2|diğerlerini} {1|helak ettik.}
+37:137 | ve şüphesiz siz | elbette uğruyorsunuz | yanlarına | sabahleyin || {0|Şüphesiz siz} {3|sabahleyin} {2|onların} (yurtlarına) {1|uğruyorsunuz},
+37:138 | ve geceleyin | hâlâ -mez misiniz | akıl erdirir || {0|geceleyin de.} {1|Hâlâ} {2|akıl erdirmiyor musunuz?}
+37:139 | ve şüphesiz | Yunus | elbette -dendir | gönderilenler || {0|Şüphesiz} {1|Yunus da} {3|gönderilen peygamberler}{2|dendi.}
+37:140 | hani | kaçmıştı | -e | gemi | dolu || {0|Hani} {4|dolu} {3|gemiye} {1|kaçmıştı.}
+37:141 | kura çekti | oldu | -den | kaybedenler || {0|Kura çekti} {1|ve} {3|kaybedenler}{2|den} {1|oldu.}
+37:142 | yuttu onu | balık | ve o | kınanacak şey yapmıştı || {1|Balık} {0|onu yuttu}; {2|o} {3|kınanacak bir iş yapmıştı.}
+37:143 | olmasaydı | ki o | idi | -den | tespih edenler || {1|Eğer o} {4|tespih edenler}{3|den} {2|olma}{0|saydı},
+37:144 | elbette kalırdı | içinde | karnı | -e | günü | diriltilecekleri || {5|insanların diriltileceği} {4|güne} {3|kadar} {2|onun karnı}{1|nda} {0|kalırdı.}
+37:145 | attık onu | çıplak bir yere | ve o | hasta || {2|O} {3|hasta} (bir hâlde iken), {0|onu} {1|çıplak bir yere} {0|attık.}
+37:146 | ve bitirdik | üzerine | bir ağaç | -den | kabak || {1|Üzerine} {4|kabak} {3|cinsinden} {2|bir ağaç} {0|bitirdik.}
+37:147 | ve gönderdik onu | -e | yüz | bin | veya | artarlar || {0|Onu} {2|yüz} {3|bin} {4|veya} {5|daha fazla} (kişiye) {0|peygamber olarak gönderdik.}
+37:148 | iman ettiler | faydalandırdık onları | -e | bir süre || {0|İman ettiler}, {1|biz de onları} {3|bir süreye} {2|kadar} {1|faydalandırdık.}
+37:149 | sor onlara | Rabbine mi | kızlar | ve onlara | oğullar || {0|Onlara sor}: {2|Kızlar} {1|Rabbinin}, {4|oğullar} {3|da onların mı?}
+37:150 | yoksa | yarattık | melekleri | dişiler | ve onlar | şahitler || {0|Yoksa} {2|melekleri} {3|dişi} {1|yarattık da} {4|onlar} {5|şahit miydiler?}
+37:151 | dikkat edin | şüphesiz onlar | -den | uydurmaları | elbette diyorlar || {0|Dikkat edin}, {1|onlar} {3|uydurmaları}{2|ndan} {4|diyorlar ki}:
+37:152 | doğurdu | Allah | ve şüphesiz onlar | elbette yalancılardır || {1|"Allah} {0|çocuk edindi."} {2|Şüphesiz onlar} {3|yalancıdırlar.}
+37:153 | seçti mi | kızları | üzerine | oğullar || (Allah) {1|kızları} {3|oğullara} {2|tercih edip} {0|seçti mi?}
+37:154 | ne | oluyor size | nasıl | hükmediyorsunuz || {0|Ne} {1|oluyor size}? {2|Nasıl} {3|hükmediyorsunuz?}
+37:155 | hâlâ -mez misiniz | düşünmez misiniz || {0|Hâlâ} {1|düşünmüyor musunuz?}
+37:156 | yoksa | sizin için vardır | bir delil | apaçık || {0|Yoksa} {1|sizin} {3|apaçık} {2|bir deliliniz mi} {1|var?}
+37:157 | getirin | kitabınızı | eğer | iseniz | doğru söyleyenler || {2|Eğer} {4|doğru söyleyenler} {3|iseniz} {1|kitabınızı} {0|getirin!}
+37:158 | ve kıldılar | O'nun arasında | ve arasında | cinler | bir soy bağı | andolsun | bildi | cinler | şüphesiz onlar | elbette hazır bulundurulacaklar || {1|O'nunla} {3|cinler} {2|arasında} {4|bir soy bağı} {0|uydurdular.} {5|Andolsun}, {7|cinler} {8|kendilerinin} (azaba) {9|götürüleceklerini} {6|bilmişlerdir.}
+37:159 | münezzehtir | Allah | -den | nitelendirdikleri || {1|Allah}, {3|onların nitelendirdikleri} {2|şeylerden} {0|münezzehtir.}
+37:160 | ancak | kulları | Allah'ın | ihlaslı kılınmış || {0|Ancak} {2|Allah'ın} {3|ihlaslı} {1|kulları} (başkadır).
+37:161 | şüphesiz siz | ve şeyler | taptığınız || {0|Şüphesiz siz} {1|ve} {2|taptıklarınız},
+37:162 | değilsiniz | siz | ona karşı | saptırıcılar || {1|siz} {2|O'na karşı} (hiç kimseyi) {3|saptıracak} {0|değilsiniz};
+37:163 | ancak | kimse | o | girecek | cehenneme || {0|ancak} {4|cehenneme} {3|girecek} {1|kimse} {2|başka.}
+37:164 | ve yoktur | bizden | ancak | onun için vardır | makam | bilinen || (Melekler der ki:) {1|"Bizden} {2|her birinin} {5|belli} {4|bir makamı} {3|vardır.}
+37:165 | ve şüphesiz biz | elbette biz | saf tutanlarız || {0|Şüphesiz biz} {1|elbette} {2|saf saf dizilenleriz.}
+37:166 | ve şüphesiz biz | elbette biz | tespih edenleriz || {0|Şüphesiz biz} {1|elbette} {2|tespih edenleriz."}
+37:167 | ve şüphesiz | idiler | elbette diyorlar || {0|Onlar} {2|şöyle diyor}{1|lardı}:
+37:168 | eğer | ki | yanımızda | bir öğüt | -den | öncekiler || {0|"Eğer} {2|yanımızda} {5|öncekiler}{4|den} (kalma) {3|bir öğüt} {1|olsaydı},
+37:169 | elbette olurduk | kulları | Allah'ın | ihlaslı kılınmış || {2|Allah'ın} {3|ihlaslı} {1|kulları} {0|olurduk."}
+37:170 | inkâr ettiler | onu | yakında | bilecekler || {0|Fakat} {1|onu} {0|inkâr ettiler.} {2|Yakında} {3|bilecekler!}
+37:171 | andolsun | geçti | sözümüz | kullarımız için | gönderilen || {0|Andolsun}, {4|gönderilen} {3|kullarımız hakkında} {2|sözümüz} {1|geçmiştir}:
+37:172 | şüphesiz onlar | onlar | yardım olunanlardır || {0|Şüphesiz onlar}, {1|evet onlar} {2|yardım olunacaklardır.}
+37:173 | ve şüphesiz | ordumuz | onlar | galip gelenlerdir || {0|Şüphesiz} {1|bizim ordumuz}, {2|evet onlar} {3|galip geleceklerdir.}
+37:174 | yüz çevir | onlardan | -e kadar | bir süre || {3|Bir süreye} {2|kadar} {1|onlardan} {0|yüz çevir.}
+37:175 | ve gözetle onları | yakında | görecekler || {0|Onları gözetle}; {1|yakında} {2|onlar da görecekler.}
+37:176 | azabımızı mı | acele istiyorlar || {0|Azabımızın} {1|çabuk gelmesini mi istiyorlar?}
+37:177 | ne zaman | indi | avlularına | ne kötü | sabahı | uyarılanların || {1|O} (azap) {2|onların avlularına} {1|indiği} {0|zaman}, {5|uyarılanların} {4|sabahı} {3|ne kötü olur!}
+37:178 | ve yüz çevir | onlardan | -e kadar | bir süre || {3|Bir süreye} {2|kadar} {1|onlardan} {0|yüz çevir.}
+37:179 | ve gözetle | yakında | görecekler || {0|Gözetle}; {1|yakında} {2|onlar da görecekler.}
+37:180 | münezzehtir | Rabbin | Rabbi | izzet | -den | nitelendirdikleri || {3|İzzet} {2|sahibi} {1|Rabbin}, {5|onların nitelendirdikleri} {4|şeylerden} {0|münezzehtir.}
+37:181 | ve selam | üzerine | gönderilenler || {2|Gönderilen peygamberlere} {0|selam olsun!}
+37:182 | ve hamd | Allah'adır | Rabbi | âlemlerin || {0|Hamd}, {3|âlemlerin} {2|Rabbi} {1|Allah'adır.}

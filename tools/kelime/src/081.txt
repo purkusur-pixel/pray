@@ -1,0 +1,29 @@
+81:1 | -diği zaman | güneş | dürüldü || {1|Güneş} {2|dürüldüğü} {0|zaman},
+81:2 | ve -diği zaman | yıldızlar | bulanıp döküldü || {1|yıldızlar} {2|bulanıp döküldüğü} {0|zaman},
+81:3 | ve -diği zaman | dağlar | yürütüldü || {1|dağlar} {2|yürütüldüğü} {0|zaman},
+81:4 | ve -diği zaman | gebe develer | başıboş bırakıldı || {1|doğurmak üzere olan develer} {2|başıboş bırakıldığı} {0|zaman},
+81:5 | ve -diği zaman | vahşi hayvanlar | toplandı || {1|vahşi hayvanlar} {2|bir araya toplandığı} {0|zaman},
+81:6 | ve -diği zaman | denizler | kaynatıldı (tutuşturuldu) || {1|denizler} {2|kaynatıldığı} {0|zaman},
+81:7 | ve -diği zaman | canlar | eşleştirildi || {1|canlar} {2|(bedenlerle) eşleştirildiği} {0|zaman},
+81:8 | ve -diği zaman | diri gömülen kız | soruldu || {1|diri diri gömülen kıza} {2|sorulduğu} {0|zaman}:
+81:9 | hangi | günah yüzünden | öldürüldü || “{0|Hangi} {1|günah yüzünden} {2|öldürüldü?}”
+81:10 | ve -diği zaman | sahifeler | açıldı || {1|amel defterleri} {2|açıldığı} {0|zaman},
+81:11 | ve -diği zaman | gök | sıyrıldı || {1|gök} {2|yerinden sıyrıldığı} {0|zaman},
+81:12 | ve -diği zaman | cehennem | kızıştırıldı || {1|cehennem} {2|kızıştırıldığı} {0|zaman},
+81:13 | ve -diği zaman | cennet | yaklaştırıldı || {1|cennet} {2|yaklaştırıldığı} {0|zaman},
+81:14 | bildi | her can | şeyi | hazırladı || {1|her can} {3|neler hazırladığını} {0|bilir.}
+81:15 | hayır | yemin ederim | sinenlere (geri çekilenlere) || {1|Yemin ederim} {2|sinenlere},
+81:16 | akıp gidenlere | gizlenenlere || {0|akıp giden}, {1|gizlenen (yıldızlara)},
+81:17 | ve geceye | -diği zaman | karardı (çekildi) || {2|kararıp çekildiği} {1|zaman} {0|geceye},
+81:18 | ve sabaha | -diği zaman | nefes aldı || {2|nefes alıp ağardığı} {1|zaman} {0|sabaha ki},
+81:19 | şüphesiz o | elbette sözüdür | elçinin | şerefli || {0|şüphesiz o (Kur'an)}, {3|şerefli} {2|bir elçinin} {1|getirdiği sözdür};
+81:20 | sahibi | kuvvet | katında | sahibi | Arş | itibarlı || {1|kuvvet} {0|sahibi}, {4|Arş'ın} {3|sahibinin} {2|katında} {5|itibarlı},
+81:21 | itaat edilen | orada | güvenilir || {1|orada} {0|itaat edilen}, {2|güvenilir} (bir elçinin).
+81:22 | ve değildir | arkadaşınız | mecnun || {1|Arkadaşınız} {2|mecnun} {0|değildir.}
+81:23 | ve andolsun | onu gördü | ufukta | apaçık || {0|Andolsun ki o}, {1|onu (Cebrail'i)} {3|apaçık} {2|ufukta} {1|görmüştür.}
+81:24 | ve değildir | o | üzerine | gayb | cimri (kıskanç) || {1|O}, {3|gayb} {2|hakkında} {4|cimri} {0|değildir.}
+81:25 | ve değildir | o | sözü | şeytanın | kovulmuş || {1|O (Kur'an)}, {4|kovulmuş} {3|şeytanın} {2|sözü} {0|değildir.}
+81:26 | nereye | gidiyorsunuz || {0|Peki nereye} {1|gidiyorsunuz?}
+81:27 | değildir | o | ancak | öğüt | âlemler için || {1|O}, {4|âlemler için} {2|ancak} {3|bir öğüttür};
+81:28 | kimse için | diledi | sizden | -mayı | doğru gitmek || {2|içinizden} {4|doğru yolda gitmeyi} {1|dileyen} {0|kimse için.}
+81:29 | ve -mezsiniz | dilersiniz | ancak | -mesi | diledi | Allah | Rabbi | âlemlerin || {7|Âlemlerin} {6|Rabbi} {5|Allah} {4|dilemedikçe} {2|siz} {1|dileye}{0|mezsiniz.}

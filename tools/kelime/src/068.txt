@@ -1,0 +1,52 @@
+68:1 | Nûn | andolsun kaleme | ve şeye | yazdıkları || {0|Nûn.} {1|Kaleme} {2|ve} {3|yazdıklarına} {1|andolsun ki},
+68:2 | değilsin | sen | nimeti sayesinde | Rabbinin | bir deli || {1|sen}, {3|Rabbinin} {2|nimeti sayesinde} {4|bir deli} {0|değilsin.}
+68:3 | ve şüphesiz | senin için | elbette bir ecir vardır | -siz | kesintisiz || {0|Şüphesiz} {1|senin için} {4|kesintisiz} {2|bir mükâfat vardır.}
+68:4 | ve şüphesiz sen | elbette üzerindesin | ahlak | yüce || {0|Şüphesiz sen} {3|yüce} {2|bir ahlak} {1|üzerindesin.}
+68:5 | yakında göreceksin | ve görecekler || {0|Yakında sen de göreceksin}, {1|onlar da görecekler};
+68:6 | hanginizin | deli olduğunu || {0|hanginizin} {1|aklını yitirmiş olduğunu.}
+68:7 | şüphesiz | Rabbin | O | en iyi bilendir | kimseyi | sapan | -den | yolu | ve O | en iyi bilendir | doğru yolda olanları || {0|Şüphesiz} {1|Rabbin}, {7|kendi yolun}{6|dan} {5|sapanı} {2|en iyi} {3|bilendir}; {8|O}, {10|doğru yolda olanları} {9|da en iyi bilendir.}
+68:8 | -me | itaat et | yalanlayanlara || {0|Öyleyse} {2|yalanlayanlara} {1|itaat et}{0|me.}
+68:9 | istediler | keşke | yumuşak davransan | onlar da yumuşak davranırlar || {1|Arzu ettiler ki} {2|sen yumuşak davranasın} da {3|onlar da yumuşak davransınlar.}
+68:10 | ve -me | itaat et | her | yemin eden | aşağılık || {3|Çokça yemin eden}, {4|aşağılık} {2|hiç kimseye} {1|itaat et}{0|me};
+68:11 | ayıplayan | dolaşan | laf taşıyarak || {0|ayıplayıp duran}, {2|laf taşıyarak} {1|dolaşan},
+68:12 | çok engelleyen | hayrı | saldırgan | günahkâr || {1|hayrı} {0|engelleyen}, {2|saldırgan}, {3|günahkâr},
+68:13 | kaba | sonra | bunun | soysuz || {0|kaba}, {2|bunun} {1|ötesinde} {3|soysuz.}
+68:14 | diye | oldu | sahibi | mal | ve oğullar || {3|Mal} {4|ve oğullar} {2|sahibi} {1|oldu} {0|diye},
+68:15 | zaman | okunduğunda | ona | ayetlerimiz | dedi | masallarıdır | öncekilerin || {2|ona} {3|ayetlerimiz} {1|okunduğu} {0|zaman}: {6|"Öncekilerin} {5|masallarıdır"} {4|der.}
+68:16 | onu damgalayacağız | üzerine | burnu || {1|Biz} {2|onun burnunun} {1|üstüne} {0|damga vuracağız.}
+68:17 | şüphesiz biz | onları denedik | gibi | denediğimiz | sahiplerini | bahçe | zaman | yemin ettiler | elbette onu devşireceklerine | sabahleyin || {0|Şüphesiz biz} {5|bahçe} {4|sahiplerini} {3|denediğimiz} {2|gibi} {1|bunları da denedik.} {6|Hani} onlar, {9|sabah olunca} {8|onu mutlaka devşireceklerine} {7|yemin etmişlerdi.}
+68:18 | ve -mıyorlardı | istisna ediyorlardı || {0|Hiç} (inşallah diye) {1|istisna et}{0|miyorlardı.}
+68:19 | dolaştı | üzerinde | bir dolaşan | -den | Rabbin | ve onlar | uyuyorlar || {5|Onlar} {6|uyurken} {4|Rabbin}{3|den} {2|bir bela} {1|onun üzerinde} {0|dolaştı};
+68:20 | sabahladı | kesilmiş gibi || {0|bahçe} {1|devşirilmiş} (simsiyah) {0|oluverdi.}
+68:21 | birbirlerine seslendiler | sabahleyin || {1|Sabahleyin} {0|birbirlerine seslendiler}:
+68:22 | ki | erken gidin | üzerine | ekininiz | eğer | iseniz | devşirecek || {4|"Eğer} {6|devşirecek} {5|iseniz} {3|ekininize} {1|erkenden gidin."}
+68:23 | yola koyuldular | ve onlar | fısıldaşıyorlar || {1|Onlar} {2|fısıldaşarak} {0|yola koyuldular}:
+68:24 | ki | -meyecek | oraya girmeyecek | bugün | yanınıza | hiçbir yoksul || {3|"Bugün} {2|oraya} {4|yanınıza} {5|hiçbir yoksul} {2|girme}{1|yecek!"}
+68:25 | ve erken gittiler | üzerine | engelleme | güçleri yeten || {0|Ve} (yoksulları) {2|engellemeye} {3|gücü yetenler olarak} {0|erkenden gittiler.}
+68:26 | ne zaman ki | onu gördüler | dediler | şüphesiz biz | elbette yolu şaşıranlarız || {0|Bahçeyi} {1|görünce} {2|dediler ki}: {3|"Herhalde biz} {4|yolu şaşırdık.}
+68:27 | hayır | biz | mahrum bırakıldık || {0|Hayır}, {1|biz} {2|mahrum bırakıldık!"}
+68:28 | dedi | en makulleri | -medim mi | demedim | size | -meli değil miydiniz | tesbih edersiniz || {1|En makulleri} {0|dedi ki}: {4|"Size}: (Allah'ı) {6|tesbih et}{5|meniz gerekmez mi} {3|de}{2|medim mi?"}
+68:29 | dediler | münezzehtir | Rabbimiz | şüphesiz biz | idik | zalimler || {0|Dediler ki}: {2|"Rabbimiz} {1|münezzehtir.} {3|Gerçekten biz} {5|zalimler} {4|imişiz."}
+68:30 | yöneldi | bazısı | üzerine | bazısı | birbirini kınayarak || {1|Derken} {4|birbirlerini kınayarak} {1|bir kısmı} {3|diğerine} {0|yöneldi.}
+68:31 | dediler | eyvah bize | şüphesiz biz | idik | azgınlar || {0|Dediler ki}: {1|"Yazıklar olsun bize!} {2|Gerçekten biz} {4|azgın} {3|kimselerdik.}
+68:32 | umulur ki | Rabbimiz | -mesi | bize verir | daha hayırlısını | ondan | şüphesiz biz | -e | Rabbimiz | rağbet edenleriz || {0|Umulur ki} {1|Rabbimiz} {5|onun} {3|yerine bize} {4|daha hayırlısını} {3|verir.} {6|Biz} {8|Rabbimize} {9|yönelenleriz."}
+68:33 | böyledir | azap | ve elbette azabı | ahiret | daha büyüktür | keşke | idiler | bilir || {1|Azap} {0|işte böyledir.} {3|Ahiret} {2|azabı} {4|elbette daha büyüktür}; {5|keşke} {7|bil}{6|selerdi!}
+68:34 | şüphesiz | takva sahipleri için | katında | Rableri | cennetleri | nimet || {0|Şüphesiz} {1|takva sahipleri için} {3|Rablerinin} {2|katında} {5|nimet} {4|cennetleri} vardır.
+68:35 | kılar mıyız | Müslümanları | suçlular gibi || {1|Müslümanları} {2|suçlular gibi} {0|kılar mıyız hiç?}
+68:36 | ne | size oluyor | nasıl | hükmediyorsunuz || {1|Size} {0|ne oluyor?} {2|Nasıl} {3|hüküm veriyorsunuz?}
+68:37 | yoksa | sizin | bir kitabınız | onda | okuyorsunuz || {0|Yoksa} {1|sizin} {3|içinde} {4|okuduğunuz} {2|bir kitabınız} mı var?
+68:38 | ki | sizin için | onda | elbette şey | beğendiğiniz || {2|Onda} {4|beğendiğiniz} {3|her şey} {1|sizin için} {0|var} mı?
+68:39 | yoksa | sizin için | yeminler | üzerimizde | ulaşan | -e | günü | kıyamet | ki | sizin için | elbette şey | hükmettiğiniz || {0|Yoksa} {11|hükmettiğiniz} {10|her şeyin} {9|sizin olacağına} {8|dair}, {7|kıyamet} {6|gününe} {5|kadar} {4|geçerli} {3|üzerimize} (aldığımız) {2|yeminler} {1|mi var?}
+68:40 | onlara sor | hangisi | buna | kefildir || {0|Onlara sor}: {1|hangisi} {2|buna} {3|kefildir?}
+68:41 | yoksa | onların | ortakları | getirsinler | ortaklarını | eğer | iseler | doğru sözlüler || {0|Yoksa} {1|onların} {2|ortakları} mı var? {5|Eğer} {7|doğru sözlü} {6|iseler} {4|ortaklarını} {3|getirsinler.}
+68:42 | gün | açılacak | -den | baldır | ve çağrılacaklar | -e | secde | -mezler | güç yetirirler || {3|Baldırın} {1|açılacağı} (işin dehşetleşeceği) {0|gün} {6|secde}{5|ye} {4|çağrılırlar}, {8|fakat güç yetire}{7|mezler.}
+68:43 | düşük | gözleri | onları sarar | zillet | ve muhakkak | idiler | çağrılıyorlar | -e | secde | ve onlar | sağlıklılar || {1|Gözleri} {0|düşmüş} hâlde, {3|zillet} {2|onları sarar.} {4|Halbuki} {9|onlar} {10|sağlıklı iken} {8|secde}{7|ye} {6|çağrılıyorlar}{5|dı.}
+68:44 | beni bırak | ve kimseyi | yalanlayan | bu | söz | onları adım adım yaklaştıracağız | -den | yer | -mezler | bilir || {0|Beni} {3|bu} {4|sözü} {2|yalanlayan} {1|kimselerle} {0|baş başa bırak.} {5|Onları} {9|bile}{8|meyecekleri} {7|bir yer}{6|den} {5|adım adım} (helake) {5|yaklaştıracağız.}
+68:45 | ve mühlet veririm | onlara | şüphesiz | tuzağım | sağlamdır || {1|Onlara} {0|mühlet veriyorum.} {2|Şüphesiz} {3|benim tuzağım} {4|sağlamdır.}
+68:46 | yoksa | onlardan istiyorsun | bir ücret | onlar | -den | borç | ağır yük altındalar || {0|Yoksa} {1|sen onlardan} {2|bir ücret} {1|istiyorsun da} {3|onlar} {5|borç}{4|tan} {6|ağır bir yük altında mı kalıyorlar?}
+68:47 | yoksa | yanlarında | gayb | onlar | yazıyorlar || {0|Yoksa} {2|gayb} {1|yanlarında} da {3|onlar} {4|mı yazıyorlar?}
+68:48 | sabret | hükmüne | Rabbinin | ve -me | olma | sahibi gibi | balık | hani | seslenmişti | ve o | gamla dolu || {2|Rabbinin} {1|hükmüne} {0|sabret.} {6|Balık} {5|sahibi} (Yunus) {5|gibi} {4|ol}{3|ma.} {7|Hani} {9|o} {10|gamla dolu} {9|olarak} {8|Rabbine seslenmişti.}
+68:49 | -masaydı | ki | ona yetişmeseydi | bir nimet | -den | Rabbi | elbette atılırdı | çıplak yere | ve o | kınanmış || {5|Rabbin}{4|den} {3|bir nimet} {2|ona yetiş}{0|meseydi}, {9|kınanmış} {8|olarak} {7|çıplak bir yere} {6|atılırdı.}
+68:50 | onu seçti | Rabbi | onu kıldı | -den | salihler || {0|Fakat} {1|Rabbi} {0|onu seçti} {2|ve onu} {4|salihler}{3|den} {2|kıldı.}
+68:51 | ve şüphesiz | neredeyse | kimseler | inkâr eden | seni devireceklerdi | bakışlarıyla | zaman | işittiklerinde | Kur'an'ı | ve diyorlar | şüphesiz o | elbette bir delidir || {3|İnkâr edenler} {8|Kur'an'ı} {7|işittikleri} {6|zaman} {1|neredeyse} {5|gözleriyle} {4|seni devireceklerdi.} {9|Bir de} {10|"O}, {11|gerçekten bir delidir"} {9|diyorlar.}
+68:52 | ve değildir | o | ancak | bir öğüt | âlemler için || {1|Halbuki o} (Kur'an) {4|âlemler için} {2|ancak} {3|bir öğüttür.}

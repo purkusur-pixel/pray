@@ -1,0 +1,62 @@
+53:1 | andolsun yıldıza | zaman | düştüğü || {0|Andolsun} {1|batmakta olan} {0|yıldıza} {2|ki},
+53:2 | -madı | sapıttı | arkadaşınız | ve -madı | azdı || {2|Arkadaşınız} {1|sapmadı} {3|ve} {4|azmadı.}
+53:3 | ve -maz | konuşur | -den | heva || {0|O} {3|hevadan} (kendi arzusuyla) {1|konuşmaz.}
+53:4 | değildir | o | ancak | bir vahiy | vahyolunan || {1|O} (Kur'an) {2|ancak} {4|vahyolunan} {3|bir vahiydir.}
+53:5 | ona öğretti | çetin | kuvvetler || {0|Onu} {2|kuvvetleri} {1|çetin olan} (Cebrail) {0|öğretti.}
+53:6 | sahibi | akıl ve kudret | doğruldu || (O) {1|üstün yaratılışlı} (güçlü), {0|sahibidir}; {2|sonra} (asıl suretiyle) {2|doğruldu.}
+53:7 | ve o | ufukta | en yüksek || {0|O,} {2|en yüksek} {1|ufukta} (idi).
+53:8 | sonra | yaklaştı | ve sarktı || {0|Sonra} {1|yaklaştı} {2|ve sarktı.}
+53:9 | ve oldu | aralığı | iki yay | veya | daha yakın || {2|İki yay} {1|aralığı} {0|kadar} {3|veya} {4|daha da yakın oldu.}
+53:10 | vahyetti | -e | kulu | şeyi | vahyetti || {0|Böylece} (Allah) {2|kuluna} {4|vahyedeceğini} {0|vahyetti.}
+53:11 | -madı | yalanladı | gönül | şeyi | gördüğü || {2|Gönül} {4|gördüğünü} {1|yalanla}{0|madı.}
+53:12 | onunla tartışıyor musunuz | üzerine | şey | gördüğü || {3|Gördüğü} {2|şey} {1|hakkında} {0|onunla tartışıyor musunuz?}
+53:13 | andolsun | onu gördü | bir inişte | başka || {0|Andolsun ki} {1|onu} {3|bir başka} {2|inişte} {1|daha görmüştü};
+53:14 | yanında | Sidre | Münteha || {1|Sidretü'l-}{2|Müntehâ'nın} {0|yanında.}
+53:15 | onun yanında | cennet | Me'vâ || {1|Cennetü'l-}{2|Me'vâ} {0|onun yanındadır.}
+53:16 | o zaman | bürüyordu | Sidre'yi | şey | bürüyen || {0|O zaman} {2|Sidre'yi} {4|bürüyen} {3|şey} {1|bürüyordu.}
+53:17 | -madı | kaydı | göz | ve -madı | aştı || {2|Göz} {1|kay}{0|madı} {3|ve} {4|sınırı aşmadı.}
+53:18 | andolsun | gördü | -den | ayetleri | Rabbinin | en büyük || {0|Andolsun ki} o, {4|Rabbinin} {5|en büyük} {3|ayetlerin}{2|den} (bazılarını) {1|gördü.}
+53:19 | gördünüz mü | Lât'ı | ve Uzzâ'yı || {0|Şimdi gördünüz mü} {1|Lât'ı} {2|ve Uzzâ'yı},
+53:20 | ve Menât'ı | üçüncü | diğer || {0|ve} {2|diğer} {1|üçüncüsü} {0|Menât'ı?}
+53:21 | size mi | erkek | ona da | dişi || {1|Erkek} {0|size}, {3|dişi} {2|O'na mı?}
+53:22 | bu | o halde | bir taksim | insafsız || {0|Bu} {1|o halde} {3|insafsız} {2|bir taksimdir!}
+53:23 | değildir | onlar | ancak | isimler | onları adlandırdığınız | siz | ve atalarınız | -medi | indirdi | Allah | onlara dair | hiçbir | delil | -mazlar | uyarlar | ancak | zanna | ve şeye | arzuladığı | nefisler | andolsun | onlara geldi | -den | Rableri | hidayet || {1|Onlar} {5|sizin} {6|ve atalarınızın} {4|taktığı} {0|birtakım} {3|isimlerden} {2|başka bir şey} {0|değildir.} {9|Allah} {10|onlar hakkında} {11|hiçbir} {12|delil} {8|indir}{7|memiştir.} {14|Onlar} {15|ancak} {16|zanna} {17|ve} {19|nefislerin} {18|arzuladığı şeye} {14|uyuyorlar.} {20|Andolsun ki} {21|onlara} {23|Rablerinden} {24|hidayet} {21|gelmiştir.}
+53:24 | yoksa | insan için mi | şey | dilediği || {0|Yoksa} {1|insan için} {3|her dilediği} {2|şey} (olacak) {1|mı?}
+53:25 | Allah'ındır | ahiret | ve dünya || {1|Ahiret} {2|de dünya da} {0|Allah'ındır.}
+53:26 | nice | -den | melek | -de | göklerde | -maz | fayda verir | şefaatleri | hiçbir şey | ancak | -den | sonra | -mesi | izin vermesi | Allah | kimseye | dilediği | ve razı olduğu || {4|Göklerde} {0|nice} {2|melek} {1|vardır} {6|ki} {7|onların şefaati}, {14|Allah'ın} {16|dilediği} {17|ve razı olduğu} {15|kimse için} {13|izin ver}{12|mesinden} {11|sonra} {9|olması müstesna}, {8|hiçbir} {6|fayda} {5|vermez.}
+53:27 | şüphesiz | kimseler | -mayan | iman eden | ahirete | elbette adlandırıyorlar | melekleri | adlandırmasıyla | dişi || {0|Şüphesiz} {4|ahirete} {3|inan}{2|mayanlar}, {6|melekleri} {8|dişi} {7|isimleriyle} {5|adlandırıyorlar.}
+53:28 | ve yoktur | onların | buna dair | hiçbir | bilgi | -mazlar | uyarlar | ancak | zanna | ve şüphesiz | zan | -maz | yarar | -den | hak | hiçbir şey || {1|Onların} {2|bu hususta} {3|hiçbir} {4|bilgisi} {0|yoktur.} {6|Onlar} {7|ancak} {8|zanna} {6|uyuyorlar.} {9|Şüphesiz} {10|zan} {14|hak}{13|tan} (gerçek bilgi yerine) {15|hiçbir şey} {12|ifade et}{11|mez.}
+53:29 | yüz çevir | -den | kimse | yüz çeviren | -den | zikrimiz | ve -medi | istedi | başka | hayatı | dünya || {0|Öyleyse} {5|bizim zikrimiz}{4|den} {3|yüz çeviren} {6|ve} {10|dünya} {9|hayatından} {8|başka bir şey} {7|iste}{6|meyen} {2|kimse}{1|den} {0|yüz çevir.}
+53:30 | bu | ulaştıkları noktadır | -den | ilim | şüphesiz | Rabbin | O | en iyi bilendir | kimseyi | sapan | -den | yolu | ve O | en iyi bilendir | kimseyi | doğru yolu bulan || {0|İşte bu}, {3|ilim}{2|den} {1|onların ulaşabildikleri son noktadır.} {4|Şüphesiz} {5|Rabbin}, {11|kendi yolun}{10|dan} {9|sapan} {8|kimseyi} {7|en iyi bilendir}; {12|ve O}, {15|doğru yolu bulanı} {14|da} {13|en iyi bilendir.}
+53:31 | ve Allah'ındır | şey | -de | göklerde | ve şey | -de | yerde | karşılık vermesi için | kimselere | kötülük eden | şeylerle | yaptıkları | ve karşılık vermesi için | kimselere | iyilik eden | en güzeliyle || {3|Göklerde} {1|olanlar} {4|ve} {6|yerde} {4|olanlar} {0|Allah'ındır}; {7|ki} {9|kötülük edenleri} {11|yaptıkları} {10|şeylerle} {7|cezalandırsın} {12|ve} {14|iyilik edenleri} {15|en güzeliyle} {12|mükâfatlandırsın.}
+53:32 | kimseler | kaçınan | büyükleri | günahın | ve hayasızlıklar | dışında | küçük kusurlar | şüphesiz | Rabbin | geniştir | bağışlaması | O | en iyi bilendir | sizi | zaman | sizi yarattığı | -den | yer | ve zaman | siz | ceninler | -de | karınları | annelerinizin | öyleyse -meyin | temize çıkarmak | kendinizi | O | en iyi bilendir | kimseyi | sakınan || {0|Onlar} {6|küçük kusurlar} {5|dışında} {3|günahın} {2|büyüklerinden} {4|ve hayasızlıklardan} {1|kaçınırlar.} {7|Şüphesiz} {8|Rabbin} {10|bağışlaması} {9|geniş olandır.} {11|O,} {15|sizi} {17|toprak}{16|tan} {15|yarattığı} {14|zaman} {18|ve} {19|siz} {23|annelerinizin} {22|karınların}{21|da} {20|cenin halinde iken} {13|sizi} {12|en iyi bilendir.} {24|Öyleyse} {26|kendinizi} {25|temize çıkar}{24|mayın.} {27|O,} {29|kimin} {30|sakındığını} {28|en iyi bilendir.}
+53:33 | gördün mü | kimseyi | yüz çeviren || {0|Gördün mü} {2|yüz çeviren} {1|o kimseyi?}
+53:34 | ve verdi | az | ve kesti || {1|Azıcık} {0|verdi} {2|ve (ardını) kesti.}
+53:35 | yanında mı | bilgisi | gaybın | o | görüyor || {0|Yoksa onun yanında} {2|gaybın} {1|bilgisi} {0|var} {3|da} (her şeyi) {4|görüyor mu?}
+53:36 | yoksa | -medi | haber verilmedi | şeyler | -de | sahifeleri | Musa || {0|Yoksa} {6|Musa'nın} {5|sahifeleri}{4|nde} {3|olanlar} {2|ona haber veril}{1|medi mi?}
+53:37 | ve İbrahim | ki | vefa gösterdi || {1|Ve} (sözünü) {2|tam yerine getiren} {0|İbrahim'in} (sahifelerinde olanlar):
+53:38 | ki -maz | yüklenir | yük taşıyan | yükünü | başkası || {0|Hiçbir} {2|günahkâr} {4|başkasının} {3|günahını} {1|yüklen}{0|mez};
+53:39 | ve | yoktur | insan için | ancak | şey | çalıştığı || {0|ve} {2|insan için} {4|kendi} {5|çalıştığından} {3|başka bir şey} {1|yoktur};
+53:40 | ve şüphesiz | çalışması | -ecek | görülecek || {0|ve} {1|onun çalışması} {2|ileride} {3|görülecektir};
+53:41 | sonra | karşılığı verilecek | karşılık | en tam || {0|sonra} {1|ona} {3|en tam} {2|karşılık} {1|verilecektir};
+53:42 | ve şüphesiz | -e | Rabbin | son varış || {0|ve şüphesiz} {3|son varış} {2|Rabbin}{1|edir};
+53:43 | ve şüphesiz O | O | güldürdü | ve ağlattı || {0|ve şüphesiz} {2|güldüren} {3|ve ağlatan} {1|O'dur};
+53:44 | ve şüphesiz O | O | öldürdü | ve diriltti || {0|ve şüphesiz} {2|öldüren} {3|ve dirilten} {1|O'dur};
+53:45 | ve şüphesiz O | yarattı | iki eşi | erkek | ve dişi || {0|ve şüphesiz O,} {2|çiftleri}, {3|erkek} {4|ve dişiyi} {1|yarattı}
+53:46 | -den | bir nutfe | zaman | döl yatağına atılan || {3|döl yatağına atıldığı} {2|zaman} {1|bir nutfe}{0|den};
+53:47 | ve şüphesiz | O'na aittir | yaratılış | diğer || {0|ve şüphesiz} {3|diğer} {2|yaratılış} (diriltme) {1|O'na aittir};
+53:48 | ve şüphesiz O | O | zengin etti | ve sermaye verdi || {0|ve şüphesiz} {2|zengin eden} {3|ve sermaye veren} {1|O'dur};
+53:49 | ve şüphesiz O | O | Rabbi | Şi'râ yıldızı || {0|ve şüphesiz} {3|Şi'râ yıldızının} {2|Rabbi} {1|O'dur};
+53:50 | ve şüphesiz O | helak etti | Âd'ı | ilk || {0|ve şüphesiz O,} {3|ilk} {2|Âd} (kavmini) {1|helak etti},
+53:51 | ve Semud'u | -madı | bıraktı || {0|Semud'u da}; {1|hiçbirini} {2|bırak}{1|madı};
+53:52 | ve kavmini | Nuh | -den | önce | şüphesiz onlar | idiler | onlar | daha zalim | ve daha azgın || {2|Daha} {3|önce} {1|Nuh} {0|kavmini de} (helak etti). {4|Şüphesiz onlar} {7|daha zalim} {8|ve daha azgın} {5|idiler.}
+53:53 | ve altüst olan şehirleri | yere geçirdi || {0|Altüst olan şehirleri de} {1|yerin dibine geçirdi};
+53:54 | onları bürüdü | şey | bürüdü || {0|Onları} {2|bürüyen} {1|şey} {0|bürüdü.}
+53:55 | hangisinde | nimetlerinin | Rabbinin | şüphe ediyorsun || {0|Şimdi} {2|Rabbinin} {0|hangi} {1|nimetinde} {3|şüphe ediyorsun?}
+53:56 | bu | bir uyarıcıdır | -den | uyarıcılar | önceki || {0|Bu} (Peygamber de) {4|önceki} {3|uyarıcılar}{2|dan} {1|bir uyarıcıdır.}
+53:57 | yaklaştı | yaklaşan || {1|Yaklaşan} (kıyamet) {0|yaklaştı.}
+53:58 | yoktur | onu | -den | başka | Allah'ın | açığa çıkaran || {0|Onu} {4|Allah'tan} {3|başka} {5|açığa çıkaracak} {1|hiçbir kimse} {0|yoktur.}
+53:59 | -den mi | bu | söz | şaşırıyorsunuz || {0|Şimdi} {1|bu} {2|söz}{0|den mi} {3|şaşırıyorsunuz?}
+53:60 | ve gülüyorsunuz | ve -mıyorsunuz | ağlıyorsunuz || {0|Gülüyorsunuz} {1|da} {2|ağla}{1|mıyorsunuz?}
+53:61 | ve siz | gaflet içindesiniz || {0|Siz} {1|gaflet içinde eğleniyorsunuz.}
+53:62 | secde edin | Allah'a | ve kulluk edin || {0|Haydi} {1|Allah'a} {0|secde edin} {2|ve kulluk edin.}

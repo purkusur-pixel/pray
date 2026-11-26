@@ -1,0 +1,227 @@
+26:1 | Tâ Sîn Mîm || {0|Tâ Sîn Mîm.}
+26:2 | bunlar | ayetleridir | Kitabın | apaçık || {0|Bunlar}, {3|apaçık} {2|Kitabın} {1|ayetleridir.}
+26:3 | belki sen | helak edeceksin | kendini | -madıkları için | olmaları | müminler || {4|Onlar} {5|mümin} {4|ol}{3|madıkları için} {0|neredeyse} {2|kendini} {1|helak edeceksin.}
+26:4 | eğer | dilersek | indiririz | üzerlerine | -den | gök | bir ayet | böylece kalır | boyunları | ona | eğilmiş || {0|Eğer} {1|dilesek} {3|onlara} {5|gökten} {6|bir mucize} {2|indiririz} {7|de} {8|boyunları} {9|ona} {10|eğilip} {7|kalır.}
+26:5 | ve -mez | gelme onlara | hiçbir | öğüt | -den | Rahman | yeni | başka | olurlar | ondan | yüz çevirenler || {5|Rahman'dan} {1|kendilerine} {6|yeni} {2|bir} {3|öğüt} {1|gel}{0|mez} {7|ki} {9|ondan} {10|yüz çevirmiş} {8|olmasınlar.}
+26:6 | andolsun | yalanladılar | yakında gelecek onlara | haberleri | şeyin | oldukları | onunla | alay ediyor || {0|Gerçekten} {1|yalanladılar}. {6|Onunla} {7|alay et}{5|tikleri} {4|şeyin} {3|haberleri} {2|yakında onlara gelecektir.}
+26:7 | -medi mi | baktılar | -e | yeryüzü | nice | bitirdik | orada | -den | her | çift | güzel || {3|Yeryüzüne} {1|bak}{0|madılar mı}, {6|orada} {8|her} {10|güzel} {9|çiftten} {4|nice} (bitki) {5|bitirdik!}
+26:8 | şüphesiz | -de | bu | elbette bir ibret vardır | ve -medi | olma | çokları | müminler || {0|Şüphesiz} {2|bunda} {3|bir ibret vardır}. {6|Fakat onların çoğu} {7|iman eden} {5|kimseler} {4|değildir.}
+26:9 | ve şüphesiz | Rabbin | elbette O | mutlak güç sahibidir | çok merhametlidir || {0|Şüphesiz} {1|Rabbin}, {2|evet O}, {3|mutlak güç sahibidir}, {4|çok merhametlidir.}
+26:10 | ve hani | seslendi | Rabbin | Musa'ya | ki | git | kavme | zalim || {0|Hani} {2|Rabbin} {3|Musa'ya} {1|seslenmişti}: {4|“O} {7|zalim} {6|kavme}, {5|git.}
+26:11 | kavmine | Firavun'un | -mezler mi | sakınma || {1|Firavun'un} {0|kavmine}. {3|Allah'tan sakın}{2|mazlar mı?”}
+26:12 | dedi | Rabbim | şüphesiz ben | korkarım | -melerinden | beni yalanla || {0|Musa dedi ki:} {1|“Rabbim!} {2|Ben} {5|beni yalanla}{4|malarından} {3|korkuyorum.}
+26:13 | ve daralır | göğsüm | ve -mez | açılma | dilim | o hâlde gönder | -e | Harun || {1|Göğsüm} {0|daralır}, {4|dilim} {3|açıl}{2|maz}. {5|Onun için} {7|Harun'a} {5|da} (vahiy) {5|gönder.}
+26:14 | ve onların vardır | üzerimde | bir suç | böylece korkarım | -melerinden | beni öldür || {1|Üstelik bana karşı} {0|onların} {2|bir suç iddiası} {0|var}; {5|beni öldür}{4|melerinden} {3|korkarım.”}
+26:15 | dedi | asla | haydi gidin | ayetlerimizle | şüphesiz biz | sizinle | dinleyenleriz || {0|Allah dedi ki:} {1|“Asla!} {3|Ayetlerimizle} {2|ikiniz gidin}. {4|Şüphesiz biz} {5|sizinle beraber} {6|dinleyicileriz.}
+26:16 | haydi gidin | Firavun'a | ve deyin | şüphesiz biz | elçisiyiz | Rabbinin | âlemlerin || {1|Firavun'a} {0|gidin} {2|ve deyin ki:} {3|‘Biz}, {6|âlemlerin} {5|Rabbinin} {4|elçisiyiz.}
+26:17 | ki | gönder | bizimle | oğullarını | İsrail || {0|İsrailoğullarını} {2|bizimle} {1|gönder.’”}
+26:18 | dedi | -medik mi | seni yetiştirme | yanımızda | çocukken | ve kaldın | aramızda | -den | ömrün | yıllar || {0|Firavun dedi ki:} {2|“Biz seni} {4|çocukken} {3|yanımızda} {2|yetiştir}{1|medik mi?} {8|Ömrünün} {9|nice yıllarını} {6|aramızda} {5|geçirdin.}
+26:19 | ve yaptın | işini | ki | yaptın | ve sen | -densin | nankörler || {3|Sonunda} {1|o yaptığın işi} {0|yaptın}. {4|Sen} {6|nankörlerden}{5|sin.”}
+26:20 | dedi | onu yaptım | o zaman | ve ben | -den idim | şaşkınlar || {0|Musa dedi ki:} “{1|Onu} {2|o zaman}, {3|ben} {5|şaşkınlardan} {4|iken} {1|yaptım.}
+26:21 | sonra kaçtım | sizden | zaman | sizden korktuğum | sonra bağışladı | bana | Rabbim | hüküm (hikmet) | ve kıldı beni | -den | peygamberler || {3|Sizden korktuğum} {2|için} {1|sizden} {0|kaçtım}. {4|Sonra} {6|Rabbim} {5|bana} {7|hikmet} {4|bağışladı} {8|ve beni} {10|peygamberlerden} {8|kıldı.}
+26:22 | ve bu | bir nimet midir | onu başa kakıyorsun | bana | ki | köleleştirdin | oğullarını | İsrail || {6|İsrailoğullarını} {5|köleleştirmiş olman}{4|dan dolayı} {3|bana} {2|başa kaktığın} {0|bu} {1|bir nimet midir?”}
+26:23 | dedi | Firavun | ve nedir | Rabbi | âlemlerin || {1|Firavun} {0|dedi ki:} {4|“Âlemlerin} {3|Rabbi} {2|de nedir?”}
+26:24 | dedi | Rabbi | göklerin | ve yerin | ve şeylerin | ikisinin arasındaki | eğer | iseniz | kesin inananlar || {0|Musa dedi ki:} {6|“Eğer} {8|kesin olarak inanıyor} {7|iseniz}, {2|göklerin}, {3|yerin} {4|ve} {5|ikisinin arasındakilerin} {1|Rabbidir.”}
+26:25 | dedi | kimselere | çevresindeki | -mez misiniz | dinleme || (Firavun) {2|çevresindeki}{1|lere} {0|dedi ki:} {4|“Duy}{3|muyor musunuz?”}
+26:26 | dedi | Rabbiniz | ve Rabbi | atalarınızın | önceki || {0|Musa dedi ki:} {1|“O, sizin Rabbiniz} {4|ve önceki} {3|atalarınızın} {2|da Rabbidir.”}
+26:27 | dedi | şüphesiz | peygamberiniz | ki | gönderilen | size | elbette delidir || {0|Firavun dedi ki:} {1|“Şüphesiz} {5|size} {4|gönderilen} {3|şu} {2|peygamberiniz} {6|kesinlikle delidir.”}
+26:28 | dedi | Rabbi | doğunun | ve batının | ve şeylerin | ikisinin arasındaki | eğer | iseniz | akıl erdiriyor || {0|Musa dedi ki:} {6|“Eğer} {8|aklınızı kullanıyor} {7|iseniz}, {2|doğunun}, {3|batının} {4|ve} {5|ikisinin arasındakilerin} {1|Rabbidir.”}
+26:29 | dedi | andolsun eğer | edinirsen | bir ilah | benden başka | elbette yaparım seni | -den | zindana atılanlar || {0|Firavun dedi ki:} {1|“Andolsun, eğer} {4|benden başka} {3|bir ilah} {2|edinirsen}, {5|seni mutlaka} {7|zindana atılanlardan} {5|ederim.”}
+26:30 | dedi | ya | sana getirsem | bir şey | apaçık || {0|Musa dedi ki:} {1|“Ya} {2|sana} {4|apaçık} {3|bir şey} {2|getirmiş olsam da} mı?”
+26:31 | dedi | öyleyse getir | onu | eğer | isen | -den | doğru söyleyenler || {0|Firavun dedi ki:} {3|“Eğer} {6|doğru söyleyenlerden} {4|isen} {2|onu} {1|getir.”}
+26:32 | bunun üzerine attı | asasını | bir de ne görsünler | o | bir ejderha | apaçık || {0|Bunun üzerine Musa} {1|asasını} {0|attı}, {2|bir de ne görsünler}, {3|o} {5|apaçık} {4|bir ejderha!}
+26:33 | ve çıkardı | elini | bir de ne görsünler | o | bembeyaz | bakanlara || {1|Elini} {0|çıkardı}, {2|bir de ne görsünler}, {3|o} {5|bakanlara} {4|bembeyaz} görünüyor!
+26:34 | dedi | ileri gelenlere | çevresindeki | şüphesiz | bu | elbette bir büyücüdür | bilgili || (Firavun) {2|çevresindeki} {1|ileri gelenlere} {0|dedi ki:} {3|“Şüphesiz} {4|bu}, {6|bilgili} {5|bir büyücüdür.}
+26:35 | istiyor | -mek | sizi çıkar | -den | yurdunuz | büyüsüyle | o hâlde ne | emredersiniz || {5|Büyüsüyle} {2|sizi} {4|yurdunuzdan} {2|çıkar}{1|mak} {0|istiyor}. {6|Ne} {7|emredersiniz?”}
+26:36 | dediler | onu beklet | ve kardeşini | ve gönder | -e | şehirler | toplayıcılar || {0|Dediler ki:} {1|“Onu} {2|ve kardeşini} {1|beklet}, {5|şehirlere} {6|toplayıcılar} {3|gönder.}
+26:37 | sana getirsinler | her | büyücüyü | bilgili || {3|Bilgili} {1|her} {2|büyücüyü} {0|sana getirsinler.”}
+26:38 | ve toplandı | büyücüler | vaktine | bir günün | belirli || {1|Büyücüler} {4|belirli} {3|bir günün} {2|belirlenen vaktinde} {0|toplandı.}
+26:39 | ve denildi | insanlara | -mi | siz | toplanacak mısınız || {1|İnsanlara} {0|denildi ki:} {3|“Siz} {4|toplanıyor} {2|musunuz?}
+26:40 | umarız ki biz | uyarız | büyücülere | eğer | olurlarsa | onlar | galipler || {3|Eğer} {5|onlar} {6|galip} {4|gelirlerse} {0|belki} {2|büyücülere} {1|uyarız.”}
+26:41 | ne zaman ki | geldi | büyücüler | dediler | Firavun'a | mutlaka -mi | bize | bir ücret vardır | eğer | olursak | biz | galipler || {2|Büyücüler} {1|gelince} {4|Firavun'a} {3|dediler ki:} {8|“Eğer} {10|biz} {11|galip} {9|gelirsek} {6|bize} {7|bir ücret} {5|var mı?”}
+26:42 | dedi | evet | ve siz | o zaman | elbette -densiniz | yakın kılınanlar || {0|Firavun dedi ki:} {1|“Evet}, {3|o zaman} {2|siz} {5|mutlaka bana yakın olanlardan}{4|sınız.”}
+26:43 | dedi | onlara | Musa | atın | şeyi | siz | atacak olduğunuz || {2|Musa} {1|onlara} {0|dedi ki:} {5|“Siz} {6|atacağınızı} {3|atın!”}
+26:44 | böylece attılar | iplerini | ve değneklerini | ve dediler | izzeti için | Firavun'un | şüphesiz biz | elbette biziz | galipler || {1|İplerini} {2|ve değneklerini} {0|attılar} {3|ve dediler ki:} {5|“Firavun'un} {4|izzeti hakkı için}, {6|şüphesiz} {7|biz} {8|galip geleceğiz.”}
+26:45 | sonra attı | Musa | asasını | bir de ne görsünler | o | yutuyor | şeyleri | uydurdukları || {0|Sonra} {1|Musa} {2|asasını} {0|attı}. {3|Bir de ne görsünler}, {4|o} {7|uydurdukları} {6|şeyleri} {5|yutuyor!}
+26:46 | bunun üzerine kapandılar | büyücüler | secde edenler olarak || {1|Bunun üzerine büyücüler} {2|secdeye} {0|kapandılar.}
+26:47 | dediler | inandık | Rabbine | âlemlerin || {0|Dediler ki:} {3|“Âlemlerin} {2|Rabbine} {1|inandık}
+26:48 | Rabbi | Musa'nın | ve Harun'un || {1|Musa'nın} {2|ve Harun'un} {0|Rabbine.”}
+26:49 | dedi | inandınız | ona | önce | -meden | izin ver | size | şüphesiz o | elbette büyüğünüzdür | ki | size öğretti | büyüyü | o hâlde yakında | bileceksiniz | elbette keseceğim | ellerinizi | ve ayaklarınızı | -den | çaprazlama | ve elbette asacağım sizi | hepinizi || {0|Firavun dedi ki:} {6|“Ben size} {5|izin ver}{4|meden} {3|önce} {2|ona} {1|inandınız ha!} {7|Şüphesiz o}, {10|size} {11|büyüyü} {10|öğreten} {8|büyüğünüzdür}. {12|Yakında} {13|bileceksiniz}! {18|Çaprazlama} {15|ellerinizi} {16|ve ayaklarınızı} {14|mutlaka keseceğim} {19|ve} {20|hepinizi} {19|mutlaka asacağım.”}
+26:50 | dediler | yoktur | zarar | şüphesiz biz | -e | Rabbimiz | dönenleriz || {0|Dediler ki:} {2|“Zararı} {1|yok}. {3|Biz} {5|Rabbimize} {6|döneceğiz.}
+26:51 | şüphesiz biz | umarız | -mesini | bağışla | bize | Rabbimiz | hatalarımızı | çünkü | olduk | ilk | iman edenler || {0|Biz}, {9|ilk} {10|iman edenler} {8|olduğumuz} {7|için} {5|Rabbimizin} {4|bize} {6|hatalarımızı} {3|bağışla}{2|masını} {1|umarız.”}
+26:52 | ve vahyettik | -e | Musa | ki | geceleyin yürüt | kullarımı | şüphesiz siz | takip edileceksiniz || {2|Musa'ya} {0|vahyettik} {3|ki:} {5|“Kullarımı} {4|geceleyin yola çıkar}; {6|çünkü siz} {7|takip edileceksiniz.”}
+26:53 | bunun üzerine gönderdi | Firavun | -e | şehirler | toplayıcılar || {0|Bunun üzerine} {1|Firavun} {3|şehirlere} {4|toplayıcılar} {0|gönderdi.}
+26:54 | şüphesiz | bunlar | elbette bir topluluktur | az || {0|“Şüphesiz} {1|bunlar} {3|az} {2|bir topluluktur.}
+26:55 | ve şüphesiz onlar | bize | elbette öfkelendirenlerdir || {0|Onlar} {1|bizi} {2|gerçekten öfkelendiriyorlar.}
+26:56 | ve şüphesiz biz | elbette hepimiz | uyanığız || {0|Biz ise} {1|hep birlikte} {2|tedbirli ve uyanığız.”}
+26:57 | böylece onları çıkardık | -den | bahçeler | ve pınarlar || {0|Böylece onları} {2|bahçelerden} {3|ve pınarlardan} {0|çıkardık}
+26:58 | ve hazineler | ve makam | değerli || {0|hazinelerden} {1|ve} {2|değerli} {1|makamlardan.}
+26:59 | böyle | ve onları miras verdik | oğullarına | İsrail || {0|İşte böyle}! {1|Onları} {2|İsrailoğullarına} {1|miras verdik.}
+26:60 | sonra onları takip ettiler | gün doğarken || {1|Gün doğarken} {0|onları takip ettiler.}
+26:61 | ne zaman ki | birbirini gördü | iki topluluk | dedi | arkadaşları | Musa'nın | şüphesiz biz | elbette yakalananlarız || {2|İki topluluk} {1|birbirini gör}{0|ünce}, {5|Musa'nın} {4|arkadaşları} {3|dediler ki:} {6|“Eyvah}, {7|yakalandık!”}
+26:62 | dedi | asla | şüphesiz | benimledir | Rabbim | bana yol gösterecek || {0|Musa dedi ki:} {1|“Asla!} {2|Şüphesiz} {4|Rabbim} {3|benimledir}; {5|bana yol gösterecektir.”}
+26:63 | bunun üzerine vahyettik | -e | Musa | ki | vur | asanla | denize | hemen yarıldı | ve oldu | her | parça | dağ gibi | büyük || {0|Bunun üzerine} {2|Musa'ya} {3|şöyle} {0|vahyettik:} {5|“Asanla} {6|denize} {4|vur.”} {7|Deniz hemen yarıldı}, {9|her} {10|parça} {12|büyük} {11|bir dağ gibi} {8|oldu.}
+26:64 | ve yaklaştırdık | oraya | ötekileri || {2|Ötekileri} {1|oraya} {0|yaklaştırdık.}
+26:65 | ve kurtardık | Musa'yı | ve kimseleri | beraberindeki | hepsini || {1|Musa'yı} {2|ve} {3|beraberindekilerin} {4|hepsini} {0|kurtardık.}
+26:66 | sonra | boğduk | ötekileri || {0|Sonra} {2|ötekileri} {1|suda boğduk.}
+26:67 | şüphesiz | -de | bu | elbette bir ibret vardır | ve -medi | olma | çokları | müminler || {0|Şüphesiz} {2|bunda} {3|bir ibret vardır}. {6|Fakat onların çoğu} {7|iman eden} {5|kimseler} {4|değildir.}
+26:68 | ve şüphesiz | Rabbin | elbette O | mutlak güç sahibidir | çok merhametlidir || {0|Şüphesiz} {1|Rabbin}, {2|evet O}, {3|mutlak güç sahibidir}, {4|çok merhametlidir.}
+26:69 | ve oku | onlara | haberini | İbrahim'in || {1|Onlara} {3|İbrahim'in} {2|haberini} {0|oku.}
+26:70 | hani | dedi | babasına | ve kavmine | neye | tapıyorsunuz || {0|Hani} {2|babasına} {3|ve kavmine} {1|demişti ki:} {4|“Neye} {5|tapıyorsunuz?”}
+26:71 | dediler | taparız | putlara | ve sürekli kalırız | onlara | bağlılar || {0|Dediler ki:} {2|“Putlara} {1|tapıyoruz} {4|ve onlara} {5|bağlı olarak} {3|duruyoruz.”}
+26:72 | dedi | -mi | sizi işitirler | zaman | çağırdığınız || {0|İbrahim dedi ki:} {4|“Onlara yalvardığınız} {3|zaman} {2|sizi işitiyorlar} {1|mı?}
+26:73 | veya | size fayda verirler | veya | zarar verirler || {0|Yahut} {1|size fayda} {2|veya} {3|zarar veriyorlar mı?”}
+26:74 | dediler | hayır | bulduk | atalarımızı | böyle | yapıyorlar || {0|Dediler ki:} {1|“Hayır}, {3|atalarımızı} {4|böyle} {5|yaparken} {2|bulduk.”}
+26:75 | dedi | gördünüz mü | şeyleri | olduğunuz | tapıyor || {0|İbrahim dedi ki:} {1|“Peki}, {4|tapmakta} {3|olduğunuz} {2|şeyleri} {1|gördünüz mü?}
+26:76 | siz | ve atalarınız | önceki || {0|Siz} {2|ve önceki} {1|atalarınız?}
+26:77 | şüphesiz onlar | düşmandır | benim için | ancak | Rabbi | âlemlerin || {0|Onlar} {2|benim} {1|düşmanımdır}; {3|ancak} {5|âlemlerin} {4|Rabbi} {3|başka}.
+26:78 | O ki | beni yarattı | sonra O | bana yol gösterir || {0|O}, {1|beni yaratan} {2|ve bana} {3|yol gösterendir.}
+26:79 | ve O ki | O | beni yedirir | ve bana içirir || {0|O}, {1|beni} {2|yediren} {3|ve içirendir.}
+26:80 | ve zaman | hastalandığım | O | bana şifa verir || {1|Hastalandığım} {0|zaman} {2|O} {3|bana şifa verir.}
+26:81 | ve O ki | beni öldürür | sonra | beni diriltir || {0|O}, {1|beni öldürecek}, {2|sonra} {3|beni diriltecek olandır.}
+26:82 | ve O ki | umarım | -mesini | bağışla | bana | hatamı | günü | din (hesap) || {0|O}, {7|hesap} {6|günü} {5|hatamı} {4|bana} {3|bağışla}{2|masını} {1|umduğumdur.}
+26:83 | Rabbim | bağışla | bana | hüküm (hikmet) | ve kat beni | salihlere || {0|Rabbim!} {2|Bana} {3|hikmet} {1|bağışla} {4|ve beni} {5|salihler arasına} {4|kat.}
+26:84 | ve kıl | benim için | dil | doğruluk | -de | sonrakiler || {5|Sonrakiler} {4|arasında} {1|bana} {3|doğruluk} {2|dili} (güzel bir anılış) {0|nasip et.}
+26:85 | ve kıl beni | -den | varisleri | cenneti | nimet || {0|Beni} {4|Naim} {3|cennetinin} {2|varislerinden} {0|kıl.}
+26:86 | ve bağışla | babamı | şüphesiz o | oldu | -den | sapıklar || {1|Babamı} {0|bağışla}; {2|çünkü o} {5|sapıklardan} {3|oldu.}
+26:87 | ve -me | beni rezil etme | günü | diriltilecekleri || {3|Diriltilecekleri} {2|gün} {1|beni rezil et}{0|me.}
+26:88 | gün | -mez | fayda verme | mal | ve ne | oğullar || {0|O gün} {3|ne mal} {4|ne de} {5|oğullar} {2|fayda ver}{1|mez}
+26:89 | ancak | kimse | gelen | Allah'a | bir kalple | selim || {0|ancak} {3|Allah'a} {5|selim} {4|bir kalple} {2|gelen} {1|kimse} {0|müstesna.”}
+26:90 | ve yaklaştırıldı | cennet | takva sahiplerine || {1|Cennet} {2|takva sahiplerine} {0|yaklaştırılır.}
+26:91 | ve ortaya çıkarıldı | cehennem | azgınlara || {1|Cehennem} de {2|azgınlara} {0|gösterilir.}
+26:92 | ve denildi | onlara | nerede | şeyler | olduğunuz | tapıyor || {1|Onlara} {0|denir ki:} {5|“Tapmakta} {4|olduğunuz} {3|şeyler} {2|nerede?}
+26:93 | -den | başka | Allah | -mi | size yardım ediyorlar | veya | kendilerine yardım edebiliyorlar || {2|Allah'ı} {1|bırakıp} (taptıklarınız) {4|size yardım ediyorlar} {3|mı}, {5|yahut} {6|kendilerine yardım edebiliyorlar mı?”}
+26:94 | yüzüstü atıldılar | oraya | onlar | ve azgınlar || {2|Onlar} {3|ve azgınlar} {1|oraya} {0|yüzüstü atılırlar}
+26:95 | ve orduları | İblis'in | hepsi || {1|İblis'in} {0|orduları} {2|da hep birlikte.}
+26:96 | dediler | ve onlar | orada | çekişirken || {1|Onlar} {2|orada} {3|birbirleriyle çekişirken} {0|şöyle derler:}
+26:97 | Allah'a andolsun | şüphesiz | idik | -de | sapıklık | apaçık || {0|“Allah'a andolsun}, {1|biz gerçekten} {5|apaçık} {4|bir sapıklık} {3|içinde} {2|imişiz}
+26:98 | zaman | size denk tutuyorduk | Rabbine | âlemlerin || {0|zira} {1|sizi} {3|âlemlerin} {2|Rabbine} {1|denk tutuyorduk.}
+26:99 | ve -medi | bizi saptırma | başkası | suçlular || {1|Bizi} {3|suçlulardan} {2|başkası} {1|saptır}{0|madı.}
+26:100 | artık yoktur | bizim için | hiçbir | şefaatçi || {0|Artık} {1|bizim için} {2|hiçbir} {3|şefaatçi} {0|yoktur}
+26:101 | ve ne | dost | candan || {0|ne de} {2|candan} {1|bir dost.}
+26:102 | keşke | -saydı | bizim | bir dönüş | böylece olsaydık | -den | müminler || {0|Keşke} {2|bizim için} {3|bir dönüş} {1|olsaydı da} {6|müminlerden} {4|olsaydık!”}
+26:103 | şüphesiz | -de | bu | elbette bir ibret vardır | ve -medi | olma | çokları | müminler || {0|Şüphesiz} {2|bunda} {3|bir ibret vardır}. {6|Fakat onların çoğu} {7|iman eden} {5|kimseler} {4|değildir.}
+26:104 | ve şüphesiz | Rabbin | elbette O | mutlak güç sahibidir | çok merhametlidir || {0|Şüphesiz} {1|Rabbin}, {2|evet O}, {3|mutlak güç sahibidir}, {4|çok merhametlidir.}
+26:105 | yalanladı | kavmi | Nuh'un | peygamberleri || {2|Nuh'un} {1|kavmi} {3|peygamberleri} {0|yalanladı.}
+26:106 | hani | dedi | onlara | kardeşleri | Nuh | -mez misiniz | sakınma || {0|Hani} {3|kardeşleri} {4|Nuh} {2|onlara} {1|demişti ki:} {6|“Allah'tan sakın}{5|maz mısınız?}
+26:107 | şüphesiz ben | size | bir peygamberim | güvenilir || {0|Şüphesiz ben} {1|size} (gönderilmiş) {3|güvenilir} {2|bir peygamberim.}
+26:108 | artık sakının | Allah'tan | ve bana itaat edin || {0|Artık} {1|Allah'tan} {0|sakının} {2|ve bana itaat edin.}
+26:109 | ve -miyorum | sizden istemi | onun üzerine | hiçbir | ücret | değildir | ücretim | başka | üzerinden | Rabbi | âlemlerin || {2|Buna karşılık} {1|sizden} {3|hiçbir} {4|ücret} {1|iste}{0|miyorum}. {6|Benim ücretim} {10|âlemlerin} {9|Rabbine} {8|aittir}.
+26:110 | artık sakının | Allah'tan | ve bana itaat edin || {0|Artık} {1|Allah'tan} {0|sakının} {2|ve bana itaat edin.}”
+26:111 | dediler | inanır mıyız | sana | ve sana uydu | en aşağılıklar || {0|Dediler ki:} {4|“En aşağılık kimseler} {3|sana uymuşken} {2|biz sana} {1|inanır mıyız?”}
+26:112 | dedi | ve nedir | bilgim | şeye | olduğu | yapıyor || {0|Nuh dedi ki:} {5|“Onların yapmakta} {4|olduğu} {3|şeyler hakkında} {2|bilgim} {1|yoktur.}
+26:113 | değildir | hesapları | başka | üzerinden | Rabbim | keşke | anlasanız || {6|Bir anlasanız}, {1|onların hesabı} {4|Rabbime} {3|aittir}.
+26:114 | ve değilim | ben | kovacak | müminleri || {1|Ben} {3|müminleri} {2|kovacak} {0|değilim.}
+26:115 | değilim | ben | başka | bir uyarıcı | apaçık || {1|Ben} {4|apaçık} {3|bir uyarıcıdan} {2|başka bir şey} {0|değilim.”}
+26:116 | dediler | andolsun eğer | -mezsen | vazgeçme | ey Nuh | elbette olursun | -den | taşlananlar || {0|Dediler ki:} {4|“Ey Nuh}! {1|Eğer} {3|vazgeç}{2|mezsen}, {7|taşlananlardan} {5|olacaksın!”}
+26:117 | dedi | Rabbim | şüphesiz | kavmim | beni yalanladı || {0|Nuh dedi ki:} {1|“Rabbim!} {2|Şüphesiz} {3|kavmim} {4|beni yalanladı.}
+26:118 | öyleyse hüküm ver | benimle | ve onlar arasında | bir hükümle | ve kurtar beni | ve kimseleri | benimle beraber olan | -den | müminler || {1|Benimle} {2|onların arasında} {3|kesin} {0|hüküm ver}; {4|beni} {5|ve} {6|beraberimdeki} {8|müminleri} {4|kurtar.”}
+26:119 | böylece onu kurtardık | ve kimseleri | onunla beraber olan | -de | gemi | dolu || {0|Böylece onu} {1|ve} {5|dolu} {4|gemide} {2|onunla beraber olanları} {0|kurtardık.}
+26:120 | sonra | boğduk | ardından | geride kalanları || {0|Sonra} {2|ardından} {3|geride kalanları} {1|suda boğduk.}
+26:121 | şüphesiz | -de | bu | elbette bir ibret vardır | ve -medi | olma | çokları | müminler || {0|Şüphesiz} {2|bunda} {3|bir ibret vardır}. {6|Fakat onların çoğu} {7|iman eden} {5|kimseler} {4|değildir.}
+26:122 | ve şüphesiz | Rabbin | elbette O | mutlak güç sahibidir | çok merhametlidir || {0|Şüphesiz} {1|Rabbin}, {2|evet O}, {3|mutlak güç sahibidir}, {4|çok merhametlidir.}
+26:123 | yalanladı | Âd | peygamberleri || {1|Âd} (kavmi) {2|peygamberleri} {0|yalanladı.}
+26:124 | hani | dedi | onlara | kardeşleri | Hûd | -mez misiniz | sakınma || {0|Hani} {3|kardeşleri} {4|Hûd} {2|onlara} {1|demişti ki:} {6|“Allah'tan sakın}{5|maz mısınız?}
+26:125 | şüphesiz ben | size | bir peygamberim | güvenilir || {0|Şüphesiz ben} {1|size} (gönderilmiş) {3|güvenilir} {2|bir peygamberim.}
+26:126 | artık sakının | Allah'tan | ve bana itaat edin || {0|Artık} {1|Allah'tan} {0|sakının} {2|ve bana itaat edin.}
+26:127 | ve -miyorum | sizden istemi | onun üzerine | hiçbir | ücret | değildir | ücretim | başka | üzerinden | Rabbi | âlemlerin || {2|Buna karşılık} {1|sizden} {3|hiçbir} {4|ücret} {1|iste}{0|miyorum}. {6|Benim ücretim} {10|âlemlerin} {9|Rabbine} {8|aittir}.
+26:128 | bina mı ediyorsunuz | her | yüksek yere | bir alamet | eğlenerek || {1|Her} {2|yüksek yere} {4|eğlence için} {3|bir alamet} {0|mi dikiyorsunuz?}
+26:129 | ve ediniyorsunuz | sağlam yapılar | umarak | ebedî kalacağınızı || {3|Ebedî kalacakmış} {2|gibi} {1|sağlam yapılar (köşkler)} {0|ediniyorsunuz.}
+26:130 | ve zaman | yakaladığınız | yakalıyorsunuz | zorbalar olarak || {1|Yakaladığınız} {0|zaman} da {3|zorbaca} {2|yakalıyorsunuz.}
+26:131 | artık sakının | Allah'tan | ve bana itaat edin || {0|Artık} {1|Allah'tan} {0|sakının} {2|ve bana itaat edin.}
+26:132 | ve sakının | O'ndan ki | size yardım etti | şeylerle | bildiğiniz || {4|Bildiğiniz} {3|şeylerle} {2|size yardım eden} {1|Allah'tan} {0|sakının.}
+26:133 | size yardım etti | hayvanlarla | ve oğullarla || {0|O, size} {1|hayvanlar} {2|ve oğullar}
+26:134 | ve bahçelerle | ve pınarlarla || {0|bahçeler} {1|ve pınarlar} {0|vererek yardım etti.}
+26:135 | şüphesiz ben | korkarım | üzerinize | azabından | bir günün | büyük || {0|Ben} {2|sizin için} {5|büyük} {4|bir günün} {3|azabından} {1|korkuyorum.”}
+26:136 | dediler | birdir | bize göre | öğüt versen de | yoksa | -mesen de | olma | -den | öğüt verenler || {0|Dediler ki:} {3|“Öğüt versen de} {8|öğüt verenlerden} {6|ol}{5|masan da} {2|bizim için} {1|birdir.}
+26:137 | değildir | bu | başka | âdeti | öncekilerin || {1|Bu} {4|öncekilerin} {3|âdetinden} {2|başka bir şey} {0|değildir.}
+26:138 | ve değiliz | biz | azap edilecekler || {1|Biz} {2|azap edilecek} {0|değiliz.”}
+26:139 | sonra onu yalanladılar | bunun üzerine onları helak ettik | şüphesiz | -de | bu | elbette bir ibret vardır | ve -medi | olma | çokları | müminler || {0|Onu yalanladılar}, {1|biz de onları helak ettik}. {2|Şüphesiz} {4|bunda} {5|bir ibret vardır}. {8|Fakat onların çoğu} {9|iman eden} {7|kimseler} {6|değildir.}
+26:140 | ve şüphesiz | Rabbin | elbette O | mutlak güç sahibidir | çok merhametlidir || {0|Şüphesiz} {1|Rabbin}, {2|evet O}, {3|mutlak güç sahibidir}, {4|çok merhametlidir.}
+26:141 | yalanladı | Semûd | peygamberleri || {1|Semûd} (kavmi) {2|peygamberleri} {0|yalanladı.}
+26:142 | hani | dedi | onlara | kardeşleri | Salih | -mez misiniz | sakınma || {0|Hani} {3|kardeşleri} {4|Salih} {2|onlara} {1|demişti ki:} {6|“Allah'tan sakın}{5|maz mısınız?}
+26:143 | şüphesiz ben | size | bir peygamberim | güvenilir || {0|Şüphesiz ben} {1|size} (gönderilmiş) {3|güvenilir} {2|bir peygamberim.}
+26:144 | artık sakının | Allah'tan | ve bana itaat edin || {0|Artık} {1|Allah'tan} {0|sakının} {2|ve bana itaat edin.}
+26:145 | ve -miyorum | sizden istemi | onun üzerine | hiçbir | ücret | değildir | ücretim | başka | üzerinden | Rabbi | âlemlerin || {2|Buna karşılık} {1|sizden} {3|hiçbir} {4|ücret} {1|iste}{0|miyorum}. {6|Benim ücretim} {10|âlemlerin} {9|Rabbine} {8|aittir}.
+26:146 | bırakılacak mısınız | içinde | şeyler | burada | güven içinde || {3|Buradaki} {2|nimetler} {1|içinde} {4|güven içinde} {0|bırakılacak mısınız?}
+26:147 | içinde | bahçeler | ve pınarlar || {1|Bahçeler} {2|ve pınarlar} {0|içinde}
+26:148 | ve ekinler | ve hurmalıklar | tomurcukları | yumuşacık || {0|ekinler} {1|ve} {2|tomurcukları} {3|yumuşacık} {1|hurmalıklar içinde?}
+26:149 | ve oyuyorsunuz | -den | dağlar | evler | ustaca || {2|Dağlardan} {4|ustaca} {3|evler} {0|yontuyorsunuz.}
+26:150 | artık sakının | Allah'tan | ve bana itaat edin || {0|Artık} {1|Allah'tan} {0|sakının} {2|ve bana itaat edin.}
+26:151 | ve -meyin | itaat etme | emrine | israf edenlerin || {3|Haddi aşanların} {2|emrine} {1|itaat et}{0|meyin}
+26:152 | ki onlar | bozgunculuk yaparlar | -de | yeryüzü | ve -mezler | düzeltme || {0|ki onlar} {3|yeryüzünde} {1|bozgunculuk yaparlar} {5|ve düzeltmeye çalış}{4|mazlar.”}
+26:153 | dediler | ancak | sen | -densin | büyülenmişler || {0|Dediler ki:} {2|“Sen} {1|ancak} {4|büyülenmişlerden}{3|sin.}
+26:154 | değilsin | sen | başka | bir insan | bizim gibi | öyleyse getir | bir mucize | eğer | isen | -den | doğru söyleyenler || {1|Sen} {4|bizim gibi} {3|bir insandan} {2|başka bir şey} {0|değilsin}. {7|Eğer} {10|doğru söyleyenlerden} {8|isen} {6|bir mucize} {5|getir.”}
+26:155 | dedi | bu | bir dişi devedir | onundur | su içme hakkı | ve sizindir | su içme hakkı | günü | belli || {0|Salih dedi ki:} {1|“İşte} {2|bir dişi deve}. {4|Su içme hakkı} {3|onundur}, {8|belli} {7|bir günün} {6|su içme hakkı} {5|da sizindir.}
+26:156 | ve -meyin | ona dokunma | bir kötülükle | sonra yakalar sizi | azabı | bir günün | büyük || {1|Ona} {2|bir kötülükle} {1|dokun}{0|mayın}; {3|sonra sizi} {6|büyük} {5|bir günün} {4|azabı} {3|yakalar.”}
+26:157 | fakat onu kestiler | sonra oldular | pişman || {0|Fakat onu kestiler}, {1|sonra da} {2|pişman} {1|oldular.}
+26:158 | bunun üzerine yakaladı onları | azap | şüphesiz | -de | bu | elbette bir ibret vardır | ve -medi | olma | çokları | müminler || {1|Azap} {0|onları yakaladı}. {2|Şüphesiz} {4|bunda} {5|bir ibret vardır}. {8|Fakat onların çoğu} {9|iman eden} {7|kimseler} {6|değildir.}
+26:159 | ve şüphesiz | Rabbin | elbette O | mutlak güç sahibidir | çok merhametlidir || {0|Şüphesiz} {1|Rabbin}, {2|evet O}, {3|mutlak güç sahibidir}, {4|çok merhametlidir.}
+26:160 | yalanladı | kavmi | Lut'un | peygamberleri || {2|Lut'un} {1|kavmi} {3|peygamberleri} {0|yalanladı.}
+26:161 | hani | dedi | onlara | kardeşleri | Lut | -mez misiniz | sakınma || {0|Hani} {3|kardeşleri} {4|Lut} {2|onlara} {1|demişti ki:} {6|“Allah'tan sakın}{5|maz mısınız?}
+26:162 | şüphesiz ben | size | bir peygamberim | güvenilir || {0|Şüphesiz ben} {1|size} (gönderilmiş) {3|güvenilir} {2|bir peygamberim.}
+26:163 | artık sakının | Allah'tan | ve bana itaat edin || {0|Artık} {1|Allah'tan} {0|sakının} {2|ve bana itaat edin.}
+26:164 | ve -miyorum | sizden istemi | onun üzerine | hiçbir | ücret | değildir | ücretim | başka | üzerinden | Rabbi | âlemlerin || {2|Buna karşılık} {1|sizden} {3|hiçbir} {4|ücret} {1|iste}{0|miyorum}. {6|Benim ücretim} {10|âlemlerin} {9|Rabbine} {8|aittir}.
+26:165 | gidiyor musunuz | erkeklere | -den | âlemler || {3|İnsanlar arasından} {1|erkeklere} {0|mi gidiyorsunuz?}
+26:166 | ve bırakıyorsunuz | şeyleri | yarattığı | sizin için | Rabbinizin | -den | eşleriniz | bilakis | siz | bir kavimsiniz | haddi aşan || {4|Rabbinizin} {3|sizin için} {2|yarattığı} {6|eşlerinizi} {0|bırakıyorsunuz}. {7|Bilakis} {8|siz} {10|haddi aşan} {9|bir kavimsiniz.”}
+26:167 | dediler | andolsun eğer | -mezsen | vazgeçme | ey Lut | elbette olursun | -den | çıkarılanlar || {0|Dediler ki:} {4|“Ey Lut}! {1|Eğer} {3|vazgeç}{2|mezsen}, {7|mutlaka} (yurdundan) {7|çıkarılanlardan} {5|olacaksın.”}
+26:168 | dedi | şüphesiz ben | işinize | -denim | nefret edenler || {0|Lut dedi ki:} {1|“Ben} {2|yaptığınız işe} {4|nefret edenler}{3|denim.}
+26:169 | Rabbim | kurtar beni | ve ailemi | şeyden | yaptıkları || {0|Rabbim!} {1|Beni} {2|ve ailemi} {4|onların yaptıkları} {3|şeyden} {1|kurtar.”}
+26:170 | böylece kurtardık onu | ve ailesini | hepsini || {0|Böylece onu} {1|ve ailesinin} {2|hepsini} {0|kurtardık}
+26:171 | ancak | bir yaşlı kadın | -de | geride kalanlar || {3|geride kalanlar} {2|arasındaki} {1|bir yaşlı kadın} {0|müstesna.}
+26:172 | sonra | helak ettik | ötekileri || {0|Sonra} {2|ötekileri} {1|helak ettik.}
+26:173 | ve yağdırdık | üzerlerine | bir yağmur | ne kötüdür | yağmuru | uyarılanların || {1|Üzerlerine} {2|bir yağmur} {0|yağdırdık}. {5|Uyarılanların} {4|yağmuru} {3|ne kötüdür!}
+26:174 | şüphesiz | -de | bu | elbette bir ibret vardır | ve -medi | olma | çokları | müminler || {0|Şüphesiz} {2|bunda} {3|bir ibret vardır}. {6|Fakat onların çoğu} {7|iman eden} {5|kimseler} {4|değildir.}
+26:175 | ve şüphesiz | Rabbin | elbette O | mutlak güç sahibidir | çok merhametlidir || {0|Şüphesiz} {1|Rabbin}, {2|evet O}, {3|mutlak güç sahibidir}, {4|çok merhametlidir.}
+26:176 | yalanladı | halkı | Eyke | peygamberleri || {2|Eyke} {1|halkı} {3|peygamberleri} {0|yalanladı.}
+26:177 | hani | dedi | onlara | Şuayb | -mez misiniz | sakınma || {0|Hani} {3|Şuayb} {2|onlara} {1|demişti ki:} {5|“Allah'tan sakın}{4|maz mısınız?}
+26:178 | şüphesiz ben | size | bir peygamberim | güvenilir || {0|Şüphesiz ben} {1|size} (gönderilmiş) {3|güvenilir} {2|bir peygamberim.}
+26:179 | artık sakının | Allah'tan | ve bana itaat edin || {0|Artık} {1|Allah'tan} {0|sakının} {2|ve bana itaat edin.}
+26:180 | ve -miyorum | sizden istemi | onun üzerine | hiçbir | ücret | değildir | ücretim | başka | üzerinden | Rabbi | âlemlerin || {2|Buna karşılık} {1|sizden} {3|hiçbir} {4|ücret} {1|iste}{0|miyorum}. {6|Benim ücretim} {10|âlemlerin} {9|Rabbine} {8|aittir}.
+26:181 | tam yapın | ölçüyü | ve -meyin | olma | -den | eksik verenler || {1|Ölçüyü} {0|tam yapın}, {5|eksik verenlerden} {3|ol}{2|mayın.}
+26:182 | ve tartın | terazi ile | doğru || {2|Doğru} {1|terazi ile} {0|tartın.}
+26:183 | ve -meyin | eksik verme | insanlara | eşyalarını | ve -meyin | karışıklık çıkarma | -de | yeryüzü | bozguncular olarak || {2|İnsanların} {3|eşyalarını} {1|eksik ver}{0|meyin}. {7|Yeryüzünde} {8|bozguncular olarak} {5|karışıklık çıkar}{4|mayın.}
+26:184 | ve sakının | O'ndan ki | sizi yarattı | ve nesilleri | önceki || {2|Sizi} {3|ve önceki} {3|nesilleri} {2|yaratan} {1|Allah'tan} {0|sakının.”}
+26:185 | dediler | ancak | sen | -densin | büyülenmişler || {0|Dediler ki:} {2|“Sen} {1|ancak} {4|büyülenmişlerden}{3|sin.}
+26:186 | ve değilsin | sen | başka | bir insan | bizim gibi | ve şüphesiz | seni sanıyoruz | elbette -den | yalancılar || {1|Sen} {4|bizim gibi} {3|bir insandan} {2|başka bir şey} {0|değilsin}. {5|Biz} {6|seni} {8|yalancılardan} {7|biri} {6|sanıyoruz.}
+26:187 | öyleyse düşür | üzerimize | parçalar | -den | gök | eğer | isen | -den | doğru söyleyenler || {5|Eğer} {8|doğru söyleyenlerden} {6|isen}, {1|üzerimize} {4|gökten} {2|parçalar} {0|düşür.”}
+26:188 | dedi | Rabbim | daha iyi bilir | şeyi | yaptığınız || {0|Şuayb dedi ki:} {1|“Rabbim} {4|yaptıklarınızı} {2|daha iyi bilir.”}
+26:189 | sonra onu yalanladılar | bunun üzerine yakaladı onları | azabı | günün | gölge bulut | şüphesiz o | oldu | azabı | bir günün | büyük || {0|Onu yalanladılar}; {1|bunun üzerine onları} {4|gölge} (bulut) {3|gününün} {2|azabı} {1|yakaladı}. {5|Şüphesiz o}, {9|büyük} {8|bir günün} {7|azabı} {6|idi.}
+26:190 | şüphesiz | -de | bu | elbette bir ibret vardır | ve -medi | olma | çokları | müminler || {0|Şüphesiz} {2|bunda} {3|bir ibret vardır}. {6|Fakat onların çoğu} {7|iman eden} {5|kimseler} {4|değildir.}
+26:191 | ve şüphesiz | Rabbin | elbette O | mutlak güç sahibidir | çok merhametlidir || {0|Şüphesiz} {1|Rabbin}, {2|evet O}, {3|mutlak güç sahibidir}, {4|çok merhametlidir.}
+26:192 | ve şüphesiz o | elbette indirmesidir | Rabbinin | âlemlerin || {0|Şüphesiz bu} (Kur'an), {3|âlemlerin} {2|Rabbinin} {1|indirmesidir.}
+26:193 | indirdi | onu | Ruh | güvenilir || {1|Onu} {3|güvenilir} {2|Ruh} (Cebrail) {0|indirdi}
+26:194 | üzerine | kalbin | olasın diye | -den | uyarıcılar || {1|senin kalbine}, {4|uyarıcılardan} {2|olasın diye}
+26:195 | bir dille | Arapça | apaçık || {2|apaçık} {1|Arapça} {0|bir dille.}
+26:196 | ve şüphesiz o | elbette -de vardır | kitaplarında | öncekilerin || {0|Şüphesiz o}, {3|öncekilerin} {2|kitaplarında} {1|da vardır.}
+26:197 | -medi mi | olma | onlar için | bir delil | -mesi | onu bil | bilginlerinin | oğullarının | İsrail || {7|İsrailoğullarının} {6|bilginlerinin} {5|onu bil}{4|mesi}, {2|onlar için} {3|bir delil} {1|ol}{0|madı mı?}
+26:198 | ve eğer | onu indirseydik | üzerine | bazısı | Arap olmayanlar || {0|Eğer} {1|onu} {4|Arap olmayanların} {3|birine} {1|indirseydik}
+26:199 | ve o onu okusaydı | onlara | -mezlerdi | olacak | ona | inanan || {0|de o} {1|onlara} {0|okusaydı}, {4|ona} {5|inanacak} {2|değil}{3|lerdi.}
+26:200 | böyle | onu soktuk | -e | kalpleri | suçluların || {0|İşte böyle}, {1|onu} {4|suçluların} {3|kalplerine} {1|soktuk.}
+26:201 | -mezler | inanma | ona | -inceye kadar | görme | azabı | acıklı || {6|Acıklı} {5|azabı} {4|görünceye} {3|kadar} {2|ona} {1|inan}{0|mazlar.}
+26:202 | böylece gelir onlara | ansızın | ve onlar | -mezken | farkına varma || {0|O azap onlara} {2|onlar} {4|farkına var}{3|madan} {1|ansızın} {0|gelir.}
+26:203 | sonra derler | -mi | biz | mühlet verilecekler || {0|O zaman} {2|“Bize} {3|mühlet verilecek} {1|mi?”} {0|derler.}
+26:204 | azabımızı mı | acele istiyorlar || {0|Azabımızın} {1|çabuk gelmesini mi istiyorlar?}
+26:205 | gördün mü | eğer | onları yararlandırsak | yıllarca || {0|Gördün mü}, {1|eğer} {2|onları} {3|yıllarca} {2|yararlandırsak}
+26:206 | sonra | gelse onlara | şey | oldukları | tehdit ediliyor || {0|sonra} {4|tehdit edilmekte} {3|oldukları} {2|şey} {1|onlara gelse}
+26:207 | -mez | fayda verme | onlara | şey | oldukları | yararlandırılıyor || {5|yararlandırılmakta} {4|oldukları} {3|şeyler} {2|onlara} {1|hiçbir fayda sağla}{0|maz.}
+26:208 | ve -medik | helak etme | hiçbir | ülke | başka | onun | uyarıcıları vardı || {4|Uyarıcıları} {5|olmayan} {2|hiçbir} {3|ülkeyi} {1|helak et}{0|medik}
+26:209 | bir öğüt | ve -medik | olma | zalimler || (bu uyarı) {0|bir öğüttür}. Biz {3|zalim} {2|ol}{1|madık.}
+26:210 | ve -medi | onu indirme | onu | şeytanlar || {3|Onu} {3|şeytanlar} {1|indir}{0|medi.}
+26:211 | ve -mez | yakışma | onlara | ve -mez | güç yetirme || {2|Bu onlara} {1|yakış}{0|maz}, {4|buna güçleri de} {3|yetmez.}
+26:212 | şüphesiz onlar | -den | işitme | elbette uzaklaştırılmışlardır || {0|Onlar} (vahyi) {2|işitmekten} {3|kesinlikle uzaklaştırılmışlardır.}
+26:213 | o hâlde -me | tapma | ile | Allah | ilaha | başka | sonra olursun | -den | azap görenler || {3|Allah} {2|ile birlikte} {5|başka} {4|bir ilaha} {1|tap}{0|ma}; {6|sonra} {8|azap görenlerden} {6|olursun.}
+26:214 | ve uyar | akrabalarını | en yakın || {2|En yakın} {1|akrabalarını} {0|uyar.}
+26:215 | ve indir | kanadını | kimseler için | sana uyan | -den | müminler || {5|Müminlerden} {3|sana uyanlara} {1|kanatlarını} {0|indir.}
+26:216 | eğer | sana isyan ederlerse | de ki | şüphesiz ben | uzağım | şeyden | yaptığınız || {0|Eğer} {1|sana isyan ederlerse}, {2|de ki:} {3|“Ben} {6|sizin yaptıklarınızdan} {4|uzağım.”}
+26:217 | ve tevekkül et | -e | mutlak güç sahibi | çok merhametli || {2|Mutlak güç sahibi}, {3|çok merhametli} (Allah'a) {0|tevekkül et.}
+26:218 | O ki | seni görür | zaman | kalktığın || {0|O}, {3|kalktığın} {2|zaman} {1|seni görür}
+26:219 | ve dönüşünü | arasında | secde edenler || {2|secde edenler} {1|arasında} {0|dönüp dolaşmanı} da (görür).
+26:220 | şüphesiz O | O | işitendir | bilendir || {0|Şüphesiz O}, {1|evet O}, {2|hakkıyla işitendir}, {3|bilendir.}
+26:221 | -mi | size haber vereyim | üzerine | kime | inerler | şeytanlar || {5|Şeytanların} {4|kime} {4|indiğini} {1|size haber vereyim} {0|mi?}
+26:222 | inerler | üzerine | her | yalancı | günahkâr || {2|Her} {3|yalancıya}, {4|günahkâra} {0|inerler.}
+26:223 | aktarırlar | işittiklerini | ve çokları | yalancılardır || {1|Kulak verip} (işittiklerini) {0|aktarırlar}. {2|Çoğu da} {3|yalancıdır.}
+26:224 | ve şairler | onlara uyar | azgınlar || {0|Şairlere} {1|gelince, onlara} {2|azgınlar} {1|uyar.}
+26:225 | -medin mi | görme | onların | -de | her | vadi | şaşkın şaşkın dolaştıklarını || {2|Onların} {4|her} {5|vadide} {6|şaşkın şaşkın dolaştıklarını} {1|gör}{0|medin mi?}
+26:226 | ve onlar | söylerler | şeyi | -medikleri | yapma || {0|Onlar} {4|yapma}{3|dıkları} {2|şeyleri} {1|söylerler.}
+26:227 | ancak | kimseler | iman eden | ve yapan | salih ameller | ve anan | Allah'ı | çok | ve öç alan | -den | sonra | -dikten | zulme uğra | ve yakında bilecek | kimseler | zulmeden | nasıl bir | dönüş yeri | dönecekler || {0|Ancak} {2|iman edip} {4|salih ameller} {3|işleyen}{1|ler}, {6|Allah'ı} {7|çok} {5|anan} {12|zulme uğra}{11|dık}{10|tan sonra} {8|haklarını alanlar} {0|başka}. {15|Zulmeden}{14|ler}, {16|nasıl bir} {17|dönüş yerine} {18|döneceklerini} {13|yakında bileceklerdir.}

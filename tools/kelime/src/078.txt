@@ -1,0 +1,40 @@
+78:1 | neyi (hakkında) | birbirlerine soruyorlar || {0|Neyi} {1|birbirlerine soruyorlar?}
+78:2 | -den | haber | büyük || {2|O büyük} {1|haberden} {0|(soruyorlar)};
+78:3 | o ki | onlar | onun hakkında | ayrılığa düşmüşler || {0|ki} {1|onlar} {2|onun hakkında} {3|ayrılığa düşmüşlerdir.}
+78:4 | hayır | bilecekler || {0|Hayır!} {1|Yakında bilecekler.}
+78:5 | sonra | hayır | bilecekler || {0|Sonra} {1|hayır!} {2|Yakında bilecekler.}
+78:6 | -medik mi | kıldık | yeri | döşek || {2|Yeri} {3|bir döşek} {1|yap}{0|madık mı?}
+78:7 | ve dağları | kazıklar || {0|Dağları da} {1|kazıklar} (yapmadık mı?)
+78:8 | ve sizi yarattık | çiftler || {0|Sizi} {1|çiftler hâlinde} {0|yarattık.}
+78:9 | ve kıldık | uykunuzu | dinlenme || {1|Uykunuzu} {2|bir dinlenme} {0|kıldık.}
+78:10 | ve kıldık | geceyi | örtü || {1|Geceyi} {2|bir örtü} {0|yaptık.}
+78:11 | ve kıldık | gündüzü | geçim vakti || {1|Gündüzü} {2|geçim vakti} {0|yaptık.}
+78:12 | ve bina ettik | üstünüzde | yedi | sağlam || {1|Üstünüzde} {3|sağlam} {2|yedi (gök)} {0|bina ettik.}
+78:13 | ve kıldık | kandil | parıl parıl yanan || {2|Parıl parıl yanan} {1|bir kandil} {0|yaptık.}
+78:14 | ve indirdik | -den | yağmur yüklü bulutlar | su | şarıl şarıl akan || {2|Yağmur yüklü bulutlardan} {4|şarıl şarıl akan} {3|bir su} {0|indirdik};
+78:15 | çıkaralım diye | onunla | dane | ve bitki || {1|onunla} {2|dane} {3|ve bitki} {0|çıkaralım diye},
+78:16 | ve bahçeler | sarmaş dolaş || {1|ve sarmaş dolaş} {0|bahçeler.}
+78:17 | şüphesiz | günü | ayırma (hüküm) | oldu | belirli bir vakit || {0|Şüphesiz} {2|hüküm} {1|günü} {4|belirlenmiş bir vakit} {3|olmuştur.}
+78:18 | gün | üfürülür | -e | Sûr | ve gelirsiniz | bölük bölük || {3|Sûr'a} {1|üfürüleceği} {0|gün}, {5|bölük bölük} {4|gelirsiniz.}
+78:19 | ve açıldı | gök | ve oldu | kapılar || {1|Gök} {0|açılır} {2|ve} {3|kapı kapı} {2|olur.}
+78:20 | ve yürütüldü | dağlar | ve oldu | serap || {1|Dağlar} {0|yürütülür} {2|ve} {3|serap} {2|olur.}
+78:21 | şüphesiz | cehennem | oldu | gözetleme yeri || {0|Şüphesiz} {1|cehennem} {3|bir gözetleme yeri} {2|olmuştur};
+78:22 | azgınlar için | dönüş yeri || {0|azgınlar için} {1|bir dönüş yeri.}
+78:23 | kalıcılar | orada | çağlar boyu || {1|Orada} {2|çağlar boyu} {0|kalırlar.}
+78:24 | -mezler | tadarlar | orada | serinlik | ve -mez | içecek || {2|Orada} {3|ne bir serinlik} {4|ne de} {5|bir içecek} {1|tadar}{0|lar};
+78:25 | ancak | kaynar su | ve irin || {0|ancak} {1|kaynar su} {2|ve irin} (tadarlar),
+78:26 | ceza | uygun || {1|(yaptıklarına) uygun} {0|bir ceza olarak.}
+78:27 | şüphesiz onlar | idiler | -mez | umarlar | hesap || {0|Çünkü onlar} {4|bir hesap} {3|um}{2|mıyor}{1|lardı};
+78:28 | ve yalanladılar | ayetlerimizi | yalanlamakla || {1|ayetlerimizi} {2|tamamen} {0|yalanladılar.}
+78:29 | ve her | şey(i) | onu sayıp tespit ettik | yazı olarak || {0|Oysa biz her} {1|şeyi} {3|yazılı olarak} {2|sayıp tespit etmişizdir.}
+78:30 | öyleyse tadın | asla | size artırmayacağız | ancak | azap || “{0|Tadın öyleyse!} {1|Artık size} {4|azaptan} {3|başka bir şey} {2|artırmayacağız.}”
+78:31 | şüphesiz | takva sahipleri için | kurtuluş || {0|Şüphesiz} {1|takva sahipleri için} {2|bir kurtuluş} vardır:
+78:32 | bahçeler | ve üzümler || {0|bahçeler} {1|ve üzüm bağları},
+78:33 | ve göğüsleri tomurcuk kızlar | yaşıt || {1|yaşıt} {0|genç kızlar},
+78:34 | ve kadeh | dolu dolu || {1|ve dolu dolu} {0|kadehler.}
+78:35 | -mezler | işitirler | orada | boş söz | ve -mez | yalan || {2|Orada} {3|ne boş bir söz} {4|ne de} {5|bir yalan} {1|işit}{0|irler.}
+78:36 | mükâfat | -den | Rabbin | bağış | yeterli (hesaplı) || {2|Rabbinden} {1|bir} {0|mükâfat}, {4|yeterli} {3|bir bağış};
+78:37 | Rabbi | göklerin | ve yerin | ve şeyin | aralarındaki | Rahmân | -mezler | malik olurlar | O'ndan | hitap || {1|göklerin}, {2|yerin} {3|ve} {4|ikisi arasındakilerin} {0|Rabbi} olan {5|Rahmân'dan}; {8|O'na} {9|hitap etmeye} {7|güç yetire}{6|mezler.}
+78:38 | gün | durur | Ruh (Cebrail) | ve melekler | saf saf | -mezler | konuşurlar | ancak | kimse | izin verdi | ona | Rahmân | ve dedi | doğru || {2|Ruh} {3|ve meleklerin} {4|saf saf} {1|durduğu} {0|gün}, {11|Rahmân'ın} {10|kendisine} {9|izin verdiği} {8|kimse} {7|dışında} {6|konuş}{5|mazlar}; {12|o da} {13|doğruyu} {12|söyler.}
+78:39 | işte o | gün | gerçek | öyleyse kim | diledi | edinsin | -e | Rabbi | dönüş yeri || {0|İşte bu}, {2|gerçek olan} {1|gündür.} {3|Artık kim} {4|dilerse} {7|Rabbine} {6|giden} {8|bir yol} {5|tutar.}
+78:40 | şüphesiz biz | sizi uyardık | azaptan | yakın | gün | bakar | kişi | şeye | önden gönderdi | iki eli | ve der | kâfir | keşke | olsaydım | toprak || {0|Şüphesiz biz} {1|sizi} {3|yakın} {2|bir azaba karşı} {1|uyardık}: {6|kişinin} {9|kendi ellerinin} {8|önden gönderdiklerine} {5|bakacağı} {4|gün}, {11|kâfir} de “{12|Keşke} {14|toprak} {13|olsaydım!}” {10|der.}

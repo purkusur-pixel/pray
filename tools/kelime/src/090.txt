@@ -1,0 +1,20 @@
+90:1 | hayır | yemin ederim | bu | belde(ye) || {1|Yemin ederim} {2|bu} {3|beldeye};
+90:2 | ve sen | helal kılınmışsın (konaklayan) | bu | beldede || {0|ki sen} {2|bu} {3|beldede} {1|yaşamaktasın (sana helal kılınacaktır)};
+90:3 | ve babaya | ve şeye | doğurdu || {0|babaya} {1|ve} {2|doğurduğu} {1|evlada} andolsun ki,
+90:4 | andolsun | yarattık | insanı | -de | meşakkat || {0|Andolsun} {1|biz} {2|insanı} {4|meşakkat} {3|içinde} {1|yarattık.}
+90:5 | sanır mı | -ı | asla | güç yetirmez | ona | hiç kimse || {5|Hiç kimsenin} {4|kendisine} {3|güç yetiremeyeceğini} {0|mi sanıyor?}
+90:6 | der | tükettim | mal | yığın yığın || “{3|Yığın yığın} {2|mal} {1|harcadım}” {0|der.}
+90:7 | sanır mı | -ı | -medi | onu gördü | hiç kimse || {4|Kimsenin} {3|kendisini görmediğini} {0|mi sanıyor?}
+90:8 | -medik mi | kıldık | ona | iki göz || {2|Biz ona} {3|iki göz} {1|ver}{0|medik mi?}
+90:9 | ve bir dil | ve iki dudak || {0|Bir dil} {1|ve iki dudak} (vermedik mi?)
+90:10 | ve ona gösterdik | iki yol(u) || {0|Ve ona} {1|(iyilik ve kötülük) iki yolunu} {0|göstermedik mi?}
+90:11 | fakat -medi | atıldı (aştı) | sarp yokuşu || {0|Fakat o} {2|sarp yokuşu} {1|aşmaya} {0|atılmadı.}
+90:12 | ve ne | bildirdi sana | nedir | sarp yokuş || {3|Sarp yokuşun} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+90:13 | çözmek | köle || {1|Köle} {0|azat etmek},
+90:14 | yahut | doyurmak | -de | gün | sahibi | açlık || {0|yahut} {5|açlık} {4|olan} {3|bir günde} {1|doyurmak};
+90:15 | yetimi | sahibi | yakınlık || {2|yakınlığı} {1|olan} {0|bir yetimi},
+90:16 | yahut | yoksulu | sahibi | toprak (sefalet) || {0|yahut} {3|toprağa düşmüş} {1|bir yoksulu}.
+90:17 | sonra | olmak | -den | kimseler | iman eden | ve birbirine tavsiye eden | sabrı | ve birbirine tavsiye eden | merhameti || {0|Sonra} {4|iman edip}, {6|sabrı} {5|tavsiye eden} {8|ve merhameti} {7|tavsiye eden} {3|kimselerden} {1|olmak.}
+90:18 | işte onlar | ehli | sağ (bereket) || {0|İşte onlar} {2|sağın (mutluluğun)} {1|ehlidir.}
+90:19 | ve kimseler | inkâr eden | ayetlerimizi | onlar | ehli | sol (uğursuzluk) || {2|Ayetlerimizi} {1|inkâr eden} {0|kimseler} {3|ise} {5|solun (bedbahtlığın)} {4|ehlidir.}
+90:20 | üzerlerine | ateş | kapatılmış || {1|Onların} {0|üzerine} {2|kapatılmış} {1|bir ateş vardır.}

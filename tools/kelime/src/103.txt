@@ -1,0 +1,3 @@
+103:1 | andolsun asra (zamana) || {0|Asra (zamana) andolsun ki},
+103:2 | şüphesiz | insan | elbette -dedir | ziyan || {0|şüphesiz} {1|insan} {3|ziyan} {2|içindedir};
+103:3 | ancak | kimseler | iman eden | ve yapan | salih ameller | ve birbirine tavsiye eden | hakkı | ve birbirine tavsiye eden | sabrı || {0|ancak} {2|iman eden}, {4|salih ameller} {3|işleyen}, {6|hakkı} {5|birbirine tavsiye eden} {8|ve sabrı} {7|birbirine tavsiye eden} {1|kimseler} başka.

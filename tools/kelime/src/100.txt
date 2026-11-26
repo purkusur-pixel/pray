@@ -1,0 +1,11 @@
+100:1 | andolsun koşanlara | soluyarak || {1|Soluk soluğa} {0|koşanlara andolsun},
+100:2 | ve çıkaranlara | çakarak (kıvılcım) || {1|(nallarıyla) çakıp kıvılcım} {0|çıkaranlara},
+100:3 | ve baskın yapanlara | sabahleyin || {1|sabahleyin} {0|baskın yapanlara},
+100:4 | ve kaldırdılar | onunla (orada) | toz || {1|orada} {2|tozu dumana} {0|katanlara},
+100:5 | ve ortasına daldılar | onunla (orada) | topluluğun || {1|orada} {2|(düşman) topluluğunun} {0|ortasına dalanlara};
+100:6 | şüphesiz | insan | Rabbine karşı | elbette çok nankördür || {0|şüphesiz} {1|insan} {2|Rabbine karşı} {3|çok nankördür.}
+100:7 | ve şüphesiz o | üzerine | buna | elbette şahittir || {0|Ve şüphesiz kendisi} {2|buna} {3|elbette şahittir.}
+100:8 | ve şüphesiz o | sevgisine | malın (hayrın) | elbette çok düşkündür || {0|Ve şüphesiz o}, {2|mal} {1|sevgisine} {3|çok düşkündür.}
+100:9 | bilmez mi | bilir | -diği zaman | (dışarı) çıkarıldı | şey | -de | kabirler || {0|Peki o bilmez mi ki}, {6|kabirlerde} {4|olanlar} {3|dışarı çıkarıldığı} {2|zaman},
+100:10 | ve ortaya konuldu | şey | -de | göğüsler || {3|göğüslerde (kalplerde)} {1|olanlar} {0|ortaya konulduğu zaman},
+100:11 | şüphesiz | Rableri | onlardan | o gün | elbette haberdardır || {0|şüphesiz} {1|Rableri} {3|o gün} {2|onlardan} {4|tamamen haberdardır.}

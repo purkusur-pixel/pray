@@ -1,0 +1,55 @@
+54:1 | yaklaştı | kıyamet saati | ve yarıldı | ay || {1|Kıyamet} {0|yaklaştı} {2|ve} {3|ay} {2|yarıldı.}
+54:2 | ve eğer | görseler | bir mucize | yüz çevirirler | ve derler | bir büyü | süregelen || {0|Onlar} {2|bir mucize} {1|görseler} {3|yüz çevirirler} {4|ve} {6|"Süregelen} {5|bir büyüdür"} {4|derler.}
+54:3 | ve yalanladılar | ve uydular | heveslerine | ve her | iş | yerleşmiştir || {0|Yalanladılar} {1|ve} {2|heveslerine} {1|uydular.} {3|Oysa her} {4|iş} (sonunda) {5|bir karara bağlanacaktır.}
+54:4 | andolsun | onlara geldi | -den | haberler | şey | onda vardır | caydırma || {0|Andolsun ki} {1|onlara}, {5|içinde} {6|caydırıcı öğüt} {4|bulunan} {3|haberler}{2|den} (nice şeyler) {1|gelmiştir};
+54:5 | hikmet | ulaşmış | ama -maz | fayda verir | uyarılar || {1|son derece} {0|hikmetli} (sözler). {2|Fakat} {4|uyarılar} (onlara) {3|fayda} {2|vermiyor.}
+54:6 | yüz çevir | onlardan | gün | çağırır | çağırıcı | -e | şey | çetin || {0|Öyleyse} {1|onlardan} {0|yüz çevir.} {4|Çağırıcının} {7|çok çetin} {6|bir şey}{5|e} {3|çağıracağı} {2|gün},
+54:7 | düşük | gözleri | çıkarlar | -den | kabirler | sanki onlar | çekirge | yayılmış || {1|gözleri} {0|zilletten düşük} {2|olarak}, {4|kabirler}{3|den} {7|yayılmış} {6|çekirgeler} {5|gibi} {2|çıkarlar};
+54:8 | koşarak | -e | çağırıcı | der | kâfirler | bu | bir gündür | zor || {2|çağırıcıya} {1|doğru} {0|koşarlar.} {4|Kâfirler}: {5|"Bu} {7|çetin} {6|bir gündür"} {3|derler.}
+54:9 | yalanladı | onlardan önce | kavmi | Nuh | yalanladılar | kulumuzu | ve dediler | bir deli | ve tehdit edildi || {1|Onlardan önce} {3|Nuh} {2|kavmi} de {0|yalanlamıştı.} {5|Kulumuzu} {4|yalanladılar} {6|ve} {7|"Bir delidir"} {6|dediler}; {8|ve} (o) {8|tehdit edilip engellendi.}
+54:10 | dua etti | Rabbine | ben | yenik düştüm | yardım et || {0|Bunun üzerine} {1|Rabbine}: {2|"Ben} {3|yenik düştüm}, {4|bana yardım et"} {0|diye dua etti.}
+54:11 | açtık | kapılarını | göğün | su ile | boşanan || {0|Biz de} {4|bardaktan boşanırcasına akan} {3|bir su ile} {2|göğün} {1|kapılarını} {0|açtık.}
+54:12 | ve fışkırttık | yerden | pınarlar | buluştu | su | üzere | bir iş | ki | takdir edilmiş || {1|Yeri} {0|de} {2|pınarlar halinde} {0|fışkırttık.} {4|Sular}, {7|önceden} {8|takdir edilmiş} {6|bir iş} {5|için} {3|buluştu.}
+54:13 | ve onu taşıdık | üzerinde | sahibi | levhalar | ve çiviler || {0|Onu} {3|levhalar} {4|ve çiviler}{2|den yapılmış} (bir gemi) {1|üzerinde} {0|taşıdık.}
+54:14 | akıyordu | gözlerimizin önünde | bir ceza | kimse için | idi | inkâr edilmiş || {1|Gözlerimizin önünde} {0|akıp gidiyordu.} {2|Bu}, {5|inkâr edilmiş} {4|olan} {3|kimse} (Nuh) {3|için} {2|bir mükâfattı.}
+54:15 | andolsun | onu bıraktık | bir ibret | var mı | -den | öğüt alan || {0|Andolsun ki} {1|onu} {2|bir ibret} {1|olarak bıraktık.} {3|Yok mu} {5|öğüt alan?}
+54:16 | nasıl | oldu | azabım | ve uyarılarım || {2|Azabım} {3|ve uyarılarım} {0|nasıl} {1|imiş!}
+54:17 | andolsun | kolaylaştırdık | Kur'an'ı | öğüt için | var mı | -den | öğüt alan || {0|Andolsun} {2|Kur'an'ı} {3|öğüt almak için} {1|kolaylaştırdık.} {4|Yok mu} {6|öğüt alan?}
+54:18 | yalanladı | Âd | nasıl | oldu | azabım | ve uyarılarım || {1|Âd} (kavmi) {0|yalanladı.} {4|Azabım} {5|ve uyarılarım} {2|nasıl} {3|imiş!}
+54:19 | şüphesiz biz | gönderdik | üzerlerine | bir rüzgâr | dondurucu | -de | gün | uğursuz | sürekli || {0|Şüphesiz biz}, {8|sürekli} {7|uğursuz} {6|bir gün}{5|de} {2|üzerlerine} {4|dondurucu} {3|bir rüzgâr} {1|gönderdik};
+54:20 | koparıyordu | insanları | sanki onlar | kütükleri | hurma | kökünden sökülmüş || {1|İnsanları}, {2|sanki onlar} {5|kökünden sökülmüş} {4|hurma} {3|kütükleri} {2|imiş gibi} {0|koparıp atıyordu.}
+54:21 | nasıl | oldu | azabım | ve uyarılarım || {2|Azabım} {3|ve uyarılarım} {0|nasıl} {1|imiş!}
+54:22 | andolsun | kolaylaştırdık | Kur'an'ı | öğüt için | var mı | -den | öğüt alan || {0|Andolsun} {2|Kur'an'ı} {3|öğüt almak için} {1|kolaylaştırdık.} {4|Yok mu} {6|öğüt alan?}
+54:23 | yalanladı | Semud | uyarıları || {1|Semud} (kavmi) {2|uyarıları} {0|yalanladı.}
+54:24 | dediler | bir beşere mi | bizden | tek | ona uyacağız | şüphesiz biz | o takdirde | içindeyiz | sapıklık | ve çılgınlık || {0|Dediler ki}: {2|"Bizden} {3|tek} {1|bir insana mı} {4|uyacağız?} {6|O takdirde} {5|biz} {8|sapıklık} {9|ve çılgınlık} {7|içine düşmüş oluruz.}
+54:25 | bırakıldı mı | zikir | ona | -den | aramızdan | hayır | o | çok yalancı | şımarık || {1|Vahiy} {4|aramızdan} {2|ona mı} {0|bırakıldı?} {5|Hayır}, {6|o} {8|şımarık} {7|bir yalancıdır."}
+54:26 | bilecekler | yarın | kimdir | yalancı | şımarık || {1|Yarın} {3|çok yalancı}, {4|şımarık} {2|kimmiş} {0|bilecekler!}
+54:27 | şüphesiz biz | gönderenleriz | dişi deve | bir imtihan | onlar için | onları gözetle | ve sabret || {0|Şüphesiz biz} {4|onları} {3|imtihan için} {2|dişi deveyi} {1|göndereceğiz.} {5|Sen onları gözetle} {6|ve sabret.}
+54:28 | ve onlara haber ver | ki | su | paylaştırılmıştır | aralarında | her | içme | hazır bulunulur || {0|Onlara haber ver} {1|ki} {2|su} {4|aralarında} {3|paylaştırılmıştır.} {5|Her} {6|içme payında} (hak sahibi) {7|hazır bulunur.}
+54:29 | çağırdılar | arkadaşlarını | o da el attı | ve kesti || {0|Derken} {1|arkadaşlarını} {0|çağırdılar}; {2|o da} (kılıcı) {2|alıp} (deveyi) {3|kesti.}
+54:30 | nasıl | oldu | azabım | ve uyarılarım || {2|Azabım} {3|ve uyarılarım} {0|nasıl} {1|imiş!}
+54:31 | şüphesiz biz | gönderdik | üzerlerine | bir çığlık | tek | oldular | kuru çalı gibi | ağıl yapanın || {0|Şüphesiz biz} {2|üzerlerine} {4|tek} {3|bir korkunç ses} {1|gönderdik}; {5|hemen} {7|ağıl yapanın} {6|kuru çalı çırpısı gibi} {5|oldular.}
+54:32 | andolsun | kolaylaştırdık | Kur'an'ı | öğüt için | var mı | -den | öğüt alan || {0|Andolsun} {2|Kur'an'ı} {3|öğüt almak için} {1|kolaylaştırdık.} {4|Yok mu} {6|öğüt alan?}
+54:33 | yalanladı | kavmi | Lut | uyarıları || {2|Lut} {1|kavmi} {3|uyarıları} {0|yalanladı.}
+54:34 | şüphesiz biz | gönderdik | üzerlerine | taş yağdıran rüzgâr | hariç | ailesi | Lut | onları kurtardık | seherde || {0|Şüphesiz biz} {2|üzerlerine} {3|taş yağdıran bir rüzgâr} {1|gönderdik}; {6|Lut} {5|ailesi} {4|hariç}. {7|Onları} {8|seher vakti} {7|kurtardık};
+54:35 | bir nimet olarak | -den | katımız | böyle | karşılık veririz | kimseye | şükreden || {2|katımız}{1|dan} {0|bir nimet olarak}. {6|Şükreden} {5|kimseyi} {3|işte böyle} {4|mükâfatlandırırız.}
+54:36 | andolsun | onları uyarmıştı | yakalamamızla | şüphe ettiler | uyarılardan || {0|Andolsun ki} (Lut) {2|bizim şiddetli yakalamamızla} {1|onları uyarmıştı}; {3|fakat onlar} {4|uyarılar} {3|hakkında şüphe edip tartıştılar.}
+54:37 | andolsun | ondan istediler | -den | misafirleri | kör ettik | gözlerini | tadın | azabımı | ve uyarılarımı || {0|Andolsun ki} {3|misafirlerin}{2|den} (kötü maksatla) {1|ondan yararlanmak istediler}; {4|biz de} {5|gözlerini} {4|silme kör ettik.} {6|"Tadın} {7|azabımı} {8|ve uyarılarımı!"}
+54:38 | andolsun | onları yakaladı sabahleyin | erkenden | bir azap | kalıcı || {0|Andolsun ki} {2|sabah erkenden} {4|kalıcı} {3|bir azap} {1|onları yakaladı.}
+54:39 | tadın | azabımı | ve uyarılarımı || {0|"Tadın} {1|azabımı} {2|ve uyarılarımı!"}
+54:40 | andolsun | kolaylaştırdık | Kur'an'ı | öğüt için | var mı | -den | öğüt alan || {0|Andolsun} {2|Kur'an'ı} {3|öğüt almak için} {1|kolaylaştırdık.} {4|Yok mu} {6|öğüt alan?}
+54:41 | andolsun | geldi | ailesine | Firavun | uyarılar || {0|Andolsun ki} {3|Firavun} {2|ailesine} de {4|uyarıcılar} {1|gelmişti.}
+54:42 | yalanladılar | ayetlerimizi | hepsini | onları yakaladık | yakalayışı | mutlak güçlü | her şeye gücü yeten || {1|Ayetlerimizin} {2|hepsini} {0|yalanladılar}; {3|biz de onları} {5|mutlak güçlü}, {6|her şeye gücü yeten} (birinin) {4|yakalayışıyla} {3|yakaladık.}
+54:43 | kâfirleriniz mi | daha hayırlı | -den | onlar | yoksa | sizin için | bir berat | -de | kitaplar || {0|Sizin kâfirleriniz} {3|onlar}{2|dan} {1|daha mı hayırlı?} {4|Yoksa} {8|kitaplar}{7|da} {5|sizin için} {6|bir berat} (aklanma) mı var?
+54:44 | yoksa | diyorlar mı | biz | bir topluluğuz | galip gelen || {0|Yoksa} {2|"Biz} {4|üstün gelecek} {3|bir topluluğuz"} {1|mu diyorlar?}
+54:45 | bozguna uğratılacak | topluluk | ve dönecekler | arkalarını || {1|O topluluk} {0|yakında bozguna uğratılacak} {2|ve} {3|arkalarını} {2|dönüp kaçacaklar.}
+54:46 | bilakis | kıyamet | buluşma zamanlarıdır | ve kıyamet | daha dehşetli | ve daha acı || {0|Bilakis} {1|kıyamet} {2|onların asıl buluşma zamanıdır.} {3|Kıyamet} {4|daha dehşetli} {5|ve daha acıdır.}
+54:47 | şüphesiz | suçlular | içindedir | sapıklık | ve çılgınlık || {0|Şüphesiz} {1|suçlular} {3|sapıklık} {4|ve çılgınlık} {2|içindedirler.}
+54:48 | gün | sürüklenirler | -de | ateş | üzerine | yüzleri | tadın | dokunuşunu | Sekar || {3|Ateşin} {2|içinde} {5|yüzleri} {4|üstü} {1|sürüklenecekleri} {0|gün}: {6|"Tadın} {8|Sekar'ın} {7|dokunuşunu!"} (denilir).
+54:49 | şüphesiz biz | her | şey | onu yarattık | bir ölçüyle || {0|Şüphesiz biz} {1|her} {2|şeyi} {4|bir ölçüye göre} {3|yarattık.}
+54:50 | ve değildir | emrimiz | ancak | bir tek | bakış gibi | göz ile || {1|Bizim emrimiz} {2|ancak} {5|göz} {4|kırpması gibi} {3|bir tek} (sözdür).
+54:51 | andolsun | helak ettik | benzerlerinizi | var mı | -den | öğüt alan || {0|Andolsun} {2|sizin benzerlerinizi} {1|helak ettik.} {3|Yok mu} {5|öğüt alan?}
+54:52 | ve her | şey | yaptıkları | -de | kitaplar || {2|Yaptıkları} {0|her} {1|şey} {4|kitaplar}{3|da} (yazılıdır).
+54:53 | ve her | küçük | ve büyük | satır satır yazılmıştır || {1|Küçük} {2|büyük} {0|her şey} {3|satır satır yazılmıştır.}
+54:54 | şüphesiz | takva sahipleri | içindedir | cennetler | ve ırmaklar || {0|Şüphesiz} {1|takva sahipleri} {3|cennetlerde} {4|ve ırmakların} {2|içindedirler};
+54:55 | -de | makam | doğruluk | katında | hükümdar | güçlü || {5|güçlü} {4|bir hükümdarın} {3|katında}, {2|doğruluk} {1|makamında}{0|dırlar.}

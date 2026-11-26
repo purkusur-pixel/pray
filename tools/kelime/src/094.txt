@@ -1,0 +1,8 @@
+94:1 | -medik mi | açtık | senin için | göğsünü || {2|Senin} {3|göğsünü} {1|açıp genişletmedik} {0|mi?}
+94:2 | ve kaldırdık | senden | yükünü || {1|Senden} {2|yükünü} {0|kaldırıp atmadık mı?}
+94:3 | o ki | büktü | belini || {0|O (yük) ki} {2|belini} {1|bükmüştü.}
+94:4 | ve yükselttik | senin için | şanını (anılmanı) || {1|Senin} {2|şanını (anılmanı)} {0|yükseltmedik mi?}
+94:5 | şüphesiz | ile | zorluk | kolaylık || {0|Şüphesiz} {2|zorlukla} {1|beraber} {3|bir kolaylık vardır.}
+94:6 | şüphesiz | ile | zorluk | kolaylık || {0|Gerçekten} {2|zorlukla} {1|beraber} {3|bir kolaylık vardır.}
+94:7 | öyleyse -diğinde | boşaldın (işi bitirdin) | hemen yorul (başka işe koyul) || {0|Öyleyse} {1|bir işi bitirince} {2|hemen başka işe koyul (yorul)}
+94:8 | ve -e | Rabbine | rağbet et (yönel) || {0|ve} {1|yalnız Rabbine} {2|yönel.}

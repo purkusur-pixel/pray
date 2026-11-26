@@ -1,0 +1,36 @@
+83:1 | vay haline | eksik ölçüp tartanların || {1|Eksik ölçüp tartanların} {0|vay haline!}
+83:2 | onlar ki | -diği zaman | ölçerek aldılar | -den | insanlar | tam alırlar || {0|Onlar ki} {4|insanlardan} {2|ölçüp aldıkları} {1|zaman} {5|tam alırlar};
+83:3 | ve -diği zaman | onlara ölçtüler | yahut | onlara tarttılar | eksik verirler || {1|onlara ölçtükleri} {2|ya da} {3|tarttıkları} {0|zaman} {4|eksik verirler.}
+83:4 | -mez mı | sanır | onlar | -cekleri(ni) | diriltilecekler || {2|Onlar} {4|diriltileceklerini} {1|san}{0|mazlar mı},
+83:5 | bir güne | büyük || {1|büyük} {0|bir günde?}
+83:6 | gün | durur | insanlar | Rabbi için | âlemlerin || {2|İnsanların} {4|âlemlerin} {3|Rabbinin huzurunda} {1|duracakları} {0|gün.}
+83:7 | hayır | şüphesiz | kitabı | günahkârların | elbette -de | Siccîn || {0|Hayır!} {1|Şüphesiz} {3|günahkârların} {2|kitabı} {5|Siccîn'dedir.}
+83:8 | ve ne | sana bildirdi | nedir | Siccîn || {3|Siccîn'in} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+83:9 | kitap | yazılmış (damgalı) || (O,) {1|yazılmış} {0|bir kitaptır.}
+83:10 | vay haline | o gün | yalanlayanların || {1|O gün} {2|yalanlayanların} {0|vay haline!}
+83:11 | onlar ki | yalanlarlar | gününü | din || {0|Onlar ki} {3|din} {2|gününü} {1|yalanlarlar.}
+83:12 | ve -mez | yalanlar | onu | ancak | her | saldırgan | günahkâr || {2|Onu} {5|haddi aşan}, {6|günahkâr} {4|her} kimseden {3|başkası} {1|yalanla}{0|maz.}
+83:13 | -diği zaman | okunur | ona | ayetlerimiz | der | masalları | öncekilerin || {2|Ona} {3|ayetlerimiz} {1|okunduğu} {0|zaman} “{6|Öncekilerin} {5|masalları}” {4|der.}
+83:14 | hayır | bilakis | pas bağladı | üzerine | kalplerinin | şey | idiler | kazanıyorlar || {0|Hayır!} {1|Bilakis} {7|kazanmakta} {6|oldukları} {5|şeyler} {4|kalplerinin} {3|üzerini} {2|paslandırmıştır.}
+83:15 | hayır | şüphesiz onlar | -den | Rableri | o gün | elbette perdelenmişlerdir || {0|Hayır!} {1|Şüphesiz onlar} {4|o gün} {3|Rablerinden} {5|perdelenmişlerdir.}
+83:16 | sonra | şüphesiz onlar | elbette girecekler | cehenneme || {0|Sonra} {1|onlar} {3|cehenneme} {2|gireceklerdir.}
+83:17 | sonra | denilir | bu | o ki | idiniz | onu | yalanlıyor || {0|Sonra} “{2|İşte bu}, {5|sizin} {6|yalanla}{4|dığınız} {3|şeydir}” {1|denilir.}
+83:18 | hayır | şüphesiz | kitabı | iyilerin | elbette -de | İlliyyûn || {0|Hayır!} {1|Şüphesiz} {3|iyilerin} {2|kitabı} {5|İlliyyûn'dadır.}
+83:19 | ve ne | sana bildirdi | nedir | İlliyyûn || {3|İlliyyûn'un} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+83:20 | kitap | yazılmış || (O,) {1|yazılmış} {0|bir kitaptır};
+83:21 | ona şahit olur | yakınlaştırılmışlar || {1|(Allah'a) yakın olanlar} {0|ona şahit olur.}
+83:22 | şüphesiz | iyiler | elbette -de | nimet || {0|Şüphesiz} {1|iyiler} {3|nimet} {2|içindedir};
+83:23 | üzerinde | koltuklar | bakarlar || {1|koltuklar} {0|üzerinde} {2|bakarlar.}
+83:24 | tanırsın | -de | yüzleri | parlaklığını | nimetin || {2|Yüzlerinde} {4|nimetin} {3|parlaklığını} {0|tanırsın.}
+83:25 | içirilirler | -den | saf içki | mühürlü || {3|Mühürlü} {2|saf bir içkiden} {0|içirilirler};
+83:26 | mührü | misk | ve -de | bu | yarışsınlar | yarışanlar || {0|onun mührü} {1|misktir.} {3|Bunda} {5|yarışanlar} {4|yarışsınlar!}
+83:27 | ve karışımı | -den | Tesnîm || {0|Onun karışımı} {2|Tesnîm'dendir};
+83:28 | bir pınar | içer | ondan | yakınlaştırılmışlar || {3|(Allah'a) yakın olanların} {2|ondan} {1|içtiği} {0|bir pınar.}
+83:29 | şüphesiz | kimseler | suç işlediler | idiler | -den | kimseler | iman eden | gülerler || {0|Şüphesiz} {2|suç işleyenler} {6|iman edenlere} {7|gül}{3|üyorlardı};
+83:30 | ve -diği zaman | geçtiler | yanlarından | kaş göz işareti yaparlar || {2|yanlarından} {1|geçtikleri} {0|zaman} {3|birbirlerine kaş göz ediyorlardı};
+83:31 | ve -diği zaman | döndüler | -e | ailelerine | döndüler | eğlenerek || {3|ailelerine} {1|döndükleri} {0|zaman} {5|eğlenerek} {4|dönüyorlardı};
+83:32 | ve -diği zaman | onları gördüler | dediler | şüphesiz | bunlar | elbette sapıklardır || {1|onları gördükleri} {0|zaman} da “{3|Şüphesiz} {4|bunlar} {5|sapıklardır}” {2|diyorlardı.}
+83:33 | ve -medi | gönderildiler | üzerlerine | bekçiler || {1|Oysa onlar} {2|bunların üzerine} {3|bekçi} {1|olarak gönderil}{0|memişlerdi.}
+83:34 | bugün ise | kimseler | iman eden | -e | kâfirler | gülerler || {0|Bugün ise} {2|iman edenler} {4|kâfirlere} {5|gülerler};
+83:35 | üzerinde | koltuklar | bakarlar || {1|koltuklar} {0|üzerinde} {2|bakarlar.}
+83:36 | -mi | cezalandırıldı | kâfirler | şeyle | idiler | yapıyorlar || {2|Kâfirler}, {5|yapmakta} {4|oldukları} {3|şeylerin karşılığını} {1|gördüler} {0|mi?}

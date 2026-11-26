@@ -1,0 +1,19 @@
+87:1 | tesbih et | adını | Rabbinin | en yüce || {3|En yüce} {2|Rabbinin} {1|adını} {0|tesbih et};
+87:2 | o ki | yarattı | ve düzenledi || {0|O ki} {1|yarattı} {2|ve düzenledi};
+87:3 | ve o ki | takdir etti (ölçü verdi) | ve yol gösterdi || {0|o ki} {1|takdir etti} {2|ve yol gösterdi};
+87:4 | ve o ki | çıkardı | otlağı || {0|o ki} {2|otlağı} {1|çıkardı},
+87:5 | sonra onu kıldı | çer çöp | kapkara (kuru) || {0|sonra onu} {2|kapkara} {1|bir çer çöp} {0|hâline getirdi.}
+87:6 | sana okutacağız | artık -mezsin | unutursun || {0|Biz sana (Kur'an'ı) okutacağız}, {1|artık} {2|unutmayacaksın};
+87:7 | ancak | şey | diledi | Allah | şüphesiz O | bilir | açığı | ve şeyi | gizlenen || {0|ancak} {3|Allah'ın} {2|dilediği} {1|müstesna.} {4|Şüphesiz O}, {6|açığı} {7|da} {8|gizliyi de} {5|bilir.}
+87:8 | ve sana kolaylaştıracağız | en kolaya || {0|Seni} {1|en kolay olana (İslam'a)} {0|muvaffak kılacağız.}
+87:9 | öyleyse öğüt ver | eğer | fayda verirse | öğüt || {0|Öyleyse öğüt ver}; {1|eğer} {3|öğüt} {2|fayda verirse.}
+87:10 | öğüt alacak | kimse | korkar || {2|(Allah'tan) korkan} {1|kimse} {0|öğüt alacak};
+87:11 | ve ondan kaçınır | en bedbaht || {1|en bedbaht olan ise} {0|ondan kaçınır};
+87:12 | o ki | girecek | ateşe | en büyük || {0|o ki} {3|en büyük} {2|ateşe} {1|girecek};
+87:13 | sonra | -mez | ölür | orada | ve -mez | yaşar || {0|sonra} {3|orada} {2|ne öl}{1|ür}, {4|ne de} {5|yaşar.}
+87:14 | gerçekten | kurtuluşa erdi | kimse | arındı || {0|Gerçekten} {3|arınan} {2|kimse} {1|kurtuluşa ermiştir};
+87:15 | ve andı | adını | Rabbinin | ve namaz kıldı || {2|Rabbinin} {1|adını} {0|anıp} {3|namaz kılan} da.
+87:16 | bilakis | tercih ediyorsunuz | hayatını | dünya || {0|Fakat siz} {3|dünya} {2|hayatını} {1|tercih ediyorsunuz.}
+87:17 | ve ahiret | daha hayırlı | ve daha kalıcı || {0|Oysa ahiret} {1|daha hayırlı} {2|ve daha kalıcıdır.}
+87:18 | şüphesiz | bu | elbette -de | sahifeler | önceki || {0|Şüphesiz} {1|bu}, {4|önceki} {3|sahifelerde} {2|de vardır};
+87:19 | sahifeleri | İbrahim'in | ve Musa'nın || {1|İbrahim'in} {2|ve Musa'nın} {0|sahifelerinde.}

@@ -1,0 +1,56 @@
+74:1 | ey | bürünen || {0|Ey} {1|bürünüp sarınan!}
+74:2 | kalk | uyar || {0|Kalk} {1|ve uyar.}
+74:3 | ve Rabbini | yücelt || {0|Rabbini} {1|yücelt.}
+74:4 | ve elbiseni | temizle || {0|Elbiseni} {1|temizle.}
+74:5 | ve pislikten | uzak dur || {0|Pislikten} {1|uzak dur.}
+74:6 | ve -me | başa kakma | çok görerek || {2|Çok görerek} {1|başa kak}{0|ma.}
+74:7 | ve Rabbin için | sabret || {0|Rabbin için} {1|sabret.}
+74:8 | zaman | üfürüldüğünde | -e | Sur || {3|Sur}{2|a} {1|üfürüldüğü} {0|zaman},
+74:9 | bu | o gün | bir gün | zor || {0|işte o}, {1|o gün}, {3|zor} {2|bir gündür};
+74:10 | üzerine | kâfirler | -mayan | kolay || {1|kâfirler} {0|için} {3|kolay} {2|olmayan.}
+74:11 | beni bırak | ve kimseyi | yarattım | tek başına || {3|Tek başına} {2|yarattığım} {1|kimseyi} {0|bana bırak};
+74:12 | ve kıldım | ona | mal | uzanan || {1|ona} {3|bol} {2|mal} {0|verdim},
+74:13 | ve oğullar | hazır bulunan || {1|yanında hazır bulunan} {0|oğullar} (verdim),
+74:14 | ve döşedim | ona | döşeyiş || {1|ona} (her imkânı) {2|iyice} {0|döşeyip hazırladım.}
+74:15 | sonra | umar | -memi | artırmamı || {0|Sonra} (daha da) {3|artırmamı} {1|umuyor.}
+74:16 | asla | şüphesiz o | idi | ayetlerimize | inatçı || {0|Asla!} {1|Çünkü o} {3|ayetlerimize} {4|karşı inatçı} {2|idi.}
+74:17 | onu sardıracağım | sarp yokuşa || {0|Onu} {1|sarp bir yokuşa} {0|sardıracağım.}
+74:18 | şüphesiz o | düşündü | ve ölçtü || {0|Çünkü o} {1|düşündü} {2|ve ölçüp biçti.}
+74:19 | kahrolası | nasıl | ölçtü || {0|Kahrolası}, {1|nasıl} {2|ölçüp biçti!}
+74:20 | sonra | kahrolası | nasıl | ölçtü || {0|Yine} {1|kahrolası}, {2|nasıl} {3|ölçüp biçti!}
+74:21 | sonra | baktı || {0|Sonra} {1|baktı.}
+74:22 | sonra | kaşlarını çattı | ve surat astı || {0|Sonra} {1|kaşlarını çattı} {2|ve surat astı.}
+74:23 | sonra | arkasını döndü | ve büyüklendi || {0|Sonra} {1|arkasını döndü} {2|ve büyüklendi.}
+74:24 | dedi | değildir | bu | ancak | bir büyü | aktarılan || {0|Dedi ki}: {2|"Bu}, {5|aktarılan} {4|bir büyü}{3|den başka bir şey} {1|değildir.}
+74:25 | değildir | bu | ancak | sözü | beşer || {1|Bu}, {4|insan} {3|sözün}{2|den başka bir şey} {0|değildir."}
+74:26 | onu sokacağım | Sekar'a || {0|Onu} {1|Sekar'a} {0|sokacağım.}
+74:27 | ve ne | sana bildirdi | nedir | Sekar || {3|Sekar'ın} {2|ne olduğunu} {1|sana} {0|ne} {1|bildirdi?}
+74:28 | -maz | bırakır | ve -maz | koyar || (O,) {1|ne bırakır} {2|ne} {3|koyar.}
+74:29 | kavurucudur | insanlar için || {1|İnsanları} {0|kavurur.}
+74:30 | üzerinde | dokuz | on || {0|Onun başında} {2|on} {1|dokuz} (bekçi) vardır.
+74:31 | ve -medik | kıldık | görevlilerini | ateşin | başka | melekler | ve -medik | kıldık | sayılarını | başka | bir imtihan | kimseler için | inkâr eden | kesin bilsin diye | kimseler | verilen | kitap | ve artsın diye | kimseler | iman eden | iman | ve -mesin diye | şüphe etmesin | kimseler | verilen | kitap | ve müminler | ve desinler diye | kimseler | -de | kalpleri | hastalık | ve kâfirler | ne | kastetti | Allah | bununla | misal olarak | böyle | saptırır | Allah | kimseyi | dilediği | ve doğru yola iletir | kimseyi | dilediği | ve -maz | bilir | orduları | Rabbinin | başkası | O | ve değildir | o | başka | bir öğüt | insanlar için || {3|Cehennemin} {2|görevlilerini} {5|melekler}{4|den başkası} {1|kıl}{0|madık.} {8|Onların sayısını} {7|da} {12|inkâr edenler} {11|için} {10|bir imtihan}{9|dan başka bir şey} {7|kıl}{6|madık}; {15|kendilerine} {16|kitap} {15|verilenler} {13|kesin bilgi edinsinler}, {19|iman edenlerin} {20|imanı} {17|artsın}, {24|kendilerine} {25|kitap} {24|verilenler} {26|ve müminler} {22|şüphe et}{21|mesinler}; {30|kalplerinde} {31|hastalık} {28|bulunanlar} {32|ve kâfirler} {27|de}: {35|"Allah} {37|misal olarak} {36|bununla} {33|ne} {34|kastetti?"} {27|desinler diye.} {38|Böylece} {40|Allah} {42|dilediğini} {39|saptırır}, {45|dilediğini} {43|doğru yola iletir.} {49|Rabbinin} {48|ordularını} {51|O'ndan} {50|başkası} {47|bil}{46|mez.} {53|Bu} {56|insanlar için} {54|ancak} {55|bir öğüttür.}
+74:32 | hayır | andolsun aya || {0|Hayır!} {1|Andolsun aya},
+74:33 | ve geceye | zaman | döndüğü || {2|dönüp gittiği} {1|zaman} {0|geceye},
+74:34 | ve sabaha | zaman | ağardığı || {2|ağardığı} {1|zaman} {0|sabaha},
+74:35 | şüphesiz o | elbette biridir | büyüklerin || {0|şüphesiz o} (cehennem), {2|en büyük} (belalar)dan {1|biridir};
+74:36 | uyarıcı | insanlar için || {1|insanlar için} {0|bir uyarıcıdır};
+74:37 | kimse için | diledi | sizden | -mek | ileri gitmeyi | veya | geri kalmayı || {2|sizden} {4|ileri gitmeyi} {5|veya} {6|geri kalmayı} {1|dileyen} {0|kimse için.}
+74:38 | her | nefis | şeye karşılık | kazandığı | rehindir || {0|Her} {1|nefis} {3|kazandığına} {2|karşılık} {4|bir rehindir};
+74:39 | ancak | ehli | sağ || {2|sağ} {1|tarafın ehli} {0|hariç.}
+74:40 | -de | cennetler | sorarlar || {1|Onlar cennetler}{0|de} {2|sorarlar}
+74:41 | -den | suçlular || {1|suçlulara}:
+74:42 | ne | sizi soktu | -e | Sekar || {0|"Sizi} {3|Sekar'a} {1|ne soktu?"}
+74:43 | dediler | -madık | olduk | -den | namaz kılanlar || {0|Derler ki}: {4|"Namaz kılanlar}{3|dan} {2|ol}{1|madık};
+74:44 | ve -madık | olduk | doyururduk | yoksulu || {3|yoksulu} {2|doyur}{0|mazdık};
+74:45 | ve idik | dalardık | ile | dalanlar || {3|batıla dalanlarla} {2|beraber} {1|dalar}{0|dık};
+74:46 | ve idik | yalanlardık | gününü | din (hesap) || {3|hesap} {2|gününü} {1|yalanlar}{0|dık};
+74:47 | -e kadar | bize geldi | kesin olan || {2|ölüm} {1|bize gelinceye} {0|kadar."}
+74:48 | -maz | onlara fayda verir | şefaati | şefaatçilerin || {3|Şefaatçilerin} {2|şefaati} {1|onlara fayda} {0|vermez.}
+74:49 | ne | onlara oluyor | -den | öğüt | yüz çevirenler || {1|Onlara} {0|ne oluyor} da {3|öğüt}{2|ten} {4|yüz çeviriyorlar?}
+74:50 | sanki onlar | eşekler | ürkmüş || {0|Sanki onlar} {2|ürkmüş} {1|yaban eşekleridir};
+74:51 | kaçmış | -den | aslan || {2|aslan}{1|dan} {0|kaçmış.}
+74:52 | hayır | ister | her | kişi | onlardan | -mesini | verilmesini | sahifeler | açılmış || {0|Hayır}, {4|onlardan} {2|her} {3|biri} {6|kendisine} {8|açılmış} {7|sahifeler} {6|verilmesini} {1|ister.}
+74:53 | hayır | bilakis | -mazlar | korkarlar | ahiretten || {0|Hayır!} {1|Bilakis} {4|ahiretten} {3|kork}{2|muyorlar.}
+74:54 | hayır | şüphesiz o | bir öğüttür || {0|Hayır!} {1|Şüphesiz bu} {2|bir öğüttür.}
+74:55 | kim | dilerse | onu anar || {0|Kim} {1|dilerse} {2|ondan öğüt alır.}
+74:56 | ve -mazlar | öğüt alırlar | ancak | -mesi | dilemesi | Allah'ın | O | ehlidir | takva | ve ehlidir | bağışlama || {5|Allah} {4|dilemedikçe} {1|öğüt ala}{0|mazlar.} {6|O}, {8|takva} {7|ehlidir} {9|ve} {10|bağışlama} {9|ehlidir.}

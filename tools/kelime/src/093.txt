@@ -1,0 +1,11 @@
+93:1 | andolsun kuşluk vaktine || {0|Kuşluk vaktine andolsun},
+93:2 | ve geceye | -diği zaman | sükûna erdi (karanlığı çöktü) || {0|ve} {2|sükûna erdiği} {1|zaman} {0|geceye andolsun ki},
+93:3 | -medi | seni terk etti | Rabbin | ve -medi | darıldı || {2|Rabbin} {1|seni terk} {0|etmedi} {3|ve} (sana) {4|darılmadı da.}
+93:4 | ve elbette ahiret | daha hayırlıdır | senin için | -den | dünya (ilk hayat) || {0|Elbette ahiret} {2|senin için} {4|dünyadan} {1|daha hayırlıdır.}
+93:5 | ve elbette ileride | sana verecek | Rabbin | ve sen hoşnut olacaksın || {2|Rabbin} {0|elbette ileride} {1|sana (nice nimetler) verecek} {3|ve sen hoşnut olacaksın.}
+93:6 | -medi mi | seni buldu | yetim | ve barındırdı || {1|O seni} {2|yetim} {1|bulup} {3|barındırmadı} {0|mı?}
+93:7 | ve seni buldu | yolunu bilmez (şaşkın) | ve doğru yola iletti || {0|Seni} {1|yolunu bilmez} {0|bulup} {2|doğru yola iletmedi mi?}
+93:8 | ve seni buldu | fakir | ve zengin etti || {0|Seni} {1|fakir} {0|bulup} {2|zengin etmedi mi?}
+93:9 | öyleyse | yetimi | sakın | ezme || {0|Öyleyse} {1|yetimi} {3|ezme}{2|!}
+93:10 | ve | isteyeni | sakın | azarlama || {1|İsteyeni (dilenciyi)} de {3|azarlama}{2|!}
+93:11 | ve | nimetini | Rabbinin | anlat || {0|Rabbinin} {1|nimetini} {3|anlat.}

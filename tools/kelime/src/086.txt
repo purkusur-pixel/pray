@@ -1,0 +1,17 @@
+86:1 | andolsun göğe | ve Târık'a || {0|Göğe} {1|ve Târık'a} andolsun.
+86:2 | ve ne | sana bildirdi | nedir | Târık || {3|Târık'ın} {2|ne olduğunu} {0|sana ne} {1|bildirdi?}
+86:3 | yıldız | delip geçen || (O,) {1|karanlığı delen} {0|yıldızdır.}
+86:4 | değildir | her | can | ancak | üzerinde | bir koruyucu || {1|Hiçbir} {2|can} {0|yoktur ki} {4|üzerinde} {5|bir koruyucu} {3|bulunmasın.}
+86:5 | baksın | insan | neden | yaratıldı || {1|İnsan} {2|neden} {3|yaratıldığına} {0|bir baksın!}
+86:6 | yaratıldı | -den | su | atılan || {3|Atılan} {2|bir sudan} {0|yaratıldı};
+86:7 | çıkar | -den | arası | bel | ve göğüs kemikleri || {3|bel} {4|ile göğüs kemikleri} {2|arasından} {0|çıkar.}
+86:8 | şüphesiz O | -e | onu döndürmeye | elbette kadirdir || {0|Şüphesiz O (Allah)}, {2|onu (tekrar) döndürmeye} {3|kadirdir.}
+86:9 | gün | sınanır | gizliler || {2|Gizlilerin} {1|ortaya döküleceği} {0|gün},
+86:10 | artık yoktur | onun için | -den | kuvvet | ve -mez | yardımcı || {1|onun için} {3|ne bir kuvvet} {4|ne de} {5|bir yardımcı} {0|vardır.}
+86:11 | andolsun göğe | sahibi | dönüş (yağmur) || {2|Yağmur} {1|sahibi} {0|göğe},
+86:12 | ve yere | sahibi | yarılma || {2|bitkilerle yarılan} {0|yere} andolsun ki,
+86:13 | şüphesiz o | elbette sözdür | ayırıcı || {0|şüphesiz o (Kur'an)}, {2|hak ile batılı ayıran} {1|bir sözdür};
+86:14 | ve değildir | o | şaka || {1|o} {2|bir şaka} {0|değildir.}
+86:15 | şüphesiz onlar | tuzak kurarlar | tuzak || {0|Şüphesiz onlar} {2|bir tuzak} {1|kuruyorlar};
+86:16 | ve tuzak kurarım | tuzak || {0|ben de} {1|bir tuzak} {0|kuruyorum.}
+86:17 | mühlet ver | kâfirlere | onlara mühlet ver | az bir süre || {0|Öyleyse} {1|kâfirlere} {0|mühlet ver}; {2|onları} {3|biraz} {2|kendi hallerine bırak.}

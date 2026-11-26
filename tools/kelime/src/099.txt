@@ -1,0 +1,8 @@
+99:1 | -diği zaman | sarsıldı | yer | sarsıntısı(yla) || {2|Yer} {3|o şiddetli sarsıntısıyla} {1|sarsıldığı} {0|zaman},
+99:2 | ve çıkardı | yer | ağırlıklarını || {1|yer} {2|ağırlıklarını (içindekileri)} {0|dışarı çıkardığı},
+99:3 | ve dedi | insan | ne (oluyor) | ona || {1|insan} da “{3|Ona} {2|ne oluyor?}” {0|dediği zaman},
+99:4 | o gün | anlatır | haberlerini || {0|işte o gün} (yer) {2|haberlerini} {1|anlatır;}
+99:5 | çünkü | Rabbin | vahyetti | ona || {0|çünkü} {1|Rabbin} {3|ona} {2|vahyetmiştir.}
+99:6 | o gün | çıkar | insanlar | bölük bölük | gösterilsin diye | amelleri || {0|O gün} {2|insanlar}, {5|amelleri} {4|kendilerine gösterilsin diye} {3|bölük bölük} {1|(kabirlerinden) çıkarlar.}
+99:7 | kim | yaparsa | ağırlığınca | zerre | hayır | onu görür || {0|Kim} {3|zerre} {2|ağırlığınca} {4|bir hayır} {1|yaparsa} {5|onu görür.}
+99:8 | ve kim | yaparsa | ağırlığınca | zerre | şer | onu görür || {0|Kim de} {3|zerre} {2|ağırlığınca} {4|bir kötülük} {1|yaparsa} {5|onu görür.}
